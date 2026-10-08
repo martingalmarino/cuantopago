@@ -65,6 +65,60 @@ p { margin: 0 0 12px; }
 .page { padding: 8px 0 48px; }
 .page-stack, .stack { display: grid; gap: 20px; }
 
+.quote-bar { padding: 10px 16px 0; }
+.quote-bar-inner {
+  width: min(var(--content), 100%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.quote-bar-inner::-webkit-scrollbar { display: none; }
+.quote-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  flex: none;
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 13px;
+  box-shadow: var(--shadow);
+}
+.quote-chip strong { font-size: 13px; }
+.quote-bar-inner > a {
+  flex: none;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.quote-status {
+  width: min(var(--content), calc(100% - 32px));
+  margin: 10px auto 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.quote-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px 18px;
+}
+.quote-card h2 { font-size: 15px; margin-bottom: 8px; }
+.quote-sell { font-size: 26px; font-weight: 700; letter-spacing: -0.03em; margin: 0; }
+.quote-chip .up, .quote-card .up { color: var(--accent); font-weight: 600; }
+.quote-chip .down, .quote-card .down { color: var(--danger); font-weight: 600; }
+.quote-chip .flat, .quote-card .flat { color: var(--text-secondary); font-weight: 600; }
+
 .site-header {
   position: static;
   z-index: 10;

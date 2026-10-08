@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import DollarQuotes from '../../components/DollarQuotes';
+---
+<Base
+  title="Cotización del dólar en Argentina"
+  description="Compra y venta del dólar oficial, blue, MEP, CCL y otras pizarras públicas. No es la cotización de tu banco."
+  crumbs={[{ name: 'Inicio', href: '/' }, { name: 'Cotizaciones', href: '/cotizaciones/' }]}
+>
+  <div class="wrap page page-stack">
+    <nav class="crumbs" aria-label="Migas"><a href="/">Inicio</a> <span>/</span> <span>Cotizaciones</span></nav>
+    <header class="intro">
+      <h1>Cotización del dólar</h1>
+      <p>Referencia de pizarras públicas. No es el tipo de cambio de tu banco ni el que usa el cálculo de impuestos. Si cargás un dólar en la calculadora, el resultado sigue siendo una simulación.</p>
+    </header>
+    <DollarQuotes client:load mode="board" />
+    <p class="meta">Fuente: <a href="https://monedapi.ar/">MonedAPI</a>. Esta página vuelve a pedir los datos cada cinco minutos.</p>
+  </div>
+</Base>

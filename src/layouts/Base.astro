@@ -4,6 +4,7 @@ import '@fontsource/inter/500.css';
 import '@fontsource/inter/600.css';
 import '@fontsource/inter/700.css';
 import '../styles/global.css';
+import DollarQuotes from '../components/DollarQuotes';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 
@@ -53,6 +54,7 @@ if (crumbs.length && Astro.site) {
   </head>
   <body>
     <a class="skip" href="#contenido">Saltar al contenido</a>
+    <DollarQuotes client:load mode="bar" />
     <SiteHeader />
     <main id="contenido">
       <slot />
