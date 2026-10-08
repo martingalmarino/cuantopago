@@ -9,10 +9,15 @@ import Calculator from '../../components/Calculator';
 >
   <div class="wrap page page-stack">
     <nav class="crumbs" aria-label="Migas"><a href="/">Inicio</a> <span>/</span> <span>Calculadora</span></nav>
-    <header class="sheet prose">
-      <h1>Calculadora</h1>
-      <p>Si ya sabés cuánto te debitaron, cargá ese importe final. Si querés estimar un precio de lista, indicá la moneda y si el IVA está incluido. Si falta un dato, vas a ver el subtotal conocido y qué queda sin resolver.</p>
-    </header>
-    <Calculator client:only="react" />
+    <h1 style="margin-bottom:16px">Calculadora</h1>
+    <div class="decision">
+      <section class="section-panel">
+        <div class="section-cap"><h2>Cómo usarla</h2></div>
+        <div class="section-body pad prose">
+          <p>Si ya sabés cuánto te debitaron, elegí «Cargar lo que pago». Si querés estimar un precio de lista, indicá la moneda y si el IVA está incluido. Si falta un dato, el total queda parcial.</p>
+        </div>
+      </section>
+      <Calculator client:only="react" />
+    </div>
   </div>
 </Base>

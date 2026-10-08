@@ -4,13 +4,20 @@ const path = Astro.url.pathname;
 const links = [
   { href: '/plataformas/', label: 'Plataformas' },
   { href: '/calculadora/', label: 'Calculadora' },
-  { href: '/como-calculamos/', label: 'Cómo calculamos' },
   { href: '/mis-suscripciones/', label: 'Mis suscripciones', count: true },
 ];
 ---
 <header class="site-header">
   <div class="header-inner">
-    <a class="wordmark" href="/">Cuánto Pago</a>
+    <a class="wordmark" href="/">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="8" cy="8" r="5.2" />
+          <path d="M8 4.8v6.4M6.2 6.4h2.5a1.4 1.4 0 0 1 0 2.8H6.2" />
+        </svg>
+      </span>
+      Cuánto Pago
+    </a>
     <nav class="nav nav-desktop" aria-label="Principal">
       {links.map((link) => (
         <a href={link.href} aria-current={path === link.href ? 'page' : undefined}>
@@ -21,7 +28,7 @@ const links = [
     </nav>
     <details class="nav-mobile">
       <summary>Menú</summary>
-      <nav class="nav-links" aria-label="Principal en el teléfono">
+      <nav class="nav-links nav" aria-label="Principal en el teléfono">
         {links.map((link) => (
           <a href={link.href} aria-current={path === link.href ? 'page' : undefined}>{link.label}</a>
         ))}

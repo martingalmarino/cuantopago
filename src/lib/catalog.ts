@@ -43,6 +43,14 @@ export function todayIso(date = new Date()): string {
   return new Intl.DateTimeFormat('en-CA', { timeZone: catalogMeta.timeZone }).format(date);
 }
 
+const monthShort = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+
+export function reviewedLabel(iso: string | null | undefined): string | null {
+  if (!iso || !/^\d{4}-\d{2}-\d{2}$/.test(iso)) return null;
+  const [year, month, day] = iso.split('-').map(Number);
+  return `Revisado el ${day} ${monthShort[month - 1]} ${year}`;
+}
+
 export function serviceBySlug(slug: string): ServiceRecord | undefined {
   return services.find((service) => service.slug === slug);
 }

@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { Check } from 'lucide-react';
 import { track } from '../lib/analytics';
 import { choicesAreValid, overlapWarnings, summarizeBudget } from '../lib/budget';
-import { catalogMeta, purchasablePlans, quotePlan, serviceById, todayIso } from '../lib/catalog';
+import { purchasablePlans, quotePlan, serviceById, todayIso } from '../lib/catalog';
 import { catalogEntry } from '../lib/entries';
-import { formatMinor } from '../lib/money';
+import { formatPrice } from '../lib/money';
 import { useBudget } from './useBudget';
 
 export default function BudgetDock() {
@@ -68,12 +68,24 @@ export default function BudgetDock() {
     setServiceId(null);
   }
 
-  const amount = ready ? formatMinor(totals.knownMonthlyDisplayMinor, 'ARS') : '…';
-  const label = totals.status === 'partial' ? 'Total parcial' : totals.enabledCount === 0 ? 'Sin servicios' : 'Por mes';
+  const amount = ready ? formatPrice(totals.knownMonthlyDisplayMinor, 'ARS') : '…';
+  const label = totals.status === 'partial' ? 'Total parcial' : 'Tu gasto mensual';
 
   return (
-    <div className="dock">
+    <div className={totals.enabledCount > 0 ? 'dock has-items' : 'dock'}>
+      <section className="section-panel">
+      <div className="section-cap"><h2>Tu gasto mensual</h2></div>
+      <div className="section-body">
       <div className="summary-card">
+        {totals.enabledCount === 0 ? (
+          <>
+            <p className="kicker">Tu gasto mensual</p>
+            <p className="summary-empty-title">Todavía no agregaste suscripciones</p>
+            <p className="meta">Cuando sumes un plan, el total mensual aparece acá.</p>
+            <a className="btn" href="#catalogo">Explorar plataformas</a>
+          </>
+        ) : (
+          <>
         <p className="kicker">{label}</p>
         <p className="total nums">{amount}</p>
         <p className="meta">{totals.enabledCount} {totals.enabledCount === 1 ? 'servicio activo' : 'servicios activos'}</p>
@@ -84,11 +96,13 @@ export default function BudgetDock() {
               : `${totals.unresolvedCount} servicios todavía tienen cargos sin resolver.`}
           </p>
         )}
-        <p className="meta nums">Proyección de 12 meses a precios actuales: {ready ? formatMinor(totals.projectionDisplayMinor, 'ARS') : '…'}</p>
-        <a className="btn primary" href="/mis-suscripciones/">Ver resumen</a>
-        <p className="meta">Datos del catálogo revisados el {catalogMeta.revision}. Se guarda en este navegador.</p>
+        <a className="btn primary" href="/mis-suscripciones/">Ver mi resumen</a>
+          </>
+        )}
         {notice && <p className="warning">{notice}</p>}
       </div>
+      </div>
+      </section>
       <div className="budget-bar">
         <div>
           <strong className="nums">{totals.enabledCount} {totals.enabledCount === 1 ? 'servicio' : 'servicios'} · {amount}/mes</strong>
@@ -115,16 +129,16 @@ export default function BudgetDock() {
                   className="btn"
                   aria-pressed={planId === plan.id}
                   onClick={() => { setPlanId(plan.id); setChoiceIds([]); setUsePromotion(false); }}
-                  style={planId === plan.id ? { background: 'var(--selected)', borderColor: 'var(--action)' } : undefined}
+                  style={planId === plan.id ? { background: 'var(--accent-soft)' } : undefined}
                 >
                   {planId === plan.id && <Check size={16} aria-hidden="true" />}
                   {plan.name}
-                  {plan.amountMinor !== null && plan.currency ? ` · ${formatMinor(plan.amountMinor, plan.currency)}` : ''}
+                  {plan.amountMinor !== null && plan.currency ? ` · ${formatPrice(plan.amountMinor, plan.currency)}` : ''}
                 </button>
               ))}
               {selected?.promotion && selected.currency && (
                 <label className="field">
-                  <span>Promo {formatMinor(selected.promotion.amountMinor, selected.promotion.currency)} por {selected.promotion.durationCycles} ciclos. No se activa sola.</span>
+                  <span>Promo {formatPrice(selected.promotion.amountMinor, selected.promotion.currency)} por {selected.promotion.durationCycles} ciclos. No se activa sola.</span>
                   <input type="checkbox" checked={usePromotion} onChange={(event) => setUsePromotion(event.target.checked)} />
                 </label>
               )}

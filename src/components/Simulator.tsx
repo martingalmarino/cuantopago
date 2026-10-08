@@ -60,7 +60,7 @@ export default function Simulator() {
         <p className="meta nums">Lista actual: {formatMinor(delta.baselineMinor, 'ARS')} / mes</p>
         <p className="meta nums">Escenario: {formatMinor(delta.scenarioMinor, 'ARS')} / mes</p>
         {delta.definitive ? (
-          <p className="price nums">Diferencia a precios actuales: {formatMinor(delta.differenceMinor, 'ARS')} por mes.</p>
+          <p className={delta.differenceMinor > 0 ? 'save-positive nums' : 'price nums'}>Diferencia a precios actuales: {formatMinor(delta.differenceMinor, 'ARS')} por mes.</p>
         ) : (
           <p className="warning">No es un ahorro cerrado. Hay importes parciales o sin resolver ({delta.unresolved}). La diferencia de lo conocido es {formatMinor(delta.differenceMinor, 'ARS')} por mes y puede cambiar cuando completes esos datos.</p>
         )}

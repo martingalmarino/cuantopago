@@ -2,13 +2,13 @@
 interface Props {
   name: string;
   logo: string | null;
-  size: 'card' | 'header' | 'row';
+  size: 'header' | 'row' | 'mini';
 }
 const { name, logo, size } = Astro.props;
-const box = size === 'header' ? 68 : size === 'row' ? 32 : 52;
-const art = size === 'header' ? 44 : size === 'row' ? 20 : 32;
+const box = size === 'header' ? 56 : size === 'mini' ? 24 : 44;
+const art = size === 'header' ? 40 : size === 'mini' ? 18 : 32;
 ---
-<span class="logo-box" style={`width:${box}px;height:${box}px`}>
+<span class="logo-box" style={`width:${box}px;height:${box}px`} aria-hidden="true">
   {logo ? (
     <img src={logo} alt="" width={art} height={art} />
   ) : (

@@ -33,6 +33,17 @@ export function formatMinor(minor: number, currency: Currency): string {
   }).format(value);
 }
 
+export function formatPrice(minor: number, currency: Currency): string {
+  const fraction = Math.abs(minor) % 100 === 0 ? 0 : 2;
+  return new Intl.NumberFormat('es-AR', {
+    style: 'currency',
+    currency,
+    currencyDisplay: currency === 'USD' ? 'code' : 'narrowSymbol',
+    minimumFractionDigits: fraction,
+    maximumFractionDigits: 2,
+  }).format(minor / 100);
+}
+
 export function formatMinorPlain(minor: number): string {
   return new Intl.NumberFormat('es-AR', {
     minimumFractionDigits: 2,

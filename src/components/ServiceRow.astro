@@ -1,0 +1,46 @@
+---
+import BrandLogo from './BrandLogo.astro';
+import { lowestPublishedPlan, monthlyPublishedMinor, searchText, todayIso } from '../lib/catalog';
+import { formatPrice } from '../lib/money';
+import type { ServiceRecord } from '../lib/types';
+
+interface Props {
+  service: ServiceRecord;
+  extraCategory?: string;
+}
+const { service, extraCategory } = Astro.props;
+const offer = lowestPublishedPlan(service.id, todayIso());
+const plan = offer.plan;
+const monthly = plan ? monthlyPublishedMinor(plan) : null;
+const priced = Boolean(plan && plan.amountMinor !== null && plan.currency && monthly !== null);
+const hint = !priced || !plan
+  ? 'Podés cargar tu importe'
+  : plan.billingPeriodMonths > 1 && !plan.billingIntervalDays
+    ? `${plan.name} · pago anual`
+    : plan.name;
+const priceLabel = priced && plan && monthly !== null && plan.currency
+  ? `${formatPrice(monthly, plan.currency)}${plan.billingIntervalDays ? '' : ' / mes'}`
+  : 'Precio a confirmar';
+---
+<article
+  class="service-row"
+  data-search={searchText(service)}
+  data-primary={service.category}
+  data-extra={extraCategory ?? ''}
+  hidden={extraCategory ? true : undefined}
+>
+  <a class="service-row-link" href={`/${service.slug}/`}>
+    <BrandLogo name={service.name} logo={service.logo} size="row" />
+    <span>
+      <span class="service-name">{service.name}</span>
+      <span class="meta">{hint}</span>
+    </span>
+    <span class:list={['service-price', 'nums', { 'is-pending': !priced }]}>
+      {priceLabel}
+    </span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+  </a>
+  <button class="service-add" type="button" data-add-service={service.id} aria-label={`Agregar ${service.name}`}>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+  </button>
+</article>

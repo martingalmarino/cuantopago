@@ -1,7 +1,7 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { track } from '../lib/analytics';
 import { calculate } from '../lib/calculation';
-import { inputFromPlan, purchasablePlans, serviceById, taxRules, todayIso } from '../lib/catalog';
+import { inputFromPlan, plansFor, purchasablePlans, quotePlan, serviceById, taxRules, todayIso } from '../lib/catalog';
 import { catalogEntry, customEntry } from '../lib/entries';
 import { parseLocalAmount } from '../lib/money';
 import { loadBudget, saveBudget } from '../lib/storage';
@@ -11,12 +11,14 @@ import QuoteView from './QuoteView';
 interface Props {
   serviceId?: string;
   initialPlanId?: string;
+  embedded?: boolean;
 }
 
-export default function Calculator({ serviceId, initialPlanId }: Props) {
+export default function Calculator({ serviceId, initialPlanId, embedded = false }: Props) {
   const servicePlans = (serviceId ? purchasablePlans(serviceId) : []).filter((plan) => (plan.choiceSlots ?? 0) === 0);
   const startingPlan = servicePlans.some((plan) => plan.id === initialPlanId) ? initialPlanId : servicePlans[0]?.id ?? '';
   const [planId, setPlanId] = useState(startingPlan ?? '');
+  const [bundleId, setBundleId] = useState<string | null>(null);
   const [mode, setMode] = useState<'catalog' | 'final' | 'estimate'>(servicePlans.length > 0 ? 'catalog' : serviceId ? 'final' : 'estimate');
   const [finalRaw, setFinalRaw] = useState('');
   const [baseRaw, setBaseRaw] = useState('');
@@ -28,11 +30,35 @@ export default function Calculator({ serviceId, initialPlanId }: Props) {
   const [error, setError] = useState<string | null>(null);
   const asOf = todayIso();
   const plan = servicePlans.find((item) => item.id === planId);
+  const bundle = bundleId && serviceId ? plansFor(serviceId).find((item) => item.id === bundleId) : undefined;
+
+  useEffect(() => {
+    const onSelect = (event: Event) => {
+      const detail = (event as CustomEvent<{ id?: string; priced?: boolean }>).detail;
+      if (!detail?.id || !serviceId) return;
+      const chosen = plansFor(serviceId).find((item) => item.id === detail.id);
+      if (chosen && (chosen.choiceSlots ?? 0) > 0 && chosen.amountMinor !== null) {
+        setBundleId(chosen.id);
+        setMode('catalog');
+        return;
+      }
+      setBundleId(null);
+      if (detail.priced && servicePlans.some((item) => item.id === detail.id)) {
+        setPlanId(detail.id);
+        setMode('catalog');
+        return;
+      }
+      setMode('final');
+    };
+    document.addEventListener('cuanto-pago:select-plan', onSelect);
+    return () => document.removeEventListener('cuanto-pago:select-plan', onSelect);
+  }, [serviceId, servicePlans]);
   const period = Number(months);
   const safeMonths = Number.isInteger(period) && period > 0 ? period : 1;
 
   const shown = useMemo(() => {
     if (mode === 'catalog') {
+      if (bundle && bundle.amountMinor !== null) return quotePlan(bundle, { asOf });
       if (!plan) return null;
       return calculate(inputFromPlan(plan, { asOf }));
     }
@@ -84,7 +110,7 @@ export default function Calculator({ serviceId, initialPlanId }: Props) {
       manual: true,
     };
     return calculate(manual);
-  }, [asOf, baseRaw, currency, finalRaw, fxRaw, mode, plan, safeMonths, taxInclusion]);
+  }, [asOf, baseRaw, bundle, currency, finalRaw, fxRaw, mode, plan, safeMonths, taxInclusion]);
 
   function add() {
     if (!shown) {
@@ -97,6 +123,10 @@ export default function Calculator({ serviceId, initialPlanId }: Props) {
       return;
     }
     const service = serviceId ? serviceById(serviceId) : undefined;
+    if (bundle) {
+      setError('Este plan se suma desde Agregar, eligiendo las opciones incluidas.');
+      return;
+    }
     if (mode === 'catalog' && plan) {
       const duplicate = loaded.state.entries.find((entry) => entry.planId === plan.id && entry.enabled);
       const replace = duplicate
@@ -124,9 +154,10 @@ export default function Calculator({ serviceId, initialPlanId }: Props) {
   }
 
   return (
-    <section className="panel stack" style={{ padding: 16 }}>
-      <h2>Calculadora</h2>
-      {servicePlans.length > 0 && (
+    <section id="calculo" className="section-panel calc-panel">
+      <div className="section-cap"><h2>{bundle?.name ?? plan?.name ?? 'Calculá tu costo'}</h2></div>
+      <div className="section-body pad stack">
+      {!embedded && servicePlans.length > 0 && (
         <label className="field">
           <span>Plan</span>
           <select value={planId} onChange={(event) => { setPlanId(event.target.value); setMode('catalog'); }}>
@@ -135,9 +166,9 @@ export default function Calculator({ serviceId, initialPlanId }: Props) {
         </label>
       )}
       <div className="row-actions">
-        {servicePlans.length > 0 && <button type="button" className="chip" aria-pressed={mode === 'catalog'} onClick={() => setMode('catalog')}>Precio publicado</button>}
-        <button type="button" className="chip" aria-pressed={mode === 'final'} onClick={() => setMode('final')}>Ya sé cuánto me cobran</button>
-        <button type="button" className="chip" aria-pressed={mode === 'estimate'} onClick={() => setMode('estimate')}>Quiero estimar un precio</button>
+        {servicePlans.length > 0 && <button type="button" className="chip" aria-pressed={mode === 'catalog' && !bundle} onClick={() => { setBundleId(null); setMode('catalog'); }}>Precio publicado</button>}
+        <button type="button" className="chip" aria-pressed={mode === 'final'} onClick={() => { setBundleId(null); setMode('final'); }}>Cargar lo que pago</button>
+        <button type="button" className="chip" aria-pressed={mode === 'estimate'} onClick={() => { setBundleId(null); setMode('estimate'); }}>Estimar costo</button>
       </div>
       {mode === 'final' && (
         <label className="field">
@@ -180,10 +211,12 @@ export default function Calculator({ serviceId, initialPlanId }: Props) {
           <input inputMode="numeric" value={months} onChange={(event) => setMonths(event.target.value)} />
         </label>
       )}
+      {bundle && <p className="meta">El precio de lista está arriba. Para sumarlo, usá Agregar y elegí las opciones incluidas.</p>}
       {shown ? <QuoteView result={shown} /> : <p className="meta">Cuando ingreses un importe válido, el resultado aparece acá.</p>}
       {error && <p className="error" role="alert">{error}</p>}
       {message && <p className="warning">{message}</p>}
-      <button type="button" className="btn primary" onClick={add}>Agregar a mis suscripciones</button>
+      <button type="button" className="btn primary" onClick={add}>{bundle ? 'Elegí las opciones para agregar' : 'Agregar a mis suscripciones'}</button>
+      </div>
     </section>
   );
 }
