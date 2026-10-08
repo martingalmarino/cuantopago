@@ -22,7 +22,7 @@ export default function BudgetDock() {
   useEffect(() => {
     const onClick = (event: MouseEvent) => {
       const target = event.target;
-      if (!(target instanceof HTMLElement)) return;
+      if (!(target instanceof Element)) return;
       const button = target.closest('[data-add-service]');
       if (!(button instanceof HTMLButtonElement)) return;
       const id = button.dataset.addService;

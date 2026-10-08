@@ -265,6 +265,7 @@ p { margin: 0 0 12px; }
   place-items: center;
 }
 .service-add:hover { background: var(--accent-soft); color: var(--accent); }
+.service-add svg { pointer-events: none; }
 
 .logo-box {
   background: var(--surface);
