@@ -1,0 +1,31 @@
+---
+import SubscriptionCount from './SubscriptionCount';
+const path = Astro.url.pathname;
+const links = [
+  { href: '/plataformas/', label: 'Plataformas' },
+  { href: '/calculadora/', label: 'Calculadora' },
+  { href: '/como-calculamos/', label: 'Cómo calculamos' },
+  { href: '/mis-suscripciones/', label: 'Mis suscripciones', count: true },
+];
+---
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="/">Cuánto Pago</a>
+    <nav class="nav nav-desktop" aria-label="Principal">
+      {links.map((link) => (
+        <a href={link.href} aria-current={path === link.href ? 'page' : undefined}>
+          {link.label}
+          {link.count && <SubscriptionCount client:only="react" />}
+        </a>
+      ))}
+    </nav>
+    <details class="nav-mobile">
+      <summary>Menú</summary>
+      <nav class="nav-links" aria-label="Principal en el teléfono">
+        {links.map((link) => (
+          <a href={link.href} aria-current={path === link.href ? 'page' : undefined}>{link.label}</a>
+        ))}
+      </nav>
+    </details>
+  </div>
+</header>

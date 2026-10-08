@@ -1,0 +1,12 @@
+{
+  "snapshots": [],
+  "basis": {
+    "id": "bna-vendedor-decreto-354-art4",
+    "pair": "USDARS",
+    "arsPerUsdMinor": null,
+    "basis": "Cuando el IVA de un servicio digital lo ingresa la persona, el Decreto 354/2018 (artículo 4) convierte la moneda extranjera al tipo de cambio vendedor del Banco de la Nación Argentina del cierre del día anterior. Este sitio no guarda una cotización numérica verificada.",
+    "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/primera/182137/20180424",
+    "verifiedAt": "2026-10-08",
+    "freshnessHours": 24
+  }
+}

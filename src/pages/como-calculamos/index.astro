@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base
+  title="Cómo calculamos los totales"
+  description="De dónde salen los precios, qué impuestos se suman y qué queda sin resolver en Cuánto Pago."
+  crumbs={[{ name: 'Inicio', href: '/' }, { name: 'Cómo calculamos', href: '/como-calculamos/' }]}
+>
+  <div class="wrap page">
+    <nav class="crumbs" aria-label="Migas"><a href="/">Inicio</a> <span>/</span> <span>Cómo calculamos</span></nav>
+    <article class="sheet prose">
+    <h1>Cómo calculamos</h1>
+    <p>Cuánto Pago muestra el precio que publica cada servicio y, solo cuando la regla está documentada, estima un cargo encima. No es el resumen de tu tarjeta.</p>
+    <h2>Precios</h2>
+    <p>Cada plan tiene una fuente y una fecha de verificación. Si la página oficial no dejó el monto en claro, la ficha dice «Precio pendiente de verificación». Un precio vencido conserva esa fecha y muestra un aviso a los 30 días. No lo tratamos como la opción más barata si hay otro vigente.</p>
+    <h2>IVA</h2>
+    <p>La alícuota general de la Ley de IVA, artículo 28 del texto ordenado en 1997, es del 21%. La RG 4240/2018 y el Decreto 354/2018 explican el IVA de servicios digitales del exterior para quien no es responsable inscripto. Lo sumamos únicamente cuando la empresa dice que el precio no incluye impuestos. Si el precio ya trae el IVA, no lo sumamos de nuevo. Si la página no lo aclara, el cargo queda sin resolver y no lo ponemos en cero.</p>
+    <h2>Percepción del 30%</h2>
+    <p>La RG 5617/2024 fija una percepción del 30% sobre ciertos pagos en pesos que exigen comprar divisas. La RG 5677/2025 excluye a prestadores de una nómina que este sitio no reproduce. Por eso no la sumamos solos: el total queda parcial hasta saber si tu pago entra en esa condición.</p>
+    <h2>Dólares</h2>
+    <p>No guardamos una cotización del Banco Nación. Si ingresás un tipo de cambio, el resultado se llama simulación y dice «Tipo de cambio ingresado por vos». No es una cotización de tu banco. El Decreto 354/2018, artículo 4, usa el tipo vendedor del Banco Nación del día anterior cuando el IVA lo ingresa la persona.</p>
+    <h2>Tu presupuesto</h2>
+    <p>Un plan anual aporta el total dividido 12 al equivalente mensual, pero el débito sigue siendo el del período. Si reemplazás el número por lo que te cobraron, no le volvemos a calcular impuestos. La proyección de 12 meses usa los precios actuales: no predice el mes que viene.</p>
+    <h2>Fuentes de las reglas</h2>
+    <ul>
+      <li><a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/42701/norma.htm">Ley de IVA, artículo 28</a></li>
+      <li><a href="https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-4240-2018-310227/texto">RG 4240/2018</a></li>
+      <li><a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/182137/20180424">Decreto 354/2018</a></li>
+      <li><a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/405000-409999/407430/texact.htm">RG 5617/2024, con la modificación de la RG 5677</a></li>
+      <li><a href="https://www.arca.gob.ar/iva/servicios-digitales/reg-percepcion-4240.asp">ARCA, percepción de IVA en servicios digitales</a></li>
+    </ul>
+    </article>
+  </div>
+</Base>

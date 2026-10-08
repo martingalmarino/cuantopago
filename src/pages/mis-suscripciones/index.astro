@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import BudgetPage from '../../components/BudgetPage';
+---
+<Base
+  title="Mis suscripciones"
+  description="Tu lista de suscripciones queda en este navegador."
+  noindex
+>
+  <div class="wrap page page-stack">
+    <header class="sheet">
+      <h1>Mis suscripciones</h1>
+      <p class="prose">Se guarda en este navegador. No hay cuenta ni conexión con el banco.</p>
+    </header>
+    <BudgetPage client:only="react" />
+  </div>
+</Base>

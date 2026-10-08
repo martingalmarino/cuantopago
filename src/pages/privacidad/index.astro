@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base
+  title="Privacidad"
+  description="Cuánto Pago guarda tu lista en este navegador y no envía analítica si no la configurás."
+  crumbs={[{ name: 'Inicio', href: '/' }, { name: 'Privacidad', href: '/privacidad/' }]}
+>
+  <div class="wrap page">
+    <nav class="crumbs" aria-label="Migas"><a href="/">Inicio</a> <span>/</span> <span>Privacidad</span></nav>
+    <article class="sheet prose">
+    <h1>Privacidad</h1>
+    <p>La lista de suscripciones, el tope mensual y los importes que cargás se guardan en el localStorage de este navegador. No hay cuenta, no hay servidor de usuarios y no se conecta con tu banco.</p>
+    <p>Si borrás los datos del sitio, la lista se pierde. Si el navegador bloquea el almacenamiento, la lista dura solo mientras la página está abierta y te lo avisamos.</p>
+    <p>No hay un medidor de visitas activo. La analítica queda apagada salvo que quien publica el sitio configure una dirección en PUBLIC_ANALYTICS_ENDPOINT. En ese caso solo se enviarían el nombre del evento y, como mucho, el identificador de la plataforma. No se mandan montos, nombres de suscripciones propias ni la lista completa.</p>
+    <p>Los enlaces a Netflix, Spotify y el resto salen hacia esos sitios. A partir de ahí rige la política de cada empresa. Las páginas Mis suscripciones y Simular un cambio piden no ser indexadas.</p>
+    </article>
+  </div>
+</Base>

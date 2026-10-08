@@ -1,0 +1,88 @@
+---
+import Base from '../layouts/Base.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import BudgetDock from '../components/BudgetDock';
+import { categoryLabels, services } from '../lib/catalog';
+
+const categories = [
+  { id: 'todas', label: 'Todas' },
+  { id: 'series', label: categoryLabels.series },
+  { id: 'musica', label: categoryLabels.musica },
+  { id: 'almacenamiento', label: categoryLabels.almacenamiento },
+  { id: 'paquetes', label: categoryLabels.paquetes },
+  { id: 'deportes', label: categoryLabels.deportes },
+  { id: 'tv-en-vivo', label: categoryLabels['tv-en-vivo'] },
+  { id: 'productividad', label: categoryLabels.productividad },
+  { id: 'diseno', label: categoryLabels.diseno },
+  { id: 'inteligencia-artificial', label: categoryLabels['inteligencia-artificial'] },
+];
+---
+<Base
+  title="Cuánto Pago | Suscripciones en Argentina"
+  description="Calculá el precio final estimado, compará planes y organizá lo que gastás por mes en suscripciones."
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Cuánto Pago',
+    description: 'Tus suscripciones, con los números claros.',
+    inLanguage: 'es-AR',
+  }}
+>
+  <div class="wrap has-budget-bar">
+    <section class="hero">
+      <h1>Tus suscripciones, con los números claros.</h1>
+      <p class="lead">Calculá el precio final estimado, compará planes y organizá lo que gastás por mes.</p>
+      <label class="search">
+        <span class="kicker">Buscar</span>
+        <input id="q" type="search" placeholder="Netflix, Disney, YouTube…" autocomplete="off" />
+      </label>
+      <div class="chips" role="group" aria-label="Categorías">
+        {categories.map((category) => (
+          <button type="button" class="chip" data-chip={category.id} aria-pressed={category.id === 'todas' ? 'true' : 'false'}>{category.label}</button>
+        ))}
+      </div>
+      <p id="result-count" class="meta" aria-live="polite">{services.length} plataformas</p>
+    </section>
+    <div class="home-grid">
+      <div>
+        <div class="cards" id="catalog">
+          {services.map((service) => <ServiceCard service={service} />)}
+        </div>
+        <p id="empty" class="warning" hidden>
+          No hay resultados. <a href="/calculadora/">Cargá el importe a mano</a>.
+        </p>
+      </div>
+      <BudgetDock client:only="react" />
+    </div>
+  </div>
+</Base>
+<script>
+  import { fold } from '../lib/search';
+  const input = document.querySelector<HTMLInputElement>('#q');
+  const cards = [...document.querySelectorAll<HTMLElement>('[data-search]')];
+  const empty = document.querySelector<HTMLElement>('#empty');
+  const count = document.querySelector('#result-count');
+  const chips = [...document.querySelectorAll<HTMLButtonElement>('[data-chip]')];
+  function apply() {
+    const query = fold(input?.value ?? '');
+    const category = chips.find((chip) => chip.getAttribute('aria-pressed') === 'true')?.dataset.chip ?? 'todas';
+    let visible = 0;
+    for (const card of cards) {
+      const haystack = card.dataset.search ?? '';
+      const categoriesOnCard = `${card.dataset.category ?? ''} ${card.dataset.secondary ?? ''}`.split(/\s+/);
+      const show = (category === 'todas' || categoriesOnCard.includes(category)) && (!query || haystack.includes(query));
+      card.hidden = !show;
+      if (show) visible += 1;
+    }
+    if (count) count.textContent = `${visible} ${visible === 1 ? 'plataforma' : 'plataformas'}`;
+    if (empty) empty.hidden = visible !== 0;
+  }
+  input?.addEventListener('input', apply);
+  for (const chip of chips) {
+    chip.addEventListener('click', () => {
+      for (const other of chips) other.setAttribute('aria-pressed', 'false');
+      chip.setAttribute('aria-pressed', 'true');
+      apply();
+    });
+  }
+</script>

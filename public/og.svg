@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F7F8F4"/>
+  <rect x="80" y="80" width="1040" height="470" rx="28" fill="#FFFFFF" stroke="#DCE3DD"/>
+  <text x="140" y="280" font-family="sans-serif" font-size="84" font-weight="700" fill="#15231C">Cuánto Pago</text>
+  <text x="140" y="360" font-family="sans-serif" font-size="36" fill="#526159">Tus suscripciones, con los números claros.</text>
+</svg>

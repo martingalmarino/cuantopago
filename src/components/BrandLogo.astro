@@ -1,0 +1,17 @@
+---
+interface Props {
+  name: string;
+  logo: string | null;
+  size: 'card' | 'header' | 'row';
+}
+const { name, logo, size } = Astro.props;
+const box = size === 'header' ? 68 : size === 'row' ? 32 : 52;
+const art = size === 'header' ? 44 : size === 'row' ? 20 : 32;
+---
+<span class="logo-box" style={`width:${box}px;height:${box}px`}>
+  {logo ? (
+    <img src={logo} alt="" width={art} height={art} />
+  ) : (
+    <span class="logo-fallback">{name}</span>
+  )}
+</span>

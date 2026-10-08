@@ -1,0 +1,66 @@
+---
+import '../styles/global.css';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+
+interface Crumb { name: string; href: string }
+interface Props {
+  title: string;
+  description: string;
+  noindex?: boolean;
+  crumbs?: Crumb[];
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+}
+const { title, description, noindex = false, crumbs = [], jsonLd } = Astro.props;
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
+const graph = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+if (crumbs.length && Astro.site) {
+  graph.push({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((crumb, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: crumb.name,
+      item: new URL(crumb.href, Astro.site).href,
+    })),
+  });
+}
+---
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    {canonical && <meta property="og:url" content={canonical} />}
+    <meta property="og:image" content="/og.svg" />
+    {graph.map((item) => <script type="application/ld+json" set:html={JSON.stringify(item)} />)}
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <SiteHeader />
+    <main id="contenido">
+      <slot />
+    </main>
+    <SiteFooter />
+    <script is:inline>
+      (function () {
+        var now = Date.now();
+        document.querySelectorAll('[data-verified]').forEach(function (el) {
+          var days = Number(el.getAttribute('data-freshness-days') || '30');
+          var verified = Date.parse(el.getAttribute('data-verified') + 'T12:00:00-03:00');
+          if (!Number.isNaN(verified) && now - verified >= days * 86400000) el.hidden = false;
+        });
+      })();
+    </script>
+  </body>
+</html>

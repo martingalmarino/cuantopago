@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import Simulator from '../../components/Simulator';
+---
+<Base
+  title="Simular un cambio"
+  description="Compará tu lista con otro escenario, sin modificarla hasta que confirmes."
+  noindex
+>
+  <div class="wrap page page-stack">
+    <header class="sheet">
+      <h1>Simular un cambio</h1>
+      <p class="prose">La lista original no cambia hasta que apliques el escenario.</p>
+    </header>
+    <Simulator client:only="react" />
+  </div>
+</Base>

@@ -1,0 +1,834 @@
+[
+  {
+    "id": "netflix",
+    "slug": "netflix",
+    "name": "Netflix",
+    "category": "series",
+    "officialUrl": "https://www.netflix.com/ar/",
+    "logo": "/brands/netflix.svg",
+    "logoAltMode": "decorative",
+    "description": "Streaming de series y películas. En la página de Argentina hay tres planes mensuales y el sitio aclara que esos precios van sin impuestos incluidos.",
+    "aliases": [
+      "netflix"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.netflix.com/ar/"
+    ],
+    "verificationStatus": "verified",
+    "faqs": [
+      {
+        "question": "¿El precio de Netflix en Argentina incluye impuestos?",
+        "answer": "No. El 8 de octubre de 2026 la página de Netflix Argentina mostraba los planes desde $ 8.999 hasta $ 19.999 por mes y aclaraba que van sin impuestos incluidos. Cada plan del sitio también está marcado como precio antes de impuestos."
+      },
+      {
+        "question": "¿Qué planes hay y cuántas pantallas permiten?",
+        "answer": "Básico: HD 720p, 1 pantalla a la vez y 1 descarga, $ 8.999 por mes. Estándar: Full HD 1080p, 2 pantallas y 2 descargas, $ 14.999. Premium: Ultra HD 4K y HDR, 4 pantallas, 6 descargas y audio espacial, $ 19.999. Las pantallas son reproducciones simultáneas, no la cantidad de perfiles."
+      },
+      {
+        "question": "¿Esos planes tienen anuncios?",
+        "answer": "En los tres planes publicados para Argentina, la página indica que no tienen anuncios."
+      },
+      {
+        "question": "¿Había prueba gratis?",
+        "answer": "En la oferta consultada ese día, la página no mostraba una prueba gratis."
+      }
+    ]
+  },
+  {
+    "id": "disney-plus",
+    "slug": "disney-plus",
+    "name": "Disney+",
+    "category": "series",
+    "officialUrl": "https://www.disneyplus.com/es-ar",
+    "logo": null,
+    "logoAltMode": "text-fallback",
+    "description": "Películas, series y deporte. No pudimos leer una tabla de precios argentina en la página oficial durante esta verificación, así que no publicamos un monto.",
+    "aliases": [
+      "disney",
+      "disney plus",
+      "disney+"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.disneyplus.com/es-ar"
+    ],
+    "verificationStatus": "unverified",
+    "faqs": [
+      {
+        "question": "¿Por qué no hay un precio de Disney+?",
+        "answer": "La ficha de ayuda de precios para Argentina no devolvió la tabla al consultarla el 8 de octubre de 2026. Hasta verificarla, el monto queda pendiente y podés cargar lo que te cobran."
+      },
+      {
+        "question": "¿Dónde lo contrato?",
+        "answer": "En el sitio oficial de Disney+. Este sitio no vende la suscripción."
+      },
+      {
+        "question": "¿Puedo sumarlo a mi presupuesto igual?",
+        "answer": "Sí. En la calculadora o en Mis suscripciones podés anotar el importe final que te cobra el banco."
+      }
+    ]
+  },
+  {
+    "id": "hbo-max",
+    "slug": "hbo-max",
+    "name": "HBO Max",
+    "category": "series",
+    "officialUrl": "https://www.max.com/ar/es",
+    "logo": "/brands/hbomax.svg",
+    "logoAltMode": "decorative",
+    "description": "Series y películas de HBO y Warner. La página argentina publica planes mensuales y de 12 meses. No dice si esos precios ya incluyen impuestos.",
+    "aliases": [
+      "hbo",
+      "hbo max",
+      "max",
+      "hbomax"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.max.com/ar/es",
+      "https://help.hbomax.com/ar-es/answer/detail/000002547"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto publica HBO Max por mes?",
+        "answer": "En los datos de la página argentina del 8 de octubre de 2026, el plan mensual figura así: Básico con anuncios $ 7.390, Estándar $ 9.590 y Platino $ 11.490."
+      },
+      {
+        "question": "¿Y el plan de 12 meses?",
+        "answer": "La página lo muestra como 12 cuotas y un total anual: Básico con anuncios 12 × $ 5.390 ($ 64.680), Estándar 12 × $ 6.690 ($ 80.280) y Platino 12 × $ 7.990 ($ 95.880). El total anual es la suma de esas cuotas, no un pago único distinto."
+      },
+      {
+        "question": "¿Qué cambia entre planes?",
+        "answer": "Básico con anuncios y Estándar permiten 2 dispositivos a la vez en Full HD. Estándar suma 30 descargas. Platino permite 4 dispositivos, Full HD y 4K Ultra HD en algunos títulos, Dolby Atmos y 100 descargas. El contenido en vivo de Estándar y Platino puede tener publicidad."
+      },
+      {
+        "question": "¿Esos precios son el total del resumen?",
+        "answer": "No lo afirmamos. La página no dice si el IVA ya está incluido. Por eso el cálculo queda parcial."
+      }
+    ]
+  },
+  {
+    "id": "prime-video",
+    "slug": "prime-video",
+    "name": "Prime Video",
+    "category": "series",
+    "officialUrl": "https://www.primevideo.com/",
+    "logo": null,
+    "logoAltMode": "text-fallback",
+    "description": "Series y películas de Amazon. No verificamos un precio argentino en una página oficial durante esta lectura, así que no hay un monto publicado acá.",
+    "aliases": [
+      "prime",
+      "amazon prime",
+      "prime video",
+      "amazon"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.primevideo.com/"
+    ],
+    "verificationStatus": "unverified",
+    "faqs": [
+      {
+        "question": "¿Por qué no aparece un precio?",
+        "answer": "La página de ofertas que consultamos no trajo un precio en pesos. Hasta leerlo en una fuente oficial, queda pendiente de verificación."
+      },
+      {
+        "question": "¿Puedo anotar lo que pago?",
+        "answer": "Sí. Cargá el importe final de tu resumen y no le vamos a sumar impuestos otra vez."
+      },
+      {
+        "question": "¿Este sitio vende Prime?",
+        "answer": "No. El enlace oficial es solo para contratar en Amazon o Prime Video."
+      }
+    ]
+  },
+  {
+    "id": "paramount-plus",
+    "slug": "paramount-plus",
+    "name": "Paramount+",
+    "category": "series",
+    "officialUrl": "https://www.paramountplus.com/ar/",
+    "logo": "/brands/paramountplus.svg",
+    "logoAltMode": "decorative",
+    "description": "Series, películas y eventos. La página argentina publica un precio desde, con IVA incluido, y avisa que el banco puede sumar otros cargos.",
+    "aliases": [
+      "paramount",
+      "paramount plus",
+      "paramount+"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.paramountplus.com/ar/"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuál es el precio publicado?",
+        "answer": "El 8 de octubre de 2026 la página de Paramount+ Argentina decía «Planes desde $6,750.00 / Mes (IVA incluido)». No desglosaba el nombre ni las pantallas de cada plan, así que no inventamos esa tabla."
+      },
+      {
+        "question": "¿Ese monto es el final del resumen?",
+        "answer": "La misma página aclara que tu banco o tarjeta puede aplicar otros impuestos o cargos. El IVA está incluido en ese desde; el resto queda sin resolver."
+      },
+      {
+        "question": "¿Sirve como el plan más barato cerrado?",
+        "answer": "No. Es un precio de referencia publicado, no una comparación completa entre planes."
+      }
+    ]
+  },
+  {
+    "id": "apple-tv",
+    "slug": "apple-tv",
+    "name": "Apple TV",
+    "category": "series",
+    "officialUrl": "https://www.apple.com/la/apple-tv-plus/",
+    "logo": "/brands/appletv.svg",
+    "logoAltMode": "decorative",
+    "description": "Series y películas de Apple. En la página regional el servicio se presenta como Apple TV, sin anuncios, y se puede compartir con hasta seis personas. El precio en dólares que aparece aclara que puede cambiar según el país, así que no lo tomamos como tarifa de Argentina.",
+    "aliases": [
+      "apple tv",
+      "apple tv+",
+      "appletv",
+      "tv+"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.apple.com/la/apple-tv-plus/"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Se llama Apple TV o Apple TV+?",
+        "answer": "En la página oficial consultada el título y los textos dicen Apple TV. El enlace todavía usa apple-tv-plus. El identificador interno sigue siendo apple-tv."
+      },
+      {
+        "question": "¿Por qué no hay un precio en pesos ni en dólares de Argentina?",
+        "answer": "La página muestra USD 6,99 al mes después de una prueba y, en la nota, dice que los precios pueden variar según el país. No hay una línea que fije ese monto para Argentina, así que queda pendiente."
+      },
+      {
+        "question": "¿Qué sí está publicado?",
+        "answer": "El servicio se describe sin anuncios. Con Compartir en Familia, hasta seis personas pueden usar la misma suscripción."
+      }
+    ]
+  },
+  {
+    "id": "spotify",
+    "slug": "spotify",
+    "name": "Spotify",
+    "category": "musica",
+    "officialUrl": "https://www.spotify.com/ar/premium/",
+    "logo": "/brands/spotify.svg",
+    "logoAltMode": "decorative",
+    "description": "Música y podcasts sin anuncios en los planes Premium. Los precios recurrentes de Argentina están en pesos y la página los marca con impuestos aparte.",
+    "aliases": [
+      "spotify",
+      "spotify premium"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.spotify.com/ar/premium/",
+      "https://support.spotify.com/ar/article/sales-tax/"
+    ],
+    "verificationStatus": "verified",
+    "faqs": [
+      {
+        "question": "¿Cuánto sale cada plan, sin la promo?",
+        "answer": "La pregunta frecuente de Spotify Argentina, leída el 8 de octubre de 2026, dice: Individual $ 4.499, Duo $ 5.999, Familiar $ 7.599 y Estudiantes $ 2.299 por mes. No usamos la promo de $ 450 como precio habitual."
+      },
+      {
+        "question": "¿Esos precios incluyen IVA?",
+        "answer": "No. La página los marca como «más impuestos aplicables». El centro de ayuda dice que el banco debería agregar el IVA."
+      },
+      {
+        "question": "¿Quién puede usar Duo, Familiar y Estudiantes?",
+        "answer": "Duo es para dos personas que conviven. Familiar admite hasta 6 cuentas de personas que viven en el mismo domicilio. Estudiantes pide matrícula en una institución de educación superior acreditada, ser mayor de 18 y puede usarse hasta 4 años. El plan de estudiantes que vimos se paga por adelantado y no se renueva solo."
+      },
+      {
+        "question": "¿El total del sitio es el débito del banco?",
+        "answer": "No. Sumamos el IVA del 21% cuando el precio está publicado sin impuestos, y dejamos afuera la percepción de la RG 5617 y los cargos provinciales porque no están confirmados para tu pago."
+      }
+    ]
+  },
+  {
+    "id": "youtube-premium",
+    "slug": "youtube-premium",
+    "name": "YouTube Premium",
+    "category": "musica",
+    "officialUrl": "https://www.youtube.com/premium",
+    "logo": "/brands/youtube.svg",
+    "logoAltMode": "decorative",
+    "description": "YouTube sin la publicidad del plan que elijas, con descargas y reproducción en segundo plano. La página también habla de YouTube Music. No pudimos atar cada nombre de plan a un precio verificable, así que el monto queda pendiente.",
+    "aliases": [
+      "youtube",
+      "youtube premium",
+      "yt premium"
+    ],
+    "overlapNote": "La página oficial de YouTube Premium describe acceso sin anuncios, descargas y reproducción en segundo plano en YouTube y en YouTube Music. Eso no descuenta solo una suscripción a YouTube Music: si la tenés aparte, la decisión es tuya.",
+    "sourceUrls": [
+      "https://www.youtube.com/premium"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿YouTube Premium incluye YouTube Music?",
+        "answer": "La descripción de la página oficial habla de acceso sin anuncios, descargas y segundo plano en YouTube y en YouTube Music. No borramos YouTube Music de tu lista por eso."
+      },
+      {
+        "question": "¿Por qué no hay precios?",
+        "answer": "La página muestra montos en pesos, pero no quedaron asociados de forma inequívoca a cada plan ni aclaran si incluyen impuestos. Hasta esa lectura, no los publicamos."
+      },
+      {
+        "question": "¿Qué nombres de plan aparecen?",
+        "answer": "En la página se leen Individual, Familiar, Lite y Dos personas. Sin un precio verificado al lado, no los ofrecemos como oferta vigente."
+      }
+    ]
+  },
+  {
+    "id": "youtube-music",
+    "slug": "youtube-music",
+    "name": "YouTube Music",
+    "category": "musica",
+    "officialUrl": "https://music.youtube.com/",
+    "logo": "/brands/youtubemusic.svg",
+    "logoAltMode": "decorative",
+    "description": "Música de YouTube. No verificamos un precio argentino aparte. Puede coincidir con lo que ya trae YouTube Premium, pero no lo restamos automáticamente.",
+    "aliases": [
+      "youtube music",
+      "yt music",
+      "music"
+    ],
+    "overlapNote": "YouTube Premium describe funciones de música en YouTube Music. Tener las dos suscripciones puede superponerse; el ahorro no se calcula solo.",
+    "sourceUrls": [
+      "https://music.youtube.com/",
+      "https://www.youtube.com/premium"
+    ],
+    "verificationStatus": "unverified",
+    "faqs": [
+      {
+        "question": "¿Tiene un precio propio verificado?",
+        "answer": "No en esta versión. Podés cargar el importe que te cobran."
+      },
+      {
+        "question": "¿Se descuenta si ya pago YouTube Premium?",
+        "answer": "No. La superposición se informa, pero no se convierte en un ahorro automático."
+      },
+      {
+        "question": "¿Dónde miro la oferta?",
+        "answer": "En YouTube Music y en la página de YouTube Premium."
+      }
+    ]
+  },
+  {
+    "id": "apple-music",
+    "slug": "apple-music",
+    "name": "Apple Music",
+    "category": "musica",
+    "officialUrl": "https://www.apple.com/la/apple-music/",
+    "logo": "/brands/applemusic.svg",
+    "logoAltMode": "decorative",
+    "description": "Música sin anuncios. La nota al pie de la página regional publica precios de Argentina en dólares. No dice si ese monto ya incluye IVA.",
+    "aliases": [
+      "apple music",
+      "musica apple"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.apple.com/la/apple-music/"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto publica Apple para Argentina?",
+        "answer": "En la nota 5 de la página, leída el 8 de octubre de 2026: Estudiantes USD 1,99, Individual USD 3,29 y Familiar USD 5,49 por mes. Esos montos pisan el precio general en dólares que aparece más arriba."
+      },
+      {
+        "question": "¿El Familiar alcanza a cuántas personas?",
+        "answer": "Hasta seis personas, cada una con su cuenta, mediante Compartir en Familia."
+      },
+      {
+        "question": "¿Tiene anuncios?",
+        "answer": "La página dice que Apple Music no tiene anuncios."
+      },
+      {
+        "question": "¿Eso es lo que me debitan en pesos?",
+        "answer": "No. Falta un tipo de cambio verificado y la página no aclara el IVA para Argentina. Si ingresás un tipo de cambio, el resultado es una simulación."
+      }
+    ]
+  },
+  {
+    "id": "google-one",
+    "slug": "google-one",
+    "name": "Google One",
+    "category": "almacenamiento",
+    "officialUrl": "https://one.google.com/about/plans?hl=es-419",
+    "logo": null,
+    "logoAltMode": "text-fallback",
+    "description": "Almacenamiento de Google. En la página localizada en pesos verificamos el plan de 100 GB. Otros planes se mezclan con ofertas de inteligencia artificial, así que no los publicamos todavía.",
+    "aliases": [
+      "google one",
+      "googleone",
+      "drive"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://one.google.com/about/plans?hl=es-419"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Qué precio quedó verificado?",
+        "answer": "El plan de 100 GB (sku g1.100gb) figuraba a ARS 2.975,05 por mes el 8 de octubre de 2026. La página no aclara si ese importe incluye impuestos."
+      },
+      {
+        "question": "¿Y el resto de los tamaños?",
+        "answer": "Quedaron pendientes. Había precios de planes con IA y de otros almacenamientos que no se podían separar con seguridad."
+      },
+      {
+        "question": "¿Por qué no hay logo?",
+        "answer": "Simple Icons no trae una marca de Google One. Mostramos el nombre completo en lugar de un ícono genérico."
+      }
+    ]
+  },
+  {
+    "id": "icloud-plus",
+    "slug": "icloud-plus",
+    "name": "iCloud+",
+    "category": "almacenamiento",
+    "officialUrl": "https://support.apple.com/es-lamr/108047",
+    "logo": "/brands/icloud.svg",
+    "logoAltMode": "decorative",
+    "description": "Almacenamiento de Apple. El soporte publica precios de Argentina en dólares y avisa que pueden ser un poco más altos por el IVA, sin decir cuánto.",
+    "aliases": [
+      "icloud",
+      "icloud+",
+      "icloud plus"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://support.apple.com/es-lamr/108047"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto lista Apple para Argentina?",
+        "answer": "En la tabla del soporte, con fecha de publicación 29 de septiembre de 2026: 50 GB USD 0,99; 200 GB USD 2,99; 2 TB USD 9,99; 6 TB USD 29,99 y 12 TB USD 59,99 por mes. Se cobran en dólares porque la moneda local no está admitida para estas actualizaciones."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "Argentina está en la nota que dice que los precios pueden ser un poco más altos por el IVA. No está en la nota de «impuestos incluidos». No inventamos el recargo."
+      },
+      {
+        "question": "¿Se puede compartir?",
+        "answer": "La página dice que podés compartir el plan con hasta cinco familiares más."
+      },
+      {
+        "question": "¿Cómo lo paso a pesos?",
+        "answer": "Solo si ingresás un tipo de cambio. Esa conversión es una simulación, no la cotización del banco."
+      }
+    ]
+  },
+  {
+    "id": "meli-plus",
+    "slug": "meli-plus",
+    "name": "Meli+",
+    "category": "paquetes",
+    "officialUrl": "https://www.mercadolibre.com.ar/suscripciones/nivel-6",
+    "logo": null,
+    "logoAltMode": "text-fallback",
+    "description": "Una membresía para evaluar beneficios de compras y entretenimiento en un mismo presupuesto.",
+    "aliases": [
+      "meli plus",
+      "meli+",
+      "mercado libre plus"
+    ],
+    "overlapNote": "Meli+ Total puede incluir Disney+. Si ya lo pagás por tu cuenta, los dos cargos siguen hasta que confirmes cuál te facturan.",
+    "sourceUrls": [
+      "https://www.mercadolibre.com.ar/suscripciones/melimasv2/planes?is_migrated=true",
+      "https://www.mercadolibre.com.ar/suscripciones/nivel-6",
+      "https://www.mercadolibre.com.ar/l/legalesloyatly"
+    ],
+    "verificationStatus": "unverified",
+    "faqs": [
+      {
+        "question": "¿Meli+ y Disney+ se suman siempre por separado?",
+        "answer": "Depende del plan y del canal de contratación. Identificá la prestación incluida y cualquier adicional antes de sumar ambos cargos."
+      },
+      {
+        "question": "¿La calculadora descuenta el valor de los envíos?",
+        "answer": "No. Los beneficios de compras se muestran por separado; el presupuesto suma los cargos de suscripción que realmente pagás."
+      },
+      {
+        "question": "¿Qué falta verificar?",
+        "answer": "Capturar precio actual de Esencial y Total en cuenta/checkout argentino sin completar compra."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Compará el costo de la membresía con los servicios que ya pagás. Revisá qué está incluido, qué tiene descuento y qué requiere un adicional: son beneficios diferentes.",
+    "seoTitle": "Meli+ en Argentina: planes y calculadora de costo",
+    "seoDescription": "Compará los planes de Meli+ en Argentina, sus beneficios y los adicionales de streaming. Sumá la membresía a tu presupuesto."
+  },
+  {
+    "id": "apple-one",
+    "slug": "apple-one",
+    "name": "Apple One",
+    "category": "paquetes",
+    "officialUrl": "https://www.apple.com/la/apple-one/",
+    "logo": null,
+    "logoAltMode": "text-fallback",
+    "description": "Un paquete de servicios Apple para comparar con tus suscripciones individuales.",
+    "aliases": [
+      "apple one"
+    ],
+    "overlapNote": "Apple One incluye un iCloud+ de 50 o 200 GB. No reemplaza un plan de más capacidad que ya tengas cargado.",
+    "sourceUrls": [
+      "https://www.apple.com/la/apple-one/"
+    ],
+    "verificationStatus": "unverified",
+    "faqs": [
+      {
+        "question": "¿Apple One reemplaza cualquier plan de iCloud+?",
+        "answer": "No necesariamente. Compará el almacenamiento incluido y revisá si mantenés un plan adicional."
+      },
+      {
+        "question": "¿El ahorro es igual para todos?",
+        "answer": "No. La comparación usa únicamente los servicios y planes que seleccionaste; no asigna un ahorro por servicios que no pagabas."
+      },
+      {
+        "question": "¿Qué falta verificar?",
+        "answer": "Confirmar las tarifas en storefront argentino; los USD regionales no certifican la oferta local."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Revisá música, video y almacenamiento antes de cambiar de plan. La comparación debe contemplar la capacidad de iCloud+ y las personas que necesitan acceso.",
+    "seoTitle": "Apple One en Argentina: planes y costo estimado",
+    "seoDescription": "Compará Apple One Individual y Familiar con tus servicios Apple por separado. Revisá almacenamiento, precio y costo estimado en pesos."
+  },
+  {
+    "id": "crunchyroll",
+    "slug": "crunchyroll",
+    "name": "Crunchyroll",
+    "category": "series",
+    "officialUrl": "https://www.crunchyroll.com/es/premium",
+    "logo": "/brands/crunchyroll.svg",
+    "logoAltMode": "decorative",
+    "description": "Streaming de anime para comparar planes, dispositivos y alternativas de pago.",
+    "aliases": [
+      "crunchyroll",
+      "crunchy"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.crunchyroll.com/es/premium",
+      "https://help.crunchyroll.com/hc/es/articles/19133832775956--Por-qu%C3%A9-no-puedo-transmitir-contenido-en-varios-dispositivos-al-mismo-tiempo",
+      "https://help.crunchyroll.com/hc/es/articles/18812304848148--Qu%C3%A9-m%C3%A9todos-de-pago-aceptan"
+    ],
+    "verificationStatus": "unverified",
+    "faqs": [
+      {
+        "question": "¿Qué debo comparar además del precio?",
+        "answer": "La disponibilidad del plan en Argentina, las descargas y la cantidad de reproducciones simultáneas."
+      },
+      {
+        "question": "¿Puedo usar lo que figura en mi resumen?",
+        "answer": "Sí. Cargá el importe final y su período de cobro para incorporarlo al presupuesto sin agregar impuestos otra vez."
+      },
+      {
+        "question": "¿Qué falta verificar?",
+        "answer": "Obtener tarifa en contexto argentino: /es es idioma, no prueba del país de cobro; /ar puede significar idioma árabe."
+      }
+    ],
+    "tags": [
+      "Anime"
+    ],
+    "secondaryCategories": [],
+    "body": "Elegí según cómo mirás anime: el precio es una parte de la comparación. Revisá los dispositivos simultáneos, las descargas y el período de contratación de cada oferta.",
+    "seoTitle": "Crunchyroll Argentina: planes y precio estimado",
+    "seoDescription": "Compará los planes de Crunchyroll para Argentina, sus diferencias y el costo estimado. Agregá tu suscripción al presupuesto mensual."
+  },
+  {
+    "id": "mubi",
+    "slug": "mubi",
+    "name": "MUBI",
+    "category": "series",
+    "officialUrl": "https://mubi.com/es/ar/memberships",
+    "logo": "/brands/mubi.svg",
+    "logoAltMode": "decorative",
+    "description": "Cine por suscripción para sumar a tu presupuesto de entretenimiento.",
+    "aliases": [
+      "mubi"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://mubi.com/es/ar/memberships",
+      "https://es.help.mubi.com/article/1251-cual-es-mi-fecha-de-facturacion",
+      "https://es.help.mubi.com/article/890-que-es-el-programa-para-estudiantes-de-mubi"
+    ],
+    "verificationStatus": "unverified",
+    "faqs": [
+      {
+        "question": "¿La modalidad mensual se cobra el mismo día de cada mes?",
+        "answer": "La ayuda de MUBI describe ciclos de 30 días. Confirmá el canal de contratación y la fecha de renovación de tu cuenta."
+      },
+      {
+        "question": "¿Por qué el equivalente mensual puede diferir del cargo?",
+        "answer": "El equivalente permite comparar presupuestos. Un cargo cada cierta cantidad de días sigue un calendario distinto al de una mensualidad fija."
+      },
+      {
+        "question": "¿Qué falta verificar?",
+        "answer": "Descartar valores en BRL devueltos por la URL argentina."
+      }
+    ],
+    "tags": [
+      "Cine"
+    ],
+    "secondaryCategories": [],
+    "body": "Compará las modalidades de MUBI y el desembolso de cada renovación. Prestá atención al ciclo real de facturación al evaluar su equivalente mensual.",
+    "seoTitle": "MUBI Argentina: suscripción y costo estimado",
+    "seoDescription": "Consultá modalidades de MUBI en Argentina y calculá su impacto en tu presupuesto. Compará el pago por ciclo y el equivalente mensual."
+  },
+  {
+    "id": "f1-tv",
+    "slug": "f1-tv",
+    "name": "F1 TV",
+    "category": "deportes",
+    "officialUrl": "https://f1tv.formula1.com/",
+    "logo": null,
+    "logoAltMode": "text-fallback",
+    "description": "Planes de Fórmula 1 para comparar cobertura y costo de suscripción.",
+    "aliases": [
+      "f1 tv",
+      "formula 1 tv",
+      "fórmula 1"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://f1tv.formula1.com/",
+      "https://f1help.formula1.com/article/F1-TV-subscription-comparison",
+      "https://f1help.formula1.com/"
+    ],
+    "verificationStatus": "unverified",
+    "faqs": [
+      {
+        "question": "¿Todos los planes incluyen carreras en vivo?",
+        "answer": "No. La comparación oficial diferencia Access de los niveles con transmisiones en vivo; revisá además su disponibilidad argentina."
+      },
+      {
+        "question": "¿El plan anual se paga mes a mes?",
+        "answer": "Mostrá el pago completo al contratar y el equivalente mensual por separado. Un promedio mensual no implica cuotas."
+      },
+      {
+        "question": "¿Qué falta verificar?",
+        "answer": "Verificar Location Availability para Argentina y luego tarifas locales."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Antes de elegir, diferenciá el acceso a carreras en vivo del contenido diferido. Las prestaciones y los planes disponibles deben verificarse para Argentina.",
+    "seoTitle": "F1 TV Argentina: planes y calculadora de precio",
+    "seoDescription": "Compará F1 TV Access, Pro y Premium según disponibilidad en Argentina. Revisá carreras en vivo, modalidad de pago y costo estimado."
+  },
+  {
+    "id": "dgo",
+    "slug": "dgo",
+    "name": "DGO",
+    "category": "tv-en-vivo",
+    "officialUrl": "https://www.directvgo.com/ar/destacado",
+    "logo": "/brands/dgo.png",
+    "logoAltMode": "decorative",
+    "description": "Televisión y streaming para comparar un abono base y sus adicionales.",
+    "aliases": [
+      "dgo",
+      "directv go",
+      "directvgo"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.directvgo.com/ar/destacado",
+      "https://www.directvgo.com/documents/d/ecommerce/precios-DGO-argentina-noviembre-diciembre-2025",
+      "https://www.directvgo.com/ar/legales"
+    ],
+    "verificationStatus": "unverified",
+    "faqs": [
+      {
+        "question": "¿Debo sumar DGO si ya tengo DIRECTV?",
+        "answer": "Algunos planes de DIRECTV incluyen acceso. Revisá tu contrato y registrá los cargos reales para evitar duplicarlos."
+      },
+      {
+        "question": "¿Los packs forman parte del precio base?",
+        "answer": "Depende de la oferta. La calculadora debe mostrar qué está incluido y cuánto cuesta cada adicional seleccionado."
+      },
+      {
+        "question": "¿Qué falta verificar?",
+        "answer": "Reemplazar los candidatos históricos por los nombres vigentes antes de publicarlos."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Armá el costo a partir de la oferta que contratás. Distinguí canales y plataformas incluidas, packs adicionales y promociones temporales.",
+    "seoTitle": "DGO Argentina: planes, packs y costo mensual",
+    "seoDescription": "Compará planes y adicionales de DGO en Argentina. Separá el abono base de los packs y sumá el costo a tu presupuesto."
+  },
+  {
+    "id": "flow",
+    "slug": "flow",
+    "name": "Flow",
+    "category": "tv-en-vivo",
+    "officialUrl": "https://www.personal.com.ar/flow/planes",
+    "logo": null,
+    "logoAltMode": "text-fallback",
+    "description": "Un abono de TV y streaming para comparar planes y contenido incluido.",
+    "aliases": [
+      "flow",
+      "flow full",
+      "flow plus",
+      "flow+"
+    ],
+    "overlapNote": "Flow Full incluye Paramount+. Flow+ suma exactamente dos plataformas a elegir. Si ya las pagás, el presupuesto no las borra.",
+    "sourceUrls": [
+      "https://www.personal.com.ar/flow/planes"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿El precio promocional es el precio de lista?",
+        "answer": "No. Mostramos los dos valores y la duración anunciada para que puedas evaluar el gasto inicial y el valor de referencia posterior."
+      },
+      {
+        "question": "¿Una suscripción incluida deja de cobrarse automáticamente?",
+        "answer": "No lo presupongas. Verificá la activación y el canal de facturación antes de quitar un cargo de tu presupuesto."
+      },
+      {
+        "question": "¿Qué falta verificar?",
+        "answer": "No confundir Flow Full con Flow+: la página actual asigna las dos elecciones a Flow+."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Elegí el abono y los contenidos que realmente necesitás. Separá el precio de lista de las promociones y revisá los requisitos de contratación.",
+    "seoTitle": "Flow Argentina: planes, packs y precio mensual",
+    "seoDescription": "Compará Flow Full y Flow+, revisá suscripciones incluidas y distinguí precio de lista y promociones en tu presupuesto."
+  },
+  {
+    "id": "microsoft-365",
+    "slug": "microsoft-365",
+    "name": "Microsoft 365",
+    "category": "productividad",
+    "officialUrl": "https://www.microsoft.com/es-ar/microsoft-365/buy/compare-all-microsoft-365-products",
+    "logo": null,
+    "logoAltMode": "text-fallback",
+    "description": "Aplicaciones y almacenamiento para organizar el gasto de trabajo o estudio.",
+    "aliases": [
+      "microsoft 365",
+      "office 365",
+      "microsoft365"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.microsoft.com/es-ar/microsoft-365/buy/compare-all-microsoft-365-products"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Debo agregar OneDrive por separado?",
+        "answer": "Solo si pagás una contratación adicional. El almacenamiento incluido en Microsoft 365 no genera otro cargo dentro de este presupuesto."
+      },
+      {
+        "question": "¿El precio anual es una cuota mensual?",
+        "answer": "No. Mostramos el pago anual completo y su equivalente mensual como dos datos diferentes."
+      },
+      {
+        "question": "¿Qué falta verificar?",
+        "answer": "Confirmar impuestos al precio publicado antes de calcular un total bancario."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [
+      "almacenamiento"
+    ],
+    "body": "Compará el número de personas, el almacenamiento asignado y la modalidad de pago. No confundas una suscripción con una licencia de compra única.",
+    "seoTitle": "Microsoft 365 Argentina: planes y precio estimado",
+    "seoDescription": "Compará Microsoft 365 Personal, Familia y Premium en Argentina. Revisá pago mensual o anual y sumalo a tu presupuesto."
+  },
+  {
+    "id": "canva",
+    "slug": "canva",
+    "name": "Canva",
+    "category": "diseno",
+    "officialUrl": "https://www.canva.com/es_ar/pro/",
+    "logo": null,
+    "logoAltMode": "text-fallback",
+    "description": "Planes de diseño para comparar el gasto individual y por equipo.",
+    "aliases": [
+      "canva",
+      "canva pro"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.canva.com/es_ar/pro/",
+      "https://www.canva.com/pricing/"
+    ],
+    "verificationStatus": "unverified",
+    "faqs": [
+      {
+        "question": "¿El precio es por persona o por equipo?",
+        "answer": "Depende de la oferta. La calculadora debe indicarlo y multiplicar por licencias únicamente cuando el precio sea unitario."
+      },
+      {
+        "question": "¿Puedo registrar un precio anterior?",
+        "answer": "Sí. Ingresá lo que efectivamente te cobran y mantenelo identificado como un importe personal, separado del catálogo."
+      },
+      {
+        "question": "¿Qué falta verificar?",
+        "answer": "Obtener tarifa argentina: no trasladar los USD globales automáticamente."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Elegí la modalidad que corresponde a tu uso y revisá si la tarifa es por persona. Separá los adicionales de IA del abono principal.",
+    "seoTitle": "Canva Argentina: planes y calculadora de costo",
+    "seoDescription": "Compará Canva Pro y Business para Argentina. Revisá precio por persona, modalidad de pago y adicionales antes de sumar el gasto."
+  },
+  {
+    "id": "chatgpt",
+    "slug": "chatgpt",
+    "name": "ChatGPT",
+    "category": "inteligencia-artificial",
+    "officialUrl": "https://chatgpt.com/pricing/",
+    "logo": null,
+    "logoAltMode": "text-fallback",
+    "description": "Planes de inteligencia artificial para organizar el gasto personal.",
+    "aliases": [
+      "chatgpt",
+      "chat gpt"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://learn.chatgpt.com/docs/pricing",
+      "https://chatgpt.com/pricing/"
+    ],
+    "verificationStatus": "unverified",
+    "faqs": [
+      {
+        "question": "¿La API forma parte del precio del abono?",
+        "answer": "La facturación de API se trata por separado. No la sumamos como una cuota incluida del plan personal."
+      },
+      {
+        "question": "¿Puedo usar el importe que me cobra la tienda del celular?",
+        "answer": "Sí. Seleccioná el canal correcto o ingresá el cargo final; no lo reemplaces automáticamente por una referencia web en dólares."
+      },
+      {
+        "question": "¿Qué falta verificar?",
+        "answer": "Confirmar precio y disponibilidad para Argentina; tarifas globales no son un cargo final local."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Compará el abono según tu uso y el importe que ofrece tu cuenta. Los consumos adicionales y la facturación de API deben mantenerse separados de la suscripción.",
+    "seoTitle": "ChatGPT Argentina: planes y costo estimado en pesos",
+    "seoDescription": "Compará los planes personales de ChatGPT y calculá su costo estimado en Argentina según moneda, canal y condiciones de pago."
+  }
+]

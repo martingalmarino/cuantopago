@@ -1,0 +1,148 @@
+---
+import Base from '../layouts/Base.astro';
+import BrandLogo from '../components/BrandLogo.astro';
+import Calculator from '../components/Calculator';
+import { categoryLabels, monthlyPublishedMinor, plansFor, services } from '../lib/catalog';
+import { formatMinor } from '../lib/money';
+import type { PlanRecord } from '../lib/types';
+
+export function getStaticPaths() {
+  return services.map((service) => ({ params: { slug: service.slug }, props: { service } }));
+}
+const { service } = Astro.props;
+const list = plansFor(service.id);
+const h1 = `Cuánto cuesta ${service.name} en Argentina`;
+const title = service.seoTitle ?? h1;
+const description = service.seoDescription ?? `Precio publicado de ${service.name} en Argentina, planes y qué entra en la estimación.`;
+const bundles = list.filter((plan) => (plan.entitlements?.length ?? 0) > 0 || (plan.choiceOptions?.length ?? 0) > 0);
+function periodLabel(plan: PlanRecord): string {
+  if (plan.billingIntervalDays) return `cada ${plan.billingIntervalDays} días`;
+  if (plan.billingPeriodMonths === 1) return 'por mes';
+  return `cada ${plan.billingPeriodMonths} meses`;
+}
+function featureLine(plan: PlanRecord): string {
+  const bits = [
+    plan.features.ads === true ? 'Con anuncios' : plan.features.ads === false ? 'Sin anuncios' : null,
+    plan.features.maxResolution,
+    plan.features.simultaneousPlayback === 1
+      ? '1 pantalla a la vez'
+      : plan.features.simultaneousPlayback
+        ? `${plan.features.simultaneousPlayback} pantallas a la vez`
+        : null,
+    plan.features.downloads,
+    plan.features.storage,
+    plan.features.memberLimit ? `Hasta ${plan.features.memberLimit} miembros` : null,
+    plan.features.eligibility,
+  ].filter(Boolean);
+  return bits.join(' · ') || 'La página no detalla estas condiciones.';
+}
+---
+<Base
+  title={title}
+  description={description}
+  crumbs={[{ name: 'Inicio', href: '/' }, { name: 'Plataformas', href: '/plataformas/' }, { name: service.name, href: `/${service.slug}/` }]}
+>
+  <div class="wrap page page-stack">
+    <nav class="crumbs" aria-label="Migas">
+      <a href="/">Inicio</a> <span>/</span> <a href="/plataformas/">Plataformas</a> <span>/</span> <span>{service.name}</span>
+    </nav>
+    <header class="sheet">
+      <div class="service-head">
+        <BrandLogo name={service.name} logo={service.logo} size="header" />
+        <div>
+          <p class="kicker">{categoryLabels[service.category]}{(service.tags ?? []).length > 0 ? ` · ${service.tags?.join(' · ')}` : ''}</p>
+          <h1>{h1}</h1>
+        </div>
+      </div>
+      <p class="prose">{service.description}</p>
+      {service.body && <p class="prose">{service.body}</p>}
+      {service.overlapNote && <p class="warning">{service.overlapNote}</p>}
+      <a class="btn" href={service.officialUrl} rel="noopener noreferrer">Contratar en el sitio oficial</a>
+    </header>
+    <section class="sheet">
+      <h2>Planes</h2>
+      {list.length === 0 ? (
+        <p class="warning">Precio pendiente de verificación. Podés anotar lo que te cobran en la calculadora.</p>
+      ) : (
+        <div class="plan-list">
+          {list.map((plan) => (
+            <article class="plan-row">
+              <h3>{plan.name}</h3>
+              <p class="meta">{periodLabel(plan)}</p>
+              <p class="plan-price nums">
+                {plan.amountMinor !== null && plan.currency ? formatMinor(plan.amountMinor, plan.currency) : 'Precio pendiente de verificación'}
+              </p>
+              {plan.amountMinor !== null && plan.currency && plan.billingPeriodMonths > 1 && (
+                <p class="meta">Equivalente mensual: {formatMinor(monthlyPublishedMinor(plan) ?? plan.amountMinor, plan.currency)}. No es una cuota.</p>
+              )}
+              {plan.billingIntervalDays && (
+                <p class="meta">El equivalente mensual usa 365 días y 12 meses. {plan.billingIntervalDays} días no son un mes calendario.</p>
+              )}
+              {plan.promotion && (
+                <p class="meta">Promo {formatMinor(plan.promotion.amountMinor, plan.promotion.currency)} por {plan.promotion.durationCycles} ciclos. El presupuesto usa la lista salvo que la actives.</p>
+              )}
+              <p class="meta">{plan.taxInclusion === 'excluded' ? 'Sin impuestos incluidos' : plan.taxInclusion === 'included' ? 'Monto publicado con impuestos incluidos. No se suma IVA de nuevo.' : 'No está dicho si incluye impuestos'}</p>
+              {plan.verifiedAt && <p class="meta">Verificado el {plan.verifiedAt}</p>}
+              <p class="warning" hidden data-verified={plan.verifiedAt} data-freshness-days="30">Precio para revisar</p>
+              <p class="meta">{featureLine(plan)}{plan.notes ? ` ${plan.notes}` : ''}</p>
+            </article>
+          ))}
+        </div>
+      )}
+    </section>
+    {bundles.length > 0 && (
+      <section class="sheet">
+        <h2>Qué incluye</h2>
+        {bundles.map((plan) => (
+          <article class="plan-row">
+            <h3>{plan.name}</h3>
+            <ul>
+              {(plan.entitlements ?? []).map((item) => (
+                <li>{item.label}. Entra en el cargo de este plan. No es un servicio gratis aparte.</li>
+              ))}
+              {(plan.choiceSlots ?? 0) > 0 && (
+                <li>Elegís exactamente {plan.choiceSlots}: {(plan.choiceOptions ?? []).map((option) => option.label).join(', ')}. Una opción de más no queda incluida.</li>
+              )}
+            </ul>
+          </article>
+        ))}
+      </section>
+    )}
+    <Calculator client:only="react" serviceId={service.id} initialPlanId={list.find((plan) => plan.selectable !== false && plan.amountMinor !== null && (plan.choiceSlots ?? 0) === 0)?.id} />
+    <section class="sheet">
+      <h2>Fuentes</h2>
+      <ul>
+        {service.sourceUrls.map((url) => <li><a href={url}>{url}</a></li>)}
+      </ul>
+      <p class="meta">La regla de IVA se revisó el 8 de octubre de 2026. No hay una cotización de cambio guardada.</p>
+    </section>
+    <section class="sheet">
+      <h2>Preguntas frecuentes</h2>
+      <div class="faq-list">
+        {service.faqs.map((faq) => (
+          <details class="breakdown">
+            <summary>{faq.question}</summary>
+            <p>{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+      <p>
+        <button type="button" class="btn" id="copy-report">Copiar resumen para reportar un precio</button>
+      </p>
+      <p id="copy-status" class="meta" aria-live="polite"></p>
+    </section>
+  </div>
+</Base>
+<script define:vars={{ serviceName: service.name, serviceSlug: service.slug }}>
+  const button = document.querySelector('#copy-report');
+  const status = document.querySelector('#copy-status');
+  button?.addEventListener('click', async () => {
+    const text = `Cuánto Pago — precio para revisar\nServicio: ${serviceName}\nFicha: /${serviceSlug}/\nNo se envió a ningún lado: copialo y mandalo por el canal que uses.`;
+    try {
+      await navigator.clipboard.writeText(text);
+      if (status) status.textContent = 'Copiado. No se envió a ningún lado.';
+    } catch {
+      if (status) status.textContent = text;
+    }
+  });
+</script>

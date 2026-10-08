@@ -1,0 +1,178 @@
+[
+  {
+    "serviceId": "netflix",
+    "file": "/brands/netflix.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-08",
+    "license": "CC0 1.0. El paquete simple-icons 16.34.0 cita https://brand.netflix.com/en/assets/logos como origen del trazado.",
+    "limitation": "Isotipo de un solo color, sin el wordmark."
+  },
+  {
+    "serviceId": "disney-plus",
+    "file": null,
+    "sourceUrl": null,
+    "retrievalDate": "2026-10-08",
+    "license": null,
+    "limitation": "simple-icons 16.34.0 no exporta disneyplus ni disney. No se dibujó un logo. En la interfaz se muestra el nombre."
+  },
+  {
+    "serviceId": "hbo-max",
+    "file": "/brands/hbomax.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-08",
+    "license": "CC0 1.0. El registro hbomax del paquete apunta a https://commons.wikimedia.org/wiki/File:Max_2025_logo.svg.",
+    "limitation": "El archivo de origen se llama Max 2025. Se muestra junto al nombre HBO Max, sin recolorarlo."
+  },
+  {
+    "serviceId": "prime-video",
+    "file": null,
+    "sourceUrl": null,
+    "retrievalDate": "2026-10-08",
+    "license": null,
+    "limitation": "No hay un slug primevideo ni amazonprimevideo en simple-icons 16.34.0. Se usa el nombre, sin un ícono genérico de play."
+  },
+  {
+    "serviceId": "paramount-plus",
+    "file": "/brands/paramountplus.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-08",
+    "license": "CC0 1.0. Origen citado por el paquete: https://www.paramount.com/brand/paramount-plus.",
+    "limitation": null
+  },
+  {
+    "serviceId": "apple-tv",
+    "file": "/brands/appletv.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-08",
+    "license": "CC0 1.0. Origen citado: https://en.wikipedia.org/wiki/File:Apple_TV_(logo).svg.",
+    "limitation": "Marca Apple TV en negro. Va sobre fondo blanco."
+  },
+  {
+    "serviceId": "spotify",
+    "file": "/brands/spotify.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-08",
+    "license": "CC0 1.0. Guía citada: https://developer.spotify.com/documentation/general/design-and-branding/#using-our-logo.",
+    "limitation": null
+  },
+  {
+    "serviceId": "youtube-premium",
+    "file": "/brands/youtube.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-08",
+    "license": "CC0 1.0. Guía citada: https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors.",
+    "limitation": "No existe un slug youtubepremium. Se usa la marca de YouTube junto al nombre YouTube Premium. No se fabricó un wordmark."
+  },
+  {
+    "serviceId": "youtube-music",
+    "file": "/brands/youtubemusic.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-08",
+    "license": "CC0 1.0. Origen citado: https://partnermarketinghub.withgoogle.com/#/brands.",
+    "limitation": null
+  },
+  {
+    "serviceId": "apple-music",
+    "file": "/brands/applemusic.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-08",
+    "license": "CC0 1.0. Origen citado: https://www.apple.com/itunes/marketing-on-music/identity-guidelines.html#apple-music-icon.",
+    "limitation": null
+  },
+  {
+    "serviceId": "google-one",
+    "file": null,
+    "sourceUrl": null,
+    "retrievalDate": "2026-10-08",
+    "license": null,
+    "limitation": "No hay slug googleone. No se usa el logo genérico de Google como si fuera Google One."
+  },
+  {
+    "serviceId": "icloud-plus",
+    "file": "/brands/icloud.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-08",
+    "license": "CC0 1.0. Origen citado: https://commons.wikimedia.org/wiki/File:ICloud_logo.svg.",
+    "limitation": "La marca del paquete es iCloud. Se muestra junto al nombre iCloud+."
+  },
+  {
+    "serviceId": "meli-plus",
+    "file": null,
+    "sourceUrl": "https://www.mercadolibre.com.ar/suscripciones/nivel-6",
+    "retrievalDate": "2026-10-08",
+    "license": null,
+    "limitation": "Todavía no hay un logo verificado. La ficha muestra el nombre."
+  },
+  {
+    "serviceId": "apple-one",
+    "file": null,
+    "sourceUrl": "https://www.apple.com/la/apple-one/",
+    "retrievalDate": "2026-10-08",
+    "license": null,
+    "limitation": "Todavía no hay un logo verificado. La ficha muestra el nombre."
+  },
+  {
+    "serviceId": "crunchyroll",
+    "file": "/brands/crunchyroll.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-08",
+    "license": "CC0 1.0. El registro crunchyroll de simple-icons 16.34.0 cita https://www.crunchyroll.com.",
+    "limitation": "Isotipo de un solo color."
+  },
+  {
+    "serviceId": "mubi",
+    "file": "/brands/mubi.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-08",
+    "license": "CC0 1.0. El registro mubi de simple-icons 16.34.0 cita https://mubi.com.",
+    "limitation": "Marca negra de un solo color."
+  },
+  {
+    "serviceId": "f1-tv",
+    "file": null,
+    "sourceUrl": "https://f1tv.formula1.com/",
+    "retrievalDate": "2026-10-08",
+    "license": null,
+    "limitation": "Todavía no hay un logo verificado. La ficha muestra el nombre."
+  },
+  {
+    "serviceId": "dgo",
+    "file": "/brands/dgo.png",
+    "sourceUrl": "https://cdn-cms74.hub.directvgo.com/documents/91224/96206/DGO-logo.png/b1567ee6-04c7-7d5c-1c55-a0c9b29e3cad?t=1665468489713",
+    "retrievalDate": "2026-10-08",
+    "license": "Imagen del pie oficial de DIRECTV GO, descargada el 2026-10-08.",
+    "limitation": "Wordmark horizontal. Se muestra con el nombre DGO."
+  },
+  {
+    "serviceId": "flow",
+    "file": null,
+    "sourceUrl": "https://www.personal.com.ar/flow/planes",
+    "retrievalDate": "2026-10-08",
+    "license": null,
+    "limitation": "Todavía no hay un logo verificado. La ficha muestra el nombre."
+  },
+  {
+    "serviceId": "microsoft-365",
+    "file": null,
+    "sourceUrl": "https://www.microsoft.com/es-ar/microsoft-365/buy/compare-all-microsoft-365-products",
+    "retrievalDate": "2026-10-08",
+    "license": null,
+    "limitation": "Todavía no hay un logo verificado. La ficha muestra el nombre."
+  },
+  {
+    "serviceId": "canva",
+    "file": null,
+    "sourceUrl": "https://www.canva.com/es_ar/pro/",
+    "retrievalDate": "2026-10-08",
+    "license": null,
+    "limitation": "Todavía no hay un logo verificado. La ficha muestra el nombre."
+  },
+  {
+    "serviceId": "chatgpt",
+    "file": null,
+    "sourceUrl": "https://chatgpt.com/pricing/",
+    "retrievalDate": "2026-10-08",
+    "license": null,
+    "limitation": "Todavía no hay un logo verificado. La ficha muestra el nombre."
+  }
+]
