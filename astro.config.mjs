@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 
-const site = process.env.SITE_URL?.trim().replace(/\/$/, '') || undefined;
+const site = (process.env.SITE_URL?.trim() || 'https://www.abonito.com.ar').replace(/\/$/, '');
 
 export default defineConfig({
   site,
@@ -10,13 +10,9 @@ export default defineConfig({
   trailingSlash: 'always',
   integrations: [
     react(),
-    ...(site
-      ? [
-          sitemap({
-            filter: (page) =>
-              !page.includes('/mis-suscripciones') && !page.includes('/simular-ahorro'),
-          }),
-        ]
-      : []),
+    sitemap({
+      filter: (page) =>
+        !page.includes('/mis-suscripciones') && !page.includes('/simular-ahorro'),
+    }),
   ],
 });

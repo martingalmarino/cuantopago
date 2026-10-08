@@ -17,6 +17,7 @@ interface Props {
 }
 const { title, description, noindex = false, crumbs = [], jsonLd } = Astro.props;
 const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
+const ogImage = Astro.site ? new URL('/og.svg', Astro.site).href : '/og.svg';
 const graph = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 if (crumbs.length && Astro.site) {
   graph.push({
@@ -46,7 +47,7 @@ if (crumbs.length && Astro.site) {
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_AR" />
     {canonical && <meta property="og:url" content={canonical} />}
-    <meta property="og:image" content="/og.svg" />
+    <meta property="og:image" content={ogImage} />
     {graph.map((item) => <script type="application/ld+json" set:html={JSON.stringify(item)} />)}
   </head>
   <body>
