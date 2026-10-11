@@ -246,5 +246,29 @@
     "retrievalDate": "2026-10-11",
     "license": "Marca de SpaceX. Archivo oficial publicado en starlink.com, usado solo para identificar el servicio.",
     "limitation": "Wordmark negro STARLINK, 612×101. Sin modificaciones."
+  },
+  {
+    "serviceId": "personal-fibertel",
+    "file": "/brands/personal.svg",
+    "sourceUrl": "https://www.personal.com.ar/content/dam/teco-cms-ecosystem/componentes-cross/header/personal-brand-header.svg",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Telecom Argentina. Archivo oficial publicado en personal.com.ar, usado solo para identificar el servicio.",
+    "limitation": "Wordmark personal en celeste, 96×22. Sin modificaciones."
+  },
+  {
+    "serviceId": "claro-internet",
+    "file": "/brands/claro.svg",
+    "sourceUrl": "https://www.claro.com.ar/static/claro-logo-red-atlas-2.svg",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de AMX Argentina. Archivo oficial publicado en claro.com.ar, usado solo para identificar el servicio.",
+    "limitation": "Logo rojo de Claro, 90×32. Sin modificaciones."
+  },
+  {
+    "serviceId": "iplan",
+    "file": "/brands/iplan.png",
+    "sourceUrl": "https://www.iplan.com.ar/themes/contrib/iplan_b4/NEW/img/v2_LogoIplan.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de NSS S.A. Archivo oficial publicado en iplan.com.ar, usado solo para identificar el servicio.",
+    "limitation": "Wordmark gris con asterisco rosa, 149×60. Sin modificaciones."
   }
 ]

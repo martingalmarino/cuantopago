@@ -1355,5 +1355,156 @@
     "body": "Compará los planes de Starlink según dónde lo vas a usar: en casa, de viaje o en una empresa. El abono es mensual y el kit se paga aparte, una sola vez.",
     "seoTitle": "Starlink Argentina: planes, precios y costo del kit",
     "seoDescription": "Precios de Starlink en Argentina: Residencial Lite, Residencial Max, Itinerante y planes Prioridad para empresas. Mirá el abono mensual y el costo del kit."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [
+      "Fibra óptica"
+    ],
+    "secondaryCategories": [],
+    "category": "internet",
+    "id": "personal-fibertel",
+    "slug": "personal-fibertel",
+    "name": "Personal Fibertel",
+    "officialUrl": "https://www.personal.com.ar/internet",
+    "logo": "/brands/personal.svg",
+    "description": "Internet por fibra óptica de Personal, la ex Fibertel. Tres planes con IVA incluido y descuento los primeros 6 meses.",
+    "aliases": [
+      "fibertel",
+      "personal",
+      "personal fibertel",
+      "telecom",
+      "personal internet"
+    ],
+    "sourceUrls": [
+      "https://www.personal.com.ar/internet"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Personal Fibertel?",
+        "answer": "El 11 de octubre de 2026 la página oficial publicaba para Capital Federal Internet 300 MB a $ 91.860, Internet 600 MB a $ 107.700 e Internet 300 MB + Flow Full a $ 133.420 por mes de precio de lista."
+      },
+      {
+        "question": "¿Cuánto dura el descuento?",
+        "answer": "6 meses. Durante ese tiempo los planes quedan en $ 27.000, $ 31.000 y $ 39.000. Lo mostramos como promoción y el presupuesto usa el precio de lista."
+      },
+      {
+        "question": "¿Los precios incluyen impuestos?",
+        "answer": "Sí. La página muestra el precio final y aparte el precio sin impuestos."
+      },
+      {
+        "question": "¿Hay descuento si tengo Personal en el celular?",
+        "answer": "Con una línea móvil abono e internet o Flow en la misma factura, Personal descuenta hasta $ 12.000 por mes con Conexión Total."
+      },
+      {
+        "question": "¿El combo incluye Flow?",
+        "answer": "Sí, Internet 300 MB + Flow Full incluye Flow Full. Si ya pagás Flow por separado, podrías estar pagándolo dos veces."
+      }
+    ],
+    "body": "Compará los planes de fibra de Personal por velocidad. El precio promocional dura 6 meses; después rige el precio de lista.",
+    "seoTitle": "Personal Fibertel: planes de internet y precios",
+    "seoDescription": "Precios de Personal Fibertel en Argentina con IVA incluido: Internet 300 MB, 600 MB y 300 MB + Flow Full. Mirá el precio de lista y la promoción."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [
+      "Fibra óptica"
+    ],
+    "secondaryCategories": [],
+    "category": "internet",
+    "id": "claro-internet",
+    "slug": "claro-internet",
+    "name": "Claro Internet",
+    "officialUrl": "https://www.claro.com.ar/personas/internet-wifi-telefonia-tv",
+    "logo": "/brands/claro.svg",
+    "description": "Internet por fibra óptica de Claro con línea fija. Cuatro planes de 200 MB a 2 GB, con precio final publicado.",
+    "aliases": [
+      "claro",
+      "claro fibra",
+      "claro hogar",
+      "claro wifi",
+      "claro internet"
+    ],
+    "sourceUrls": [
+      "https://www.claro.com.ar/personas/internet-wifi-telefonia-tv"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Claro Internet?",
+        "answer": "El 11 de octubre de 2026 la página oficial mostraba Fibra 200 MB a $ 55.289, 500 MB a $ 65.289, 800 MB a $ 81.956 y 2 GB a $ 125.289 por mes como precio anterior, todos con línea fija."
+      },
+      {
+        "question": "¿Y el precio promocional?",
+        "answer": "La página muestra $ 14.999, $ 17.999, $ 22.999 y $ 35.999 por mes, con el primer mes gratis, pero no dice cuánto dura. Por eso el presupuesto usa el precio anterior publicado."
+      },
+      {
+        "question": "¿Los precios incluyen impuestos?",
+        "answer": "Sí. La página muestra el precio final y aparte un precio sin impuestos."
+      },
+      {
+        "question": "¿Hay descuento si tengo Claro en el celular?",
+        "answer": "Sí. Con una línea de Claro se descuentan $ 4.000 por mes durante 1 año."
+      },
+      {
+        "question": "¿Está en todo el país?",
+        "answer": "Depende de la cobertura de fibra en tu dirección. El plan de 2 GB es solo para Mendoza, CABA y La Plata."
+      }
+    ],
+    "body": "Compará los planes de fibra de Claro por velocidad. Todos incluyen línea fija, y el TV HD se suma aparte.",
+    "seoTitle": "Claro Internet: planes de fibra óptica y precios",
+    "seoDescription": "Precios de Claro Fibra en Argentina: 200 MB, 500 MB, 800 MB y 2 GB con línea fija. Mirá el precio publicado y la promoción."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [
+      "Fibra óptica"
+    ],
+    "secondaryCategories": [],
+    "category": "internet",
+    "id": "iplan",
+    "slug": "iplan",
+    "name": "iplan",
+    "officialUrl": "https://www.iplan.com.ar/hogar",
+    "logo": "/brands/iplan.png",
+    "description": "Internet por fibra óptica simétrica en CABA, Córdoba, Rosario y Tucumán. Planes solo internet y combos con DGO.",
+    "aliases": [
+      "iplan",
+      "iplan hogar",
+      "nss"
+    ],
+    "sourceUrls": [
+      "https://www.iplan.com.ar/hogar"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta iplan?",
+        "answer": "El 11 de octubre de 2026 los legales de la página publicaban 500 Megas a $ 55.037, 800 Megas a $ 71.842 y 1.000 Megas a $ 69.599 por mes de precio de lista con IVA."
+      },
+      {
+        "question": "¿Cuánto dura el descuento?",
+        "answer": "El primer mes es bonificado y después hay 11 meses con descuento: 500 Megas queda en $ 35.774 y 800 Megas en $ 49.571. Desde el mes 13 rige el precio de lista. 1.000 Megas no tiene descuento."
+      },
+      {
+        "question": "¿Quién puede acceder a la promoción?",
+        "answer": "Nuevos clientes personas físicas que se adhieran al débito automático con tarjeta de crédito, entre el 8 de septiembre y el 31 de diciembre de 2026 o hasta agotar 5.000 cupos."
+      },
+      {
+        "question": "¿Los combos incluyen DGO?",
+        "answer": "Sí. Smart y Ultra incluyen DGO con 100 canales y Prime Video; Fútbol y Full suman el pack de la Liga Profesional. Si ya pagás DGO o Prime Video por separado, podrías estar pagándolos dos veces."
+      },
+      {
+        "question": "¿Dónde está disponible?",
+        "answer": "En zonas de CABA, Olivos, Vicente López, Córdoba Centro, Rosario Centro y San Miguel de Tucumán. Hay que verificar la dirección."
+      }
+    ],
+    "body": "Compará los planes de iplan solo internet o con DGO. El descuento dura 12 meses en total; desde el mes 13 rige el precio de lista.",
+    "seoTitle": "iplan: planes de internet por fibra y precios",
+    "seoDescription": "Precios de iplan Hogar con IVA: 500, 800 y 1.000 Megas, y combos con DGO. Mirá el precio de lista y cuánto dura el descuento."
   }
 ]

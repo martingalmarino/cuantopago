@@ -22,6 +22,9 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | Vercel | `/brands/vercel.svg` | Copiado el 11 de octubre de 2026. Triángulo negro. Origen citado: vercel.com/geist/brands. |
 | Supabase | `/brands/supabase.svg` | Copiado el 11 de octubre de 2026. Isotipo verde sin degradado. Origen citado: repositorio de Supabase. |
 | Starlink | `/brands/starlink.png` | Archivo oficial `logo_black.png` de starlink.com, descargado el 11 de octubre de 2026. Wordmark negro de 612×101, sin modificaciones. |
+| Personal Fibertel | `/brands/personal.svg` | SVG oficial del encabezado de personal.com.ar, descargado el 11 de octubre de 2026. Wordmark celeste de 96×22, sin modificaciones. |
+| Claro Internet | `/brands/claro.svg` | SVG oficial del encabezado de claro.com.ar, descargado el 11 de octubre de 2026. Logo rojo de 90×32, sin modificaciones. |
+| iplan | `/brands/iplan.png` | PNG oficial del encabezado de iplan.com.ar, descargado el 11 de octubre de 2026. Wordmark de 149×60, sin modificaciones. |
 | Google One | ninguno | No se usa el logo genérico de Google. |
 | iCloud+ | `/brands/icloud.svg` | La marca del paquete es iCloud y el nombre visible es iCloud+. |
 | Crunchyroll | `/brands/crunchyroll.svg` | simple-icons 16.34.0, slug crunchyroll, origen citado crunchyroll.com. |
