@@ -397,8 +397,8 @@
       "memberLimit": null,
       "eligibility": null
     },
-    "sourceUrl": "https://www.max.com/ar/es",
-    "verifiedAt": "2026-10-08",
+    "sourceUrl": "https://www.hbomax.com/ar/es",
+    "verifiedAt": "2026-10-11",
     "effectiveFrom": null,
     "effectiveTo": null,
     "retired": false,
@@ -427,8 +427,8 @@
       "memberLimit": null,
       "eligibility": null
     },
-    "sourceUrl": "https://www.max.com/ar/es",
-    "verifiedAt": "2026-10-08",
+    "sourceUrl": "https://www.hbomax.com/ar/es",
+    "verifiedAt": "2026-10-11",
     "effectiveFrom": null,
     "effectiveTo": null,
     "retired": false,
@@ -457,8 +457,8 @@
       "memberLimit": null,
       "eligibility": null
     },
-    "sourceUrl": "https://www.max.com/ar/es",
-    "verifiedAt": "2026-10-08",
+    "sourceUrl": "https://www.hbomax.com/ar/es",
+    "verifiedAt": "2026-10-11",
     "effectiveFrom": null,
     "effectiveTo": null,
     "retired": false,
@@ -487,12 +487,12 @@
       "memberLimit": null,
       "eligibility": null
     },
-    "sourceUrl": "https://www.max.com/ar/es",
-    "verifiedAt": "2026-10-08",
+    "sourceUrl": "https://www.hbomax.com/ar/es",
+    "verifiedAt": "2026-10-11",
     "effectiveFrom": null,
     "effectiveTo": null,
     "retired": false,
-    "notes": "La página lo muestra como 12 cuotas de $ 5.390 y un total anual de $ 64.680. El equivalente mensual no es el débito de un plan mes a mes."
+    "notes": "La página lo muestra como 12 cuotas de $ 5.390 y un total anual de $ 64.680. El equivalente mensual no es el débito de un plan mes a mes. La pregunta frecuente de la página dice $ 64.490 por año; usamos la suma de las cuotas."
   },
   {
     "id": "hbo-max-estandar-12",
@@ -517,12 +517,12 @@
       "memberLimit": null,
       "eligibility": null
     },
-    "sourceUrl": "https://www.max.com/ar/es",
-    "verifiedAt": "2026-10-08",
+    "sourceUrl": "https://www.hbomax.com/ar/es",
+    "verifiedAt": "2026-10-11",
     "effectiveFrom": null,
     "effectiveTo": null,
     "retired": false,
-    "notes": "12 cuotas de $ 6.690. Total anual publicado: $ 80.280."
+    "notes": "12 cuotas de $ 6.690. Total anual publicado: $ 80.280. La pregunta frecuente de la página dice $ 80.490 por año; usamos la suma de las cuotas."
   },
   {
     "id": "hbo-max-platino-12",
@@ -547,12 +547,12 @@
       "memberLimit": null,
       "eligibility": null
     },
-    "sourceUrl": "https://www.max.com/ar/es",
-    "verifiedAt": "2026-10-08",
+    "sourceUrl": "https://www.hbomax.com/ar/es",
+    "verifiedAt": "2026-10-11",
     "effectiveFrom": null,
     "effectiveTo": null,
     "retired": false,
-    "notes": "12 cuotas de $ 7.990. Total anual publicado: $ 95.880."
+    "notes": "12 cuotas de $ 7.990. Total anual publicado: $ 95.880. La pregunta frecuente de la página dice $ 95.890 por año; usamos la suma de las cuotas."
   },
   {
     "id": "paramount-plus-desde",

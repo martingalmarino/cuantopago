@@ -82,7 +82,7 @@
     "slug": "hbo-max",
     "name": "HBO Max",
     "category": "series",
-    "officialUrl": "https://www.max.com/ar/es",
+    "officialUrl": "https://www.hbomax.com/ar/es",
     "logo": "/brands/hbomax.svg",
     "logoAltMode": "decorative",
     "description": "Series y películas de HBO y Warner. La página argentina publica planes mensuales y de 12 meses. No dice si esos precios ya incluyen impuestos.",
@@ -94,18 +94,18 @@
     ],
     "overlapNote": null,
     "sourceUrls": [
-      "https://www.max.com/ar/es",
+      "https://www.hbomax.com/ar/es",
       "https://help.hbomax.com/ar-es/answer/detail/000002547"
     ],
     "verificationStatus": "partial",
     "faqs": [
       {
         "question": "¿Cuánto publica HBO Max por mes?",
-        "answer": "En los datos de la página argentina del 8 de octubre de 2026, el plan mensual figura así: Básico con anuncios $ 7.390, Estándar $ 9.590 y Platino $ 11.490."
+        "answer": "El 11 de octubre de 2026 la página argentina publicaba el plan mensual así: Básico con anuncios $ 7.390, Estándar $ 9.590 y Platino $ 11.490."
       },
       {
         "question": "¿Y el plan de 12 meses?",
-        "answer": "La página lo muestra como 12 cuotas y un total anual: Básico con anuncios 12 × $ 5.390 ($ 64.680), Estándar 12 × $ 6.690 ($ 80.280) y Platino 12 × $ 7.990 ($ 95.880). El total anual es la suma de esas cuotas, no un pago único distinto."
+        "answer": "Las tarjetas del plan anual muestran 12 cuotas: Básico con anuncios 12 × $ 5.390 ($ 64.680), Estándar 12 × $ 6.690 ($ 80.280) y Platino 12 × $ 7.990 ($ 95.880). La pregunta frecuente de la misma página dice $ 64.490, $ 80.490 y $ 95.890 por año. Usamos la suma de las cuotas, que es lo que se ve al elegir el plan."
       },
       {
         "question": "¿Qué cambia entre planes?",
