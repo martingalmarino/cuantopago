@@ -287,12 +287,14 @@ describe('catálogo ampliado', () => {
     expect(plans.some((plan) => plan.amountMinor === 300_000 || plan.amountMinor === 3000)).toBe(false);
   });
 
-  it('no convierte un precio nulo en cero ni guarda el USD 20 de ChatGPT como tarifa argentina', () => {
+  it('no convierte un precio nulo en cero ni guarda el USD 20 de ChatGPT como pesos', () => {
     const meli = plans.find((plan) => plan.id === 'meli-plus-esencial');
     expect(meli?.amountMinor).toBeNull();
     expect(meli?.amountMinor).not.toBe(0);
-    expect(plans.some((plan) => plan.serviceId === 'chatgpt')).toBe(false);
-    expect(plans.some((plan) => plan.currency === 'USD' && plan.amountMinor === 2000)).toBe(false);
+    const plus = plans.find((plan) => plan.id === 'chatgpt-plus');
+    expect(plus?.currency).toBe('USD');
+    expect(plus?.amountMinor).toBe(2000);
+    expect(plans.some((plan) => plan.serviceId === 'chatgpt' && plan.currency === 'ARS')).toBe(false);
   });
 
   it('no grava de nuevo un importe final de la persona', () => {

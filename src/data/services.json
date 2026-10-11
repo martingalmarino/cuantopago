@@ -944,38 +944,46 @@
     "slug": "chatgpt",
     "name": "ChatGPT",
     "category": "inteligencia-artificial",
-    "officialUrl": "https://chatgpt.com/pricing/",
+    "officialUrl": "https://chatgpt.com/es-419/pricing/",
     "logo": null,
     "logoAltMode": "text-fallback",
-    "description": "Planes de inteligencia artificial para organizar el gasto personal.",
+    "description": "Asistente de inteligencia artificial con plan gratis y planes pagos en dólares: Go, Plus y Pro en tres niveles de uso.",
     "aliases": [
       "chatgpt",
       "chat gpt"
     ],
     "overlapNote": null,
     "sourceUrls": [
-      "https://learn.chatgpt.com/docs/pricing",
-      "https://chatgpt.com/pricing/"
+      "https://chatgpt.com/es-419/pricing/",
+      "https://learn.chatgpt.com/docs/pricing"
     ],
-    "verificationStatus": "unverified",
+    "verificationStatus": "partial",
     "faqs": [
       {
+        "question": "¿Cuánto cuesta ChatGPT en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página de precios mostraba Go a USD 6, Plus a USD 20 y Pro a USD 100, 200 o 500 por mes, según el nivel de uso. También hay un plan gratis."
+      },
+      {
+        "question": "¿Cómo se calcula en pesos?",
+        "answer": "El precio está en dólares. Cargá la cotización a la que te cobra tu tarjeta y el resultado queda como simulación."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción del 30% depende de cómo pagues y queda sin resolver."
+      },
+      {
+        "question": "¿Qué cambia entre los niveles de Pro?",
+        "answer": "Los tres tienen las mismas funciones. Lo que cambia es cuánto uso permiten: más uso cuanto más alto el nivel."
+      },
+      {
         "question": "¿La API forma parte del precio del abono?",
-        "answer": "La facturación de API se trata por separado. No la sumamos como una cuota incluida del plan personal."
-      },
-      {
-        "question": "¿Puedo usar el importe que me cobra la tienda del celular?",
-        "answer": "Sí. Seleccioná el canal correcto o ingresá el cargo final; no lo reemplaces automáticamente por una referencia web en dólares."
-      },
-      {
-        "question": "¿Qué falta verificar?",
-        "answer": "Confirmar precio y disponibilidad para Argentina; tarifas globales no son un cargo final local."
+        "answer": "No. La API se factura aparte y no la sumamos al plan personal."
       }
     ],
     "tags": [],
     "secondaryCategories": [],
-    "body": "Compará el abono según tu uso y el importe que ofrece tu cuenta. Los consumos adicionales y la facturación de API deben mantenerse separados de la suscripción.",
+    "body": "Compará Go, Plus y los tres niveles de Pro según tu uso. Los precios están en dólares, así que el total en pesos depende de la cotización de tu tarjeta.",
     "seoTitle": "ChatGPT Argentina: planes y costo estimado en pesos",
-    "seoDescription": "Compará los planes personales de ChatGPT y calculá su costo estimado en Argentina según moneda, canal y condiciones de pago."
+    "seoDescription": "Precios de ChatGPT Go, Plus y Pro en dólares, y cuánto suman en pesos según la cotización de tu tarjeta."
   }
 ]
