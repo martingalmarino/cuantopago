@@ -20,7 +20,7 @@ export function catalogEntry(
     customName: null,
     category: service?.category ?? 'otro',
     quote,
-    catalogRevision: catalogMeta.revision,
+    catalogRevision: quote.priceVerifiedAt ?? catalogMeta.revision,
     billingIntervalMonths: plan.billingPeriodMonths,
     billingIntervalDays: plan.billingIntervalDays ?? null,
     usePromotion: extra.usePromotion ?? false,

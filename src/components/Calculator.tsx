@@ -51,6 +51,12 @@ export default function Calculator({ serviceId, initialPlanId, embedded = false 
       setMode('final');
     };
     document.addEventListener('cuanto-pago:select-plan', onSelect);
+    const checked = document.querySelector<HTMLInputElement>('input[name="plan"]:checked');
+    if (checked && checked.value !== startingPlan) {
+      onSelect(new CustomEvent('cuanto-pago:select-plan', {
+        detail: { id: checked.value, priced: checked.dataset.priced === 'true' },
+      }));
+    }
     return () => document.removeEventListener('cuanto-pago:select-plan', onSelect);
   }, [serviceId, servicePlans]);
   const period = Number(months);

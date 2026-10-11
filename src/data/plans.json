@@ -93,6 +93,99 @@
     "notes": "Incluye audio espacial. Precio mensual antes de impuestos."
   },
   {
+    "id": "disney-plus-estandar-anuncios",
+    "serviceId": "disney-plus",
+    "availableInArgentina": true,
+    "name": "Estándar con anuncios",
+    "billingPeriodMonths": 1,
+    "currency": "ARS",
+    "amountMinor": 999900,
+    "taxInclusion": "included",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-iva-digital-21",
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": true,
+      "maxResolution": null,
+      "simultaneousPlayback": 2,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": null
+    },
+    "sourceUrl": "https://www.disneyplus.com/es-ar",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio final publicado. Sin impuestos nacionales figura a $ 8.263,64. Se paga por mes o por 6 meses; el pago semestral ahorra 16% sobre el mensual, pero no tiene monto publicado. No permite descargas y la compatibilidad depende del dispositivo."
+  },
+  {
+    "id": "disney-plus-estandar",
+    "serviceId": "disney-plus",
+    "availableInArgentina": true,
+    "name": "Estándar",
+    "billingPeriodMonths": 1,
+    "currency": "ARS",
+    "amountMinor": 1299900,
+    "taxInclusion": "included",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-iva-digital-21",
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": false,
+      "maxResolution": null,
+      "simultaneousPlayback": 2,
+      "downloads": "Incluidas",
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": null
+    },
+    "sourceUrl": "https://www.disneyplus.com/es-ar",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio final publicado. Sin impuestos nacionales figura a $ 10.742,98. Se paga por mes, 6 meses o 12 meses; el semestral ahorra 16% sobre el mensual. Ni el semestral ni el anual tienen monto publicado. No incluye ESPN."
+  },
+  {
+    "id": "disney-plus-premium",
+    "serviceId": "disney-plus",
+    "availableInArgentina": true,
+    "name": "Premium",
+    "billingPeriodMonths": 1,
+    "currency": "ARS",
+    "amountMinor": 1999900,
+    "taxInclusion": "included",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-iva-digital-21",
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": false,
+      "maxResolution": "4K UHD y HDR",
+      "simultaneousPlayback": 4,
+      "downloads": "Incluidas",
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": null
+    },
+    "sourceUrl": "https://www.disneyplus.com/es-ar",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio final publicado. Sin impuestos nacionales figura a $ 16.528,10. Incluye los canales básicos de ESPN, más de 500 eventos exclusivos y Dolby Atmos. Se paga por mes, 6 meses o 12 meses; el semestral ahorra 16% sobre el mensual. Ni el semestral ni el anual tienen monto publicado."
+  },
+  {
     "id": "hbo-max-basico-mensual",
     "serviceId": "hbo-max",
     "availableInArgentina": true,

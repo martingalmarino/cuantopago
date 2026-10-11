@@ -43,7 +43,7 @@
     "officialUrl": "https://www.disneyplus.com/es-ar",
     "logo": null,
     "logoAltMode": "text-fallback",
-    "description": "Películas, series y deporte. No pudimos leer una tabla de precios argentina en la página oficial durante esta verificación, así que no publicamos un monto.",
+    "description": "Películas, series y deporte. La página argentina publica tres planes con precio final por mes: Estándar con anuncios, Estándar y Premium. ESPN solo viene en Premium.",
     "aliases": [
       "disney",
       "disney plus",
@@ -53,19 +53,27 @@
     "sourceUrls": [
       "https://www.disneyplus.com/es-ar"
     ],
-    "verificationStatus": "unverified",
+    "verificationStatus": "partial",
     "faqs": [
       {
-        "question": "¿Por qué no hay un precio de Disney+?",
-        "answer": "La ficha de ayuda de precios para Argentina no devolvió la tabla al consultarla el 8 de octubre de 2026. Hasta verificarla, el monto queda pendiente y podés cargar lo que te cobran."
+        "question": "¿Cuánto cuesta Disney+ en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página oficial publicaba $ 9.999 por mes para Estándar con anuncios, $ 12.999 para Estándar y $ 19.999 para Premium, como precios finales."
+      },
+      {
+        "question": "¿Esos precios ya incluyen impuestos?",
+        "answer": "Incluyen el IVA. La misma página aclara que sin impuestos nacionales serían $ 8.263,64, $ 10.742,98 y $ 16.528,10. La percepción del 30% depende de cómo pagues y no se suma sola."
+      },
+      {
+        "question": "¿Conviene pagar 6 meses o el año?",
+        "answer": "Disney+ dice que el pago semestral ahorra 16% sobre el precio mensual del plan, y que la baja se aplica al terminar los 6 meses. No publica el monto semestral ni el anual, así que acá solo calculamos el mensual. El plan con anuncios no tiene opción anual."
+      },
+      {
+        "question": "¿Qué cambia entre los planes?",
+        "answer": "Premium suma ESPN, 4K UHD y HDR, Dolby Atmos y 4 dispositivos a la vez. Estándar no tiene anuncios en películas y series, permite 2 dispositivos y descargas. Estándar con anuncios tiene publicidad y no permite descargas. En los tres puede haber publicidad en el contenido en vivo."
       },
       {
         "question": "¿Dónde lo contrato?",
         "answer": "En el sitio oficial de Disney+. Este sitio no vende la suscripción."
-      },
-      {
-        "question": "¿Puedo sumarlo a mi presupuesto igual?",
-        "answer": "Sí. En la calculadora o en Mis suscripciones podés anotar el importe final que te cobra el banco."
       }
     ]
   },

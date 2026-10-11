@@ -2,7 +2,7 @@
 
 Verificación del 8 de octubre de 2026. Lo que no figura acá sí quedó en `src/data/` con fuente y fecha.
 
-- Disney+: la ayuda de precios en español de Argentina no devolvió la tabla. Sin monto.
+- Disney+: los tres planes mensuales tienen precio final observado el 2026-10-11. El semestral (16% de ahorro sobre el mensual) y el anual no publican monto, así que no se cargaron.
 - Prime Video: la página consultada no trajo un precio en pesos.
 - Apple TV: el sitio regional lo nombra Apple TV y describe el servicio sin anuncios, para hasta seis personas. El USD 6,99 dice que puede variar según el país, así que no se guardó como precio argentino.
 - YouTube Premium y YouTube Music: la página de Premium menciona YouTube Music, descargas y segundo plano, pero los precios no quedaron atados a cada plan ni aclaran impuestos.
