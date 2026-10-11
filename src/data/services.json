@@ -382,6 +382,45 @@
     ]
   },
   {
+    "id": "tidal",
+    "slug": "tidal",
+    "name": "TIDAL",
+    "category": "musica",
+    "officialUrl": "https://tidal.com/pricing",
+    "logo": "/brands/tidal.svg",
+    "logoAltMode": "decorative",
+    "description": "Música en HiRes FLAC y Dolby Atmos, sin anuncios y sin conexión. La página argentina publica Individual, Family y DJ en pesos. No dice si los precios incluyen impuestos.",
+    "aliases": [
+      "tidal",
+      "tidal music",
+      "tidal hifi"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://tidal.com/pricing",
+      "https://support.tidal.com/hc/es/articles/360004405337-Plan-Familiar"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta TIDAL en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página de precios mostraba $ 3.299 por mes para Individual, $ 5.499 para Family y $ 5.499 para DJ."
+      },
+      {
+        "question": "¿Esos precios incluyen impuestos?",
+        "answer": "La página no lo aclara. Por eso el total queda parcial: no sumamos un IVA que podría estar incluido, y la percepción del 30% depende de cómo pagues."
+      },
+      {
+        "question": "¿Qué es el plan DJ?",
+        "answer": "Es una cuenta Individual que además accede al catálogo desde un programa de DJ compatible. Funciones como la separación de pistas y el modo sin conexión dependen de cada programa. No se puede sumar al plan Family."
+      },
+      {
+        "question": "¿Quién puede entrar en Family?",
+        "answer": "Hasta 6 miembros, cada uno con su cuenta. Según la ayuda de TIDAL, todos tienen que tener la cuenta en el mismo país que el titular."
+      }
+    ]
+  },
+  {
     "id": "google-one",
     "slug": "google-one",
     "name": "Google One",

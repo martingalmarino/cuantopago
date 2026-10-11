@@ -731,6 +731,96 @@
     "notes": "YouTube Music Premium, precio mensual publicado. La página no dice si incluye impuestos. La prueba de 1 mes por ARS 0 es solo para miembros nuevos y no se aplica sola."
   },
   {
+    "id": "tidal-individual",
+    "serviceId": "tidal",
+    "availableInArgentina": true,
+    "name": "Individual",
+    "billingPeriodMonths": 1,
+    "currency": "ARS",
+    "amountMinor": 329900,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": false,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": "Escucha offline",
+      "storage": null,
+      "memberLimit": 1,
+      "eligibility": null
+    },
+    "sourceUrl": "https://tidal.com/pricing",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio mensual publicado. La página no dice si incluye impuestos. 180 millones de temas en HiRes FLAC y Dolby Atmos, mixes personalizados y sesiones en vivo."
+  },
+  {
+    "id": "tidal-family",
+    "serviceId": "tidal",
+    "availableInArgentina": true,
+    "name": "Family",
+    "billingPeriodMonths": 1,
+    "currency": "ARS",
+    "amountMinor": 549900,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": false,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": "Escucha offline",
+      "storage": null,
+      "memberLimit": 6,
+      "eligibility": "Miembros con cuenta en el mismo país que el titular"
+    },
+    "sourceUrl": "https://tidal.com/pricing",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio mensual publicado. La página no dice si incluye impuestos. Cada miembro tiene su cuenta, con playlists claras y contenido infantil seleccionado. No admite la extensión DJ."
+  },
+  {
+    "id": "tidal-dj",
+    "serviceId": "tidal",
+    "availableInArgentina": true,
+    "name": "DJ",
+    "billingPeriodMonths": 1,
+    "currency": "ARS",
+    "amountMinor": 549900,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": false,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": 1,
+      "eligibility": "Requiere un programa de DJ compatible"
+    },
+    "sourceUrl": "https://tidal.com/pricing",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio mensual publicado. La página no dice si incluye impuestos. Incluye una cuenta Individual y el catálogo completo desde un programa de DJ compatible. La separación de pistas y el modo sin conexión dependen de cada programa."
+  },
+  {
     "id": "apple-music-individual",
     "serviceId": "apple-music",
     "availableInArgentina": true,

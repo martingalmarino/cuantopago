@@ -80,6 +80,14 @@
     "limitation": null
   },
   {
+    "serviceId": "tidal",
+    "file": "/brands/tidal.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0. Origen citado: https://tidal.com/press.",
+    "limitation": "Isotipo en negro, sin el wordmark. Va sobre fondo blanco."
+  },
+  {
     "serviceId": "google-one",
     "file": null,
     "sourceUrl": null,

@@ -7,6 +7,7 @@ Verificación del 8 de octubre de 2026. Lo que no figura acá sí quedó en `src
 - Apple TV: el sitio regional lo nombra Apple TV y describe el servicio sin anuncios, para hasta seis personas. El USD 6,99 dice que puede variar según el país, así que no se guardó como precio argentino.
 - YouTube Premium: Individual, Dos personas, Familiar y Premium Lite tienen precio mensual observado el 2026-10-11. La página no aclara si incluyen impuestos.
 - YouTube Music: Music Premium Individual, Dos personas y Familiar tienen precio mensual observado el 2026-10-11. No aclara impuestos. YouTube Premium también lo incluye, pero no se descuenta solo.
+- TIDAL: Individual, Family y DJ salen de una captura de la página de precios del 2026-10-11, porque la página bloquea la lectura automática. No aclara impuestos.
 - Google One: solo se publicó 100 GB a ARS 2.975,05 por mes. El resto se mezcla con planes de IA.
 - HBO Max, Apple Music, iCloud+ y el «desde» de Paramount+ tienen precio publicado, pero el tratamiento impositivo no alcanza para un total cerrado. iCloud avisa que el IVA puede subir el precio, sin decir cuánto.
 - No hay cotización verificada del Banco Nación. Un dólar solo pasa a pesos si la persona ingresa el tipo de cambio, y eso se etiqueta como simulación.

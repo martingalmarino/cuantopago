@@ -14,6 +14,7 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | YouTube Premium | `/brands/youtube.svg` | No hay isotipo propio de Premium. Se usa YouTube más el nombre del servicio. |
 | YouTube Music | `/brands/youtubemusic.svg` | Origen citado: centro de marcas de Google. |
 | Apple Music | `/brands/applemusic.svg` | Origen citado: guía de identidad de Apple Music. |
+| TIDAL | `/brands/tidal.svg` | Copiado el 11 de octubre de 2026. Isotipo negro sin wordmark. Origen citado: tidal.com/press. |
 | Google One | ninguno | No se usa el logo genérico de Google. |
 | iCloud+ | `/brands/icloud.svg` | La marca del paquete es iCloud y el nombre visible es iCloud+. |
 | Crunchyroll | `/brands/crunchyroll.svg` | simple-icons 16.34.0, slug crunchyroll, origen citado crunchyroll.com. |
