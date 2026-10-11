@@ -286,5 +286,29 @@
     "retrievalDate": "2026-10-11",
     "license": "Marca de NSS S.A. Archivo oficial publicado en iplan.com.ar, usado solo para identificar el servicio.",
     "limitation": "Wordmark gris con asterisco rosa, 149×60. Sin modificaciones."
+  },
+  {
+    "serviceId": "dropbox",
+    "file": "/brands/dropbox.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Dropbox, Inc.; origen citado dropbox.com/branding.",
+    "limitation": "Isotipo azul #0061FF, sin wordmark."
+  },
+  {
+    "serviceId": "onedrive",
+    "file": "/brands/onedrive.svg",
+    "sourceUrl": "https://www.microsoft.com/content/dam/microsoft/bade/images/icons/en-us/m365-app-icons-fy26/OneDrive-Icon-FY26.svg",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Microsoft. Ícono oficial publicado en microsoft.com, usado solo para identificar el servicio.",
+    "limitation": "Ícono de la app, 48×48 con degradados. Sin modificaciones."
+  },
+  {
+    "serviceId": "yandex-360",
+    "file": "/brands/yandex360.svg",
+    "sourceUrl": "https://avatars.mds.yandex.net/get-bunker/50064/df4cfc44757c1f16e29615dcb82438a514d0ae73/orig",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Yandex. Archivo oficial del encabezado de 360.yandex.com, usado solo para identificar el servicio.",
+    "limitation": "Se recortó el isotipo de 360 (círculo naranja con tres óvalos) y se quitó el wordmark. Mismos trazos y colores."
   }
 ]

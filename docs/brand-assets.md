@@ -29,6 +29,9 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | iplan | `/brands/iplan.png` | PNG oficial del encabezado de iplan.com.ar, descargado el 11 de octubre de 2026. Wordmark de 149×60, sin modificaciones. |
 | Google One | ninguno | No se usa el logo genérico de Google. |
 | iCloud+ | `/brands/icloud.svg` | La marca del paquete es iCloud y el nombre visible es iCloud+. |
+| Dropbox | `/brands/dropbox.svg` | simple-icons 16.34.0, slug dropbox, origen citado dropbox.com/branding. Isotipo azul sin wordmark. |
+| OneDrive | `/brands/onedrive.svg` | Ícono oficial de la app publicado en microsoft.com, descargado el 11 de octubre de 2026. 48×48 con degradados, sin modificaciones. |
+| Yandex 360 | `/brands/yandex360.svg` | SVG oficial del encabezado de 360.yandex.com, descargado el 11 de octubre de 2026. Se recortó el isotipo de 360 y se quitó el wordmark; mismos trazos y colores. |
 | Crunchyroll | `/brands/crunchyroll.svg` | simple-icons 16.34.0, slug crunchyroll, origen citado crunchyroll.com. |
 | MUBI | `/brands/mubi.svg` | simple-icons 16.34.0, slug mubi, origen citado mubi.com. |
 | DGO | `/brands/dgo.png` | PNG oficial del pie de DIRECTV GO, 400×181. No es un isotipo inventado. |

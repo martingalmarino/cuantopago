@@ -493,6 +493,138 @@
     ]
   },
   {
+    "category": "almacenamiento",
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "id": "dropbox",
+    "slug": "dropbox",
+    "name": "Dropbox",
+    "officialUrl": "https://www.dropbox.com/plans",
+    "logo": "/brands/dropbox.svg",
+    "description": "Almacenamiento y archivos compartidos. Plus para uso personal y Standard o Advanced por usuario para equipos, en dólares.",
+    "aliases": [
+      "dropbox",
+      "dropbox plus",
+      "dropbox standard",
+      "dropbox advanced"
+    ],
+    "sourceUrls": [
+      "https://www.dropbox.com/plans"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Dropbox Plus?",
+        "answer": "El 11 de octubre de 2026 la página mostraba Plus a USD 11,99 por mes con facturación mensual, o USD 9,99 por mes con facturación anual. Incluye 2 TB para una persona."
+      },
+      {
+        "question": "¿Y los planes para equipos?",
+        "answer": "Standard cuesta USD 18 por usuario por mes, o USD 15 con facturación anual, desde 3 TB para el equipo. Advanced cuesta USD 30, o USD 24 anual, desde 15 TB y para 3 personas o más. Se multiplica por la cantidad de usuarios."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí, Basic tiene 2 GB sin costo."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "Compará el espacio y la cantidad de personas de cada plan. Los precios están en dólares, así que el total en pesos depende de la cotización de tu tarjeta.",
+    "seoTitle": "Dropbox Argentina: precio de Plus, Standard y Advanced",
+    "seoDescription": "Precios de Dropbox en Argentina: Plus con 2 TB, Standard y Advanced por usuario. Mirá el costo mensual y anual en dólares."
+  },
+  {
+    "category": "almacenamiento",
+    "logoAltMode": "decorative",
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "overlapNote": "Microsoft 365 Personal y Familia ya incluyen 1 TB de OneDrive por persona. Si pagás alguno de esos planes, no hace falta sumar OneDrive aparte.",
+    "id": "onedrive",
+    "slug": "onedrive",
+    "name": "OneDrive",
+    "officialUrl": "https://www.microsoft.com/es-ar/microsoft-365/onedrive/onedrive-plans-and-pricing",
+    "logo": "/brands/onedrive.svg",
+    "description": "Almacenamiento de Microsoft. Solo, se contrata como Microsoft 365 Básico, con 100 GB, en pesos.",
+    "aliases": [
+      "onedrive",
+      "one drive",
+      "microsoft 365 basico",
+      "microsoft 365 básico"
+    ],
+    "sourceUrls": [
+      "https://www.microsoft.com/es-ar/microsoft-365/onedrive/onedrive-plans-and-pricing"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta OneDrive?",
+        "answer": "El 11 de octubre de 2026 Microsoft 365 Básico costaba $ 879 por mes o $ 8.789 por año. Incluye 100 GB en OneDrive y 100 GB de buzón de correo para una persona."
+      },
+      {
+        "question": "¿Y si necesito 1 TB?",
+        "answer": "El siguiente escalón es Microsoft 365 Personal o Familia, que suman las aplicaciones de Office. Están en la ficha de Microsoft 365."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página avisa que se cobra el impuesto a las compras con tarjeta en servicios del exterior, salvo que compres a través de un distribuidor local. La percepción depende de cómo pagues y queda sin resolver. No aclara el IVA."
+      }
+    ],
+    "body": "OneDrive se vende solo con el plan Básico. Si ya tenés Microsoft 365 Personal o Familia, el espacio de OneDrive ya está incluido.",
+    "seoTitle": "OneDrive Argentina: precio de Microsoft 365 Básico",
+    "seoDescription": "Cuánto cuesta OneDrive en Argentina: Microsoft 365 Básico con 100 GB, mensual o anual en pesos. Compará con Microsoft 365 Personal."
+  },
+  {
+    "category": "almacenamiento",
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "id": "yandex-360",
+    "slug": "yandex-360",
+    "name": "Yandex 360",
+    "officialUrl": "https://360.yandex.com/premium-plans/",
+    "logo": "/brands/yandex360.svg",
+    "description": "Yandex Disk, Mail y Documents sin publicidad. Planes Personal, Family (hasta 8 personas) y Pro, en dólares.",
+    "aliases": [
+      "yandex",
+      "yandex 360",
+      "yandex disk",
+      "yandex disco"
+    ],
+    "sourceUrls": [
+      "https://360.yandex.com/premium-plans/"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Yandex 360?",
+        "answer": "El 11 de octubre de 2026 Personal costaba USD 3,99 (200 GB), USD 6,19 (1 TB) o USD 8,69 (2 TB) por mes. Family, para hasta 8 personas, USD 4,69, USD 7,49 o USD 10,49. Pagando un año: Personal USD 25,25 (200 GB) y USD 50,65 (2 TB); Family USD 30,35 y USD 60,79."
+      },
+      {
+        "question": "¿Qué descuentos hay?",
+        "answer": "El plan de 1 TB tenía descuento: pagando por mes, USD 4,99 en Personal y USD 5,99 en Family durante 3 meses; pagando un año, USD 28,99 y USD 36,45 el primer año. No se aplican solos en el presupuesto."
+      },
+      {
+        "question": "¿Y el plan Pro?",
+        "answer": "Pro de 3 TB permite subir archivos de hasta 100 GB. Costaba USD 16 por mes o USD 75 pagando un año. También hay Pro de 5, 10, 20 y 30 TB, que no cargamos."
+      },
+      {
+        "question": "¿Funciona en Argentina?",
+        "answer": "La página muestra precios en dólares desde Argentina, pero tiene un aviso de que algunos servicios o funciones pueden no estar disponibles. No confirmamos que acepte tarjetas argentinas."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "Yandex 360 cobra en dólares. El plan Family reparte el espacio entre hasta 8 personas. Revisá cuánto dura el descuento antes de comparar.",
+    "seoTitle": "Yandex 360 Argentina: precio de Personal, Family y Pro",
+    "seoDescription": "Precios de Yandex 360 en Argentina: Personal y Family con 200 GB, 1 TB o 2 TB, y Pro con 3 TB. Mirá el costo mensual y anual en dólares."
+  },
+  {
     "id": "meli-plus",
     "slug": "meli-plus",
     "name": "Meli+",

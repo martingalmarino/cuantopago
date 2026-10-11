@@ -232,10 +232,10 @@ describe('presupuesto', () => {
 });
 
 describe('catálogo ampliado', () => {
-  it('importa 36 servicios sin ids repetidos', () => {
-    expect(services).toHaveLength(36);
-    expect(new Set(services.map((service) => service.id)).size).toBe(36);
-    expect(new Set(services.map((service) => service.slug)).size).toBe(36);
+  it('importa 39 servicios sin ids repetidos', () => {
+    expect(services).toHaveLength(39);
+    expect(new Set(services.map((service) => service.id)).size).toBe(39);
+    expect(new Set(services.map((service) => service.slug)).size).toBe(39);
     expect(new Set(plans.map((plan) => plan.id)).size).toBe(plans.length);
   });
 
@@ -284,7 +284,7 @@ describe('catálogo ampliado', () => {
     }));
     expect(monthlyMinorDisplay(result)).toBe(304_167);
     expect(result.assumptions.some((line) => line.includes('365'))).toBe(true);
-    expect(plans.some((plan) => plan.amountMinor === 300_000 || plan.amountMinor === 3000)).toBe(false);
+    expect(plans.some((plan) => plan.currency === 'ARS' && (plan.amountMinor === 300_000 || plan.amountMinor === 3000))).toBe(false);
   });
 
   it('no convierte un precio nulo en cero ni guarda el USD 20 de ChatGPT como pesos', () => {
