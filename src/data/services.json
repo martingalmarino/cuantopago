@@ -830,8 +830,8 @@
     "name": "Canva",
     "category": "diseno",
     "officialUrl": "https://www.canva.com/es_ar/precios/",
-    "logo": null,
-    "logoAltMode": "text-fallback",
+    "logo": "/brands/canva.png",
+    "logoAltMode": "decorative",
     "description": "Diseño con plantillas, contenido prémium y herramientas con IA. La página argentina publica Pro y Negocios en pesos, por mes o por año. No dice si los precios incluyen impuestos.",
     "aliases": [
       "canva",

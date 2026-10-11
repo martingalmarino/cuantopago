@@ -169,11 +169,11 @@
   },
   {
     "serviceId": "canva",
-    "file": null,
-    "sourceUrl": "https://www.canva.com/es_ar/pro/",
-    "retrievalDate": "2026-10-08",
-    "license": null,
-    "limitation": "Todavía no hay un logo verificado. La ficha muestra el nombre."
+    "file": "/brands/canva.png",
+    "sourceUrl": "https://www.canva.com/es_ar/precios/",
+    "retrievalDate": "2026-10-11",
+    "license": "Ícono de app de Canva enviado por el responsable del sitio el 2026-10-11. simple-icons 16.34.0 no trae Canva.",
+    "limitation": "Ícono cuadrado con degradé, recortado a 160×160 con las esquinas transparentes."
   },
   {
     "serviceId": "chatgpt",

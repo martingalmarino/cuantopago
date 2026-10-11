@@ -20,6 +20,7 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | Crunchyroll | `/brands/crunchyroll.svg` | simple-icons 16.34.0, slug crunchyroll, origen citado crunchyroll.com. |
 | MUBI | `/brands/mubi.svg` | simple-icons 16.34.0, slug mubi, origen citado mubi.com. |
 | DGO | `/brands/dgo.png` | PNG oficial del pie de DIRECTV GO, 400×181. No es un isotipo inventado. |
-| Meli+, Apple One, F1 TV, Flow, Microsoft 365, Canva, ChatGPT | ninguno | No hay un export de simple-icons del producto. No se usó la marca de la empresa madre ni se dibujó un logo. |
+| Canva | `/brands/canva.png` | Ícono de app enviado el 11 de octubre de 2026. simple-icons no trae Canva. Recortado a 160×160 con esquinas transparentes. |
+| Meli+, Apple One, F1 TV, Flow, Microsoft 365, ChatGPT | ninguno | No hay un export de simple-icons del producto. No se usó la marca de la empresa madre ni se dibujó un logo. |
 
 El pie del sitio aclara que es independiente y que las marcas son de sus titulares.
