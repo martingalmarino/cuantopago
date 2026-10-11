@@ -1,14 +1,60 @@
+---
+import { categoryLabels, services } from '../lib/catalog';
+import type { CategoryId } from '../lib/types';
+
+const categories = (Object.keys(categoryLabels) as CategoryId[])
+  .filter((id) => services.some((service) => service.category === id));
+const tools = [
+  { href: '/calculadora/', label: 'Calculadora' },
+  { href: '/mis-suscripciones/', label: 'Mis suscripciones' },
+  { href: '/simular-ahorro/', label: 'Simular un cambio' },
+  { href: '/cotizaciones/', label: 'Cotizaciones del dólar' },
+];
+const about = [
+  { href: '/plataformas/', label: 'Todas las plataformas' },
+  { href: '/como-calculamos/', label: 'Cómo calculamos' },
+  { href: '/privacidad/', label: 'Privacidad' },
+];
+const year = new Date().getFullYear();
+---
 <footer class="site-footer">
-  <div class="wrap">
-    <nav aria-label="Pie">
-      <a href="/plataformas/">Plataformas</a>
-      <a href="/calculadora/">Calculadora</a>
-      <a href="/mis-suscripciones/">Mis suscripciones</a>
-      <a href="/cotizaciones/">Cotizaciones</a>
-      <a href="/como-calculamos/">Cómo calculamos</a>
-      <a href="/privacidad/">Privacidad</a>
-      <a href="/simular-ahorro/">Simular un cambio</a>
-    </nav>
-    <p>Cuánto Pago es un sitio independiente. Las marcas son de sus titulares. Las estimaciones no reemplazan el resumen de tu banco.</p>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="wordmark" href="/">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="8" cy="8" r="5.2" />
+              <path d="M8 4.8v6.4M6.2 6.4h2.5a1.4 1.4 0 0 1 0 2.8H6.2" />
+            </svg>
+          </span>
+          Abonito
+        </a>
+        <p>Cuánto pagás por tus suscripciones en Argentina: el precio publicado, los impuestos y el total en pesos.</p>
+        <p class="footer-count">{services.length} plataformas en el catálogo</p>
+      </div>
+      <nav class="footer-nav" aria-label="Pie">
+        <div class="footer-col">
+          <p class="footer-heading">Herramientas</p>
+          <ul>{tools.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul>
+        </div>
+        <div class="footer-col footer-col-wide">
+          <p class="footer-heading">Categorías</p>
+          <ul>
+            {categories.map((id) => (
+              <li><a href={`/plataformas/?categoria=${id}`}>{categoryLabels[id]}</a></li>
+            ))}
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-heading">Sobre Abonito</p>
+          <ul>{about.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© {year} Abonito · abonito.com.ar</p>
+      <p>Sitio independiente. Las marcas son de sus titulares. Las estimaciones no reemplazan el resumen de tu banco.</p>
+    </div>
   </div>
 </footer>

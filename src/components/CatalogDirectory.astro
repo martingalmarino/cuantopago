@@ -83,4 +83,9 @@ const groups = order
   }
   input?.addEventListener('input', apply);
   select?.addEventListener('change', apply);
+  const requested = new URLSearchParams(location.search).get('categoria');
+  if (select && requested && [...select.options].some((option) => option.value === requested)) {
+    select.value = requested;
+    apply();
+  }
 </script>
