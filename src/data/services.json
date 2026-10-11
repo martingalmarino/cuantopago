@@ -859,6 +859,151 @@
     "seoDescription": "Compará F1 TV Access, Pro y Premium según disponibilidad en Argentina. Revisá carreras en vivo, modalidad de pago y costo estimado."
   },
   {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "deportes",
+    "id": "nba-league-pass",
+    "slug": "nba-league-pass",
+    "name": "NBA League Pass",
+    "officialUrl": "https://www.nba.com/watch/league-pass-stream",
+    "logo": "/brands/nba.svg",
+    "description": "Todos los partidos de la NBA en vivo y a la carta. League Pass con anuncios o Premium sin anuncios, por mes o por temporada, en dólares.",
+    "aliases": [
+      "nba",
+      "nba league pass",
+      "league pass",
+      "nba tv",
+      "team pass"
+    ],
+    "sourceUrls": [
+      "https://www.nba.com/watch/league-pass-stream"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta NBA League Pass?",
+        "answer": "El 11 de octubre de 2026 la página mostraba League Pass a USD 9,99 por mes o USD 59,99 por temporada, y Premium a USD 12,99 por mes o USD 79,99 por temporada. Team Pass, para seguir a un solo equipo, costaba USD 8,99 por mes."
+      },
+      {
+        "question": "¿Qué agrega Premium?",
+        "answer": "Sin anuncios, hasta 3 dispositivos a la vez, descargas para ver sin conexión y lo que pasa en la cancha durante los descansos. League Pass tiene anuncios y 1 dispositivo."
+      },
+      {
+        "question": "¿Qué cubre la temporada?",
+        "answer": "Desde septiembre: temporada regular, Play-in, Playoffs y finales. Se paga una vez y se cancela al final indicando que no querés renovarla."
+      },
+      {
+        "question": "¿Hay descuento para estudiantes?",
+        "answer": "La página anuncia 40% para estudiantes, solo en algunos mercados. No confirmamos que aplique en Argentina."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "Elegí entre pagar por mes o por temporada. El precio está en dólares, así que el total en pesos depende de la cotización de tu tarjeta.",
+    "seoTitle": "NBA League Pass Argentina: precio mensual y por temporada",
+    "seoDescription": "Precios de NBA League Pass en Argentina: League Pass, Premium y Team Pass, por mes o por temporada, en dólares."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "deportes",
+    "id": "nfl-game-pass",
+    "slug": "nfl-game-pass",
+    "name": "NFL Game Pass",
+    "officialUrl": "https://www.dazn.com/es-AR/l/nfl-game-pass",
+    "logo": "/brands/nfl.svg",
+    "description": "Todos los partidos de la NFL en vivo y a la carta, a través de DAZN. Season Pro y Season Pro Ultimate, en pesos, con pago mensual o por temporada.",
+    "aliases": [
+      "nfl",
+      "nfl game pass",
+      "game pass nfl",
+      "dazn nfl",
+      "redzone"
+    ],
+    "sourceUrls": [
+      "https://www.dazn.com/es-AR/l/nfl-game-pass"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta NFL Game Pass?",
+        "answer": "El 11 de octubre de 2026 DAZN mostraba Season Pro a ARS 120.000 y Season Pro Ultimate a ARS 140.000 en un pago único hasta el 31 de julio de 2027. Con pago mensual y contrato de 12 meses: ARS 27.000 y ARS 31.000 por mes."
+      },
+      {
+        "question": "¿Qué agrega Ultimate?",
+        "answer": "Multiview de hasta 4 partidos, HDR y sonido 5.1 en algunos partidos, transmisiones alternativas como ManningCast, 5 dispositivos en 2 ubicaciones y 15% de descuento en NFL Shop. Season Pro permite 2 dispositivos en 1 ubicación."
+      },
+      {
+        "question": "¿Hay pases semanales?",
+        "answer": "Sí: Weekly Pro a ARS 20.000 y Weekly Pro Ultimate a ARS 22.000, por 7 días y sin renovación. No los sumamos porque son pagos sueltos."
+      },
+      {
+        "question": "¿Hay descuento?",
+        "answer": "La página anuncia 25% de descuento por el resto de la temporada en el pago único, calculado según cuánto pasó de la temporada. No aclara si el importe mostrado ya lo incluye."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "NFL Game Pass se contrata en DAZN. El plan mensual tiene contrato de 12 meses, así que compará el total del año con el pago único.",
+    "seoTitle": "NFL Game Pass Argentina: precio en DAZN",
+    "seoDescription": "Precios de NFL Game Pass en Argentina: Season Pro y Season Pro Ultimate en DAZN, por mes o en un pago, en pesos."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "deportes",
+    "id": "triller-tv",
+    "slug": "triller-tv",
+    "name": "TrillerTV+",
+    "officialUrl": "https://www.trillertv.com/join/trillertv-subscription/",
+    "logo": "/brands/trillertv.svg",
+    "description": "Boxeo, lucha libre, MMA y otros deportes en vivo y a la carta. Pase mensual o anual en dólares.",
+    "aliases": [
+      "triller",
+      "triller tv",
+      "trillertv",
+      "triller tv+",
+      "trillertv+",
+      "fite",
+      "fite tv"
+    ],
+    "sourceUrls": [
+      "https://www.trillertv.com/join/trillertv-subscription/"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta TrillerTV+?",
+        "answer": "El 11 de octubre de 2026 la página mostraba el pase mensual a USD 3,99 y el anual a USD 34,99. Los dos tienen 7 días de prueba gratis."
+      },
+      {
+        "question": "¿Incluye los PPV?",
+        "answer": "El pase anual incluye algunos PPV sin costo extra. El mensual da hasta 70% de descuento en algunos PPV. Los demás eventos se pagan aparte."
+      },
+      {
+        "question": "¿Hay descuento?",
+        "answer": "Con el código ANNUAL10 el anual tiene 10% de descuento, solo para nuevos usuarios en la web. No se aplica solo en el presupuesto."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "TrillerTV+ es la suscripción de TrillerTV, antes FITE. Los eventos PPV se compran aparte, salvo los que incluye el pase anual.",
+    "seoTitle": "TrillerTV+ Argentina: precio mensual y anual",
+    "seoDescription": "Cuánto cuesta TrillerTV+ en Argentina: pase mensual y anual en dólares para boxeo, lucha libre y MMA."
+  },
+  {
     "id": "dgo",
     "slug": "dgo",
     "name": "DGO",
@@ -1382,6 +1527,143 @@
     "body": "Compará Google AI Plus, Pro y Ultra según cuánto uses Gemini y cuánto almacenamiento necesitás. Si ya pagás Google One o YouTube Premium, mirá qué te cubre cada plan.",
     "seoTitle": "Gemini Argentina: precios de Google AI Plus, Pro y Ultra",
     "seoDescription": "Precios de Gemini en Argentina: Google AI Plus, Pro y Ultra en dólares. Mirá qué almacenamiento y beneficios trae cada plan."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "inteligencia-artificial",
+    "id": "grok",
+    "slug": "grok",
+    "name": "Grok",
+    "officialUrl": "https://grok.com/plans",
+    "logo": "/brands/grok.svg",
+    "description": "Asistente de IA de xAI. Planes SuperGrok Lite, SuperGrok, Plus y Heavy en dólares, con pago mensual o anual.",
+    "aliases": [
+      "grok",
+      "supergrok",
+      "super grok",
+      "xai",
+      "grok heavy"
+    ],
+    "sourceUrls": [
+      "https://grok.com/plans"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Grok?",
+        "answer": "El 11 de octubre de 2026 la página publicaba SuperGrok Lite a USD 10, SuperGrok a USD 30, SuperGrok Plus a USD 100 y SuperGrok Heavy a USD 300 por mes. Pagando el año: USD 100, 300, 1.000 y 3.000."
+      },
+      {
+        "question": "¿Qué agrega Heavy?",
+        "answer": "El mayor uso y la versión más potente del modelo. Además incluye 𝕏 Premium+ sin costo adicional si conectás tu cuenta de 𝕏."
+      },
+      {
+        "question": "¿Hay versión gratis?",
+        "answer": "Sí, Grok tiene acceso básico sin pagar. Los planes pagos amplían los límites, el modo experto y la creación de imágenes y videos."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "Compará los límites de uso de cada plan de Grok. Los precios están en dólares, así que el total en pesos depende de la cotización de tu tarjeta.",
+    "seoTitle": "Grok Argentina: precio de SuperGrok, Plus y Heavy",
+    "seoDescription": "Precios de Grok en Argentina: SuperGrok Lite, SuperGrok, Plus y Heavy. Mirá el costo mensual y anual en dólares."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "inteligencia-artificial",
+    "id": "t3-chat",
+    "slug": "t3-chat",
+    "name": "T3 Chat",
+    "officialUrl": "https://t3.chat/",
+    "logo": "/brands/t3chat.png",
+    "description": "Chat con varios modelos de IA en un solo lugar. T3 Chat no publica precios: se ven recién al pagar. Pro y Premier salen de anuncios del fundador y del equipo.",
+    "aliases": [
+      "t3 chat",
+      "t3chat",
+      "t3.chat",
+      "t3"
+    ],
+    "sourceUrls": [
+      "https://feedback.t3.chat/p/ability-to-see-paid-plan-price-without-going-into-checkout",
+      "https://feedback.t3.chat/p/new-tier-in-between-pro-and-premier",
+      "https://www.linkedin.com/posts/t3gg_yesterday-i-had-to-make-changes-i-didnt-activity-7293176522985676800-w3vH"
+    ],
+    "faqs": [
+      {
+        "question": "¿Por qué no hay una página de precios?",
+        "answer": "El equipo explicó en su foro oficial que el precio se muestra recién al cargar los datos de pago, porque depende de los impuestos de cada país."
+      },
+      {
+        "question": "¿Cuánto cuesta?",
+        "answer": "Pro cuesta USD 8 por mes según lo anunció el fundador. Premier cuesta USD 50 por mes más impuestos, según el equipo en el foro oficial. Confirmá el importe al pagar."
+      },
+      {
+        "question": "¿Qué cambia entre Pro y Premier?",
+        "answer": "Premier tiene límites de uso más altos. Los dos usan un cupo que se recarga cada 4 horas y otro mensual para los días de más uso."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "Para Premier el equipo dice que se suman los impuestos que correspondan, así que estimamos IVA y percepción. Para Pro no hay aclaración."
+      }
+    ],
+    "body": "T3 Chat reúne modelos de distintas empresas en una sola suscripción. El importe final aparece al pagar, así que tomá estos valores como referencia.",
+    "seoTitle": "T3 Chat Argentina: precio de Pro y Premier",
+    "seoDescription": "Cuánto cuesta T3 Chat en Argentina: Pro a USD 8 y Premier a USD 50 por mes. Mirá el costo estimado en pesos."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": "Microsoft 365 Premium es el mismo plan que aparece en la ficha de Microsoft 365. Si ya lo sumaste ahí, no lo agregues de nuevo. GitHub Copilot, para programar, está en la ficha de GitHub.",
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "inteligencia-artificial",
+    "id": "copilot",
+    "slug": "copilot",
+    "name": "Microsoft Copilot",
+    "officialUrl": "https://www.microsoft.com/es-ar/microsoft-365-copilot/personal",
+    "logo": "/brands/copilot.svg",
+    "description": "Asistente de IA de Microsoft. Copilot Pro ya no se vende aparte: el uso ampliado viene con Microsoft 365 Premium o Pro, en pesos.",
+    "aliases": [
+      "microsoft copilot",
+      "copilot pro",
+      "copilot microsoft",
+      "microsoft 365 premium",
+      "microsoft 365 pro"
+    ],
+    "sourceUrls": [
+      "https://www.microsoft.com/es-ar/microsoft-365-copilot/personal",
+      "https://www.microsoft.com/es-ar/microsoft-365/p/microsoft-365-premium/cfq7ttc11z3q"
+    ],
+    "faqs": [
+      {
+        "question": "¿Dónde está Copilot Pro?",
+        "answer": "En la tienda de Microsoft Argentina, Copilot Pro redirige a Microsoft 365 Premium. Es el plan que hoy da uso ampliado de Copilot."
+      },
+      {
+        "question": "¿Cuánto cuesta?",
+        "answer": "El 11 de octubre de 2026 Microsoft 365 Premium costaba $ 16.899 por mes o $ 168.999 por año, y Microsoft 365 Pro $ 136.999 por mes, solo con pago mensual. Los dos son para 1 a 6 personas, pero la IA es solo para quien paga."
+      },
+      {
+        "question": "¿Y Personal o Familia?",
+        "answer": "También traen Copilot, con menos uso que Premium. Están en la ficha de Microsoft 365. Copilot tiene además una versión gratis."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "Microsoft avisa en su página de planes que se cobra el impuesto a las compras con tarjeta en servicios del exterior, salvo que compres por un distribuidor local. La percepción depende de cómo pagues y queda sin resolver. No aclara el IVA."
+      }
+    ],
+    "body": "Copilot viene dentro de los planes de Microsoft 365. Si ya pagás Premium en la ficha de Microsoft 365, no lo sumes dos veces.",
+    "seoTitle": "Microsoft Copilot Argentina: precio de Premium y Pro",
+    "seoDescription": "Cuánto cuesta Copilot en Argentina: Microsoft 365 Premium y Microsoft 365 Pro, en pesos. Mirá el costo mensual y anual."
   },
   {
     "id": "github",

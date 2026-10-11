@@ -18,6 +18,12 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | Claude | `/brands/claude.svg` | Copiado el 11 de octubre de 2026. Isotipo en el color de la marca, sin wordmark. Origen citado: claude.ai. |
 | Perplexity | `/brands/perplexity.svg` | Copiado el 11 de octubre de 2026. Isotipo en el color de la marca, sin wordmark. Origen citado: perplexity.ai. |
 | Gemini | `/brands/gemini.svg` | Copiado el 11 de octubre de 2026. Isotipo de un color, sin el degradado oficial. Origen citado: gemini.google.com. |
+| Grok | `/brands/grok.svg` | Favicon oficial de grok.com, descargado el 11 de octubre de 2026. Se quitaron el desenfoque y la sombra; quedan el cuadrado negro y el símbolo blanco con los mismos trazos. |
+| T3 Chat | `/brands/t3chat.png` | Ícono oficial `apple-touch-icon.png` de t3.chat, descargado el 11 de octubre de 2026. 180×180, sin modificaciones. |
+| Microsoft Copilot | `/brands/copilot.svg` | Ícono oficial publicado en microsoft.com, descargado el 11 de octubre de 2026. Con degradados, sin modificaciones. |
+| NBA League Pass | `/brands/nba.svg` | simple-icons 16.34.0, slug nba, origen citado nba.com. Logo de la NBA; no hay isotipo propio de League Pass. |
+| NFL Game Pass | `/brands/nfl.svg` | Escudo oficial de nfl.com, descargado el 11 de octubre de 2026. 500×500, sin modificaciones. No hay isotipo propio de Game Pass. |
+| TrillerTV+ | `/brands/trillertv.svg` | simple-icons 16.34.0, slug trillertv, origen citado fite.tv. Isotipo en un solo color. |
 | GitHub | `/brands/github.svg` | Copiado el 11 de octubre de 2026. Invertocat negro. Origen citado: github.com/logos. |
 | Vercel | `/brands/vercel.svg` | Copiado el 11 de octubre de 2026. Triángulo negro. Origen citado: vercel.com/geist/brands. |
 | Supabase | `/brands/supabase.svg` | Copiado el 11 de octubre de 2026. Isotipo verde sin degradado. Origen citado: repositorio de Supabase. |
