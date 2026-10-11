@@ -985,5 +985,57 @@
     "body": "Compará Go, Plus y los tres niveles de Pro según tu uso. Los precios están en dólares, así que el total en pesos depende de la cotización de tu tarjeta.",
     "seoTitle": "ChatGPT Argentina: planes y costo estimado en pesos",
     "seoDescription": "Precios de ChatGPT Go, Plus y Pro en dólares, y cuánto suman en pesos según la cotización de tu tarjeta."
+  },
+  {
+    "id": "claude",
+    "slug": "claude",
+    "name": "Claude",
+    "category": "inteligencia-artificial",
+    "officialUrl": "https://claude.com/es/pricing",
+    "logo": "/brands/claude.svg",
+    "logoAltMode": "decorative",
+    "description": "Asistente de inteligencia artificial de Anthropic. Pro cuesta USD 20 por mes o USD 200 por año, y Max desde USD 100 por mes, más impuestos.",
+    "aliases": [
+      "claude",
+      "claude ai",
+      "anthropic",
+      "claude pro",
+      "claude max",
+      "claude code"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://claude.com/es/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Claude en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página oficial publicaba Pro a USD 20 por mes o USD 200 por año, y Max desde USD 100 por mes. También hay un plan gratis."
+      },
+      {
+        "question": "¿Esos precios incluyen impuestos?",
+        "answer": "No. La página aclara que no incluyen impuestos aplicables, así que sumamos el IVA del 21%. La percepción del 30% depende de cómo pagues y queda sin resolver."
+      },
+      {
+        "question": "¿Cómo se calcula en pesos?",
+        "answer": "El precio está en dólares. Cargá la cotización a la que te cobra tu tarjeta y el resultado queda como simulación."
+      },
+      {
+        "question": "¿Conviene Pro anual?",
+        "answer": "Si lo vas a usar todo el año, sí. Equivale a USD 16,67 por mes (la página lo redondea a USD 17), contra USD 20 pagando mes a mes, pero se paga todo por adelantado."
+      },
+      {
+        "question": "¿Cuánto cuesta Max 20x?",
+        "answer": "La página no lo publica. Solo dice que Max cuesta desde USD 100, que es el precio de Max 5x. Si lo pagás, cargá el importe de tu resumen."
+      }
+    ],
+    "tags": [
+      "IA"
+    ],
+    "secondaryCategories": [],
+    "body": "Compará Pro mensual, Pro anual y Max según cuánto uses Claude. Los precios están en dólares y no incluyen impuestos, así que el total en pesos depende de tu tarjeta.",
+    "seoTitle": "Claude Argentina: precios de Pro y Max y costo estimado",
+    "seoDescription": "Precios de Claude Pro y Max en dólares, con el IVA sumado. Calculá cuánto suma a tu presupuesto según la cotización de tu tarjeta."
   }
 ]
