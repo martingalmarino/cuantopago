@@ -636,7 +636,7 @@
     "officialUrl": "https://mubi.com/es/ar/memberships",
     "logo": "/brands/mubi.svg",
     "logoAltMode": "decorative",
-    "description": "Cine por suscripción para sumar a tu presupuesto de entretenimiento.",
+    "description": "Cine de autor sin anuncios, con descargas en iOS y Android. La página argentina publica MUBI Classic en pesos, por mes o en un pago anual.",
     "aliases": [
       "mubi"
     ],
@@ -646,28 +646,36 @@
       "https://es.help.mubi.com/article/1251-cual-es-mi-fecha-de-facturacion",
       "https://es.help.mubi.com/article/890-que-es-el-programa-para-estudiantes-de-mubi"
     ],
-    "verificationStatus": "unverified",
+    "verificationStatus": "partial",
     "faqs": [
       {
-        "question": "¿La modalidad mensual se cobra el mismo día de cada mes?",
-        "answer": "La ayuda de MUBI describe ciclos de 30 días. Confirmá el canal de contratación y la fecha de renovación de tu cuenta."
+        "question": "¿Cuánto cuesta MUBI en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página oficial publicaba MUBI Classic a ARS 9.999 por mes o ARS 82.800 por año, cobrado en un pago."
       },
       {
-        "question": "¿Por qué el equivalente mensual puede diferir del cargo?",
-        "answer": "El equivalente permite comparar presupuestos. Un cargo cada cierta cantidad de días sigue un calendario distinto al de una mensualidad fija."
+        "question": "¿Conviene el pago anual?",
+        "answer": "Si lo vas a usar todo el año, sí. Equivale a ARS 6.900 por mes y la página habla de un ahorro del 31%. A cambio, pagás todo junto."
       },
       {
-        "question": "¿Qué falta verificar?",
-        "answer": "Descartar valores en BRL devueltos por la URL argentina."
+        "question": "¿El precio incluye impuestos?",
+        "answer": "La página no lo aclara. No sumamos IVA. La percepción del 30% depende de cómo pagues y queda sin resolver."
+      },
+      {
+        "question": "¿Cuenta la prueba gratis de 7 días?",
+        "answer": "No la aplicamos. El presupuesto usa el precio completo."
+      },
+      {
+        "question": "¿Hay precio para estudiantes?",
+        "answer": "MUBI tiene un programa para estudiantes, pero la página de membresías no publica su precio para Argentina."
       }
     ],
     "tags": [
       "Cine"
     ],
     "secondaryCategories": [],
-    "body": "Compará las modalidades de MUBI y el desembolso de cada renovación. Prestá atención al ciclo real de facturación al evaluar su equivalente mensual.",
+    "body": "Compará MUBI Classic mensual con el pago anual. El anual sale más barato por mes, pero se cobra en un solo pago.",
     "seoTitle": "MUBI Argentina: suscripción y costo estimado",
-    "seoDescription": "Consultá modalidades de MUBI en Argentina y calculá su impacto en tu presupuesto. Compará el pago por ciclo y el equivalente mensual."
+    "seoDescription": "Precio de MUBI Classic en Argentina, mensual o anual. Calculá cuánto suma a tu presupuesto de suscripciones."
   },
   {
     "id": "f1-tv",
