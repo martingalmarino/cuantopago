@@ -109,7 +109,7 @@ function priceLabel(plan: PlanRecord): string {
                 <p class="meta">Equivalente mensual: {formatPrice(monthlyPublishedMinor(plan) ?? plan.amountMinor, plan.currency)}. No es una cuota.</p>
               )}
               {plan.promotion && (
-                <p class="meta">Promo {formatPrice(plan.promotion.amountMinor, plan.promotion.currency)} por {plan.promotion.durationCycles} ciclos. El presupuesto usa la lista salvo que la actives.</p>
+                <p class="meta">Promo {formatPrice(plan.promotion.amountMinor, plan.promotion.currency)} por {plan.promotion.durationCycles} {plan.promotion.durationCycles === 1 ? 'ciclo' : 'ciclos'}. El presupuesto usa la lista salvo que la actives.</p>
               )}
               {plan.notes && <p class="meta">{plan.notes}</p>}
             </article>

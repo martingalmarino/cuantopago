@@ -19,7 +19,7 @@ Verificación del 8 de octubre de 2026. Lo que no figura acá sí quedó en `src
 - Crunchyroll Fan y Mega Fan tienen precio mensual y anual en pesos, más impuestos, leídos el 2026-10-11. Ultimate Fan no aparece en la página argentina.
 - MUBI Classic tiene precio mensual y anual en pesos, leídos el 2026-10-11. La página no aclara impuestos. El plan estudiantil y MUBI GO no publican precio.
 - F1 TV: Access, Pro y Premium no tienen disponibilidad argentina confirmada. No hay planes en el selector.
-- DGO: el banner de 47.999 no tiene plan ni período. El tarifario de noviembre y diciembre de 2025 no es un precio actual. Lite, Básico y Full no se publicaron.
+- DGO tiene cuatro planes en pesos con IVA incluido, leídos el 2026-10-11. Los descuentos de Fútbol Total y TV duran 1 mes. Los extras solo figuran en las preguntas frecuentes, no se pueden sumar en la calculadora.
 - Flow Full y Flow+ sí tienen lista y promo observadas el 2026-10-08. Los netos 16.143 y 44.824 quedan como evidencia, no como otra oferta. Falta confirmar cliente, domicilio y vigencia para usar la promo.
 - Microsoft 365 Personal, Familia y Premium tienen precio mensual y anual, pero no está confirmado si incluyen impuestos. No se inventó una alícuota.
 - Canva Pro y Negocios tienen precio mensual y anual en pesos, leídos sin sesión el 2026-10-11. Una captura enviada el mismo día mostró 9.300 y 13.500 por mes; se usó lo que muestra la página sin sesión. No aclara impuestos. Los planes diarios y semanales no tienen monto.

@@ -723,10 +723,10 @@
     "slug": "dgo",
     "name": "DGO",
     "category": "tv-en-vivo",
-    "officialUrl": "https://www.directvgo.com/ar/destacado",
+    "officialUrl": "https://www.directvgo.com/ar/home",
     "logo": "/brands/dgo.png",
     "logoAltMode": "decorative",
-    "description": "Televisión y streaming para comparar un abono base y sus adicionales.",
+    "description": "Televisión en vivo y streaming de DIRECTV. Cuatro planes en pesos con IVA incluido, desde Lite + DSPORTS hasta Streaming con Prime Video, Disney+ y HBO Max.",
     "aliases": [
       "dgo",
       "directv go",
@@ -734,30 +734,37 @@
     ],
     "overlapNote": null,
     "sourceUrls": [
-      "https://www.directvgo.com/ar/destacado",
-      "https://www.directvgo.com/documents/d/ecommerce/precios-DGO-argentina-noviembre-diciembre-2025",
+      "https://www.directvgo.com/ar/home",
       "https://www.directvgo.com/ar/legales"
     ],
-    "verificationStatus": "unverified",
+    "verificationStatus": "partial",
     "faqs": [
       {
-        "question": "¿Debo sumar DGO si ya tengo DIRECTV?",
-        "answer": "Algunos planes de DIRECTV incluyen acceso. Revisá tu contrato y registrá los cargos reales para evitar duplicarlos."
+        "question": "¿Cuánto cuesta DGO en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página oficial publicaba Lite + DSPORTS a $ 12.900, TV a $ 24.500, Fútbol Total a $ 34.900 y Streaming a $ 35.200 por mes."
       },
       {
-        "question": "¿Los packs forman parte del precio base?",
-        "answer": "Depende de la oferta. La calculadora debe mostrar qué está incluido y cuánto cuesta cada adicional seleccionado."
+        "question": "¿Los precios incluyen impuestos?",
+        "answer": "Sí. La página muestra también el precio sin impuestos nacionales, y la diferencia es el IVA del 21%. No sumamos nada más."
       },
       {
-        "question": "¿Qué falta verificar?",
-        "answer": "Reemplazar los candidatos históricos por los nombres vigentes antes de publicarlos."
+        "question": "¿Cuentan los descuentos?",
+        "answer": "Fútbol Total baja a $ 31.900 y TV a $ 19.900, pero solo el primer mes. Los mostramos como promoción y el presupuesto usa el precio regular."
+      },
+      {
+        "question": "¿Qué plataformas incluye cada plan?",
+        "answer": "Streaming incluye Prime Video, Disney+ Premium, HBO Max y NFL Game Pass. Fútbol Total incluye Prime Video, Pack Fútbol y NFL Game Pass. TV incluye Prime Video. Si ya pagás alguna por separado, podrías estar pagándola dos veces."
+      },
+      {
+        "question": "¿Cuánto cuestan los extras?",
+        "answer": "La página publica Paramount+ a $ 6.750, Atresplayer a $ 9.300, Universal+ a $ 11.800, HBO Max a $ 11.900 y Pack Fútbol a $ 26.500 por mes. Se suman al plan."
       }
     ],
     "tags": [],
     "secondaryCategories": [],
-    "body": "Armá el costo a partir de la oferta que contratás. Distinguí canales y plataformas incluidas, packs adicionales y promociones temporales.",
+    "body": "Compará los cuatro planes de DGO según el fútbol y las plataformas que quieras. Si ya pagás Prime Video, Disney+ o HBO Max por separado, revisá si el plan los incluye.",
     "seoTitle": "DGO Argentina: planes, packs y costo mensual",
-    "seoDescription": "Compará planes y adicionales de DGO en Argentina. Separá el abono base de los packs y sumá el costo a tu presupuesto."
+    "seoDescription": "Precios de DGO en Argentina con IVA incluido: Lite + DSPORTS, TV, Fútbol Total y Streaming. Mirá qué plataformas trae cada plan."
   },
   {
     "id": "flow",

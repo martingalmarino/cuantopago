@@ -1,5 +1,194 @@
 [
   {
+    "id": "dgo-futbol-total",
+    "serviceId": "dgo",
+    "availableInArgentina": true,
+    "name": "Fútbol Total",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "ARS",
+    "amountMinor": 3490000,
+    "taxInclusion": "included",
+    "otherChargesNoted": false,
+    "taxRuleIds": [],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": 4,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": null
+    },
+    "sourceUrl": "https://www.directvgo.com/ar/home",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Liga Profesional, Copa Argentina, Libertadores, Sudamericana, ligas europeas y NFL. 109 canales más 20 gratuitos. La página aclara que el valor promocional vale hasta el 31/12/26. Incluye IVA: la página muestra el precio sin impuestos nacionales y la diferencia es del 21%.",
+    "selectable": true,
+    "promotion": {
+      "amountMinor": 3190000,
+      "currency": "ARS",
+      "durationCycles": 1,
+      "note": "Descuento publicado por 1 mes. No se aplica solo. Después rige el precio regular."
+    },
+    "entitlements": [
+      {
+        "serviceId": "prime-video",
+        "label": "Prime Video",
+        "capacityGb": null
+      },
+      {
+        "serviceId": null,
+        "label": "Pack Fútbol",
+        "capacityGb": null
+      },
+      {
+        "serviceId": null,
+        "label": "NFL Game Pass",
+        "capacityGb": null
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "dgo-lite-dsports",
+    "serviceId": "dgo",
+    "availableInArgentina": true,
+    "name": "Lite + DSPORTS",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "ARS",
+    "amountMinor": 1290000,
+    "taxInclusion": "included",
+    "otherChargesNoted": false,
+    "taxRuleIds": [],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": 2,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": null
+    },
+    "sourceUrl": "https://www.directvgo.com/ar/home",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Partidos de la Copa Sudamericana, básquet, ciclismo, entretenimiento y noticias. 19 canales más 20 gratuitos. La página aclara que el valor promocional vale hasta el 31/12/26. Incluye IVA: la página muestra el precio sin impuestos nacionales y la diferencia es del 21%.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "dgo-streaming",
+    "serviceId": "dgo",
+    "availableInArgentina": true,
+    "name": "Streaming",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "ARS",
+    "amountMinor": 3520000,
+    "taxInclusion": "included",
+    "otherChargesNoted": false,
+    "taxRuleIds": [],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": 3,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": null
+    },
+    "sourceUrl": "https://www.directvgo.com/ar/home",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Libertadores, Sudamericana, ligas europeas, NFL y Fórmula 1. 19 canales más 20 gratuitos. Incluye IVA: la página muestra el precio sin impuestos nacionales y la diferencia es del 21%.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [
+      {
+        "serviceId": "prime-video",
+        "label": "Prime Video",
+        "capacityGb": null
+      },
+      {
+        "serviceId": "disney-plus",
+        "label": "Disney+ Premium",
+        "capacityGb": null
+      },
+      {
+        "serviceId": "hbo-max",
+        "label": "HBO Max",
+        "capacityGb": null
+      },
+      {
+        "serviceId": null,
+        "label": "NFL Game Pass",
+        "capacityGb": null
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "dgo-tv",
+    "serviceId": "dgo",
+    "availableInArgentina": true,
+    "name": "TV",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "ARS",
+    "amountMinor": 2450000,
+    "taxInclusion": "included",
+    "otherChargesNoted": false,
+    "taxRuleIds": [],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": 4,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": null
+    },
+    "sourceUrl": "https://www.directvgo.com/ar/home",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Libertadores, Sudamericana, ligas europeas y Fórmula 1. 109 canales más 20 gratuitos. La tarjeta muestra Prime Video como incluido. La página aclara que el valor promocional vale hasta el 31/12/26. Incluye IVA: la página muestra el precio sin impuestos nacionales y la diferencia es del 21%.",
+    "selectable": true,
+    "promotion": {
+      "amountMinor": 1990000,
+      "currency": "ARS",
+      "durationCycles": 1,
+      "note": "Descuento publicado por 1 mes. No se aplica solo. Después rige el precio regular."
+    },
+    "entitlements": [
+      {
+        "serviceId": "prime-video",
+        "label": "Prime Video",
+        "capacityGb": null
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
     "id": "netflix-basico",
     "serviceId": "netflix",
     "availableInArgentina": true,

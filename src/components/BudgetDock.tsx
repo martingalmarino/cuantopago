@@ -138,7 +138,7 @@ export default function BudgetDock() {
               ))}
               {selected?.promotion && selected.currency && (
                 <label className="field">
-                  <span>Promo {formatPrice(selected.promotion.amountMinor, selected.promotion.currency)} por {selected.promotion.durationCycles} ciclos. No se activa sola.</span>
+                  <span>Promo {formatPrice(selected.promotion.amountMinor, selected.promotion.currency)} por {selected.promotion.durationCycles} {selected.promotion.durationCycles === 1 ? 'ciclo' : 'ciclos'}. No se activa sola.</span>
                   <input type="checkbox" checked={usePromotion} onChange={(event) => setUsePromotion(event.target.checked)} />
                 </label>
               )}
