@@ -497,41 +497,49 @@
     "slug": "meli-plus",
     "name": "Meli+",
     "category": "paquetes",
-    "officialUrl": "https://www.mercadolibre.com.ar/suscripciones/nivel-6",
-    "logo": null,
-    "logoAltMode": "text-fallback",
-    "description": "Una membresía para evaluar beneficios de compras y entretenimiento en un mismo presupuesto.",
+    "officialUrl": "https://www.mercadolibre.com.ar/melimas",
+    "logo": "/brands/meliplus.png",
+    "logoAltMode": "decorative",
+    "description": "Membresía de Mercado Libre con envíos gratis y cupones. Esencial cuesta $ 5.490 por mes y Total, con Disney+, desde $ 11.990.",
     "aliases": [
       "meli plus",
       "meli+",
       "mercado libre plus"
     ],
-    "overlapNote": "Meli+ Total puede incluir Disney+. Si ya lo pagás por tu cuenta, los dos cargos siguen hasta que confirmes cuál te facturan.",
+    "overlapNote": "Meli+ Total incluye Disney+. Si ya lo pagás por tu cuenta, podrías estar pagándolo dos veces.",
     "sourceUrls": [
+      "https://www.mercadolibre.com.ar/melimas",
       "https://www.mercadolibre.com.ar/suscripciones/melimasv2/planes?is_migrated=true",
-      "https://www.mercadolibre.com.ar/suscripciones/nivel-6",
       "https://www.mercadolibre.com.ar/l/legalesloyatly"
     ],
-    "verificationStatus": "unverified",
+    "verificationStatus": "partial",
     "faqs": [
       {
-        "question": "¿Meli+ y Disney+ se suman siempre por separado?",
-        "answer": "Depende del plan y del canal de contratación. Identificá la prestación incluida y cualquier adicional antes de sumar ambos cargos."
+        "question": "¿Cuánto cuesta Meli+?",
+        "answer": "El 11 de octubre de 2026 la página oficial publicaba Esencial a $ 5.490 por mes y Total desde $ 11.990 por mes."
+      },
+      {
+        "question": "¿Por qué Total dice \"desde\"?",
+        "answer": "El precio de Total depende del plan de Disney+ que elijas. Mercado Libre muestra los niveles recién después de iniciar sesión, así que cargamos el mínimo publicado. Si pagás otro, cargá el importe de tu resumen."
+      },
+      {
+        "question": "¿Qué incluye cada plan?",
+        "answer": "Esencial trae envíos gratis desde $ 15.000, envíos gratis en Restaurantes y Delivery desde $ 10.000, y cupones. Total suma Disney+ y 30% de descuento en HBO Max, Paramount+, Universal+ y Vix Premium."
+      },
+      {
+        "question": "¿Si ya pago Disney+ se cobra dos veces?",
+        "answer": "Si contratás Total y seguís pagando Disney+ por tu cuenta, sí. Mercado Libre indica que podés seguir usando tu cuenta de Disney+, pero tenés que dar de baja el pago anterior."
       },
       {
         "question": "¿La calculadora descuenta el valor de los envíos?",
-        "answer": "No. Los beneficios de compras se muestran por separado; el presupuesto suma los cargos de suscripción que realmente pagás."
-      },
-      {
-        "question": "¿Qué falta verificar?",
-        "answer": "Capturar precio actual de Esencial y Total en cuenta/checkout argentino sin completar compra."
+        "answer": "No. Los beneficios de compras no se restan. El presupuesto suma lo que pagás de suscripción."
       }
     ],
     "tags": [],
     "secondaryCategories": [],
-    "body": "Compará el costo de la membresía con los servicios que ya pagás. Revisá qué está incluido, qué tiene descuento y qué requiere un adicional: son beneficios diferentes.",
+    "body": "Compará Esencial y Total con lo que ya pagás. Si tenés Disney+ por separado, Total puede reemplazarlo; si no, Esencial alcanza para los envíos.",
     "seoTitle": "Meli+ en Argentina: planes y calculadora de costo",
-    "seoDescription": "Compará los planes de Meli+ en Argentina, sus beneficios y los adicionales de streaming. Sumá la membresía a tu presupuesto."
+    "seoDescription": "Precios de Meli+ Esencial y Total en Argentina. Mirá qué incluye cada plan y si te conviene frente a pagar Disney+ por separado."
   },
   {
     "id": "apple-one",

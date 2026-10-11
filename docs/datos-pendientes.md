@@ -14,7 +14,7 @@ Verificación del 8 de octubre de 2026. Lo que no figura acá sí quedó en `src
 - La percepción del 30% de la RG 5617 no se suma: falta saber si el pago accede al mercado de cambios y si el prestador está fuera de la nómina de la RG 5677.
 - No hay selector de provincia ni de pago con dólares propios. Ingresos Brutos no tiene una tasa única cargada.
 - No se publican precios de App Store, Google Play ni operadoras.
-- Meli+ Esencial y Total se nombran, sin monto. No se cargó un precio viejo ni una promo vencida.
+- Meli+ Esencial ($ 5.490) y Total (desde $ 11.990) se leyeron el 2026-10-11. Los niveles de Total según el plan de Disney+ requieren iniciar sesión. La página no detalla impuestos y se toma como precio final.
 - Apple One Individual y Familiar tienen precio argentino en la nota al pie, observado el 2026-10-11: USD 9,95 y USD 11,95. Los USD 12,95 y 16,95 de la misma página son regionales y no se cargaron. El IVA no está aclarado.
 - Crunchyroll Fan y Mega Fan tienen precio mensual y anual en pesos, más impuestos, leídos el 2026-10-11. Ultimate Fan no aparece en la página argentina.
 - MUBI Classic tiene precio mensual y anual en pesos, leídos el 2026-10-11. La página no aclara impuestos. El plan estudiantil y MUBI GO no publican precio.

@@ -288,9 +288,9 @@ describe('catálogo ampliado', () => {
   });
 
   it('no convierte un precio nulo en cero ni guarda el USD 20 de ChatGPT como pesos', () => {
-    const meli = plans.find((plan) => plan.id === 'meli-plus-esencial');
-    expect(meli?.amountMinor).toBeNull();
-    expect(meli?.amountMinor).not.toBe(0);
+    const max20x = plans.find((plan) => plan.id === 'claude-max-20x');
+    expect(max20x?.amountMinor).toBeNull();
+    expect(max20x?.amountMinor).not.toBe(0);
     const plus = plans.find((plan) => plan.id === 'chatgpt-plus');
     expect(plus?.currency).toBe('USD');
     expect(plus?.amountMinor).toBe(2000);
