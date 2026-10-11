@@ -22,6 +22,6 @@ Verificación del 8 de octubre de 2026. Lo que no figura acá sí quedó en `src
 - DGO: el banner de 47.999 no tiene plan ni período. El tarifario de noviembre y diciembre de 2025 no es un precio actual. Lite, Básico y Full no se publicaron.
 - Flow Full y Flow+ sí tienen lista y promo observadas el 2026-10-08. Los netos 16.143 y 44.824 quedan como evidencia, no como otra oferta. Falta confirmar cliente, domicilio y vigencia para usar la promo.
 - Microsoft 365 Personal, Familia y Premium tienen precio mensual y anual, pero no está confirmado si incluyen impuestos. No se inventó una alícuota.
-- Canva Pro y Business mensuales están sin tarifa argentina. Los USD globales y los anuales no se publicaron.
+- Canva Pro y Negocios tienen precio mensual y anual en pesos, leídos sin sesión el 2026-10-11. Una captura enviada el mismo día mostró 9.300 y 13.500 por mes; se usó lo que muestra la página sin sesión. No aclara impuestos. Los planes diarios y semanales no tienen monto.
 - ChatGPT: los USD 8, 20, 100, 200 y 500 no se guardaron como precios argentinos. No hay planes en el selector.
 - No se publicaron las comparaciones apple-one-vs-servicios-por-separado, meli-plus-vs-disney-plus ni flow-vs-dgo.

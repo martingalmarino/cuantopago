@@ -829,39 +829,46 @@
     "slug": "canva",
     "name": "Canva",
     "category": "diseno",
-    "officialUrl": "https://www.canva.com/es_ar/pro/",
+    "officialUrl": "https://www.canva.com/es_ar/precios/",
     "logo": null,
     "logoAltMode": "text-fallback",
-    "description": "Planes de diseño para comparar el gasto individual y por equipo.",
+    "description": "Diseño con plantillas, contenido prémium y herramientas con IA. La página argentina publica Pro y Negocios en pesos, por mes o por año. No dice si los precios incluyen impuestos.",
     "aliases": [
       "canva",
       "canva pro"
     ],
     "overlapNote": null,
     "sourceUrls": [
-      "https://www.canva.com/es_ar/pro/",
-      "https://www.canva.com/pricing/"
+      "https://www.canva.com/es_ar/precios/"
     ],
-    "verificationStatus": "unverified",
+    "verificationStatus": "partial",
     "faqs": [
       {
+        "question": "¿Cuánto cuesta Canva en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página de precios de Canva Argentina mostraba Pro a $ 8.500 por mes o $ 68.000 por año, y Negocios a $ 12.000 por mes o $ 120.000 por año, por persona. Canva Gratis cuesta $ 0 y Empresas se cotiza con Ventas."
+      },
+      {
+        "question": "¿Conviene el pago anual?",
+        "answer": "Pro anual equivale a unos $ 5.667 por mes, contra $ 8.500 si pagás mes a mes. Negocios anual equivale a $ 10.000 por mes, contra $ 12.000."
+      },
+      {
         "question": "¿El precio es por persona o por equipo?",
-        "answer": "Depende de la oferta. La calculadora debe indicarlo y multiplicar por licencias únicamente cuando el precio sea unitario."
+        "answer": "Pro es para una persona. Negocios se cobra por persona: si el equipo tiene tres, el cargo se multiplica por tres. La calculadora usa el precio de una persona."
+      },
+      {
+        "question": "¿Esos precios incluyen impuestos?",
+        "answer": "La página no lo aclara. El total queda parcial y la percepción del 30% depende de cómo pagues."
       },
       {
         "question": "¿Puedo registrar un precio anterior?",
         "answer": "Sí. Ingresá lo que efectivamente te cobran y mantenelo identificado como un importe personal, separado del catálogo."
-      },
-      {
-        "question": "¿Qué falta verificar?",
-        "answer": "Obtener tarifa argentina: no trasladar los USD globales automáticamente."
       }
     ],
     "tags": [],
     "secondaryCategories": [],
     "body": "Elegí la modalidad que corresponde a tu uso y revisá si la tarifa es por persona. Separá los adicionales de IA del abono principal.",
     "seoTitle": "Canva Argentina: planes y calculadora de costo",
-    "seoDescription": "Compará Canva Pro y Business para Argentina. Revisá precio por persona, modalidad de pago y adicionales antes de sumar el gasto."
+    "seoDescription": "Compará Canva Pro y Negocios para Argentina. Revisá precio por persona, pago mensual o anual y adicionales antes de sumar el gasto."
   },
   {
     "id": "chatgpt",
