@@ -2656,5 +2656,113 @@
     "entitlements": [],
     "choiceSlots": 0,
     "choiceOptions": []
+  },
+  {
+    "id": "perplexity-pro-annual",
+    "serviceId": "perplexity",
+    "availableInArgentina": true,
+    "name": "Pro (facturación anual)",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 1700,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": 1,
+      "eligibility": null
+    },
+    "sourceUrl": "https://www.perplexity.ai/es/hub/pricing",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Investigación profunda, acceso ampliado a Computer y elección de modelos. Es el equivalente mensual que publica la página con facturación anual. El cobro es un solo pago por año y la página no muestra el total, que puede variar por redondeo. Tampoco publica el precio pagando mes a mes. La página no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "perplexity-max-annual",
+    "serviceId": "perplexity",
+    "availableInArgentina": true,
+    "name": "Max (facturación anual)",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 16700,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": 1,
+      "eligibility": null
+    },
+    "sourceUrl": "https://www.perplexity.ai/es/hub/pricing",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Uso máximo de Computer, 10.000 créditos mensuales y acceso prioritario a funciones nuevas. Es el equivalente mensual que publica la página con facturación anual. El cobro es un solo pago por año y la página no muestra el total, que puede variar por redondeo. Tampoco publica el precio pagando mes a mes. La página no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "perplexity-education-pro",
+    "serviceId": "perplexity",
+    "availableInArgentina": true,
+    "name": "Education Pro",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 1000,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": 1,
+      "eligibility": "Estudiantes y docentes verificados con SheerID"
+    },
+    "sourceUrl": "https://www.perplexity.ai/help-center/es/articles/11187416-que-plan-de-suscripcion-de-perplexity-es-el-adecuado-para-ti",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Solo para estudiantes y docentes verificados con SheerID. Incluye todo lo de Pro. La página no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [],
+    "choiceSlots": 0,
+    "choiceOptions": []
   }
 ]

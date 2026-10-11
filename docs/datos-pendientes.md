@@ -26,4 +26,5 @@ Verificación del 8 de octubre de 2026. Lo que no figura acá sí quedó en `src
 - Adobe: diez planes individuales leídos el 2026-10-11, mensuales con compromiso anual y sujetos a impuestos. Quedan afuera Acrobat, Firefly, Substance 3D, empresas, estudiantes y las promos del primer año. Express Prémium no aclara si el compromiso es anual.
 - ChatGPT Go, Plus y Pro (niveles 100, 200 y 500) tienen precio en dólares, leído el 2026-10-11. La página no aclara impuestos. El almacenamiento de Pro 200 y Pro 500 no está publicado.
 - Claude Pro (mensual y anual) y Max 5x tienen precio en dólares, más impuestos, leído el 2026-10-11. Max 20x queda sin importe: la página solo dice "desde $100".
+- Perplexity Pro (USD 17) y Max (USD 167) son equivalentes mensuales con facturación anual, leídos el 2026-10-11. Falta el total anual y el precio pagando mes a mes. Education Pro (USD 10) sale de la ayuda oficial. No aclara impuestos.
 - No se publicaron las comparaciones apple-one-vs-servicios-por-separado, meli-plus-vs-disney-plus ni flow-vs-dgo.

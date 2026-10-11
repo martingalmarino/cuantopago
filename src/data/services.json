@@ -1037,5 +1037,58 @@
     "body": "Compará Pro mensual, Pro anual y Max según cuánto uses Claude. Los precios están en dólares y no incluyen impuestos, así que el total en pesos depende de tu tarjeta.",
     "seoTitle": "Claude Argentina: precios de Pro y Max y costo estimado",
     "seoDescription": "Precios de Claude Pro y Max en dólares, con el IVA sumado. Calculá cuánto suma a tu presupuesto según la cotización de tu tarjeta."
+  },
+  {
+    "id": "perplexity",
+    "slug": "perplexity",
+    "name": "Perplexity",
+    "category": "inteligencia-artificial",
+    "officialUrl": "https://www.perplexity.ai/es/hub/pricing",
+    "logo": "/brands/perplexity.svg",
+    "logoAltMode": "decorative",
+    "description": "Buscador con inteligencia artificial que cita sus fuentes. Pro equivale a USD 17 por mes y Max a USD 167 por mes, con facturación anual.",
+    "aliases": [
+      "perplexity",
+      "perplexity ai",
+      "perplexity pro",
+      "perplexity max",
+      "comet"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.perplexity.ai/es/hub/pricing",
+      "https://www.perplexity.ai/pro",
+      "https://www.perplexity.ai/help-center/es/articles/11187416-que-plan-de-suscripcion-de-perplexity-es-el-adecuado-para-ti"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Perplexity en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página oficial publicaba Pro a USD 17 por mes y Max a USD 167 por mes, los dos con facturación anual. También hay un plan gratis."
+      },
+      {
+        "question": "¿Por qué no aparece el total anual?",
+        "answer": "La página solo muestra el equivalente mensual. No publica cuánto se cobra en el pago anual ni el precio pagando mes a mes, así que no lo calculamos."
+      },
+      {
+        "question": "¿Cómo se calcula en pesos?",
+        "answer": "El precio está en dólares. Cargá la cotización a la que te cobra tu tarjeta y el resultado queda como simulación."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción del 30% depende de cómo pagues y queda sin resolver."
+      },
+      {
+        "question": "¿Hay precio para estudiantes?",
+        "answer": "Sí. La ayuda de Perplexity publica Education Pro a USD 10 por mes para estudiantes y docentes verificados con SheerID."
+      }
+    ],
+    "tags": [
+      "IA"
+    ],
+    "secondaryCategories": [],
+    "body": "Compará Pro, Max y Education Pro según cuánto uses Perplexity. Los precios están en dólares y los de Pro y Max corresponden a la facturación anual.",
+    "seoTitle": "Perplexity Argentina: precios de Pro y Max y costo estimado",
+    "seoDescription": "Precios de Perplexity Pro, Max y Education Pro en dólares. Calculá cuánto suma a tu presupuesto según la cotización de tu tarjeta."
   }
 ]
