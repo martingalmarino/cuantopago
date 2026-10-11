@@ -1158,5 +1158,150 @@
     "body": "Compará Google AI Plus, Pro y Ultra según cuánto uses Gemini y cuánto almacenamiento necesitás. Si ya pagás Google One o YouTube Premium, mirá qué te cubre cada plan.",
     "seoTitle": "Gemini Argentina: precios de Google AI Plus, Pro y Ultra",
     "seoDescription": "Precios de Gemini en Argentina: Google AI Plus, Pro y Ultra en dólares. Mirá qué almacenamiento y beneficios trae cada plan."
+  },
+  {
+    "id": "github",
+    "slug": "github",
+    "name": "GitHub",
+    "category": "hosting-cloud",
+    "officialUrl": "https://github.com/pricing",
+    "logo": "/brands/github.svg",
+    "logoAltMode": "decorative",
+    "description": "Repositorios de código, CI/CD y Copilot. Team cuesta USD 4 por usuario y Copilot desde USD 10 por mes.",
+    "aliases": [
+      "github",
+      "git hub",
+      "github copilot",
+      "copilot",
+      "github team",
+      "github enterprise"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://github.com/pricing",
+      "https://github.com/features/copilot/plans"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta GitHub?",
+        "answer": "El 11 de octubre de 2026 GitHub publicaba Team a USD 4 y Enterprise desde USD 21 por usuario por mes. Copilot cuesta USD 10 (Pro), USD 39 (Pro+) o USD 100 (Max) por mes. El plan gratis alcanza para repositorios públicos y privados ilimitados."
+      },
+      {
+        "question": "¿Team y Enterprise se cobran por persona?",
+        "answer": "Sí. El precio es por usuario. Si tu equipo tiene cinco personas, multiplicá por cinco o cargá el importe de tu factura."
+      },
+      {
+        "question": "¿Cómo se calcula en pesos?",
+        "answer": "Los precios de GitHub están en dólares. Cargá la cotización a la que te cobra tu tarjeta y el resultado queda como simulación."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción del 30% depende de cómo pagues y queda sin resolver."
+      },
+      {
+        "question": "¿Copilot se paga aparte de Team?",
+        "answer": "Sí. Copilot es una suscripción propia. Codespaces, Git LFS y el uso extra de Actions también se cobran por consumo."
+      }
+    ],
+    "tags": [
+      "Desarrollo"
+    ],
+    "secondaryCategories": [
+      "inteligencia-artificial"
+    ],
+    "body": "Compará los planes de GitHub y de Copilot. Team y Enterprise se cobran por usuario, y Copilot es una suscripción aparte.",
+    "seoTitle": "GitHub Argentina: precios de Team, Enterprise y Copilot",
+    "seoDescription": "Precios de GitHub Team, Enterprise y Copilot en dólares. Calculá cuánto suma a tu presupuesto según la cotización de tu tarjeta."
+  },
+  {
+    "id": "vercel",
+    "slug": "vercel",
+    "name": "Vercel",
+    "category": "hosting-cloud",
+    "officialUrl": "https://vercel.com/pricing",
+    "logo": "/brands/vercel.svg",
+    "logoAltMode": "decorative",
+    "description": "Hosting para aplicaciones web. Pro cuesta USD 20 por mes más impuestos e incluye USD 20 de crédito de uso.",
+    "aliases": [
+      "vercel",
+      "vercel pro",
+      "next.js hosting"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://vercel.com/pricing",
+      "https://vercel.com/docs/pricing/taxes"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Vercel?",
+        "answer": "El 11 de octubre de 2026 Vercel publicaba Pro a USD 20 por mes, con USD 20 de crédito de uso incluido. Hobby es gratis y Enterprise se cotiza aparte."
+      },
+      {
+        "question": "¿Esos precios incluyen impuestos?",
+        "answer": "No. Vercel aclara que los precios no incluyen IVA ni otros impuestos, así que sumamos el IVA del 21%. La percepción del 30% depende de cómo pagues y queda sin resolver."
+      },
+      {
+        "question": "¿Cómo se calcula en pesos?",
+        "answer": "Los precios de Vercel están en dólares. Cargá la cotización a la que te cobra tu tarjeta y el resultado queda como simulación."
+      },
+      {
+        "question": "¿Puedo pagar más de USD 20?",
+        "answer": "Sí. Si el consumo supera el crédito incluido, Vercel cobra la diferencia. Podés poner un límite de gasto en la cuenta. Si tu factura fue distinta, cargá el importe real."
+      }
+    ],
+    "tags": [
+      "Desarrollo"
+    ],
+    "secondaryCategories": [],
+    "body": "Calculá el costo de Vercel Pro con impuestos. El precio fijo incluye un crédito de uso, y lo que lo supere se suma a la factura.",
+    "seoTitle": "Vercel Argentina: precio de Pro con impuestos",
+    "seoDescription": "Precio de Vercel Pro en dólares con el IVA sumado. Calculá cuánto suma a tu presupuesto según la cotización de tu tarjeta."
+  },
+  {
+    "id": "supabase",
+    "slug": "supabase",
+    "name": "Supabase",
+    "category": "hosting-cloud",
+    "officialUrl": "https://supabase.com/pricing",
+    "logo": "/brands/supabase.svg",
+    "logoAltMode": "decorative",
+    "description": "Base de datos Postgres, autenticación y almacenamiento. Pro cuesta desde USD 25 por mes y Team desde USD 599, más impuestos.",
+    "aliases": [
+      "supabase",
+      "supabase pro"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://supabase.com/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Supabase?",
+        "answer": "El 11 de octubre de 2026 Supabase publicaba Pro desde USD 25 y Team desde USD 599 por mes. El plan gratis permite dos proyectos activos."
+      },
+      {
+        "question": "¿Por qué dice \"desde\"?",
+        "answer": "El precio incluye el primer proyecto. Cada proyecto adicional suma desde USD 10 por mes, y el uso que supere los límites del plan se cobra aparte."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "Sí. Supabase aplica los impuestos según tu dirección de facturación, así que sumamos el IVA del 21%. La percepción del 30% depende de cómo pagues y queda sin resolver."
+      },
+      {
+        "question": "¿Cómo se calcula en pesos?",
+        "answer": "Los precios de Supabase están en dólares. Cargá la cotización a la que te cobra tu tarjeta y el resultado queda como simulación."
+      }
+    ],
+    "tags": [
+      "Desarrollo"
+    ],
+    "secondaryCategories": [],
+    "body": "Calculá el costo de Supabase Pro o Team con impuestos. El precio cubre un proyecto, y los proyectos extra y el consumo adicional se suman a la factura.",
+    "seoTitle": "Supabase Argentina: precios de Pro y Team con impuestos",
+    "seoDescription": "Precios de Supabase Pro y Team en dólares con el IVA sumado. Calculá cuánto suma a tu presupuesto según la cotización de tu tarjeta."
   }
 ]

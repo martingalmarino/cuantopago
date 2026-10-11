@@ -214,5 +214,29 @@
     "retrievalDate": "2026-10-11",
     "license": "CC0 1.0. Origen citado: https://gemini.google.com.",
     "limitation": "Isotipo de un solo color, sin el degradado oficial ni el wordmark. Va sobre fondo blanco."
+  },
+  {
+    "serviceId": "github",
+    "file": "/brands/github.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0. Origen citado: https://github.com/logos.",
+    "limitation": "Isotipo Invertocat en negro, sin el wordmark. Va sobre fondo blanco."
+  },
+  {
+    "serviceId": "vercel",
+    "file": "/brands/vercel.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0. Origen citado: https://vercel.com/geist/brands.",
+    "limitation": "Triángulo en negro, sin el wordmark. Va sobre fondo blanco."
+  },
+  {
+    "serviceId": "supabase",
+    "file": "/brands/supabase.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0. Origen citado: https://github.com/supabase/supabase/blob/4031a7549f5d46da7bc79c01d56be4177dc7c114/packages/common/assets/images/supabase-logo-wordmark--light.svg.",
+    "limitation": "Isotipo en un solo verde, sin el degradado ni el wordmark. Va sobre fondo blanco."
   }
 ]

@@ -11,7 +11,8 @@ export type CategoryId =
   | 'tv-en-vivo'
   | 'productividad'
   | 'diseno'
-  | 'inteligencia-artificial';
+  | 'inteligencia-artificial'
+  | 'hosting-cloud';
 export type Channel = 'web-direct' | 'app-store' | 'google-play' | 'operator' | 'bundle';
 
 export interface ServiceFaq {

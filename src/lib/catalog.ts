@@ -37,6 +37,7 @@ export const categoryLabels: Record<CategoryId, string> = {
   productividad: 'Productividad',
   diseno: 'Diseño',
   'inteligencia-artificial': 'Inteligencia artificial',
+  'hosting-cloud': 'Hosting / Cloud',
 };
 
 export function todayIso(date = new Date()): string {
