@@ -206,5 +206,13 @@
     "retrievalDate": "2026-10-11",
     "license": "CC0 1.0. Origen citado: https://www.perplexity.ai.",
     "limitation": "Isotipo en el color de la marca, sin el wordmark. Va sobre fondo blanco."
+  },
+  {
+    "serviceId": "gemini",
+    "file": "/brands/gemini.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0. Origen citado: https://gemini.google.com.",
+    "limitation": "Isotipo de un solo color, sin el degradado oficial ni el wordmark. Va sobre fondo blanco."
   }
 ]

@@ -17,6 +17,7 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | TIDAL | `/brands/tidal.svg` | Copiado el 11 de octubre de 2026. Isotipo negro sin wordmark. Origen citado: tidal.com/press. |
 | Claude | `/brands/claude.svg` | Copiado el 11 de octubre de 2026. Isotipo en el color de la marca, sin wordmark. Origen citado: claude.ai. |
 | Perplexity | `/brands/perplexity.svg` | Copiado el 11 de octubre de 2026. Isotipo en el color de la marca, sin wordmark. Origen citado: perplexity.ai. |
+| Gemini | `/brands/gemini.svg` | Copiado el 11 de octubre de 2026. Isotipo de un color, sin el degradado oficial. Origen citado: gemini.google.com. |
 | Google One | ninguno | No se usa el logo genérico de Google. |
 | iCloud+ | `/brands/icloud.svg` | La marca del paquete es iCloud y el nombre visible es iCloud+. |
 | Crunchyroll | `/brands/crunchyroll.svg` | simple-icons 16.34.0, slug crunchyroll, origen citado crunchyroll.com. |

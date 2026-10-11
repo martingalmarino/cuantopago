@@ -2953,5 +2953,188 @@
     "entitlements": [],
     "choiceSlots": 0,
     "choiceOptions": []
+  },
+  {
+    "id": "gemini-ai-plus",
+    "serviceId": "gemini",
+    "availableInArgentina": true,
+    "name": "Google AI Plus",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 499,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": "400 GB",
+      "memberLimit": 1,
+      "eligibility": "Mayores de 18 años"
+    },
+    "sourceUrl": "https://gemini.google/subscriptions/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "El doble de uso que la versión gratis, acceso a 3.1 Pro, generación de videos y Gemini en Gmail. La página publica el precio en dólares para Argentina y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [
+      {
+        "serviceId": "google-one",
+        "label": "Google One 400 GB",
+        "capacityGb": 400
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "gemini-ai-pro",
+    "serviceId": "gemini",
+    "availableInArgentina": true,
+    "name": "Google AI Pro",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 1999,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": "5 TB",
+      "memberLimit": 1,
+      "eligibility": "Mayores de 18 años"
+    },
+    "sourceUrl": "https://gemini.google/subscriptions/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Cuatro veces el uso de la versión gratis, Gemini en Gmail y Documentos, y YouTube Premium Lite. Lite no se activa si ya tenés YouTube Premium. La página publica el precio en dólares para Argentina y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [
+      {
+        "serviceId": "google-one",
+        "label": "Google One 5 TB",
+        "capacityGb": 5000
+      },
+      {
+        "serviceId": "youtube-premium",
+        "label": "YouTube Premium Lite",
+        "capacityGb": null
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "gemini-ai-ultra-5x",
+    "serviceId": "gemini",
+    "availableInArgentina": true,
+    "name": "Google AI Ultra 5x",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 9999,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": "Desde 20 TB",
+      "memberLimit": 1,
+      "eligibility": "Mayores de 18 años"
+    },
+    "sourceUrl": "https://gemini.google/subscriptions/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Cinco veces los límites de AI Pro, Project Genie y YouTube Premium individual, que la página dice que está disponible en más de 40 países. La página publica el precio en dólares para Argentina y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [
+      {
+        "serviceId": "google-one",
+        "label": "Google One desde 20 TB",
+        "capacityGb": 20000
+      },
+      {
+        "serviceId": "youtube-premium",
+        "label": "YouTube Premium Individual",
+        "capacityGb": null
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "gemini-ai-ultra-20x",
+    "serviceId": "gemini",
+    "availableInArgentina": true,
+    "name": "Google AI Ultra 20x",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 19999,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": "Desde 20 TB",
+      "memberLimit": 1,
+      "eligibility": "Mayores de 18 años"
+    },
+    "sourceUrl": "https://gemini.google/subscriptions/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Veinte veces los límites de AI Pro, Project Genie y YouTube Premium individual, que la página dice que está disponible en más de 40 países. La página publica el precio en dólares para Argentina y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [
+      {
+        "serviceId": "google-one",
+        "label": "Google One desde 20 TB",
+        "capacityGb": 20000
+      },
+      {
+        "serviceId": "youtube-premium",
+        "label": "YouTube Premium Individual",
+        "capacityGb": null
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
   }
 ]

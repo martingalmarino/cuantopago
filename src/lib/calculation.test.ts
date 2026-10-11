@@ -232,10 +232,10 @@ describe('presupuesto', () => {
 });
 
 describe('catálogo ampliado', () => {
-  it('importa 26 servicios sin ids repetidos', () => {
-    expect(services).toHaveLength(26);
-    expect(new Set(services.map((service) => service.id)).size).toBe(26);
-    expect(new Set(services.map((service) => service.slug)).size).toBe(26);
+  it('importa 27 servicios sin ids repetidos', () => {
+    expect(services).toHaveLength(27);
+    expect(new Set(services.map((service) => service.id)).size).toBe(27);
+    expect(new Set(services.map((service) => service.slug)).size).toBe(27);
     expect(new Set(plans.map((plan) => plan.id)).size).toBe(plans.length);
   });
 

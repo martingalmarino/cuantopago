@@ -1105,5 +1105,58 @@
     "body": "Compará Pro, Max y Education Pro según cuánto uses Perplexity. Los precios están en dólares y los de Pro y Max corresponden a la facturación anual.",
     "seoTitle": "Perplexity Argentina: precios de Pro y Max y costo estimado",
     "seoDescription": "Precios de Perplexity Pro, Max y Education Pro en dólares. Calculá cuánto suma a tu presupuesto según la cotización de tu tarjeta."
+  },
+  {
+    "id": "gemini",
+    "slug": "gemini",
+    "name": "Gemini",
+    "category": "inteligencia-artificial",
+    "officialUrl": "https://gemini.google/subscriptions/",
+    "logo": "/brands/gemini.svg",
+    "logoAltMode": "decorative",
+    "description": "Asistente de inteligencia artificial de Google. Los planes Google AI cuestan desde USD 4,99 por mes e incluyen almacenamiento de Google One.",
+    "aliases": [
+      "gemini",
+      "google gemini",
+      "google ai",
+      "google ai plus",
+      "google ai pro",
+      "google ai ultra",
+      "gemini advanced"
+    ],
+    "overlapNote": "Los planes Google AI incluyen almacenamiento de Google One, y Pro y Ultra suman YouTube Premium. Si ya pagás alguno por separado, podrías estar pagándolo dos veces.",
+    "sourceUrls": [
+      "https://gemini.google/subscriptions/"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Gemini en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página oficial, con Argentina elegida, publicaba Google AI Plus a USD 4,99, Pro a USD 19,99 y Ultra a USD 99,99 o USD 199,99 por mes. También hay un plan gratis."
+      },
+      {
+        "question": "¿Cómo se calcula en pesos?",
+        "answer": "El precio está en dólares. Cargá la cotización a la que te cobra tu tarjeta y el resultado queda como simulación."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción del 30% depende de cómo pagues y queda sin resolver."
+      },
+      {
+        "question": "¿Reemplaza a Google One?",
+        "answer": "Sí, en almacenamiento: Plus trae 400 GB, Pro 5 TB y Ultra desde 20 TB. Si pagás Google One aparte, revisá si te conviene darlo de baja."
+      },
+      {
+        "question": "¿Incluye YouTube Premium?",
+        "answer": "Pro incluye YouTube Premium Lite, que no se activa si ya tenés Premium. Ultra incluye YouTube Premium individual en los países donde Google lo ofrece con este plan."
+      }
+    ],
+    "tags": [
+      "IA"
+    ],
+    "secondaryCategories": [],
+    "body": "Compará Google AI Plus, Pro y Ultra según cuánto uses Gemini y cuánto almacenamiento necesitás. Si ya pagás Google One o YouTube Premium, mirá qué te cubre cada plan.",
+    "seoTitle": "Gemini Argentina: precios de Google AI Plus, Pro y Ultra",
+    "seoDescription": "Precios de Gemini en Argentina: Google AI Plus, Pro y Ultra en dólares. Mirá qué almacenamiento y beneficios trae cada plan."
   }
 ]
