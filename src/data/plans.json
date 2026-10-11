@@ -641,6 +641,96 @@
     "notes": "Precio mensual publicado. La página no dice si incluye impuestos. Sin anuncios, en segundo plano y con descargas en la mayoría del contenido que no es música, salvo Shorts. Los videos musicales pueden seguir con anuncios, y también puede haber anuncios al explorar o buscar. No incluye YouTube Music."
   },
   {
+    "id": "youtube-music-individual",
+    "serviceId": "youtube-music",
+    "availableInArgentina": true,
+    "name": "Individual",
+    "billingPeriodMonths": 1,
+    "currency": "ARS",
+    "amountMinor": 329900,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": false,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": "Escucha offline",
+      "storage": null,
+      "memberLimit": 1,
+      "eligibility": null
+    },
+    "sourceUrl": "https://www.youtube.com/musicpremium",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "YouTube Music Premium, precio mensual publicado. La página no dice si incluye impuestos. Música sin anuncios, sin conexión y con la pantalla apagada. La prueba de 1 mes por ARS 0 es solo para miembros nuevos y no se aplica sola."
+  },
+  {
+    "id": "youtube-music-dos-personas",
+    "serviceId": "youtube-music",
+    "availableInArgentina": true,
+    "name": "Dos personas",
+    "billingPeriodMonths": 1,
+    "currency": "ARS",
+    "amountMinor": 439900,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": false,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": "Escucha offline",
+      "storage": null,
+      "memberLimit": 2,
+      "eligibility": "Otro miembro del grupo familiar, mayor de 13 años"
+    },
+    "sourceUrl": "https://www.youtube.com/musicpremium",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "YouTube Music Premium, precio mensual publicado. La página no dice si incluye impuestos. La prueba de 1 mes por ARS 0 es solo para miembros nuevos y no se aplica sola."
+  },
+  {
+    "id": "youtube-music-familiar",
+    "serviceId": "youtube-music",
+    "availableInArgentina": true,
+    "name": "Familiar",
+    "billingPeriodMonths": 1,
+    "currency": "ARS",
+    "amountMinor": 549900,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": false,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": "Escucha offline",
+      "storage": null,
+      "memberLimit": 6,
+      "eligibility": "Hasta 5 miembros de la familia, mayores de 13 años"
+    },
+    "sourceUrl": "https://www.youtube.com/musicpremium",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "YouTube Music Premium, precio mensual publicado. La página no dice si incluye impuestos. La prueba de 1 mes por ARS 0 es solo para miembros nuevos y no se aplica sola."
+  },
+  {
     "id": "apple-music-individual",
     "serviceId": "apple-music",
     "availableInArgentina": true,

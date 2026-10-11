@@ -313,7 +313,7 @@
     "officialUrl": "https://music.youtube.com/",
     "logo": "/brands/youtubemusic.svg",
     "logoAltMode": "decorative",
-    "description": "Música de YouTube. No verificamos un precio argentino aparte. Puede coincidir con lo que ya trae YouTube Premium, pero no lo restamos automáticamente.",
+    "description": "Música sin anuncios, sin conexión y con la pantalla apagada. En Argentina se vende aparte como YouTube Music Premium, y también viene incluido en YouTube Premium. No dice si los precios incluyen impuestos.",
     "aliases": [
       "youtube music",
       "yt music",
@@ -321,22 +321,26 @@
     ],
     "overlapNote": "YouTube Premium describe funciones de música en YouTube Music. Tener las dos suscripciones puede superponerse; el ahorro no se calcula solo.",
     "sourceUrls": [
-      "https://music.youtube.com/",
+      "https://www.youtube.com/musicpremium",
       "https://www.youtube.com/premium"
     ],
-    "verificationStatus": "unverified",
+    "verificationStatus": "partial",
     "faqs": [
       {
-        "question": "¿Tiene un precio propio verificado?",
-        "answer": "No en esta versión. Podés cargar el importe que te cobran."
+        "question": "¿Cuánto cuesta YouTube Music en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página oficial de YouTube Music Premium publicaba ARS 3.299 por mes para Individual, ARS 4.399 para Dos personas y ARS 5.499 para Familiar."
+      },
+      {
+        "question": "¿Viene incluido en YouTube Premium?",
+        "answer": "Sí. YouTube Premium (desde ARS 4.499) suma YouTube Music sin anuncios y además quita los anuncios en todo YouTube. Si solo querés música, Music Premium es más barato."
       },
       {
         "question": "¿Se descuenta si ya pago YouTube Premium?",
-        "answer": "No. La superposición se informa, pero no se convierte en un ahorro automático."
+        "answer": "No se resta solo. Si tenés los dos cargados, revisá cuál pagás de verdad para no contarlo dos veces."
       },
       {
-        "question": "¿Dónde miro la oferta?",
-        "answer": "En YouTube Music y en la página de YouTube Premium."
+        "question": "¿Esos precios incluyen impuestos?",
+        "answer": "La página no lo aclara. El total queda parcial y la percepción del 30% depende de cómo pagues."
       }
     ]
   },
