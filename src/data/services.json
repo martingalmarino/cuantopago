@@ -586,7 +586,7 @@
     "officialUrl": "https://www.crunchyroll.com/es/premium",
     "logo": "/brands/crunchyroll.svg",
     "logoAltMode": "decorative",
-    "description": "Streaming de anime para comparar planes, dispositivos y alternativas de pago.",
+    "description": "Anime sin anuncios, con episodios poco después de Japón y contenido sin conexión. La página argentina publica Fan y Mega Fan en pesos, por mes o por año, más impuestos.",
     "aliases": [
       "crunchyroll",
       "crunchy"
@@ -597,19 +597,27 @@
       "https://help.crunchyroll.com/hc/es/articles/19133832775956--Por-qu%C3%A9-no-puedo-transmitir-contenido-en-varios-dispositivos-al-mismo-tiempo",
       "https://help.crunchyroll.com/hc/es/articles/18812304848148--Qu%C3%A9-m%C3%A9todos-de-pago-aceptan"
     ],
-    "verificationStatus": "unverified",
+    "verificationStatus": "partial",
     "faqs": [
       {
-        "question": "¿Qué debo comparar además del precio?",
-        "answer": "La disponibilidad del plan en Argentina, las descargas y la cantidad de reproducciones simultáneas."
+        "question": "¿Cuánto cuesta Crunchyroll en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página oficial publicaba Fan a ARS 5.199 por mes o ARS 37.399 por año, y Mega Fan a ARS 6.099 por mes o ARS 43.899 por año."
       },
       {
-        "question": "¿Puedo usar lo que figura en mi resumen?",
-        "answer": "Sí. Cargá el importe final y su período de cobro para incorporarlo al presupuesto sin agregar impuestos otra vez."
+        "question": "¿Esos precios incluyen impuestos?",
+        "answer": "No. La página los marca «+ impuestos aplicables», así que sumamos el IVA del 21%. La percepción del 30% depende de cómo pagues y queda sin resolver."
       },
       {
-        "question": "¿Qué falta verificar?",
-        "answer": "Obtener tarifa en contexto argentino: /es es idioma, no prueba del país de cobro; /ar puede significar idioma árabe."
+        "question": "¿Conviene el pago anual?",
+        "answer": "Sí, si vas a seguir todo el año. Fan anual equivale a ARS 3.116,58 por mes y Mega Fan a ARS 3.658,25, contra 5.199 y 6.099 pagando mes a mes. La página habla de un ahorro del 40%."
+      },
+      {
+        "question": "¿Qué cambia entre Fan y Mega Fan?",
+        "answer": "Fan permite 1 dispositivo a la vez. Mega Fan permite 4 y suma Crunchyroll Game Vault. Los dos tienen todo el catálogo, sin anuncios y con contenido sin conexión."
+      },
+      {
+        "question": "¿Cuenta la prueba gratis de 7 días?",
+        "answer": "No la aplicamos. Es para suscriptores nuevos que cumplan los requisitos, y después el plan se renueva solo al precio elegido."
       }
     ],
     "tags": [
@@ -618,7 +626,7 @@
     "secondaryCategories": [],
     "body": "Elegí según cómo mirás anime: el precio es una parte de la comparación. Revisá los dispositivos simultáneos, las descargas y el período de contratación de cada oferta.",
     "seoTitle": "Crunchyroll Argentina: planes y precio estimado",
-    "seoDescription": "Compará los planes de Crunchyroll para Argentina, sus diferencias y el costo estimado. Agregá tu suscripción al presupuesto mensual."
+    "seoDescription": "Compará Crunchyroll Fan y Mega Fan en Argentina, por mes o por año, con el IVA sumado. Agregá tu suscripción al presupuesto mensual."
   },
   {
     "id": "mubi",

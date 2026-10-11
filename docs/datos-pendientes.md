@@ -16,7 +16,7 @@ Verificación del 8 de octubre de 2026. Lo que no figura acá sí quedó en `src
 - No se publican precios de App Store, Google Play ni operadoras.
 - Meli+ Esencial y Total se nombran, sin monto. No se cargó un precio viejo ni una promo vencida.
 - Apple One Individual y Familiar tienen precio argentino en la nota al pie, observado el 2026-10-11: USD 9,95 y USD 11,95. Los USD 12,95 y 16,95 de la misma página son regionales y no se cargaron. El IVA no está aclarado.
-- Crunchyroll Fan y Mega Fan mensuales están sin importe. El anual no se publicó. No se copiaron USD, MXN ni el plan Ultimate Fan.
+- Crunchyroll Fan y Mega Fan tienen precio mensual y anual en pesos, más impuestos, leídos el 2026-10-11. Ultimate Fan no aparece en la página argentina.
 - MUBI: la URL argentina devolvió reales brasileños, descartados. Quedan los ciclos de 30 y 360 días, sin precio. El plan estudiantil y MUBI GO no se publicaron.
 - F1 TV: Access, Pro y Premium no tienen disponibilidad argentina confirmada. No hay planes en el selector.
 - DGO: el banner de 47.999 no tiene plan ni período. El tarifario de noviembre y diciembre de 2025 no es un precio actual. Lite, Básico y Full no se publicaron.
