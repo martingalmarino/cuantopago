@@ -871,6 +871,59 @@
     "seoDescription": "Compará Canva Pro y Negocios para Argentina. Revisá precio por persona, pago mensual o anual y adicionales antes de sumar el gasto."
   },
   {
+    "id": "adobe",
+    "slug": "adobe",
+    "name": "Adobe",
+    "category": "diseno",
+    "officialUrl": "https://www.adobe.com/ar/creativecloud/plans.html",
+    "logo": null,
+    "logoAltMode": "text-fallback",
+    "description": "Photoshop, Illustrator, Premiere y el resto de Creative Cloud, por app o en paquete. La página argentina publica precios en pesos por mes con compromiso anual, sujetos a impuestos.",
+    "aliases": [
+      "adobe",
+      "creative cloud",
+      "photoshop",
+      "illustrator",
+      "premiere",
+      "after effects",
+      "lightroom",
+      "indesign",
+      "adobe express"
+    ],
+    "overlapNote": "Creative Cloud Pro y Standard ya incluyen varias apps sueltas. Si sumás una app y un paquete, revisá que no se repitan.",
+    "sourceUrls": [
+      "https://www.adobe.com/ar/creativecloud/plans.html"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Adobe en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página de planes publicaba $ 26.899,99 por mes para Photoshop, Illustrator, Premiere, After Effects e InDesign; $ 23.400 para Fotografía; $ 14.100 para Lightroom; $ 11.700 para Express Prémium; $ 62.100 para Creative Cloud Standard y $ 79.700 para Creative Cloud Pro."
+      },
+      {
+        "question": "¿Esos precios incluyen impuestos?",
+        "answer": "No. La página aclara que todos los precios están sujetos a los impuestos locales aplicables. Por eso sumamos el IVA del 21%. La percepción del 30% depende de cómo pagues y queda sin resolver."
+      },
+      {
+        "question": "¿Qué quiere decir «anual, facturación mensual»?",
+        "answer": "Te comprometés por 12 meses y Adobe te cobra una vez por mes. La calculadora usa ese cargo mensual."
+      },
+      {
+        "question": "¿Conviene una app sola o un paquete?",
+        "answer": "Una app cuesta $ 26.899,99. Fotografía trae Photoshop y Lightroom por $ 23.400. Si usás tres apps o más, Creative Cloud Standard o Pro puede salir más barato que pagarlas por separado."
+      },
+      {
+        "question": "¿Están las promos y los planes de Firefly?",
+        "answer": "No. Las promos del primer año, los planes de Firefly, Acrobat, Substance 3D y los planes para empresas o estudiantes quedan afuera. Si pagás alguno, podés cargar tu importe."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Elegí entre una app suelta, el plan Fotografía o un paquete de Creative Cloud. Los precios son mensuales con compromiso anual y no incluyen impuestos.",
+    "seoTitle": "Adobe en Argentina: precios de Photoshop, Illustrator y Creative Cloud",
+    "seoDescription": "Compará los precios de Photoshop, Illustrator, Premiere, Lightroom y Creative Cloud en Argentina, con IVA sumado y compromiso anual."
+  },
+  {
     "id": "chatgpt",
     "slug": "chatgpt",
     "name": "ChatGPT",

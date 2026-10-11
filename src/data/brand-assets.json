@@ -176,6 +176,14 @@
     "limitation": "Ícono cuadrado con degradé, recortado a 160×160 con las esquinas transparentes."
   },
   {
+    "serviceId": "adobe",
+    "file": null,
+    "sourceUrl": null,
+    "retrievalDate": "2026-10-11",
+    "license": null,
+    "limitation": "simple-icons 16.34.0 no trae marcas de Adobe. Se muestra el nombre."
+  },
+  {
     "serviceId": "chatgpt",
     "file": null,
     "sourceUrl": "https://chatgpt.com/pricing/",
