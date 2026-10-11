@@ -24,6 +24,8 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | Starlink | `/brands/starlink.png` | Archivo oficial `logo_black.png` de starlink.com, descargado el 11 de octubre de 2026. Wordmark negro de 612×101, sin modificaciones. |
 | Personal Fibertel | `/brands/personal.svg` | SVG oficial del encabezado de personal.com.ar, descargado el 11 de octubre de 2026. Wordmark celeste de 96×22, sin modificaciones. |
 | Claro Internet | `/brands/claro.svg` | SVG oficial del encabezado de claro.com.ar, descargado el 11 de octubre de 2026. Logo rojo de 90×32, sin modificaciones. |
+| Figma | `/brands/figma.svg` | simple-icons 16.34.0, slug figma, origen citado figma.com/using-the-figma-brand. Isotipo en un solo color. |
+| FigJam | `/brands/figjam.svg` | Icono oficial del menú de productos de figma.com, copiado el 11 de octubre de 2026. Nota adhesiva violeta sobre fondo lila. |
 | iplan | `/brands/iplan.png` | PNG oficial del encabezado de iplan.com.ar, descargado el 11 de octubre de 2026. Wordmark de 149×60, sin modificaciones. |
 | Google One | ninguno | No se usa el logo genérico de Google. |
 | iCloud+ | `/brands/icloud.svg` | La marca del paquete es iCloud y el nombre visible es iCloud+. |

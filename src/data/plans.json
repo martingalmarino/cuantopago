@@ -2522,6 +2522,486 @@
     "choiceOptions": []
   },
   {
+    "id": "figma-profesional-full",
+    "serviceId": "figma",
+    "availableInArgentina": true,
+    "name": "Profesional · Puesto Full",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 2000,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": "Precio por puesto"
+    },
+    "sourceUrl": "https://www.figma.com/es-la/pricing/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio por puesto con facturación mensual. Puesto Full: acceso completo a Figma Design, Make, Draw, Sites, Dev Mode, FigJam, Slides y Buzz. Más de 3.000 créditos de IA por mes. La página publica el precio en dólares y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [
+      {
+        "serviceId": "figjam",
+        "label": "FigJam",
+        "capacityGb": null
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "figma-profesional-full-anual",
+    "serviceId": "figma",
+    "availableInArgentina": true,
+    "name": "Profesional · Puesto Full (facturación anual)",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 1600,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": "Precio por puesto"
+    },
+    "sourceUrl": "https://www.figma.com/es-la/pricing/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio por puesto. Puesto Full: acceso completo a Figma Design, Make, Draw, Sites, Dev Mode, FigJam, Slides y Buzz. Es el equivalente mensual que publica la página con facturación anual: se paga un año por adelantado y la página no muestra el total. La página publica el precio en dólares y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [
+      {
+        "serviceId": "figjam",
+        "label": "FigJam",
+        "capacityGb": null
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "figma-profesional-dev",
+    "serviceId": "figma",
+    "availableInArgentina": true,
+    "name": "Profesional · Puesto Dev",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 1500,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": "Precio por puesto"
+    },
+    "sourceUrl": "https://www.figma.com/es-la/pricing/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio por puesto con facturación mensual. Puesto Dev: Dev Mode completo, FigJam, Slides y Buzz, y ver y comentar archivos de Figma Design. La página publica el precio en dólares y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [
+      {
+        "serviceId": "figjam",
+        "label": "FigJam",
+        "capacityGb": null
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "figma-profesional-dev-anual",
+    "serviceId": "figma",
+    "availableInArgentina": true,
+    "name": "Profesional · Puesto Dev (facturación anual)",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 1200,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": "Precio por puesto"
+    },
+    "sourceUrl": "https://www.figma.com/es-la/pricing/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio por puesto. Puesto Dev: Dev Mode completo, FigJam, Slides y Buzz, y ver y comentar archivos de Figma Design. Es el equivalente mensual que publica la página con facturación anual: se paga un año por adelantado y la página no muestra el total. La página publica el precio en dólares y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [
+      {
+        "serviceId": "figjam",
+        "label": "FigJam",
+        "capacityGb": null
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "figma-organizacion-full",
+    "serviceId": "figma",
+    "availableInArgentina": true,
+    "name": "Organización · Puesto Full (facturación anual)",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 5500,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": "Precio por puesto"
+    },
+    "sourceUrl": "https://www.figma.com/es-la/pricing/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio por puesto, solo con facturación anual. Puesto Full: acceso completo a Figma Design, Make, Draw, Sites, Dev Mode, FigJam, Slides y Buzz. Suma bibliotecas y fuentes compartidas y administración centralizada. Es el equivalente mensual que publica la página con facturación anual: se paga un año por adelantado y la página no muestra el total. La página publica el precio en dólares y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [
+      {
+        "serviceId": "figjam",
+        "label": "FigJam",
+        "capacityGb": null
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "figma-organizacion-dev",
+    "serviceId": "figma",
+    "availableInArgentina": true,
+    "name": "Organización · Puesto Dev (facturación anual)",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 2500,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": "Precio por puesto"
+    },
+    "sourceUrl": "https://www.figma.com/es-la/pricing/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio por puesto, solo con facturación anual. Puesto Dev: Dev Mode completo, FigJam, Slides y Buzz, y ver y comentar archivos de Figma Design. Es el equivalente mensual que publica la página con facturación anual: se paga un año por adelantado y la página no muestra el total. La página publica el precio en dólares y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [
+      {
+        "serviceId": "figjam",
+        "label": "FigJam",
+        "capacityGb": null
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "figma-empresa-full",
+    "serviceId": "figma",
+    "availableInArgentina": true,
+    "name": "Empresa · Puesto Full (facturación anual)",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 9000,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": "Precio por puesto"
+    },
+    "sourceUrl": "https://www.figma.com/es-la/pricing/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio por puesto, solo con facturación anual y a través de ventas. Puesto Full: acceso completo a Figma Design, Make, Draw, Sites, Dev Mode, FigJam, Slides y Buzz. Suma espacios de trabajo por equipo y gestión de puestos con SCIM. Es el equivalente mensual que publica la página con facturación anual: se paga un año por adelantado y la página no muestra el total. La página publica el precio en dólares y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [
+      {
+        "serviceId": "figjam",
+        "label": "FigJam",
+        "capacityGb": null
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "figma-empresa-dev",
+    "serviceId": "figma",
+    "availableInArgentina": true,
+    "name": "Empresa · Puesto Dev (facturación anual)",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 3500,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": "Precio por puesto"
+    },
+    "sourceUrl": "https://www.figma.com/es-la/pricing/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio por puesto, solo con facturación anual y a través de ventas. Puesto Dev: Dev Mode completo, FigJam, Slides y Buzz, y ver y comentar archivos de Figma Design. Es el equivalente mensual que publica la página con facturación anual: se paga un año por adelantado y la página no muestra el total. La página publica el precio en dólares y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [
+      {
+        "serviceId": "figjam",
+        "label": "FigJam",
+        "capacityGb": null
+      }
+    ],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "figjam-profesional",
+    "serviceId": "figjam",
+    "availableInArgentina": true,
+    "name": "Profesional · Puesto Collab",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 500,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": "Precio por puesto"
+    },
+    "sourceUrl": "https://www.figma.com/es-la/pricing/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio por puesto con facturación mensual. Puesto Collab: FigJam, Figma Slides y Figma Buzz completos, y ver y comentar archivos de Figma Design. La página publica el precio en dólares y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "figjam-profesional-anual",
+    "serviceId": "figjam",
+    "availableInArgentina": true,
+    "name": "Profesional · Puesto Collab (facturación anual)",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 300,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": "Precio por puesto"
+    },
+    "sourceUrl": "https://www.figma.com/es-la/pricing/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio por puesto. Puesto Collab: FigJam, Figma Slides y Figma Buzz completos, y ver y comentar archivos de Figma Design. Es el equivalente mensual que publica la página con facturación anual: se paga un año por adelantado y la página no muestra el total. La página publica el precio en dólares y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "figjam-organizacion",
+    "serviceId": "figjam",
+    "availableInArgentina": true,
+    "name": "Organización · Puesto Collab (facturación anual)",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 500,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": "Precio por puesto"
+    },
+    "sourceUrl": "https://www.figma.com/es-la/pricing/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio por puesto, solo con facturación anual. Puesto Collab: FigJam, Figma Slides y Figma Buzz completos, y ver y comentar archivos de Figma Design. Es el equivalente mensual que publica la página con facturación anual: se paga un año por adelantado y la página no muestra el total. La página publica el precio en dólares y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
+    "id": "figjam-empresa",
+    "serviceId": "figjam",
+    "availableInArgentina": true,
+    "name": "Empresa · Puesto Collab (facturación anual)",
+    "billingPeriodMonths": 1,
+    "billingIntervalDays": null,
+    "currency": "USD",
+    "amountMinor": 500,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": null,
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": "Precio por puesto"
+    },
+    "sourceUrl": "https://www.figma.com/es-la/pricing/",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio por puesto, solo con facturación anual y a través de ventas. Puesto Collab: FigJam, Figma Slides y Figma Buzz completos, y ver y comentar archivos de Figma Design. Es el equivalente mensual que publica la página con facturación anual: se paga un año por adelantado y la página no muestra el total. La página publica el precio en dólares y no aclara impuestos.",
+    "selectable": true,
+    "promotion": null,
+    "entitlements": [],
+    "choiceSlots": 0,
+    "choiceOptions": []
+  },
+  {
     "id": "chatgpt-go",
     "serviceId": "chatgpt",
     "availableInArgentina": true,

@@ -955,6 +955,98 @@
     "seoDescription": "Compará los precios de Photoshop, Illustrator, Premiere, Lightroom y Creative Cloud en Argentina, con IVA sumado y compromiso anual."
   },
   {
+    "category": "diseno",
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "id": "figma",
+    "slug": "figma",
+    "name": "Figma",
+    "officialUrl": "https://www.figma.com/es-la/pricing/",
+    "logo": "/brands/figma.svg",
+    "description": "Herramienta de diseño colaborativo. Planes por puesto en dólares: Profesional, Organización y Empresa. El puesto Full incluye FigJam.",
+    "aliases": [
+      "figma",
+      "figma design",
+      "dev mode",
+      "figma make"
+    ],
+    "sourceUrls": [
+      "https://www.figma.com/es-la/pricing/"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Figma?",
+        "answer": "El 11 de octubre de 2026 la página publicaba el plan Profesional a USD 20 por puesto Full y USD 15 por puesto Dev por mes, o USD 16 y USD 12 por mes con facturación anual. Hay un plan Inicial gratis con borradores ilimitados."
+      },
+      {
+        "question": "¿Y Organización y Empresa?",
+        "answer": "Solo se pagan por año. Organización cuesta USD 55 por puesto Full y USD 25 por puesto Dev por mes; Empresa, USD 90 y USD 35. Los puestos Collab cuestan USD 5 en ambos."
+      },
+      {
+        "question": "¿Qué es un puesto?",
+        "answer": "Es el acceso de cada persona. Full da acceso a todos los productos; Dev, a Dev Mode, FigJam y Slides; Collab, a FigJam, Slides y Buzz. El precio es por puesto, así que se multiplica por la cantidad de personas."
+      },
+      {
+        "question": "¿Incluye FigJam?",
+        "answer": "Sí, los puestos Full y Dev incluyen FigJam. Si solo necesitás FigJam, alcanza con un puesto Collab, que aparece en la ficha de FigJam."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "Compará los puestos de Figma según lo que necesite cada persona. Los precios son por puesto y en dólares, así que el total en pesos depende de la cotización de tu tarjeta.",
+    "seoTitle": "Figma Argentina: planes, puestos y costo en pesos",
+    "seoDescription": "Precios de Figma en Argentina: Profesional, Organización y Empresa, por puesto Full o Dev. Mirá el costo mensual y anual en dólares."
+  },
+  {
+    "category": "diseno",
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "id": "figjam",
+    "slug": "figjam",
+    "name": "FigJam",
+    "officialUrl": "https://www.figma.com/es-la/figjam/",
+    "logo": "/brands/figjam.svg",
+    "description": "Pizarra colaborativa de Figma. Se paga con el puesto Collab, que también incluye Figma Slides y Figma Buzz.",
+    "aliases": [
+      "figjam",
+      "fig jam",
+      "pizarra figma"
+    ],
+    "sourceUrls": [
+      "https://www.figma.com/es-la/figjam/",
+      "https://www.figma.com/es-la/pricing/"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta FigJam?",
+        "answer": "El 11 de octubre de 2026 el puesto Collab del plan Profesional costaba USD 5 por mes, o USD 3 por mes con facturación anual. En Organización y Empresa cuesta USD 5 por mes, pagando por año. El plan Inicial es gratis."
+      },
+      {
+        "question": "¿Qué incluye el puesto Collab?",
+        "answer": "FigJam, Figma Slides y Figma Buzz completos, y ver y comentar archivos de Figma Design. Solo trae inspección básica en Dev Mode."
+      },
+      {
+        "question": "¿Lo necesito si ya tengo Figma?",
+        "answer": "No. Los puestos Full y Dev de Figma ya incluyen FigJam. Si sumás los dos, podrías estar pagando FigJam dos veces."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "FigJam se contrata con el puesto Collab de Figma. Si ya tenés un puesto Full o Dev, FigJam viene incluido.",
+    "seoTitle": "FigJam Argentina: precio del puesto Collab",
+    "seoDescription": "Precio de FigJam en Argentina: puesto Collab de Figma en Profesional, Organización y Empresa. Mirá el costo mensual y anual en dólares."
+  },
+  {
     "id": "chatgpt",
     "slug": "chatgpt",
     "name": "ChatGPT",

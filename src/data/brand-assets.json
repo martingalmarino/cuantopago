@@ -184,6 +184,22 @@
     "limitation": "simple-icons 16.34.0 no trae marcas de Adobe. Se muestra el nombre."
   },
   {
+    "serviceId": "figma",
+    "file": "/brands/figma.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0. Origen citado: https://www.figma.com/using-the-figma-brand/.",
+    "limitation": "Isotipo en un solo color (#F24E1E), sin los cinco colores oficiales."
+  },
+  {
+    "serviceId": "figjam",
+    "file": "/brands/figjam.svg",
+    "sourceUrl": "https://www.figma.com/es-la/figjam/",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Figma. Icono oficial del menú de productos de figma.com, usado solo para identificar el servicio.",
+    "limitation": "Nota adhesiva violeta sobre fondo lila, 24×24. Sin modificaciones de trazo."
+  },
+  {
     "serviceId": "chatgpt",
     "file": "/brands/chatgpt.svg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:ChatGPT-Logo.svg",
