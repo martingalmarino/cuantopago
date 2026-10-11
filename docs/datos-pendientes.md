@@ -5,7 +5,8 @@ Verificación del 8 de octubre de 2026. Lo que no figura acá sí quedó en `src
 - Disney+: los tres planes mensuales tienen precio final observado el 2026-10-11. El semestral (16% de ahorro sobre el mensual) y el anual no publican monto, así que no se cargaron.
 - Prime Video: la página consultada no trajo un precio en pesos.
 - Apple TV: el sitio regional lo nombra Apple TV y describe el servicio sin anuncios, para hasta seis personas. El USD 6,99 dice que puede variar según el país, así que no se guardó como precio argentino.
-- YouTube Premium y YouTube Music: la página de Premium menciona YouTube Music, descargas y segundo plano, pero los precios no quedaron atados a cada plan ni aclaran impuestos.
+- YouTube Premium: Individual, Dos personas, Familiar y Premium Lite tienen precio mensual observado el 2026-10-11. La página no aclara si incluyen impuestos.
+- YouTube Music: sin precio propio. Premium lo incluye, pero eso no descuenta una suscripción aparte.
 - Google One: solo se publicó 100 GB a ARS 2.975,05 por mes. El resto se mezcla con planes de IA.
 - HBO Max, Apple Music, iCloud+ y el «desde» de Paramount+ tienen precio publicado, pero el tratamiento impositivo no alcanza para un total cerrado. iCloud avisa que el IVA puede subir el precio, sin decir cuánto.
 - No hay cotización verificada del Banco Nación. Un dólar solo pasa a pesos si la persona ingresa el tipo de cambio, y eso se etiqueta como simulación.

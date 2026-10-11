@@ -86,7 +86,7 @@ function priceLabel(plan: PlanRecord): string {
                   />
                   <span>
                     <strong>{plan.name}</strong>
-                    <span class="meta">{featureLine(plan) || 'Sin condiciones publicadas en esta ficha.'}</span>
+                    <span class="meta">{featureLine(plan) || (plan.notes ? 'Condiciones en el detalle de los planes.' : 'Sin condiciones publicadas en esta ficha.')}</span>
                   </span>
                   <span class="plan-price nums">{priceLabel(plan)}</span>
                 </label>

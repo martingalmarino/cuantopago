@@ -267,7 +267,7 @@
     "officialUrl": "https://www.youtube.com/premium",
     "logo": "/brands/youtube.svg",
     "logoAltMode": "decorative",
-    "description": "YouTube sin la publicidad del plan que elijas, con descargas y reproducción en segundo plano. La página también habla de YouTube Music. No pudimos atar cada nombre de plan a un precio verificable, así que el monto queda pendiente.",
+    "description": "YouTube y YouTube Music sin anuncios, con descargas y reproducción en segundo plano. La página argentina publica Individual, Dos personas y Familiar, más un Premium Lite que no incluye música. No dice si los precios incluyen impuestos.",
     "aliases": [
       "youtube",
       "youtube premium",
@@ -284,12 +284,24 @@
         "answer": "La descripción de la página oficial habla de acceso sin anuncios, descargas y segundo plano en YouTube y en YouTube Music. No borramos YouTube Music de tu lista por eso."
       },
       {
-        "question": "¿Por qué no hay precios?",
-        "answer": "La página muestra montos en pesos, pero no quedaron asociados de forma inequívoca a cada plan ni aclaran si incluyen impuestos. Hasta esa lectura, no los publicamos."
+        "question": "¿Cuánto cuesta YouTube Premium en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página oficial publicaba ARS 4.499 por mes para Individual, ARS 6.699 para Dos personas, ARS 10.299 para Familiar y ARS 2.699 para Premium Lite."
       },
       {
-        "question": "¿Qué nombres de plan aparecen?",
-        "answer": "En la página se leen Individual, Familiar, Lite y Dos personas. Sin un precio verificado al lado, no los ofrecemos como oferta vigente."
+        "question": "¿Esos precios incluyen impuestos?",
+        "answer": "La página no lo aclara. Por eso el total queda parcial: no sumamos un IVA que podría estar incluido, y la percepción del 30% depende de cómo pagues."
+      },
+      {
+        "question": "¿Qué cambia con Premium Lite?",
+        "answer": "Es más barato y quita los anuncios en la mayoría del contenido que no es música, salvo Shorts. Los videos musicales pueden seguir con anuncios, puede haber anuncios al explorar o buscar, y no incluye YouTube Music."
+      },
+      {
+        "question": "¿A quién puedo sumar en Dos personas o Familiar?",
+        "answer": "Dos personas suma a otro miembro de tu grupo familiar. Familiar suma hasta 5 miembros. En los dos casos tienen que ser mayores de 13 años."
+      },
+      {
+        "question": "¿Cuenta la prueba de 1 mes gratis?",
+        "answer": "No la aplicamos. Es solo para miembros nuevos que cumplan los requisitos, y el cálculo usa el precio mensual."
       }
     ]
   },

@@ -521,6 +521,126 @@
     "notes": "La página también lo muestra como un prepago de 1 mes que no se renueva solo."
   },
   {
+    "id": "youtube-premium-individual",
+    "serviceId": "youtube-premium",
+    "availableInArgentina": true,
+    "name": "Individual",
+    "billingPeriodMonths": 1,
+    "currency": "ARS",
+    "amountMinor": 449900,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": false,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": "Hasta 30 días sin conexión",
+      "storage": null,
+      "memberLimit": 1,
+      "eligibility": null
+    },
+    "sourceUrl": "https://www.youtube.com/premium",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio mensual publicado. La página no dice si incluye impuestos. Incluye YouTube Music sin anuncios. La prueba de 1 mes por ARS 0 es solo para miembros nuevos que cumplan los requisitos y no se aplica sola."
+  },
+  {
+    "id": "youtube-premium-dos-personas",
+    "serviceId": "youtube-premium",
+    "availableInArgentina": true,
+    "name": "Dos personas",
+    "billingPeriodMonths": 1,
+    "currency": "ARS",
+    "amountMinor": 669900,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": false,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": "Hasta 30 días sin conexión",
+      "storage": null,
+      "memberLimit": 2,
+      "eligibility": "Otro miembro del grupo familiar, mayor de 13 años"
+    },
+    "sourceUrl": "https://www.youtube.com/premium",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio mensual publicado. La página no dice si incluye impuestos. Incluye YouTube Music sin anuncios. La prueba de 1 mes por ARS 0 es solo para miembros nuevos que cumplan los requisitos y no se aplica sola."
+  },
+  {
+    "id": "youtube-premium-familiar",
+    "serviceId": "youtube-premium",
+    "availableInArgentina": true,
+    "name": "Familiar",
+    "billingPeriodMonths": 1,
+    "currency": "ARS",
+    "amountMinor": 1029900,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": false,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": "Hasta 30 días sin conexión",
+      "storage": null,
+      "memberLimit": 6,
+      "eligibility": "Hasta 5 miembros de la familia, mayores de 13 años"
+    },
+    "sourceUrl": "https://www.youtube.com/premium",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio mensual publicado. La página no dice si incluye impuestos. Incluye YouTube Music sin anuncios. La prueba de 1 mes por ARS 0 es solo para miembros nuevos que cumplan los requisitos y no se aplica sola."
+  },
+  {
+    "id": "youtube-premium-lite",
+    "serviceId": "youtube-premium",
+    "availableInArgentina": true,
+    "name": "Premium Lite",
+    "billingPeriodMonths": 1,
+    "currency": "ARS",
+    "amountMinor": 269900,
+    "taxInclusion": "unknown",
+    "otherChargesNoted": false,
+    "taxRuleIds": [
+      "ar-percepcion-rg5617"
+    ],
+    "channel": "web-direct",
+    "features": {
+      "ads": null,
+      "maxResolution": null,
+      "simultaneousPlayback": null,
+      "downloads": "En la mayoría del contenido no musical",
+      "storage": null,
+      "memberLimit": null,
+      "eligibility": null
+    },
+    "sourceUrl": "https://www.youtube.com/premium",
+    "verifiedAt": "2026-10-11",
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "retired": false,
+    "notes": "Precio mensual publicado. La página no dice si incluye impuestos. Sin anuncios, en segundo plano y con descargas en la mayoría del contenido que no es música, salvo Shorts. Los videos musicales pueden seguir con anuncios, y también puede haber anuncios al explorar o buscar. No incluye YouTube Music."
+  },
+  {
     "id": "apple-music-individual",
     "serviceId": "apple-music",
     "availableInArgentina": true,
