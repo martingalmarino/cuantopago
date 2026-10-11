@@ -960,8 +960,8 @@
     "name": "ChatGPT",
     "category": "inteligencia-artificial",
     "officialUrl": "https://chatgpt.com/es-419/pricing/",
-    "logo": null,
-    "logoAltMode": "text-fallback",
+    "logo": "/brands/chatgpt.svg",
+    "logoAltMode": "decorative",
     "description": "Asistente de inteligencia artificial con plan gratis y planes pagos en dólares: Go, Plus y Pro en tres niveles de uso.",
     "aliases": [
       "chatgpt",

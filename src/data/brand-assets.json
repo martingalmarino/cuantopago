@@ -185,11 +185,11 @@
   },
   {
     "serviceId": "chatgpt",
-    "file": null,
-    "sourceUrl": "https://chatgpt.com/pricing/",
-    "retrievalDate": "2026-10-08",
-    "license": null,
-    "limitation": "Todavía no hay un logo verificado. La ficha muestra el nombre."
+    "file": "/brands/chatgpt.svg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ChatGPT-Logo.svg",
+    "retrievalDate": "2026-10-11",
+    "license": "Dominio público según Wikimedia Commons. Es marca registrada de OpenAI y se usa solo para identificar el servicio.",
+    "limitation": "Isotipo negro de OpenAI, sin el nombre. Mismo trazo que el original; solo se ajustó el formato del archivo."
   },
   {
     "serviceId": "claude",

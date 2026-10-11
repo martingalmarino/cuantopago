@@ -32,6 +32,7 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | DGO | `/brands/dgo.png` | PNG oficial del pie de DIRECTV GO, 400×181. No es un isotipo inventado. |
 | Canva | `/brands/canva.png` | Ícono de app enviado el 11 de octubre de 2026. simple-icons no trae Canva. Recortado a 160×160 con esquinas transparentes. |
 | Meli+ | `/brands/meliplus.png` | Píldora oficial de mercadolibre.com.ar/melimas, 327×120, sin modificaciones. |
-| Apple One, F1 TV, Flow, Microsoft 365, ChatGPT, Adobe | ninguno | No hay un export de simple-icons del producto. No se usó la marca de la empresa madre ni se dibujó un logo. |
+| ChatGPT | `/brands/chatgpt.svg` | `File:ChatGPT-Logo.svg` de Wikimedia Commons, descargado el 11 de octubre de 2026. Dominio público y marca de OpenAI. Mismo trazo, con el formato de archivo del sitio. |
+| Apple One, F1 TV, Flow, Microsoft 365, Adobe | ninguno | No hay un export de simple-icons del producto. No se usó la marca de la empresa madre ni se dibujó un logo. |
 
 El pie del sitio aclara que es independiente y que las marcas son de sus titulares.
