@@ -1,7 +1,7 @@
 import { validateCatalog } from '../src/lib/data-validation';
 
 const report = validateCatalog();
-console.log('Cuánto Pago — revisión de datos');
+console.log('Abonito — revisión de datos');
 if (report.warnings.length) {
   console.log('\nAvisos');
   for (const warning of report.warnings) console.log(`- ${warning}`);

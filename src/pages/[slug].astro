@@ -191,7 +191,7 @@ function priceLabel(plan: PlanRecord): string {
   const button = document.querySelector('#copy-report');
   const status = document.querySelector('#copy-status');
   button?.addEventListener('click', async () => {
-    const text = `Cuánto Pago — precio para revisar\nServicio: ${serviceName}\nFicha: /${serviceSlug}/\nNo se envió a ningún lado: copialo y mandalo por el canal que uses.`;
+    const text = `Abonito — precio para revisar\nServicio: ${serviceName}\nFicha: /${serviceSlug}/\nNo se envió a ningún lado: copialo y mandalo por el canal que uses.`;
     try {
       await navigator.clipboard.writeText(text);
       if (status) status.textContent = 'Copiado. No se envió a ningún lado.';

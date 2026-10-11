@@ -1,4 +1,4 @@
-# Cuánto Pago
+# Abonito
 
 Sitio estático para ver precios publicados de suscripciones en Argentina, estimar un total cuando la regla está documentada y armar un presupuesto en el navegador.
 
