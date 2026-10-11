@@ -238,5 +238,13 @@
     "retrievalDate": "2026-10-11",
     "license": "CC0 1.0. Origen citado: https://github.com/supabase/supabase/blob/4031a7549f5d46da7bc79c01d56be4177dc7c114/packages/common/assets/images/supabase-logo-wordmark--light.svg.",
     "limitation": "Isotipo en un solo verde, sin el degradado ni el wordmark. Va sobre fondo blanco."
+  },
+  {
+    "serviceId": "starlink",
+    "file": "/brands/starlink.png",
+    "sourceUrl": "https://starlink.com/assets/images/logo/logo_black.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de SpaceX. Archivo oficial publicado en starlink.com, usado solo para identificar el servicio.",
+    "limitation": "Wordmark negro STARLINK, 612×101. Sin modificaciones."
   }
 ]

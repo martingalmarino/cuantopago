@@ -12,7 +12,8 @@ export type CategoryId =
   | 'productividad'
   | 'diseno'
   | 'inteligencia-artificial'
-  | 'hosting-cloud';
+  | 'hosting-cloud'
+  | 'internet';
 export type Channel = 'web-direct' | 'app-store' | 'google-play' | 'operator' | 'bundle';
 
 export interface ServiceFaq {

@@ -1303,5 +1303,57 @@
     "body": "Calculá el costo de Supabase Pro o Team con impuestos. El precio cubre un proyecto, y los proyectos extra y el consumo adicional se suman a la factura.",
     "seoTitle": "Supabase Argentina: precios de Pro y Team con impuestos",
     "seoDescription": "Precios de Supabase Pro y Team en dólares con el IVA sumado. Calculá cuánto suma a tu presupuesto según la cotización de tu tarjeta."
+  },
+  {
+    "id": "starlink",
+    "slug": "starlink",
+    "name": "Starlink",
+    "category": "internet",
+    "officialUrl": "https://www.starlink.com/ar",
+    "logo": "/brands/starlink.png",
+    "logoAltMode": "decorative",
+    "description": "Internet satelital de SpaceX. Planes en pesos para el hogar, para viajar y para empresas, desde Residencial Lite hasta Prioridad Global.",
+    "aliases": [
+      "starlink",
+      "internet satelital",
+      "spacex"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.starlink.com/ar/residential",
+      "https://www.starlink.com/ar/roam",
+      "https://www.starlink.com/ar/business",
+      "https://www.starlink.com/ar/business/service-plans"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Starlink en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página oficial publicaba Residencial Lite desde $ 45.000, Residencial Max desde $ 65.000, Itinerante 100 GB desde $ 63.000 e Itinerante Ilimitado desde $ 140.000 por mes."
+      },
+      {
+        "question": "¿Cuánto cuesta el kit?",
+        "answer": "El kit se paga una sola vez y no lo sumamos al presupuesto mensual. Para empresas, la página publica un costo de hardware de $ 249.999. Para el hogar, Starlink muestra el precio del kit recién al hacer el pedido con tu dirección, y en distribuidores varía según el comercio."
+      },
+      {
+        "question": "¿Los precios incluyen impuestos?",
+        "answer": "La página no lo aclara, así que mostramos el precio publicado sin sumar nada. Revisá el total al hacer el pedido."
+      },
+      {
+        "question": "¿Qué son los planes Prioridad?",
+        "answer": "Son planes para empresas con prioridad de red, IP pública y acuerdo de nivel de servicio. Prioridad Local va de $ 66.665 (50 GB) a $ 642.365 (2 TB) por mes, y Prioridad Global, que suma uso en el mar y en otros países, va de $ 435.000 a $ 3.760.000."
+      },
+      {
+        "question": "¿Se puede probar?",
+        "answer": "Sí. Starlink ofrece 30 días de prueba con reembolso completo si no quedás conforme."
+      }
+    ],
+    "tags": [
+      "Satelital"
+    ],
+    "secondaryCategories": [],
+    "body": "Compará los planes de Starlink según dónde lo vas a usar: en casa, de viaje o en una empresa. El abono es mensual y el kit se paga aparte, una sola vez.",
+    "seoTitle": "Starlink Argentina: planes, precios y costo del kit",
+    "seoDescription": "Precios de Starlink en Argentina: Residencial Lite, Residencial Max, Itinerante y planes Prioridad para empresas. Mirá el abono mensual y el costo del kit."
   }
 ]

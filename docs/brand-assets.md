@@ -21,6 +21,7 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | GitHub | `/brands/github.svg` | Copiado el 11 de octubre de 2026. Invertocat negro. Origen citado: github.com/logos. |
 | Vercel | `/brands/vercel.svg` | Copiado el 11 de octubre de 2026. Triángulo negro. Origen citado: vercel.com/geist/brands. |
 | Supabase | `/brands/supabase.svg` | Copiado el 11 de octubre de 2026. Isotipo verde sin degradado. Origen citado: repositorio de Supabase. |
+| Starlink | `/brands/starlink.png` | Archivo oficial `logo_black.png` de starlink.com, descargado el 11 de octubre de 2026. Wordmark negro de 612×101, sin modificaciones. |
 | Google One | ninguno | No se usa el logo genérico de Google. |
 | iCloud+ | `/brands/icloud.svg` | La marca del paquete es iCloud y el nombre visible es iCloud+. |
 | Crunchyroll | `/brands/crunchyroll.svg` | simple-icons 16.34.0, slug crunchyroll, origen citado crunchyroll.com. |
