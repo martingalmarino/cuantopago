@@ -486,7 +486,7 @@
     "officialUrl": "https://www.apple.com/la/apple-one/",
     "logo": null,
     "logoAltMode": "text-fallback",
-    "description": "Un paquete de servicios Apple para comparar con tus suscripciones individuales.",
+    "description": "iCloud+, Apple TV, Apple Music y Apple Arcade en un solo pago. En Argentina, Individual cuesta USD 9,95 por mes y Familiar USD 11,95, según la página oficial.",
     "aliases": [
       "apple one"
     ],
@@ -494,19 +494,27 @@
     "sourceUrls": [
       "https://www.apple.com/la/apple-one/"
     ],
-    "verificationStatus": "unverified",
+    "verificationStatus": "partial",
     "faqs": [
       {
+        "question": "¿Cuánto cuesta Apple One en Argentina?",
+        "answer": "La nota al pie de la página oficial dice que en Argentina el plan Individual cuesta USD 9,95 al mes y el Familiar USD 11,95 al mes. Los USD 12,95 y 16,95 que aparecen arriba son el precio regional."
+      },
+      {
+        "question": "¿Qué incluye cada plan?",
+        "answer": "Los dos incluyen Apple TV, Apple Music y Apple Arcade. Individual trae 50 GB de iCloud+. Familiar trae 200 GB y se comparte con hasta cinco personas más."
+      },
+      {
+        "question": "¿Cuánto pago en pesos?",
+        "answer": "Apple cobra en dólares. Para pasarlo a pesos tenés que cargar el tipo de cambio, y el resultado queda marcado como simulación. La página no aclara el IVA y la percepción del 30% depende de cómo pagues."
+      },
+      {
         "question": "¿Apple One reemplaza cualquier plan de iCloud+?",
-        "answer": "No necesariamente. Compará el almacenamiento incluido y revisá si mantenés un plan adicional."
+        "answer": "No necesariamente. Si ya pagás un iCloud+ con más espacio que el del plan, lo seguís pagando aparte hasta que lo canceles."
       },
       {
         "question": "¿El ahorro es igual para todos?",
-        "answer": "No. La comparación usa únicamente los servicios y planes que seleccionaste; no asigna un ahorro por servicios que no pagabas."
-      },
-      {
-        "question": "¿Qué falta verificar?",
-        "answer": "Confirmar las tarifas en storefront argentino; los USD regionales no certifican la oferta local."
+        "answer": "No. Apple aclara que los precios y el ahorro varían según el país. Conviene comparar solo con los servicios que ya pagás."
       }
     ],
     "tags": [],
