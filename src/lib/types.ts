@@ -13,7 +13,8 @@ export type CategoryId =
   | 'diseno'
   | 'inteligencia-artificial'
   | 'hosting-cloud'
-  | 'internet';
+  | 'internet'
+  | 'videojuegos';
 export type Channel = 'web-direct' | 'app-store' | 'google-play' | 'operator' | 'bundle';
 
 export interface ServiceFaq {

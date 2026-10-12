@@ -358,5 +358,101 @@
     "retrievalDate": "2026-10-11",
     "license": "CC0 1.0 (simple-icons). Marca de Triller; origen citado fite.tv.",
     "limitation": "Isotipo de TrillerTV en un solo color #E61414."
+  },
+  {
+    "serviceId": "playstation-plus",
+    "file": "/brands/playstation.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Sony Interactive Entertainment; origen citado playstation.com.",
+    "limitation": "Logo de PlayStation en un solo color #0070D1. No hay un isotipo propio de PS Plus."
+  },
+  {
+    "serviceId": "xbox-game-pass",
+    "file": "/brands/xbox.png",
+    "sourceUrl": "https://www.xbox.com/favicon.ico",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Microsoft. Favicon oficial de xbox.com, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 256×256 del favicon, reducido a 128×128. No hay un isotipo propio de Game Pass."
+  },
+  {
+    "serviceId": "nintendo-switch-online",
+    "file": "/brands/nintendo.png",
+    "sourceUrl": "https://assets.nintendo.com/image/upload/ncom/icons/fav-icons/apple-touch-icon.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Nintendo. Ícono oficial de nintendo.com, usado solo para identificar el servicio.",
+    "limitation": "Ícono de app de 180×180, sin modificaciones. Nintendo no publica un isotipo aislado de Switch Online."
+  },
+  {
+    "serviceId": "ea-play",
+    "file": "/brands/ea.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Electronic Arts; origen citado ea.com.",
+    "limitation": "Logo de EA en un solo color #000000. No hay un export de simple-icons del logo de EA Play."
+  },
+  {
+    "serviceId": "geforce-now",
+    "file": "/brands/geforcenow.png",
+    "sourceUrl": "https://play.geforcenow.com/favicon.ico",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de NVIDIA. Favicon oficial de play.geforcenow.com, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 256×256 extraído del favicon, sin modificaciones."
+  },
+  {
+    "serviceId": "apple-arcade",
+    "file": "/brands/applearcade.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Apple; origen citado apple.com.",
+    "limitation": "Logo de Apple Arcade en un solo color #000000."
+  },
+  {
+    "serviceId": "final-fantasy-xiv",
+    "file": "/brands/ffxiv.png",
+    "sourceUrl": "https://lds-img.finalfantasyxiv.com/h/0/U2uGfVX4GdZgU1jASO0m9h_xLg.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Square Enix. Ícono oficial del Lodestone de finalfantasyxiv.com, usado solo para identificar el servicio.",
+    "limitation": "Ícono de app de 144×144, sin modificaciones."
+  },
+  {
+    "serviceId": "minecraft-realms",
+    "file": "/brands/minecraft.png",
+    "sourceUrl": "https://www.minecraft.net/etc.clientlibs/minecraftnet/clientlibs/clientlib-site/resources/android-icon-192x192.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Mojang/Microsoft. Ícono oficial de minecraft.net, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 192×192, sin modificaciones. No hay un isotipo propio de Realms."
+  },
+  {
+    "serviceId": "iracing",
+    "file": "/brands/iracing.png",
+    "sourceUrl": "https://s100.iracing.com/wp-content/uploads/2026/05/cropped-iRacing-logo.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de iRacing.com Motorsport Simulations. Logo oficial publicado en iracing.com, usado solo para identificar el servicio.",
+    "limitation": "Se recortó el isotipo del piloto y se quitó el texto; centrado en 160×160 con fondo transparente."
+  },
+  {
+    "serviceId": "chess-com",
+    "file": "/brands/chesscom.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Chess.com; origen citado chess.com.",
+    "limitation": "Isotipo de Chess.com en un solo color #81B64C."
+  },
+  {
+    "serviceId": "geoguessr",
+    "file": "/brands/geoguessr.png",
+    "sourceUrl": "https://www.geoguessr.com/apple-touch-icon.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de GeoGuessr AB. Ícono oficial de geoguessr.com, usado solo para identificar el servicio.",
+    "limitation": "Ícono de app de 180×180, sin modificaciones."
+  },
+  {
+    "serviceId": "exitlag",
+    "file": null,
+    "sourceUrl": "https://www.exitlag.com/",
+    "retrievalDate": "2026-10-11",
+    "license": null,
+    "limitation": "simple-icons 16.34.0 no trae ExitLag y exitlag.com pide una verificación anti-bots antes de servir sus archivos. La ficha muestra el nombre."
   }
 ]

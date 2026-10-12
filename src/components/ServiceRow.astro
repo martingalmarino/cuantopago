@@ -15,11 +15,15 @@ const monthly = plan ? monthlyPublishedMinor(plan) : null;
 const priced = Boolean(plan && plan.amountMinor !== null && plan.currency && monthly !== null);
 const hint = !priced || !plan
   ? 'Podés cargar tu importe'
-  : plan.billingPeriodMonths > 1 && !plan.billingIntervalDays
-    ? `${plan.name} · pago anual`
-    : plan.name;
+  : plan.billingIntervalDays
+    ? `${plan.name} · cada ${plan.billingIntervalDays} días`
+    : plan.billingPeriodMonths === 12
+      ? `${plan.name} · pago anual`
+      : plan.billingPeriodMonths > 1
+        ? `${plan.name} · cada ${plan.billingPeriodMonths} meses`
+        : plan.name;
 const priceLabel = priced && plan && monthly !== null && plan.currency
-  ? `${formatPrice(monthly, plan.currency)}${plan.billingIntervalDays ? '' : ' / mes'}`
+  ? `${formatPrice(monthly, plan.currency)} / mes`
   : 'Precio a confirmar';
 ---
 <article

@@ -2012,5 +2012,556 @@
     "body": "Compará los planes de iplan solo internet o con DGO. El descuento dura 12 meses en total; desde el mes 13 rige el precio de lista.",
     "seoTitle": "iplan: planes de internet por fibra y precios",
     "seoDescription": "Precios de iplan Hogar con IVA: 500, 800 y 1.000 Megas, y combos con DGO. Mirá el precio de lista y cuánto dura el descuento."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "videojuegos",
+    "id": "playstation-plus",
+    "slug": "playstation-plus",
+    "name": "PlayStation Plus",
+    "officialUrl": "https://www.playstation.com/es-ar/ps-plus/",
+    "logo": "/brands/playstation.svg",
+    "description": "Juego online, juegos mensuales y catálogo de PS4 y PS5. Tres niveles, por 1, 3 o 12 meses, en dólares.",
+    "aliases": [
+      "ps plus",
+      "psplus",
+      "playstation plus",
+      "ps+",
+      "essential",
+      "extra",
+      "deluxe",
+      "premium",
+      "sony"
+    ],
+    "sourceUrls": [
+      "https://www.playstation.com/es-ar/ps-plus/"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta PlayStation Plus?",
+        "answer": "El 11 de octubre de 2026 la página argentina mostraba Essential a USD 8,99 por mes, Extra a USD 13,49 y Deluxe a USD 15,99. Los planes de 3 y 12 meses salen más baratos por mes."
+      },
+      {
+        "question": "¿Qué diferencia hay entre los niveles?",
+        "answer": "Essential trae el juego online y los juegos mensuales. Extra suma el catálogo de juegos de PS4 y PS5. Deluxe suma clásicos y pruebas de juegos."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "Sony cobra PlayStation Plus en dólares en Argentina. Ubisoft+ Classics se contrata aparte como complemento.",
+    "seoTitle": "PlayStation Plus Argentina: precio de Essential, Extra y Deluxe",
+    "seoDescription": "Cuánto cuesta PlayStation Plus en Argentina: Essential, Extra y Deluxe por 1, 3 o 12 meses, en dólares."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": "Game Pass Ultimate incluye EA Play. Si ya pagás EA Play aparte, puede haber superposición.",
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "videojuegos",
+    "id": "xbox-game-pass",
+    "slug": "xbox-game-pass",
+    "name": "Xbox Game Pass",
+    "officialUrl": "https://www.xbox.com/es-AR/xbox-game-pass",
+    "logo": "/brands/xbox.png",
+    "description": "Catálogo de juegos para Xbox, PC y la nube. Cuatro planes mensuales en pesos; Ultimate incluye EA Play.",
+    "aliases": [
+      "game pass",
+      "gamepass",
+      "xbox",
+      "xgp",
+      "ultimate",
+      "pc game pass",
+      "microsoft",
+      "xbox live"
+    ],
+    "sourceUrls": [
+      "https://www.xbox.com/es-AR/xbox-game-pass"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Xbox Game Pass?",
+        "answer": "El 11 de octubre de 2026 la página argentina mostraba Essential a $ 8.999 por mes, Premium a $ 11.999, Ultimate a $ 18.999 y Solo en PC a $ 13.999."
+      },
+      {
+        "question": "¿Qué incluye Ultimate?",
+        "answer": "Más de 400 juegos, EA Play, Fortnite Crew, Ubisoft+ Classics y hasta 15 horas de juego en la nube por mes."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara si el precio incluye impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "Microsoft publica Game Pass en pesos para Argentina. Todos los planes se cobran por mes.",
+    "seoTitle": "Xbox Game Pass Argentina: precio de Essential, Premium y Ultimate",
+    "seoDescription": "Cuánto cuesta Xbox Game Pass en Argentina: Essential, Premium, Ultimate y Solo en PC, en pesos por mes."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "videojuegos",
+    "id": "nintendo-switch-online",
+    "slug": "nintendo-switch-online",
+    "name": "Nintendo Switch Online",
+    "officialUrl": "https://www.nintendo.com/es-ar/online/",
+    "logo": "/brands/nintendo.png",
+    "description": "Juego online, clásicos de NES, Super NES y Game Boy, y copias en la nube. Planes anuales individuales y familiares en pesos.",
+    "aliases": [
+      "nso",
+      "switch online",
+      "nintendo online",
+      "paquete de expansion",
+      "expansion pack",
+      "nintendo switch 2",
+      "nintendo"
+    ],
+    "sourceUrls": [
+      "https://www.nintendo.com/es-ar/online/compare-memberships/",
+      "https://www.nintendo.com/es-ar/online/"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Nintendo Switch Online?",
+        "answer": "El 11 de octubre de 2026 la página argentina mostraba la suscripción individual a $ 29.999 por año y la familiar a $ 52.999 por año."
+      },
+      {
+        "question": "¿Qué suma el Paquete de expansión?",
+        "answer": "Clásicos de Nintendo 64, GameCube, Game Boy Advance y SEGA Genesis, más contenido descargable seleccionado. Cuesta $ 75.999 por año individual o $ 120.999 familiar."
+      },
+      {
+        "question": "¿Cuántas personas entran en el plan familiar?",
+        "answer": "Hasta 8 cuentas de Nintendo."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "La comparación de planes de Nintendo Argentina solo muestra precios anuales. Hay una prueba gratis de 7 días.",
+    "seoTitle": "Nintendo Switch Online Argentina: precio individual y familiar",
+    "seoDescription": "Cuánto cuesta Nintendo Switch Online en Argentina: planes anuales individual y familiar, con o sin Paquete de expansión."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": "EA Play viene incluido en Xbox Game Pass Ultimate. Si tenés Ultimate, no hace falta pagarlo aparte.",
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "videojuegos",
+    "id": "ea-play",
+    "slug": "ea-play",
+    "name": "EA Play",
+    "officialUrl": "https://www.ea.com/es-mx/ea-play",
+    "logo": "/brands/ea.svg",
+    "description": "Catálogo de juegos de EA, pruebas de lanzamientos y 10% de descuento. EA Play y EA Play Pro, por mes o por año, en dólares.",
+    "aliases": [
+      "ea",
+      "ea play pro",
+      "origin access",
+      "ea access",
+      "electronic arts",
+      "ea pay"
+    ],
+    "sourceUrls": [
+      "https://www.ea.com/es-mx/ea-play"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta EA Play?",
+        "answer": "El 11 de octubre de 2026 la página de EA para Latinoamérica decía USD 5,99 por mes o USD 39,99 por año. EA Play Pro cuesta USD 16,99 por mes o USD 119,99 por año."
+      },
+      {
+        "question": "¿Qué diferencia tiene EA Play Pro?",
+        "answer": "Pro da acceso completo a los lanzamientos nuevos y a las ediciones premium. EA Play solo permite probarlos hasta 10 horas. EA Play Pro es para PC."
+      },
+      {
+        "question": "¿Viene con Game Pass?",
+        "answer": "Sí. Xbox Game Pass Ultimate incluye EA Play, no EA Play Pro."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "EA no tiene una página para Argentina; tomamos los precios en dólares de la página en español para Latinoamérica.",
+    "seoTitle": "EA Play Argentina: precio de EA Play y EA Play Pro",
+    "seoDescription": "Cuánto cuesta EA Play en Argentina: EA Play y EA Play Pro, por mes o por año, en dólares."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "videojuegos",
+    "id": "geforce-now",
+    "slug": "geforce-now",
+    "name": "GeForce NOW",
+    "officialUrl": "https://abya.com/gfn",
+    "logo": "/brands/geforcenow.png",
+    "description": "Juegos de PC en la nube con placas RTX. En Argentina lo vende ABYA, en pesos, por 1, 3 o 6 meses.",
+    "aliases": [
+      "geforce now",
+      "gfn",
+      "nvidia",
+      "abya",
+      "cloud gaming",
+      "juegos en la nube"
+    ],
+    "sourceUrls": [
+      "https://abya.com/gfn",
+      "https://www.nvidia.com/es-ar/geforce-now/"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta GeForce NOW en Argentina?",
+        "answer": "El 11 de octubre de 2026 ABYA mostraba Performance a ARS 14.000 por mes, Performance PRO a ARS 24.000 y Performance ULTRA a ARS 46.799,90. Los planes de 3 y 6 meses tienen 10% de descuento."
+      },
+      {
+        "question": "¿Quién lo vende?",
+        "answer": "NVIDIA deriva Argentina a ABYA, su socio de la Alianza GeForce NOW para la región."
+      },
+      {
+        "question": "¿Cuántas horas incluye?",
+        "answer": "Performance hasta 40 horas por mes, PRO hasta 80 y ULTRA hasta 160. Hay un pase de 24 horas a ARS 4.500 que no cargamos porque no es una suscripción."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "ABYA dice que, según la experiencia de sus clientes, no se aplican impuestos extra. Tomamos el precio como final."
+      },
+      {
+        "question": "¿Necesito comprar los juegos?",
+        "answer": "Sí. GeForce NOW transmite juegos que ya tenés en Steam, Epic u otras tiendas, más algunos gratuitos."
+      }
+    ],
+    "body": "GeForce NOW Powered by ABYA está disponible en Argentina, Brasil, Chile, Paraguay y Uruguay. También hay un plan gratuito con sesiones de 1 hora y anuncios.",
+    "seoTitle": "GeForce NOW Argentina: precio de Performance, PRO y ULTRA",
+    "seoDescription": "Cuánto cuesta GeForce NOW en Argentina con ABYA: Performance, PRO y ULTRA en pesos, por 1, 3 o 6 meses."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": "Apple Arcade viene incluido en Apple One. Si tenés Apple One, no hace falta pagarlo aparte.",
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "videojuegos",
+    "id": "apple-arcade",
+    "slug": "apple-arcade",
+    "name": "Apple Arcade",
+    "officialUrl": "https://www.apple.com/la/apple-arcade/",
+    "logo": "/brands/applearcade.svg",
+    "description": "Cientos de juegos sin anuncios ni compras dentro de la app, para iPhone, iPad, Mac y Apple TV. USD 6,99 por mes.",
+    "aliases": [
+      "arcade",
+      "apple games",
+      "juegos apple"
+    ],
+    "sourceUrls": [
+      "https://www.apple.com/la/apple-arcade/"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Apple Arcade?",
+        "answer": "El 11 de octubre de 2026 la página de Apple para Latinoamérica decía USD 6,99 por mes."
+      },
+      {
+        "question": "¿Se puede compartir?",
+        "answer": "Sí. Con Compartir en Familia lo usan hasta cinco personas más, sin costo extra."
+      },
+      {
+        "question": "¿Viene con Apple One?",
+        "answer": "Sí. Los planes Individual y Familiar de Apple One incluyen Apple Arcade."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "Apple cobra Arcade en dólares en Argentina. Los juegos dejan de estar disponibles si cancelás.",
+    "seoTitle": "Apple Arcade Argentina: precio mensual",
+    "seoDescription": "Cuánto cuesta Apple Arcade en Argentina: USD 6,99 por mes, compartible con hasta cinco familiares."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "videojuegos",
+    "id": "final-fantasy-xiv",
+    "slug": "final-fantasy-xiv",
+    "name": "Final Fantasy XIV",
+    "officialUrl": "https://na.finalfantasyxiv.com/product/",
+    "logo": "/brands/ffxiv.png",
+    "description": "Suscripción del MMORPG de Square Enix. Entry o Standard, por ciclos de 30, 90 o 180 días, en dólares.",
+    "aliases": [
+      "ffxiv",
+      "ff14",
+      "final fantasy 14",
+      "ffxiv online",
+      "square enix",
+      "mog station"
+    ],
+    "sourceUrls": [
+      "https://na.finalfantasyxiv.com/product/"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Final Fantasy XIV?",
+        "answer": "El 11 de octubre de 2026 la página de Norteamérica mostraba Entry a USD 12,99 cada 30 días y Standard a USD 14,99. Standard también se paga por 90 días (USD 41,97) o 180 días (USD 77,94)."
+      },
+      {
+        "question": "¿Qué diferencia hay entre Entry y Standard?",
+        "answer": "Entry permite 8 personajes por centro de datos. Standard permite 40."
+      },
+      {
+        "question": "¿Por qué no es por mes?",
+        "answer": "Square Enix cobra por ciclos de días. Calculamos el equivalente mensual con 365 días al año."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "Argentina juega en los servidores de Norteamérica. El juego base se compra aparte e incluye 30 días gratis.",
+    "seoTitle": "Final Fantasy XIV Argentina: precio de la suscripción",
+    "seoDescription": "Cuánto cuesta la suscripción de Final Fantasy XIV en Argentina: Entry y Standard por 30, 90 o 180 días, en dólares."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "videojuegos",
+    "id": "minecraft-realms",
+    "slug": "minecraft-realms",
+    "name": "Minecraft Realms",
+    "officialUrl": "https://www.minecraft.net/es-mx/realms",
+    "logo": "/brands/minecraft.png",
+    "description": "Servidor privado de Minecraft siempre en línea para jugar con amigos. Realms, Realms Plus y Realms para Java, en dólares por mes.",
+    "aliases": [
+      "realms",
+      "realms plus",
+      "minecraft",
+      "servidor minecraft",
+      "bedrock",
+      "java"
+    ],
+    "sourceUrls": [
+      "https://www.minecraft.net/es-mx/realms"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Minecraft Realms?",
+        "answer": "El 11 de octubre de 2026 la página oficial decía USD 3,99 por mes para Realms y USD 7,99 para Realms Plus, en Bedrock. Realms para Java Edition cuesta USD 7,99."
+      },
+      {
+        "question": "¿Cuántos pueden jugar?",
+        "answer": "Realms permite jugar a vos y 2 personas al mismo tiempo. Realms Plus, a vos y 10. Los invitados no pagan."
+      },
+      {
+        "question": "¿Incluye el juego?",
+        "answer": "No. Hay que tener Minecraft. Realms Plus suma el catálogo de Marketplace Pass."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "Realms se compra dentro del juego. El precio final puede variar según la tienda de cada plataforma.",
+    "seoTitle": "Minecraft Realms Argentina: precio de Realms y Realms Plus",
+    "seoDescription": "Cuánto cuesta Minecraft Realms en Argentina: Realms, Realms Plus y Realms para Java, en dólares por mes."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "videojuegos",
+    "id": "iracing",
+    "slug": "iracing",
+    "name": "iRacing",
+    "officialUrl": "https://www.iracing.com/membership/",
+    "logo": "/brands/iracing.png",
+    "description": "Simulador de carreras online para PC. Membresía por 1, 3, 12 o 24 meses, en dólares y sin impuestos incluidos.",
+    "aliases": [
+      "iracing",
+      "i racing",
+      "simracing",
+      "sim racing",
+      "simulador"
+    ],
+    "sourceUrls": [
+      "https://www.iracing.com/membership/",
+      "https://www.iracing.com/iracing-subscription-pricing-update-july-2026/"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta iRacing?",
+        "answer": "Desde el 18 de agosto de 2026 la membresía cuesta USD 14,75 por mes, USD 37,50 por 3 meses, USD 124,50 por año y USD 222,50 por 2 años."
+      },
+      {
+        "question": "¿Hay descuento?",
+        "answer": "La página muestra 30% de descuento en la membresía de 3 meses, 1 año y 2 años. No se aplica solo en el presupuesto."
+      },
+      {
+        "question": "¿Qué incluye?",
+        "answer": "32 autos y 29 circuitos. Los demás autos y circuitos se compran aparte, desde USD 11,95 cada uno."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "Sí. iRacing aclara que los precios no incluyen impuestos indirectos. Sumamos el IVA del 21%. La percepción depende de cómo pagues."
+      }
+    ],
+    "body": "iRacing subió sus precios el 18 de agosto de 2026. Se renueva sola, pero se puede desactivar desde la cuenta.",
+    "seoTitle": "iRacing Argentina: precio de la membresía",
+    "seoDescription": "Cuánto cuesta iRacing en Argentina: membresía de 1, 3, 12 o 24 meses en dólares, más impuestos."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "videojuegos",
+    "id": "chess-com",
+    "slug": "chess-com",
+    "name": "Chess.com",
+    "officialUrl": "https://www.chess.com/membership",
+    "logo": "/brands/chesscom.svg",
+    "description": "Membresía Premium para jugar y aprender ajedrez: Gold, Platinum, Diamond y plan familiar. Precios en pesos, más impuestos.",
+    "aliases": [
+      "chess",
+      "chesscom",
+      "chess.com",
+      "ajedrez",
+      "gold",
+      "platinum",
+      "diamond"
+    ],
+    "sourceUrls": [
+      "https://www.chess.com/membership",
+      "https://support.chess.com/en/articles/8701404-where-can-i-find-the-prices-for-the-different-levels-of-membership"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Chess.com Premium?",
+        "answer": "El 11 de octubre de 2026 la página mostraba, desde Argentina, Gold a ARS 2.399,99 por mes, Platinum a ARS 3.199,99 y Diamond a ARS 4.799,99."
+      },
+      {
+        "question": "¿Conviene el pago anual?",
+        "answer": "Sí. Con pago anual sale ARS 1.066,67 por mes en Gold, ARS 1.666,67 en Platinum y ARS 2.500 en Diamond. La página solo muestra ese equivalente mensual."
+      },
+      {
+        "question": "¿Hay plan familiar?",
+        "answer": "Sí. Friends & Family es para 2 a 6 personas, solo con pago anual: ARS 4.166,67 por mes."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "Sí. Chess.com aclara que los precios no incluyen impuestos locales y que se suman al pagar. Sumamos el IVA del 21%."
+      }
+    ],
+    "body": "Chess.com muestra precios según el país. Todos los planes tienen 7 días de prueba gratis.",
+    "seoTitle": "Chess.com Argentina: precio de Gold, Platinum y Diamond",
+    "seoDescription": "Cuánto cuesta Chess.com Premium en Argentina: Gold, Platinum, Diamond y Friends & Family, en pesos."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "videojuegos",
+    "id": "geoguessr",
+    "slug": "geoguessr",
+    "name": "GeoGuessr",
+    "officialUrl": "https://www.geoguessr.com/pro",
+    "logo": "/brands/geoguessr.png",
+    "description": "Juego de adivinar lugares del mundo con Street View. Unlimited y Elite, por mes o por año, en dólares y sin impuestos.",
+    "aliases": [
+      "geoguesser",
+      "geoguesr",
+      "geo guessr",
+      "geoguessr pro",
+      "unlimited",
+      "elite"
+    ],
+    "sourceUrls": [
+      "https://www.geoguessr.com/pro",
+      "https://www.geoguessr.support/support/solutions/articles/206000066994-about-your-yearly-pro-subscription-charge"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta GeoGuessr?",
+        "answer": "El 11 de octubre de 2026 la página mostraba, desde Argentina, Unlimited a USD 3,49 por mes y Elite a USD 5,49. Con pago anual: USD 23,88 y USD 35,88 por año."
+      },
+      {
+        "question": "¿Qué suma Elite?",
+        "answer": "Mapas en colaboración, estilo de avatar y recompensas mensuales."
+      },
+      {
+        "question": "¿Hay versión gratis?",
+        "answer": "Sí, el plan Limited permite jugar el desafío diario, con anuncios."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "Sí. La página aclara que los precios no incluyen impuestos. Sumamos el IVA del 21%."
+      }
+    ],
+    "body": "GeoGuessr muestra precios regionales. El plan anual se cobra entero por adelantado.",
+    "seoTitle": "GeoGuessr Argentina: precio de Unlimited y Elite",
+    "seoDescription": "Cuánto cuesta GeoGuessr en Argentina: Unlimited y Elite por mes o por año, en dólares."
+  },
+  {
+    "logoAltMode": "decorative",
+    "overlapNote": null,
+    "verificationStatus": "partial",
+    "tags": [],
+    "secondaryCategories": [],
+    "category": "videojuegos",
+    "id": "exitlag",
+    "slug": "exitlag",
+    "name": "ExitLag",
+    "officialUrl": "https://www.exitlag.com/pricing",
+    "logo": null,
+    "description": "Optimizador de conexión para bajar el ping en juegos online. Plan para un jugador, mensual o anual, en dólares.",
+    "aliases": [
+      "exit lag",
+      "exitlag",
+      "ping",
+      "lag",
+      "optimizador"
+    ],
+    "sourceUrls": [
+      "https://www.exitlag.com/pricing"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta ExitLag?",
+        "answer": "La página de precios muestra el plan para un jugador a USD 9,99 por mes o USD 75 por año, que equivale a USD 6,25 por mes."
+      },
+      {
+        "question": "¿Hay planes para más jugadores?",
+        "answer": "Sí, para 2 y 5 jugadores, con precio por jugador más bajo. No los cargamos porque la página no muestra el total."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. La percepción depende de cómo pagues y queda sin resolver."
+      }
+    ],
+    "body": "ExitLag funciona en Windows, Android e iOS. La página de precios tiene una verificación anti-bots, así que conviene confirmar el precio antes de pagar.",
+    "seoTitle": "ExitLag Argentina: precio mensual y anual",
+    "seoDescription": "Cuánto cuesta ExitLag en Argentina: plan para un jugador, mensual o anual, en dólares."
   }
 ]

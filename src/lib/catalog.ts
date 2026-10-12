@@ -39,6 +39,7 @@ export const categoryLabels: Record<CategoryId, string> = {
   'inteligencia-artificial': 'Inteligencia artificial',
   'hosting-cloud': 'Hosting / Cloud',
   internet: 'Internet / Conectividad',
+  videojuegos: 'Games / Videojuegos',
 };
 
 export function todayIso(date = new Date()): string {

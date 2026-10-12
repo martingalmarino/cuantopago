@@ -44,6 +44,18 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | Canva | `/brands/canva.png` | Ícono de app enviado el 11 de octubre de 2026. simple-icons no trae Canva. Recortado a 160×160 con esquinas transparentes. |
 | Meli+ | `/brands/meliplus.png` | Píldora oficial de mercadolibre.com.ar/melimas, 327×120, sin modificaciones. |
 | ChatGPT | `/brands/chatgpt.svg` | `File:ChatGPT-Logo.svg` de Wikimedia Commons, descargado el 11 de octubre de 2026. Dominio público y marca de OpenAI. Mismo trazo, con el formato de archivo del sitio. |
+| PlayStation Plus | `/brands/playstation.svg` | simple-icons 16.34.0, slug playstation, origen citado playstation.com. Logo de PlayStation; no hay isotipo propio de PS Plus. |
+| Xbox Game Pass | `/brands/xbox.png` | Favicon oficial de xbox.com, descargado el 11 de octubre de 2026. Reducido de 256×256 a 128×128. |
+| Nintendo Switch Online | `/brands/nintendo.png` | Ícono oficial de nintendo.com, 180×180, sin modificaciones. Nintendo no publica un isotipo aislado de Switch Online. |
+| EA Play | `/brands/ea.svg` | simple-icons 16.34.0, slug ea, origen citado ea.com. No hay export del logo de EA Play. |
+| GeForce NOW | `/brands/geforcenow.png` | Favicon oficial de play.geforcenow.com, 256×256, sin modificaciones. |
+| Apple Arcade | `/brands/applearcade.svg` | simple-icons 16.34.0, slug applearcade, origen citado apple.com. |
+| Final Fantasy XIV | `/brands/ffxiv.png` | Ícono oficial del Lodestone de finalfantasyxiv.com, 144×144, sin modificaciones. |
+| Minecraft Realms | `/brands/minecraft.png` | Ícono oficial de minecraft.net, 192×192, sin modificaciones. No hay isotipo propio de Realms. |
+| iRacing | `/brands/iracing.png` | Logo oficial publicado en iracing.com. Se recortó el isotipo del piloto, sin el texto, centrado en 160×160. |
+| Chess.com | `/brands/chesscom.svg` | simple-icons 16.34.0, slug chessdotcom, origen citado chess.com. |
+| GeoGuessr | `/brands/geoguessr.png` | Ícono de app oficial de geoguessr.com, 180×180, sin modificaciones. |
+| ExitLag | ninguno | simple-icons no lo trae y exitlag.com pide una verificación anti-bots antes de servir sus archivos. |
 | Apple One, F1 TV, Flow, Microsoft 365, Adobe | ninguno | No hay un export de simple-icons del producto. No se usó la marca de la empresa madre ni se dibujó un logo. |
 
 El pie del sitio aclara que es independiente y que las marcas son de sus titulares.

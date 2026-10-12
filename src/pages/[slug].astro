@@ -21,7 +21,9 @@ const bundles = list.filter((plan) => (plan.entitlements?.length ?? 0) > 0 || (p
 const related = services.filter((item) => item.category === service.category && item.id !== service.id).slice(0, 4);
 const groups = [
   { label: 'Por mes', plans: list.filter((plan) => !plan.billingIntervalDays && plan.billingPeriodMonths === 1) },
-  { label: 'Pago anual', plans: list.filter((plan) => !plan.billingIntervalDays && plan.billingPeriodMonths > 1) },
+  { label: 'Cada varios meses', plans: list.filter((plan) => !plan.billingIntervalDays && plan.billingPeriodMonths > 1 && plan.billingPeriodMonths < 12) },
+  { label: 'Pago anual', plans: list.filter((plan) => !plan.billingIntervalDays && plan.billingPeriodMonths === 12) },
+  { label: 'Más de un año', plans: list.filter((plan) => !plan.billingIntervalDays && plan.billingPeriodMonths > 12) },
   { label: 'Ciclo en días', plans: list.filter((plan) => Boolean(plan.billingIntervalDays)) },
 ].filter((group) => group.plans.length > 0);
 
