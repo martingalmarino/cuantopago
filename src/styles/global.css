@@ -285,6 +285,10 @@ p { margin: 0 0 12px; }
   align-items: start;
 }
 .directory .section-panel[hidden] { display: none; }
+@media (min-width: 901px) {
+  .directory { display: block; columns: 2; column-gap: 20px; }
+  .directory > .section-panel { break-inside: avoid; margin-bottom: 20px; }
+}
 
 .service-row {
   display: grid;
