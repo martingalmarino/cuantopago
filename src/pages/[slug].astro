@@ -14,7 +14,7 @@ export function getStaticPaths() {
 const { service } = Astro.props;
 const list = plansFor(service.id);
 const h1 = `${service.name} en Argentina`;
-const title = service.seoTitle ?? `Cuánto cuesta ${service.name} en Argentina`;
+const title = `¿Cuánto sale ${service.name} en Argentina? - Precios y Planes 2026 | Abonito`;
 const description = service.seoDescription ?? `Precio publicado de ${service.name} en Argentina, planes y qué entra en la estimación.`;
 const firstPriced = list.find((plan) => plan.selectable !== false && plan.amountMinor !== null && (plan.choiceSlots ?? 0) === 0);
 const verified = list.find((plan) => plan.verifiedAt)?.verifiedAt ?? null;

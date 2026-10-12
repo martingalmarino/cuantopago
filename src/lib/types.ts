@@ -45,7 +45,6 @@ export interface ServiceRecord {
   tags?: string[];
   secondaryCategories?: CategoryId[];
   body?: string | null;
-  seoTitle?: string | null;
   seoDescription?: string | null;
 }
 
