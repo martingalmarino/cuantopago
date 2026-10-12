@@ -646,5 +646,117 @@
     "retrievalDate": "2026-10-11",
     "license": "CC0 1.0 (simple-icons). Marca de AgileBits; origen citado 1password.com/press.",
     "limitation": "Isotipo de 1Password en un solo color #145FE4."
+  },
+  {
+    "serviceId": "webflow",
+    "file": "/brands/webflow.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Webflow; origen citado brand-at.webflow.io.",
+    "limitation": "Isotipo de Webflow en un solo color #146EF5."
+  },
+  {
+    "serviceId": "bubble",
+    "file": "/brands/bubble.png",
+    "sourceUrl": "https://meta-q.cdn.bubble.io/cdn-cgi/image/w=128,h=,f=png,dpr=1,fit=contain/f1530294839424x143528842134401200/Icon-no-clearspace.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Bubble Group. Ícono oficial publicado por bubble.io, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 128×137 convertido a PNG por el CDN de Bubble, sin otras modificaciones."
+  },
+  {
+    "serviceId": "sanity",
+    "file": "/brands/sanity.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Sanity; origen citado github.com/sanity-io/logos.",
+    "limitation": "Monograma de Sanity en un solo color #0D0E12."
+  },
+  {
+    "serviceId": "obsidian",
+    "file": "/brands/obsidian.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Obsidian; origen citado obsidian.md.",
+    "limitation": "Isotipo de Obsidian en un solo color #7C3AED."
+  },
+  {
+    "serviceId": "ifttt",
+    "file": "/brands/ifttt.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de IFTTT; origen citado ifttt.com/discover/brand-guidelines.",
+    "limitation": "Logo de IFTTT en negro."
+  },
+  {
+    "serviceId": "proton",
+    "file": "/brands/proton.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Proton AG; origen citado proton.me/media/kit.",
+    "limitation": "Isotipo de Proton en un solo color #6D4AFF."
+  },
+  {
+    "serviceId": "tradingview",
+    "file": "/brands/tradingview.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de TradingView; origen citado tradingview.com/media-kit.",
+    "limitation": "Isotipo de TradingView en un solo color #131622."
+  },
+  {
+    "serviceId": "twitch",
+    "file": "/brands/twitch.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Twitch; origen citado brand.twitch.tv.",
+    "limitation": "Isotipo de Twitch en un solo color #9146FF."
+  },
+  {
+    "serviceId": "kick",
+    "file": "/brands/kick.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Kick; origen citado kick.com.",
+    "limitation": "Isotipo de Kick en un solo color #53FC19."
+  },
+  {
+    "serviceId": "streamlabs",
+    "file": "/brands/streamlabs.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Streamlabs; origen citado streamlabs.com/about.",
+    "limitation": "Isotipo de Streamlabs en un solo color #80F5D2."
+  },
+  {
+    "serviceId": "duolingo",
+    "file": "/brands/duolingo.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Duolingo; origen citado design.duolingo.com.",
+    "limitation": "Isotipo de Duolingo en un solo color #58CC02."
+  },
+  {
+    "serviceId": "busuu",
+    "file": "/brands/busuu.png",
+    "sourceUrl": "https://cdn.busuu.com/homepage/35.0.0/img/busuu-icon-192x192-transparent.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Busuu (Chegg). Ícono oficial publicado por busuu.com, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 192×192 con fondo transparente, sin modificaciones."
+  },
+  {
+    "serviceId": "brilliant",
+    "file": "/brands/brilliant.png",
+    "sourceUrl": "https://brilliant.org/apple-touch-icon-120x120-precomposed.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Brilliant Worldwide. Ícono oficial publicado por brilliant.org, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 120×120, sin modificaciones."
+  },
+  {
+    "serviceId": "mimo",
+    "file": "/brands/mimo.png",
+    "sourceUrl": "https://mimo.org/icons/v1/android-chrome-192x192.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Mimo (Getmimo AG). Ícono oficial publicado por mimo.org, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 192×192, sin modificaciones."
   }
 ]

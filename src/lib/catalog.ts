@@ -44,6 +44,8 @@ export const categoryLabels: Record<CategoryId, string> = {
   'programacion-ia': 'Programación con IA',
   'creacion-apps': 'Creación de aplicaciones',
   seguridad: 'Seguridad',
+  'streaming-creadores': 'Streaming de creadores',
+  aprendizaje: 'Aprendizaje',
 };
 
 export function todayIso(date = new Date()): string {

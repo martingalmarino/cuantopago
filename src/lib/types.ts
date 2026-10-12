@@ -18,7 +18,9 @@ export type CategoryId =
   | 'redes-sociales'
   | 'programacion-ia'
   | 'creacion-apps'
-  | 'seguridad';
+  | 'seguridad'
+  | 'streaming-creadores'
+  | 'aprendizaje';
 export type Channel = 'web-direct' | 'app-store' | 'google-play' | 'operator' | 'bundle';
 
 export interface ServiceFaq {

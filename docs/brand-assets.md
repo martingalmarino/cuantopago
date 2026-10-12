@@ -80,6 +80,20 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | NordVPN | `/brands/nordvpn.svg` | simple-icons 16.34.0, slug nordvpn, origen citado nordvpn.com/press-area. |
 | Bitwarden | `/brands/bitwarden.svg` | simple-icons 16.34.0, slug bitwarden, origen citado bitwarden.com/brand. |
 | 1Password | `/brands/1password.svg` | simple-icons 16.34.0, slug 1password, origen citado 1password.com/press. |
+| Webflow | `/brands/webflow.svg` | simple-icons 16.34.0, slug webflow, origen citado brand-at.webflow.io. |
+| Bubble | `/brands/bubble.png` | Ícono oficial publicado por bubble.io, 128×137, convertido a PNG por su CDN. simple-icons no trae Bubble. |
+| Sanity | `/brands/sanity.svg` | simple-icons 16.34.0, slug sanity, origen citado github.com/sanity-io/logos. |
+| Obsidian | `/brands/obsidian.svg` | simple-icons 16.34.0, slug obsidian, origen citado obsidian.md. |
+| IFTTT | `/brands/ifttt.svg` | simple-icons 16.34.0, slug ifttt, origen citado ifttt.com/discover/brand-guidelines. |
+| Proton | `/brands/proton.svg` | simple-icons 16.34.0, slug proton, origen citado proton.me/media/kit. |
+| TradingView | `/brands/tradingview.svg` | simple-icons 16.34.0, slug tradingview, origen citado tradingview.com/media-kit. |
+| Twitch | `/brands/twitch.svg` | simple-icons 16.34.0, slug twitch, origen citado brand.twitch.tv. |
+| Kick | `/brands/kick.svg` | simple-icons 16.34.0, slug kick, origen citado kick.com. |
+| Streamlabs | `/brands/streamlabs.svg` | simple-icons 16.34.0, slug streamlabs, origen citado streamlabs.com/about. |
+| Duolingo | `/brands/duolingo.svg` | simple-icons 16.34.0, slug duolingo, origen citado design.duolingo.com. |
+| Busuu | `/brands/busuu.png` | Ícono oficial publicado por busuu.com, 192×192, sin modificaciones. simple-icons no trae Busuu. |
+| Brilliant | `/brands/brilliant.png` | Ícono oficial publicado por brilliant.org, 120×120, sin modificaciones. simple-icons no trae Brilliant. |
+| Mimo | `/brands/mimo.png` | Ícono oficial publicado por mimo.org, 192×192, sin modificaciones. simple-icons no trae Mimo. |
 | Apple One, F1 TV, Flow, Microsoft 365, Adobe | ninguno | No hay un export de simple-icons del producto. No se usó la marca de la empresa madre ni se dibujó un logo. |
 
 El pie del sitio aclara que es independiente y que las marcas son de sus titulares.

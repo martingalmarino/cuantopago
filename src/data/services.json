@@ -1264,6 +1264,176 @@
     "seoDescription": "Cuánto cuesta Zoom en Argentina: Workplace Pro y Comercial por usuario, en pesos y con impuestos."
   },
   {
+    "id": "obsidian",
+    "slug": "obsidian",
+    "name": "Obsidian",
+    "category": "productividad",
+    "officialUrl": "https://obsidian.md/pricing",
+    "logo": "/brands/obsidian.svg",
+    "logoAltMode": "decorative",
+    "description": "App de notas en archivos locales. Es gratis; Sync y Publish se pagan aparte, en dólares.",
+    "aliases": [
+      "obsidian",
+      "obsidian md",
+      "obsidian sync",
+      "obsidian publish",
+      "notas",
+      "markdown"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://obsidian.md/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Obsidian?",
+        "answer": "La app es gratis. El 11 de octubre de 2026 Sync costaba USD 5 por usuario por mes, o USD 4 con pago anual, y Publish USD 10 por sitio por mes, o USD 8 con pago anual."
+      },
+      {
+        "question": "¿Hay que pagar para usarlo en el trabajo?",
+        "answer": "No es obligatorio. La licencia comercial (USD 50 por usuario por año) es opcional y sirve para apoyar el proyecto."
+      },
+      {
+        "question": "¿Hay descuentos?",
+        "answer": "Sí. Estudiantes, docentes y personas que trabajan en organizaciones sin fines de lucro tienen un 40% de descuento en Sync y Publish. No lo aplicamos solo."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Sync sincroniza las notas entre dispositivos con cifrado de extremo a extremo. Publish sube las notas a la web.",
+    "seoTitle": "Obsidian Argentina: precio de Sync y Publish",
+    "seoDescription": "Cuánto cuesta Obsidian en Argentina: Sync y Publish por mes o por año, en dólares y con impuestos."
+  },
+  {
+    "id": "ifttt",
+    "slug": "ifttt",
+    "name": "IFTTT",
+    "category": "productividad",
+    "officialUrl": "https://ifttt.com/plans",
+    "logo": "/brands/ifttt.svg",
+    "logoAltMode": "decorative",
+    "description": "Automatizaciones entre apps y dispositivos del hogar. Pro y Pro+, por mes o por año, en dólares.",
+    "aliases": [
+      "ifttt",
+      "if this then that",
+      "ifttt pro",
+      "ifttt pro plus",
+      "automatizaciones",
+      "applets"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://ifttt.com/plans"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta IFTTT?",
+        "answer": "El 11 de octubre de 2026 la página publicaba Pro a USD 4,99 por mes o USD 35,88 por año, y Pro+ a USD 14,99 por mes o USD 107,88 por año."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. El plan gratis permite 2 applets con ejecuciones ilimitadas."
+      },
+      {
+        "question": "¿Qué diferencia hay entre Pro y Pro+?",
+        "answer": "Pro permite 20 applets con varias acciones y webhooks. Pro+ no tiene límite de applets y suma servicios de IA, varias cuentas por servicio y código de filtros."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "El pago anual ahorra un 40% frente al mensual.",
+    "seoTitle": "IFTTT Argentina: precio de Pro y Pro+",
+    "seoDescription": "Cuánto cuesta IFTTT en Argentina: Pro y Pro+ por mes o por año, en dólares y con impuestos."
+  },
+  {
+    "id": "proton",
+    "slug": "proton",
+    "name": "Proton",
+    "category": "productividad",
+    "officialUrl": "https://proton.me/pricing",
+    "logo": "/brands/proton.svg",
+    "logoAltMode": "decorative",
+    "description": "Correo, calendario, nube, VPN y gestor de contraseñas cifrados. Mail Plus y Unlimited, por mes o por año, en dólares.",
+    "aliases": [
+      "proton",
+      "proton mail",
+      "protonmail",
+      "proton unlimited",
+      "proton vpn",
+      "proton pass",
+      "proton drive"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://proton.me/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Proton?",
+        "answer": "El 11 de octubre de 2026 la página publicaba Mail Plus a USD 4,99 por mes o USD 47,88 por año, y Unlimited a USD 12,99 por mes o USD 119,88 por año."
+      },
+      {
+        "question": "¿Qué incluye Unlimited?",
+        "answer": "Todo Proton con una sola suscripción: Mail, Calendar, Drive con 500 GB, VPN para 10 dispositivos y Pass, el gestor de contraseñas."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. Proton Free incluye una dirección de correo cifrada y hasta 1 GB de almacenamiento."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "La página deja elegir entre dólares, euros y francos suizos. Usamos los precios en dólares.",
+    "seoTitle": "Proton Argentina: precio de Mail Plus y Unlimited",
+    "seoDescription": "Cuánto cuesta Proton en Argentina: Mail Plus y Unlimited por mes o por año, en dólares y con impuestos."
+  },
+  {
+    "id": "tradingview",
+    "slug": "tradingview",
+    "name": "TradingView",
+    "category": "productividad",
+    "officialUrl": "https://es.tradingview.com/pricing/",
+    "logo": "/brands/tradingview.svg",
+    "logoAltMode": "decorative",
+    "description": "Gráficos y análisis de mercados financieros. Essential, Plus y Premium, por mes o con pago anual, en dólares.",
+    "aliases": [
+      "tradingview",
+      "trading view",
+      "tradingview essential",
+      "tradingview plus",
+      "tradingview premium",
+      "graficos",
+      "bolsa"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://es.tradingview.com/pricing/"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta TradingView?",
+        "answer": "El 11 de octubre de 2026 la página, vista desde Argentina, publicaba como \"precio especial\" Essential a USD 14,95, Plus a USD 34,95 y Premium a USD 69,95 por mes con pago mensual."
+      },
+      {
+        "question": "¿Conviene el pago anual?",
+        "answer": "Sí. Con pago anual bajan a USD 12,95, USD 29,95 y USD 59,95 por mes, un ahorro de hasta 17%."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. El plan Basic es gratis, no pide tarjeta y permite 1 gráfico por pestaña con anuncios."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "La página muestra estos montos como \"precio especial\" sin decir hasta cuándo. Ultimate (USD 239,95 por mes) no se cargó.",
+    "seoTitle": "TradingView Argentina: precio de Essential, Plus y Premium",
+    "seoDescription": "Cuánto cuesta TradingView en Argentina: Essential, Plus y Premium por mes o con pago anual, en dólares y con impuestos."
+  },
+  {
     "id": "canva",
     "slug": "canva",
     "name": "Canva",
@@ -2107,6 +2277,131 @@
     "body": "Calculá el costo de Supabase Pro o Team con impuestos. El precio cubre un proyecto, y los proyectos extra y el consumo adicional se suman a la factura.",
     "seoTitle": "Supabase Argentina: precios de Pro y Team con impuestos",
     "seoDescription": "Precios de Supabase Pro y Team en dólares con el IVA sumado. Calculá cuánto suma a tu presupuesto según la cotización de tu tarjeta."
+  },
+  {
+    "id": "webflow",
+    "slug": "webflow",
+    "name": "Webflow",
+    "category": "hosting-cloud",
+    "officialUrl": "https://webflow.com/pricing",
+    "logo": "/brands/webflow.svg",
+    "logoAltMode": "decorative",
+    "description": "Diseño y alojamiento de sitios web sin código. Basic y Premium se pagan por sitio, en dólares y más impuestos.",
+    "aliases": [
+      "webflow",
+      "web flow",
+      "webflow basic",
+      "webflow premium",
+      "webflow cms",
+      "creador de sitios web"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://webflow.com/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Webflow?",
+        "answer": "El 11 de octubre de 2026 la página publicaba Basic a USD 25 y Premium a USD 39 por sitio por mes con pago mensual. Con pago anual bajan a USD 15 y USD 25 por mes."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "Sí. Webflow aclara que los precios están en dólares, por sitio, y que los impuestos se suman al pagar. Sumamos el IVA del 21% y la percepción."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. Starter es gratis, usa un dominio webflow.io y permite 2 páginas estáticas y un CMS limitado."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Webflow cobra por sitio. Premium arranca con 50 GB de transferencia y el precio sube si elegís más.",
+    "seoTitle": "Webflow Argentina: precio de Basic y Premium",
+    "seoDescription": "Cuánto cuesta Webflow en Argentina: Basic y Premium por sitio, por mes o por año, en dólares, con IVA y percepción."
+  },
+  {
+    "id": "bubble",
+    "slug": "bubble",
+    "name": "Bubble",
+    "category": "hosting-cloud",
+    "officialUrl": "https://bubble.io/pricing",
+    "logo": "/brands/bubble.png",
+    "logoAltMode": "decorative",
+    "description": "Creá y alojá aplicaciones web sin código. Starter, Growth y Team, con facturación anual y en dólares.",
+    "aliases": [
+      "bubble",
+      "bubble io",
+      "bubble.io",
+      "no code",
+      "sin codigo",
+      "creador de apps"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://bubble.io/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Bubble?",
+        "answer": "El 11 de octubre de 2026 la página publicaba, con facturación anual, Starter a USD 29, Growth a USD 119 y Team a USD 349 por mes."
+      },
+      {
+        "question": "¿Y pagando mes a mes?",
+        "answer": "Bubble también ofrece pago mensual, pero no pudimos ver ese precio. Si lo pagás así, cargá tu importe en Mis suscripciones."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. Free sirve para crear y probar apps, con 500 créditos de IA y 50.000 unidades de carga de trabajo, pero no permite publicarlas en vivo."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Cada plan trae una cuota de unidades de carga de trabajo (workload units). Si la superás, el uso extra se cobra aparte.",
+    "seoTitle": "Bubble Argentina: precio de Starter, Growth y Team",
+    "seoDescription": "Cuánto cuesta Bubble en Argentina: Starter, Growth y Team con facturación anual, en dólares y con impuestos."
+  },
+  {
+    "id": "sanity",
+    "slug": "sanity",
+    "name": "Sanity",
+    "category": "hosting-cloud",
+    "officialUrl": "https://www.sanity.io/pricing",
+    "logo": "/brands/sanity.svg",
+    "logoAltMode": "decorative",
+    "description": "CMS headless y base de contenido para sitios y apps. Growth se paga por usuario, en dólares.",
+    "aliases": [
+      "sanity",
+      "sanity io",
+      "sanity cms",
+      "sanity studio",
+      "cms headless"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.sanity.io/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Sanity?",
+        "answer": "El 11 de octubre de 2026 la página publicaba Growth a USD 15 por usuario por mes, para hasta 50 usuarios."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. Free admite hasta 20 usuarios y sirve para proyectos chicos."
+      },
+      {
+        "question": "¿Y para empresas?",
+        "answer": "Enterprise no tiene precio publicado: se cotiza con el equipo de ventas."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Sanity cobra por usuario. Si superás las cuotas del plan, el uso extra se cobra aparte y no lo estimamos.",
+    "seoTitle": "Sanity Argentina: precio de Growth",
+    "seoDescription": "Cuánto cuesta Sanity en Argentina: Growth por usuario, en dólares y con impuestos."
   },
   {
     "id": "starlink",
@@ -3569,5 +3864,303 @@
     "body": "Los precios son los que 1Password muestra en dólares. La página no aclara impuestos.",
     "seoTitle": "1Password Argentina: precio de Individual y Families",
     "seoDescription": "Cuánto cuesta 1Password en Argentina: Individual y Families por mes o por año, en dólares y con impuestos."
+  },
+  {
+    "id": "twitch",
+    "slug": "twitch",
+    "name": "Twitch",
+    "category": "streaming-creadores",
+    "officialUrl": "https://www.twitch.tv/turbo",
+    "logo": "/brands/twitch.svg",
+    "logoAltMode": "decorative",
+    "description": "Plataforma de transmisiones en vivo. Turbo quita los anuncios en todo Twitch; las suscripciones apoyan a un canal. En dólares, con precio local para Argentina.",
+    "aliases": [
+      "twitch",
+      "twitch turbo",
+      "twitch prime",
+      "suscripcion twitch",
+      "sub twitch",
+      "streaming en vivo"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://help.twitch.tv/s/article/turbo-pricing-by-country",
+      "https://help.twitch.tv/s/article/local-sub-price-countries?language=es_MX"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Twitch Turbo en Argentina?",
+        "answer": "El 11 de octubre de 2026 la ayuda de Twitch publicaba Turbo para Argentina a USD 4,99 por mes comprado en la web. En los países sin precio ajustado cuesta USD 11,99."
+      },
+      {
+        "question": "¿Cuánto cuesta suscribirse a un canal?",
+        "answer": "Una suscripción de nivel 1 cuesta USD 1,99 por mes en la web para Argentina. Es por canal: si te suscribís a tres, pagás tres veces."
+      },
+      {
+        "question": "¿Y desde el celular?",
+        "answer": "Los precios de la ayuda son para compras en la web. Desde las apps de iPhone o Android el precio puede ser otro."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Turbo no incluye suscripciones a canales y las suscripciones no quitan los anuncios de los demás canales.",
+    "seoTitle": "Twitch Argentina: precio de Turbo y de las suscripciones",
+    "seoDescription": "Cuánto cuesta Twitch en Argentina: Turbo y suscripción de nivel 1 a un canal, en dólares y con impuestos."
+  },
+  {
+    "id": "kick",
+    "slug": "kick",
+    "name": "Kick",
+    "category": "streaming-creadores",
+    "officialUrl": "https://kick.com/",
+    "logo": "/brands/kick.svg",
+    "logoAltMode": "decorative",
+    "description": "Plataforma de transmisiones en vivo. Las suscripciones a canales tienen un precio único en dólares en todos los países.",
+    "aliases": [
+      "kick",
+      "kick com",
+      "kick.com",
+      "suscripcion kick",
+      "sub kick",
+      "streaming en vivo"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://help.kick.com/en/articles/15159735-how-kick-subscriptions-work-for-viewers",
+      "https://help.kick.com/en/articles/15171658-international-payments-and-currency-handling-on-kick"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta suscribirse en Kick?",
+        "answer": "El 11 de octubre de 2026 la ayuda de Kick decía que las suscripciones cuestan USD 5 por mes, el mismo precio en todos los países. Una guía anterior todavía menciona USD 4,99."
+      },
+      {
+        "question": "¿Hay precio para Argentina?",
+        "answer": "No. Kick no tiene precios regionales: todas las suscripciones y regalos se cobran en dólares al mismo precio."
+      },
+      {
+        "question": "¿Se puede ver Kick gratis?",
+        "answer": "Sí. Ver transmisiones es gratis. La suscripción es para apoyar a un canal y es por canal."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Solo los canales afiliados o socios de Kick pueden recibir suscripciones.",
+    "seoTitle": "Kick Argentina: cuánto cuesta suscribirse a un canal",
+    "seoDescription": "Cuánto cuesta una suscripción de Kick en Argentina: precio único en dólares, con impuestos."
+  },
+  {
+    "id": "streamlabs",
+    "slug": "streamlabs",
+    "name": "Streamlabs",
+    "category": "streaming-creadores",
+    "officialUrl": "https://streamlabs.com/ultra",
+    "logo": "/brands/streamlabs.svg",
+    "logoAltMode": "decorative",
+    "description": "Software para transmitir en vivo con overlays, alertas y multistream. Ultra se paga por mes o por año, en dólares.",
+    "aliases": [
+      "streamlabs",
+      "stream labs",
+      "streamlabs ultra",
+      "streamlabs prime",
+      "streamlabs obs",
+      "multistream"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://streamlabs.com/faq",
+      "https://streamlabs.com/ultra"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Streamlabs Ultra?",
+        "answer": "El 11 de octubre de 2026 la página de preguntas frecuentes publicaba Ultra a USD 27 por mes o USD 189 por año (unos USD 15,75 por mes)."
+      },
+      {
+        "question": "¿Qué es Ultra+?",
+        "answer": "Suma soporte dedicado, una llamada con el equipo y más automatizaciones. La página oficial no muestra su precio, así que no lo cargamos."
+      },
+      {
+        "question": "¿Se puede usar gratis?",
+        "answer": "Sí. Streamlabs Desktop, Mobile y la Web Suite tienen versión gratis para transmitir a las plataformas principales."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Ultra reemplaza a Streamlabs Prime e incluye las versiones Pro de Talk Studio, Cross Clip, Video Editor y Podcast Editor.",
+    "seoTitle": "Streamlabs Argentina: precio de Ultra",
+    "seoDescription": "Cuánto cuesta Streamlabs Ultra en Argentina: por mes o por año, en dólares y con impuestos."
+  },
+  {
+    "id": "duolingo",
+    "slug": "duolingo",
+    "name": "Duolingo",
+    "category": "aprendizaje",
+    "officialUrl": "https://www.duolingo.com/super",
+    "logo": "/brands/duolingo.svg",
+    "logoAltMode": "decorative",
+    "description": "Cursos de idiomas, matemática y ajedrez. Es gratis con anuncios; Super quita los anuncios y da vidas ilimitadas.",
+    "aliases": [
+      "duolingo",
+      "duo",
+      "super duolingo",
+      "duolingo plus",
+      "duolingo max",
+      "idiomas",
+      "ingles"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.duolingo.com/super",
+      "https://apps.apple.com/ar/app/duolingo-aprende-idiomas/id570060128"
+    ],
+    "verificationStatus": "unverified",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Super Duolingo en Argentina?",
+        "answer": "Duolingo no publica el precio en su web: se ve dentro de la app. El 11 de octubre de 2026 el App Store de Argentina listaba varias compras llamadas \"Super Duolingo\" de USD 5,49 a USD 47,99, sin decir si son por mes o por año, así que no cargamos un importe."
+      },
+      {
+        "question": "¿Se puede usar gratis?",
+        "answer": "Sí. Duolingo es gratis con anuncios y un límite de vidas. Super suma vidas ilimitadas, práctica personalizada y sin anuncios."
+      },
+      {
+        "question": "¿Hay plan familiar?",
+        "answer": "Sí. Super Family comparte Super con hasta 6 personas. Tampoco publica el precio fuera de la app."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Si pagás Super, cargá el importe que te cobran en Mis suscripciones.",
+    "seoTitle": "Duolingo Argentina: cuánto cuesta Super Duolingo",
+    "seoDescription": "Cuánto cuesta Super Duolingo en Argentina: qué incluye y dónde ver el precio."
+  },
+  {
+    "id": "busuu",
+    "slug": "busuu",
+    "name": "Busuu",
+    "category": "aprendizaje",
+    "officialUrl": "https://www.busuu.com/",
+    "logo": "/brands/busuu.png",
+    "logoAltMode": "decorative",
+    "description": "Cursos de idiomas con correcciones de hablantes nativos. Premium y Premium Plus, por año, en el App Store de Argentina.",
+    "aliases": [
+      "busuu",
+      "busuu premium",
+      "busuu premium plus",
+      "idiomas",
+      "ingles"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://apps.apple.com/ar/app/busuu-aprender-idiomas-ingl%C3%A9s/id379968583"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Busuu en Argentina?",
+        "answer": "El 11 de octubre de 2026 el App Store de Argentina listaba \"12 meses de Premium\" a USD 48,99 y \"12 Months Premium Plus\" a USD 68,90."
+      },
+      {
+        "question": "¿Y por mes?",
+        "answer": "La ficha lista varias suscripciones mensuales con precios distintos (de USD 6,49 a USD 9,99) sin decir a qué plan corresponden, así que no las cargamos."
+      },
+      {
+        "question": "¿Se puede usar gratis?",
+        "answer": "Sí. Busuu tiene una versión gratis con lecciones limitadas."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Los precios salen del App Store argentino. Desde la web o Android el importe puede ser otro.",
+    "seoTitle": "Busuu Argentina: precio de Premium y Premium Plus",
+    "seoDescription": "Cuánto cuesta Busuu en Argentina: Premium y Premium Plus por año, en dólares y con impuestos."
+  },
+  {
+    "id": "brilliant",
+    "slug": "brilliant",
+    "name": "Brilliant",
+    "category": "aprendizaje",
+    "officialUrl": "https://brilliant.org/subscribe/",
+    "logo": "/brands/brilliant.png",
+    "logoAltMode": "decorative",
+    "description": "Cursos interactivos de matemática, ciencia, programación y datos. Premium por mes, por año o Family, en pesos.",
+    "aliases": [
+      "brilliant",
+      "brilliant org",
+      "brilliant premium",
+      "matematica",
+      "programacion",
+      "ciencia"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://brilliant.org/subscribe/"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Brilliant en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página mostraba en pesos Premium a ARS 13.000 por mes, o ARS 8.750 por mes con pago anual. Family costaba ARS 17.500 por mes para 6 personas."
+      },
+      {
+        "question": "¿El pago anual se cobra de una vez?",
+        "answer": "Sí. La página aclara que se factura en un solo pago y se renueva cada año."
+      },
+      {
+        "question": "¿Se puede usar gratis?",
+        "answer": "Sí. La versión gratis da una lección por día. Premium desbloquea los más de 40 cursos y el tutor con IA."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "La página no aclara si el precio en pesos incluye impuestos.",
+    "seoTitle": "Brilliant Argentina: precio de Premium en pesos",
+    "seoDescription": "Cuánto cuesta Brilliant Premium en Argentina: por mes, por año o Family, en pesos y con impuestos."
+  },
+  {
+    "id": "mimo",
+    "slug": "mimo",
+    "name": "Mimo",
+    "category": "aprendizaje",
+    "officialUrl": "https://mimo.org/pro",
+    "logo": "/brands/mimo.png",
+    "logoAltMode": "decorative",
+    "description": "App para aprender a programar desde el celular. Pro por mes o por año, en el App Store de Argentina.",
+    "aliases": [
+      "mimo",
+      "mimo pro",
+      "mimo max",
+      "aprender a programar",
+      "programacion"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://apps.apple.com/ar/app/mimo-ia-programaci%C3%B3n-code/id1133960732",
+      "https://mimo.org/pro"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Mimo en Argentina?",
+        "answer": "El 11 de octubre de 2026 el App Store de Argentina listaba Mimo Pro a USD 9,99 por mes (\"Un mes programando\") o USD 79,99 por año (\"Un año programando\")."
+      },
+      {
+        "question": "¿Qué es Mimo Max?",
+        "answer": "Suma el acceso completo en la web. La página de Mimo, vista desde Argentina, lo mostraba en euros, así que no lo cargamos."
+      },
+      {
+        "question": "¿Se puede usar gratis?",
+        "answer": "Sí. Basic es gratis en el celular, con acceso limitado a cursos."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Los precios salen del App Store argentino. Desde la web o Android el importe puede ser otro.",
+    "seoTitle": "Mimo Argentina: precio de Mimo Pro",
+    "seoDescription": "Cuánto cuesta Mimo Pro en Argentina: por mes o por año, en dólares y con impuestos."
   }
 ]
