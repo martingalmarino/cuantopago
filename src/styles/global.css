@@ -230,6 +230,9 @@ p { margin: 0 0 12px; }
 .section-cap .count { color: var(--text-secondary); font-size: 13px; font-weight: 600; }
 .section-body { background: var(--surface); border-radius: 18px; margin: 0 6px 6px; padding: 8px 4px; }
 .section-body.pad { padding: 16px; }
+.source-list { margin: 0; padding-left: 18px; display: grid; gap: 8px; }
+.source-list li { min-width: 0; }
+.source-list a { overflow-wrap: anywhere; }
 
 .toolbar {
   display: flex;

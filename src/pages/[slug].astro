@@ -25,6 +25,11 @@ const groups = [
   { label: 'Ciclo en días', plans: list.filter((plan) => Boolean(plan.billingIntervalDays)) },
 ].filter((group) => group.plans.length > 0);
 
+function sourceLabel(url: string): string {
+  const { hostname, pathname } = new URL(url);
+  const path = pathname.replace(/\/$/, '');
+  return hostname.replace(/^www\./, '') + path;
+}
 function featureLine(plan: PlanRecord): string {
   const bits = [
     plan.features.ads === true ? 'Con anuncios' : plan.features.ads === false ? 'Sin anuncios' : null,
@@ -146,8 +151,8 @@ function priceLabel(plan: PlanRecord): string {
     <section class="section-panel">
       <div class="section-cap"><h2>Fuentes</h2></div>
       <div class="section-body pad">
-        <ul>
-          {service.sourceUrls.map((url) => <li><a href={url}>{url}</a></li>)}
+        <ul class="source-list">
+          {service.sourceUrls.map((url) => <li><a href={url} title={url} rel="noopener">{sourceLabel(url)}</a></li>)}
         </ul>
       </div>
     </section>
