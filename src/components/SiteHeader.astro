@@ -30,9 +30,29 @@ const links = [
       <summary>Menú</summary>
       <nav class="nav-links nav" aria-label="Principal en el teléfono">
         {links.map((link) => (
-          <a href={link.href} aria-current={path === link.href ? 'page' : undefined}>{link.label}</a>
+          <a href={link.href} aria-current={path === link.href ? 'page' : undefined}>
+            {link.label}
+            {link.count && <SubscriptionCount client:only="react" />}
+          </a>
         ))}
       </nav>
     </details>
   </div>
 </header>
+
+<script>
+  const menu = document.querySelector<HTMLDetailsElement>('.nav-mobile');
+  if (menu) {
+    const close = () => { menu.open = false; };
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && menu.open) {
+        close();
+        menu.querySelector('summary')?.focus();
+      }
+    });
+    document.addEventListener('click', (event) => {
+      if (menu.open && !menu.contains(event.target as Node)) close();
+    });
+    window.addEventListener('pageshow', close);
+  }
+</script>
