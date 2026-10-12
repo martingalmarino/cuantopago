@@ -526,5 +526,125 @@
     "retrievalDate": "2026-10-11",
     "license": "Marca de LinkedIn. Favicon oficial de linkedin.com, usado solo para identificar el servicio.",
     "limitation": "Ícono de 64×64 extraído del favicon, sin modificaciones."
+  },
+  {
+    "serviceId": "capcut",
+    "file": "/brands/capcut.png",
+    "sourceUrl": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/common/images/lv_web-2.ico",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de ByteDance. Favicon oficial de capcut.com, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 64×64 convertido de .ico a PNG, sin otras modificaciones."
+  },
+  {
+    "serviceId": "picsart",
+    "file": "/brands/picsart.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Picsart; origen citado picsart.com.",
+    "limitation": "Isotipo de Picsart en un solo color #C209C1."
+  },
+  {
+    "serviceId": "framer",
+    "file": "/brands/framer.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Framer; origen citado framer.com.",
+    "limitation": "Isotipo de Framer en un solo color #0055FF."
+  },
+  {
+    "serviceId": "clipchamp",
+    "file": "/brands/clipchamp.png",
+    "sourceUrl": "https://clipchamp.com/icon3.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Microsoft. Ícono oficial publicado por clipchamp.com, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 256×256, sin modificaciones."
+  },
+  {
+    "serviceId": "cursor",
+    "file": "/brands/cursor.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Anysphere; origen citado cursor.com/brand.",
+    "limitation": "Isotipo de Cursor en negro."
+  },
+  {
+    "serviceId": "windsurf",
+    "file": "/brands/windsurf.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Windsurf; origen citado windsurf.com/brand.",
+    "limitation": "Isotipo de Windsurf en un solo color #0B100F."
+  },
+  {
+    "serviceId": "tabnine",
+    "file": "/brands/tabnine.png",
+    "sourceUrl": "https://github.com/codota.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Tabnine. Avatar oficial de la organización de Tabnine en GitHub, usado solo para identificar el servicio.",
+    "limitation": "Imagen de 128×128 sobre fondo azul oscuro, sin modificaciones."
+  },
+  {
+    "serviceId": "trae",
+    "file": "/brands/trae.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de TRAE; origen citado trae.ai.",
+    "limitation": "Isotipo de TRAE en un solo color #32F08C."
+  },
+  {
+    "serviceId": "jetbrains",
+    "file": "/brands/jetbrains.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de JetBrains; origen citado jetbrains.com/company/brand.",
+    "limitation": "Logo de JetBrains en negro."
+  },
+  {
+    "serviceId": "lovable",
+    "file": "/brands/lovable.png",
+    "sourceUrl": "https://lovable.dev/favicon.ico",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Lovable. Favicon oficial de lovable.dev, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 73×74, sin modificaciones."
+  },
+  {
+    "serviceId": "bolt",
+    "file": "/brands/bolt.png",
+    "sourceUrl": "https://bolt.new/static/favicon-192x192.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de StackBlitz. Ícono oficial publicado por bolt.new, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 192×192, sin modificaciones."
+  },
+  {
+    "serviceId": "v0",
+    "file": "/brands/v0.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Vercel; origen citado v0.dev.",
+    "limitation": "Logo de v0 en negro."
+  },
+  {
+    "serviceId": "nordvpn",
+    "file": "/brands/nordvpn.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Nord Security; origen citado nordvpn.com/press-area.",
+    "limitation": "Isotipo de NordVPN en un solo color #4687FF."
+  },
+  {
+    "serviceId": "bitwarden",
+    "file": "/brands/bitwarden.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Bitwarden; origen citado bitwarden.com/brand.",
+    "limitation": "Isotipo de Bitwarden en un solo color #175DDC."
+  },
+  {
+    "serviceId": "1password",
+    "file": "/brands/1password.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de AgileBits; origen citado 1password.com/press.",
+    "limitation": "Isotipo de 1Password en un solo color #145FE4."
   }
 ]

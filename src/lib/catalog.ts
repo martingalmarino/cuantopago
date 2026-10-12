@@ -41,6 +41,9 @@ export const categoryLabels: Record<CategoryId, string> = {
   internet: 'Internet / Conectividad',
   videojuegos: 'Games / Videojuegos',
   'redes-sociales': 'Redes sociales y chat',
+  'programacion-ia': 'Programación con IA',
+  'creacion-apps': 'Creación de aplicaciones',
+  seguridad: 'Seguridad',
 };
 
 export function todayIso(date = new Date()): string {

@@ -15,7 +15,10 @@ export type CategoryId =
   | 'hosting-cloud'
   | 'internet'
   | 'videojuegos'
-  | 'redes-sociales';
+  | 'redes-sociales'
+  | 'programacion-ia'
+  | 'creacion-apps'
+  | 'seguridad';
 export type Channel = 'web-direct' | 'app-store' | 'google-play' | 'operator' | 'bundle';
 
 export interface ServiceFaq {

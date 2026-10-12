@@ -1455,6 +1455,173 @@
     "seoDescription": "Precio de FigJam en Argentina: puesto Collab de Figma en Profesional, Organización y Empresa. Mirá el costo mensual y anual en dólares."
   },
   {
+    "id": "capcut",
+    "slug": "capcut",
+    "name": "CapCut",
+    "category": "diseno",
+    "officialUrl": "https://www.capcut.com/",
+    "logo": "/brands/capcut.png",
+    "logoAltMode": "decorative",
+    "description": "Editor de videos y fotos de ByteDance. Standard y Pro suman efectos, plantillas y funciones con IA. En el App Store de Argentina se cobra en dólares.",
+    "aliases": [
+      "capcut",
+      "cap cut",
+      "capcut pro",
+      "capcut standard",
+      "editor de videos",
+      "tiktok"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://apps.apple.com/ar/app/capcut-edita-videos-y-fotos/id1500855883",
+      "https://www.capcut.com/"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta CapCut Pro en Argentina?",
+        "answer": "El 11 de octubre de 2026 el App Store de Argentina listaba Standard a USD 6,99 por mes o USD 64,99 por año, y Pro a USD 13,99 por mes."
+      },
+      {
+        "question": "¿Por qué no usan el precio de la web?",
+        "answer": "La página de precios de CapCut nos redirige a la versión de España y aclara que los montos son solo de referencia. Usamos el del App Store argentino porque es el único publicado para el país."
+      },
+      {
+        "question": "¿Se puede usar gratis?",
+        "answer": "Sí. CapCut tiene una versión gratis; los planes pagos suman funciones y recursos premium."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Los precios salen del App Store argentino. Desde la web o Android el importe puede ser otro.",
+    "seoTitle": "CapCut Argentina: precio de Standard y Pro",
+    "seoDescription": "Cuánto cuesta CapCut en Argentina: Standard y Pro por mes o por año, en dólares y con impuestos."
+  },
+  {
+    "id": "picsart",
+    "slug": "picsart",
+    "name": "Picsart",
+    "category": "diseno",
+    "officialUrl": "https://picsart.com/",
+    "logo": "/brands/picsart.svg",
+    "logoAltMode": "decorative",
+    "description": "Editor de fotos y videos con IA, plantillas y stickers. Plus y Pro se pagan por mes o por año, en dólares.",
+    "aliases": [
+      "picsart",
+      "pics art",
+      "picsart plus",
+      "picsart pro",
+      "picsart gold",
+      "editor de fotos"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://apps.apple.com/ar/app/picsart-ia-editor-de-fotos-ai/id587366035"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Picsart en Argentina?",
+        "answer": "El 11 de octubre de 2026 el App Store de Argentina listaba Plus a USD 4,99 por mes o USD 29,99 por año, y Pro a USD 6,49 por mes o USD 38,99 por año."
+      },
+      {
+        "question": "¿Qué es Picsart Gold?",
+        "answer": "Es el nombre anterior de la suscripción. La ficha todavía lo lista a USD 4,99 por mes y USD 29,99 por año, el mismo precio que Plus."
+      },
+      {
+        "question": "¿Se puede usar gratis?",
+        "answer": "Sí. Picsart tiene una versión gratis; las suscripciones suman herramientas premium y más créditos de IA."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Los precios salen del App Store argentino. Desde la web o Android el importe puede ser otro.",
+    "seoTitle": "Picsart Argentina: precio de Plus y Pro",
+    "seoDescription": "Cuánto cuesta Picsart en Argentina: Plus y Pro por mes o por año, en dólares y con impuestos."
+  },
+  {
+    "id": "framer",
+    "slug": "framer",
+    "name": "Framer",
+    "category": "diseno",
+    "officialUrl": "https://www.framer.com/pricing",
+    "logo": "/brands/framer.svg",
+    "logoAltMode": "decorative",
+    "description": "Diseño y publicación de sitios web sin código. Basic y Pro se pagan por sitio, en pesos y más impuestos.",
+    "aliases": [
+      "framer",
+      "framer sites",
+      "framer basic",
+      "framer pro",
+      "creador de sitios web"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.framer.com/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Framer en Argentina?",
+        "answer": "El 11 de octubre de 2026 la página mostraba en pesos, con facturación anual, Basic a ARS 6.263 y Pro a ARS 18.788 por sitio por mes. Cada editor adicional cuesta ARS 12.526 por mes."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "Sí. Framer aclara que los impuestos que correspondan se suman al pagar según tu ubicación. Sumamos el IVA del 21% y la percepción."
+      },
+      {
+        "question": "¿Y con pago mensual?",
+        "answer": "Framer también ofrece pago mensual, pero no pudimos ver ese precio. Si lo pagás así, cargá tu importe en Mis suscripciones."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Framer cobra por sitio publicado. Si tenés varios sitios, el total es el precio del plan por la cantidad de sitios.",
+    "seoTitle": "Framer Argentina: precio de Basic y Pro en pesos",
+    "seoDescription": "Cuánto cuesta Framer en Argentina: Basic y Pro por sitio, en pesos y con impuestos."
+  },
+  {
+    "id": "clipchamp",
+    "slug": "clipchamp",
+    "name": "Clipchamp",
+    "category": "diseno",
+    "officialUrl": "https://clipchamp.com/es/pricing/",
+    "logo": "/brands/clipchamp.png",
+    "logoAltMode": "decorative",
+    "description": "Editor de video de Microsoft. Es gratis; las funciones premium, como exportar en 4K, vienen con Microsoft 365 Personal y Familia.",
+    "aliases": [
+      "clipchamp",
+      "clip champ",
+      "clipchamp premium",
+      "editor de video microsoft"
+    ],
+    "overlapNote": "Clipchamp Premium viene con Microsoft 365 Personal y Familia: son los mismos planes que aparecen en la ficha de Microsoft 365. Si ya los sumaste ahí, no los agregues de nuevo.",
+    "sourceUrls": [
+      "https://clipchamp.com/es/pricing/",
+      "https://www.microsoft.com/es-ar/microsoft-365/buy/compare-all-microsoft-365-products"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Clipchamp?",
+        "answer": "El editor es gratis con una cuenta personal de Microsoft y exporta hasta 1080p sin marca de agua. Las funciones premium vienen con Microsoft 365 Personal (ARS 3.699 por mes) o Familia (ARS 4.599 por mes)."
+      },
+      {
+        "question": "¿Qué suma la versión premium?",
+        "answer": "Exportación en 4K, contenido de archivo premium, filtros y efectos premium, y un kit de marca."
+      },
+      {
+        "question": "¿Se puede pagar Clipchamp solo?",
+        "answer": "No. Clipchamp ya no vende una suscripción propia: las funciones premium están incluidas en los planes Personal y Familia de Microsoft 365."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Los precios son los de Microsoft 365 Personal y Familia en la tienda argentina de Microsoft.",
+    "seoTitle": "Clipchamp Argentina: cuánto cuesta la versión premium",
+    "seoDescription": "Cuánto cuesta Clipchamp en Argentina: gratis o premium con Microsoft 365 Personal y Familia, en pesos."
+  },
+  {
     "id": "chatgpt",
     "slug": "chatgpt",
     "name": "ChatGPT",
@@ -2946,5 +3113,461 @@
     "body": "Los precios salen del App Store argentino. Si pagaste desde la web, cargá tu importe en Mis suscripciones.",
     "seoTitle": "LinkedIn Premium Argentina: precio de Career y Business",
     "seoDescription": "Cuánto cuesta LinkedIn Premium en Argentina: Premium Career y Premium Business en dólares, con impuestos."
+  },
+  {
+    "id": "cursor",
+    "slug": "cursor",
+    "name": "Cursor",
+    "category": "programacion-ia",
+    "officialUrl": "https://cursor.com/pricing",
+    "logo": "/brands/cursor.svg",
+    "logoAltMode": "decorative",
+    "description": "Editor de código con agentes de IA. Pro, Pro+ y Ultra para personas, y Teams por usuario. En dólares y sin impuestos incluidos.",
+    "aliases": [
+      "cursor",
+      "cursor ai",
+      "cursor pro",
+      "cursor ultra",
+      "anysphere",
+      "editor de codigo"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://cursor.com/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Cursor?",
+        "answer": "El 11 de octubre de 2026 la página publicaba Pro a USD 20, Pro+ a USD 60 y Ultra a USD 200 por mes. Teams costaba USD 40 por usuario por mes."
+      },
+      {
+        "question": "¿Los precios incluyen impuestos?",
+        "answer": "No. Cursor aclara que todos sus precios son sin impuestos. Sumamos el IVA del 21% y la percepción."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. Hobby es gratis, no pide tarjeta y tiene solicitudes limitadas del agente."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Cada plan incluye una cantidad de uso de modelos. Si la superás, el uso extra se cobra aparte a mes vencido.",
+    "seoTitle": "Cursor Argentina: precio de Pro, Pro+, Ultra y Teams",
+    "seoDescription": "Cuánto cuesta Cursor en Argentina: Pro, Pro+, Ultra y Teams en dólares, con IVA y percepción."
+  },
+  {
+    "id": "windsurf",
+    "slug": "windsurf",
+    "name": "Windsurf (Devin)",
+    "category": "programacion-ia",
+    "officialUrl": "https://devin.ai/pricing",
+    "logo": "/brands/windsurf.svg",
+    "logoAltMode": "decorative",
+    "description": "El editor Windsurf ahora se ofrece como Devin, de Cognition. Pro y Max se pagan por mes, en dólares.",
+    "aliases": [
+      "windsurf",
+      "devin",
+      "devin desktop",
+      "codeium",
+      "cognition",
+      "windsurf pro"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://devin.ai/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Windsurf?",
+        "answer": "windsurf.com/pricing redirige a la página de Devin. El 11 de octubre de 2026 publicaba Pro a USD 20 y Max a USD 200 por mes."
+      },
+      {
+        "question": "¿Y para equipos?",
+        "answer": "Teams cuesta USD 80 por mes por el equipo, más USD 40 por mes por cada usuario con puesto completo, hasta 200 usuarios."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. Free incluye una cuota liviana para usar agentes, ediciones en línea y autocompletado Tab ilimitados."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Cada plan pago trae una cuota de uso que se renueva cada día y cada semana. El uso extra se paga a precio de API.",
+    "seoTitle": "Windsurf (Devin) Argentina: precio de Pro y Max",
+    "seoDescription": "Cuánto cuesta Windsurf, ahora Devin, en Argentina: Pro y Max en dólares, con impuestos."
+  },
+  {
+    "id": "tabnine",
+    "slug": "tabnine",
+    "name": "Tabnine",
+    "category": "programacion-ia",
+    "officialUrl": "https://www.tabnine.com/pricing/",
+    "logo": "/brands/tabnine.png",
+    "logoAltMode": "decorative",
+    "description": "Asistente de código con IA pensado para empresas. Code Assistant y Agentic se pagan por usuario, con suscripción anual.",
+    "aliases": [
+      "tabnine",
+      "tab nine",
+      "codota",
+      "tabnine agentic",
+      "code assistant"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.tabnine.com/pricing/"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Tabnine?",
+        "answer": "El 11 de octubre de 2026 la página publicaba Code Assistant a USD 39 y Agentic a USD 59 por usuario por mes, con suscripción anual."
+      },
+      {
+        "question": "¿Se puede pagar mes a mes?",
+        "answer": "No. Los dos planes se contratan con suscripción anual."
+      },
+      {
+        "question": "¿Qué diferencia hay entre los planes?",
+        "answer": "Code Assistant trae autocompletado y chat en el IDE. Agentic suma agentes, la CLI de Tabnine y el Context Engine."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Tabnine cobra por usuario. El total del equipo es el precio del plan por la cantidad de personas.",
+    "seoTitle": "Tabnine Argentina: precio de Code Assistant y Agentic",
+    "seoDescription": "Cuánto cuesta Tabnine en Argentina: Code Assistant y Agentic por usuario, en dólares y con impuestos."
+  },
+  {
+    "id": "trae",
+    "slug": "trae",
+    "name": "TRAE",
+    "category": "programacion-ia",
+    "officialUrl": "https://www.trae.ai/pricing",
+    "logo": "/brands/trae.svg",
+    "logoAltMode": "decorative",
+    "description": "Editor de código con IA de ByteDance. Pro, Pro+ y Ultra se pagan por mes, en dólares.",
+    "aliases": [
+      "trae",
+      "trae ai",
+      "trae ide",
+      "bytedance",
+      "traework"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.trae.ai/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta TRAE?",
+        "answer": "El 11 de octubre de 2026 la página publicaba Pro a USD 20, Pro+ a USD 60 y Ultra a USD 200 por mes."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. Free usa solo el modo Auto, con uso limitado y 5.000 autocompletados por mes."
+      },
+      {
+        "question": "¿Conviene el pago anual?",
+        "answer": "La página dice que el pago anual ahorra un 17%. No lo cargamos porque no publica el total."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Cada plan trae un monto de uso mensual igual a su precio (USD 20, 60 o 200) para gastar en modelos.",
+    "seoTitle": "TRAE Argentina: precio de Pro, Pro+ y Ultra",
+    "seoDescription": "Cuánto cuesta TRAE en Argentina: Pro, Pro+ y Ultra en dólares, con impuestos."
+  },
+  {
+    "id": "jetbrains",
+    "slug": "jetbrains",
+    "name": "JetBrains AI",
+    "category": "programacion-ia",
+    "officialUrl": "https://www.jetbrains.com/ai-ides/buy/?section=personal&billing=monthly",
+    "logo": "/brands/jetbrains.svg",
+    "logoAltMode": "decorative",
+    "description": "IA dentro de IntelliJ IDEA, PyCharm y el resto de los IDE de JetBrains, con el agente Junie. AI Pro, AI Ultimate y All Products Pack, en dólares.",
+    "aliases": [
+      "jetbrains",
+      "jetbrains ai",
+      "ai pro",
+      "ai ultimate",
+      "junie",
+      "intellij",
+      "pycharm",
+      "all products pack"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.jetbrains.com/ai-ides/buy/?section=personal&billing=monthly"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta JetBrains AI?",
+        "answer": "El 11 de octubre de 2026 la página publicaba, para personas y con pago mensual, AI Pro a USD 10 y AI Ultimate a USD 30 por mes. All Products Pack, con todos los IDE y AI Pro, costaba USD 29,90 por mes."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "Sí. JetBrains aclara que se pueden sumar impuestos según tu país y que el precio final se ve al pagar. Sumamos el IVA del 21% y la percepción."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. AI Free da 3 créditos de IA cada 30 días. Un crédito equivale a USD 1 y se pueden comprar más cuando quieras."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "La página aclara que los precios son aproximados. El pago anual ahorra dos meses; no lo cargamos.",
+    "seoTitle": "JetBrains AI Argentina: precio de AI Pro, AI Ultimate y All Products Pack",
+    "seoDescription": "Cuánto cuesta JetBrains AI en Argentina: AI Pro, AI Ultimate y All Products Pack en dólares, con impuestos."
+  },
+  {
+    "id": "lovable",
+    "slug": "lovable",
+    "name": "Lovable",
+    "category": "creacion-apps",
+    "officialUrl": "https://lovable.dev/es/pricing",
+    "logo": "/brands/lovable.png",
+    "logoAltMode": "decorative",
+    "description": "Creá sitios y aplicaciones web chateando con una IA. Pro y Business se pagan por espacio de trabajo, en dólares.",
+    "aliases": [
+      "lovable",
+      "lovable dev",
+      "lovable pro",
+      "vibe coding",
+      "creador de apps"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://lovable.dev/es/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Lovable?",
+        "answer": "El 11 de octubre de 2026 la página publicaba Pro a USD 25 y Business a USD 50 por mes, cada uno con 100 créditos mensuales."
+      },
+      {
+        "question": "¿Se paga por usuario?",
+        "answer": "No. Los espacios de trabajo admiten miembros ilimitados y el precio depende de los créditos, no de la cantidad de personas."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. Free da 5 créditos por día, hasta 30 por mes. Los estudiantes tienen hasta un 50% de descuento en Pro."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "El pago anual da 2 meses gratis; no lo cargamos. Si una app tiene mucho tráfico, el alojamiento puede consumir créditos extra.",
+    "seoTitle": "Lovable Argentina: precio de Pro y Business",
+    "seoDescription": "Cuánto cuesta Lovable en Argentina: Pro y Business por mes, en dólares y con impuestos."
+  },
+  {
+    "id": "bolt",
+    "slug": "bolt",
+    "name": "Bolt",
+    "category": "creacion-apps",
+    "officialUrl": "https://bolt.new/pricing",
+    "logo": "/brands/bolt.png",
+    "logoAltMode": "decorative",
+    "description": "Creá sitios y aplicaciones web con IA desde el navegador. Pro por mes y Teams por miembro, en dólares.",
+    "aliases": [
+      "bolt",
+      "bolt new",
+      "bolt.new",
+      "stackblitz",
+      "bolt pro"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://bolt.new/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Bolt?",
+        "answer": "El 11 de octubre de 2026 la página publicaba Pro a USD 25 por mes y Teams a USD 30 por miembro por mes, con pago mensual."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. Free da 1 millón de tokens por mes, con un tope de 300.000 por día, y deja la marca de Bolt en los sitios."
+      },
+      {
+        "question": "¿Conviene el pago anual?",
+        "answer": "La página dice que el pago anual ahorra hasta un 28%. No lo cargamos."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Pro arranca con 10 millones de tokens por mes y los que no usás pasan al mes siguiente.",
+    "seoTitle": "Bolt Argentina: precio de Pro y Teams",
+    "seoDescription": "Cuánto cuesta Bolt (bolt.new) en Argentina: Pro y Teams en dólares, con impuestos."
+  },
+  {
+    "id": "v0",
+    "slug": "v0",
+    "name": "v0",
+    "category": "creacion-apps",
+    "officialUrl": "https://v0.app/pricing",
+    "logo": "/brands/v0.svg",
+    "logoAltMode": "decorative",
+    "description": "El creador de apps con IA de Vercel. Plus y Business se pagan por usuario, en dólares y sin impuestos incluidos.",
+    "aliases": [
+      "v0",
+      "v0 dev",
+      "v0.app",
+      "vercel v0",
+      "v0 plus"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://v0.app/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta v0?",
+        "answer": "El 11 de octubre de 2026 la página publicaba Plus a USD 30, con USD 90 tachado al lado, y Business a USD 100 por usuario por mes. No aclara si el precio de Plus es por tiempo limitado."
+      },
+      {
+        "question": "¿Los precios incluyen impuestos?",
+        "answer": "No. v0 aclara que los precios están en dólares sin IVA y que los impuestos se suman en la factura según tu dirección. Sumamos el IVA del 21% y la percepción."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. Free permite hasta 7 mensajes por día y publicar en Vercel."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Cada usuario trae USD 30 de créditos por mes y USD 2 diarios al iniciar sesión. Lo que excede se paga según los tokens usados.",
+    "seoTitle": "v0 Argentina: precio de Plus y Business",
+    "seoDescription": "Cuánto cuesta v0 de Vercel en Argentina: Plus y Business por usuario, en dólares, con IVA y percepción."
+  },
+  {
+    "id": "nordvpn",
+    "slug": "nordvpn",
+    "name": "NordVPN",
+    "category": "seguridad",
+    "officialUrl": "https://nordvpn.com/es/pricing/",
+    "logo": "/brands/nordvpn.svg",
+    "logoAltMode": "decorative",
+    "description": "VPN con protección contra amenazas. Básico, Completo y Completo Max, por mes o por año, en dólares.",
+    "aliases": [
+      "nordvpn",
+      "nord vpn",
+      "nord",
+      "vpn",
+      "nordpass"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://nordvpn.com/es/pricing/"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta NordVPN?",
+        "answer": "El 11 de octubre de 2026 el plan de 1 mes costaba USD 14,99 en Básico, USD 19,99 en Completo y USD 21,99 en Completo Max. El plan anual se renovaba a USD 139,08, USD 219,48 y USD 301,08."
+      },
+      {
+        "question": "¿Hay descuento el primer año?",
+        "answer": "Sí. El primer año anual cuesta USD 65,88 en Básico, USD 77,88 en Completo y USD 101,88 en Completo Max. Después se renueva al precio normal. No lo aplicamos solo."
+      },
+      {
+        "question": "¿Y el plan de 2 años?",
+        "answer": "También existe, con 3 meses extra y el precio más bajo por mes durante los primeros 27 meses. No lo cargamos porque su ciclo no encaja con los demás."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "NordVPN aclara que puede aplicarse IVA. Todos los planes protegen hasta 10 dispositivos y tienen garantía de devolución de 30 días.",
+    "seoTitle": "NordVPN Argentina: precio de Básico, Completo y Completo Max",
+    "seoDescription": "Cuánto cuesta NordVPN en Argentina: Básico, Completo y Completo Max por mes o por año, en dólares y con impuestos."
+  },
+  {
+    "id": "bitwarden",
+    "slug": "bitwarden",
+    "name": "Bitwarden",
+    "category": "seguridad",
+    "officialUrl": "https://bitwarden.com/pricing/",
+    "logo": "/brands/bitwarden.svg",
+    "logoAltMode": "decorative",
+    "description": "Gestor de contraseñas de código abierto. Premium y Families se pagan por año, en dólares y sin impuestos incluidos.",
+    "aliases": [
+      "bitwarden",
+      "bit warden",
+      "gestor de contraseñas",
+      "password manager",
+      "bitwarden premium"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://bitwarden.com/pricing/"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Bitwarden?",
+        "answer": "El 11 de octubre de 2026 la página publicaba Premium a USD 19,80 por año (USD 1,65 por mes) y Families a USD 47,88 por año (USD 3,99 por mes)."
+      },
+      {
+        "question": "¿Los precios incluyen impuestos?",
+        "answer": "No. Bitwarden aclara que los precios están en dólares, con suscripción anual y sin impuestos. Sumamos el IVA del 21% y la percepción."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. El plan gratis guarda contraseñas ilimitadas en dispositivos ilimitados. Families incluye 6 cuentas Premium."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Bitwarden solo cobra por año.",
+    "seoTitle": "Bitwarden Argentina: precio de Premium y Families",
+    "seoDescription": "Cuánto cuesta Bitwarden en Argentina: Premium y Families por año, en dólares, con IVA y percepción."
+  },
+  {
+    "id": "1password",
+    "slug": "1password",
+    "name": "1Password",
+    "category": "seguridad",
+    "officialUrl": "https://1password.com/pricing/personal?currency=usd",
+    "logo": "/brands/1password.svg",
+    "logoAltMode": "decorative",
+    "description": "Gestor de contraseñas para personas y familias. Individual y Families, por mes o por año, en dólares.",
+    "aliases": [
+      "1password",
+      "one password",
+      "1 password",
+      "onepassword",
+      "gestor de contraseñas"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://1password.com/pricing/personal?currency=usd"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta 1Password?",
+        "answer": "El 11 de octubre de 2026 la página publicaba Individual a USD 4,99 por mes o USD 3,99 por mes con pago anual, y Families a USD 7,99 por mes o USD 5,99 por mes con pago anual."
+      },
+      {
+        "question": "¿Hay descuento el primer año?",
+        "answer": "Sí, para clientes nuevos que pagan por año en 1password.com: Individual a USD 2,99 y Families a USD 4,49 por mes durante el primer año. No vale en el App Store ni en Google Play. No lo aplicamos solo."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "Sí. Individual y Families se pueden probar 14 días sin tarjeta. Families incluye 5 personas."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Los precios son los que 1Password muestra en dólares. La página no aclara impuestos.",
+    "seoTitle": "1Password Argentina: precio de Individual y Families",
+    "seoDescription": "Cuánto cuesta 1Password en Argentina: Individual y Families por mes o por año, en dólares y con impuestos."
   }
 ]

@@ -65,6 +65,21 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | Telegram Premium | `/brands/telegram.svg` | simple-icons 16.34.0, slug telegram, origen citado telegram.org. |
 | X Premium | `/brands/x.svg` | simple-icons 16.34.0, slug x, origen citado x.com. |
 | LinkedIn Premium | `/brands/linkedin.png` | Favicon oficial de linkedin.com, 64×64, sin modificaciones. simple-icons no trae LinkedIn. |
+| CapCut | `/brands/capcut.png` | Favicon oficial de capcut.com, 64×64, convertido de .ico a PNG. simple-icons no trae CapCut. |
+| Picsart | `/brands/picsart.svg` | simple-icons 16.34.0, slug picsart, origen citado picsart.com. |
+| Framer | `/brands/framer.svg` | simple-icons 16.34.0, slug framer, origen citado framer.com. |
+| Clipchamp | `/brands/clipchamp.png` | Ícono oficial de clipchamp.com, 256×256, sin modificaciones. simple-icons no trae Clipchamp. |
+| Cursor | `/brands/cursor.svg` | simple-icons 16.34.0, slug cursor, origen citado cursor.com/brand. |
+| Windsurf (Devin) | `/brands/windsurf.svg` | simple-icons 16.34.0, slug windsurf, origen citado windsurf.com/brand. |
+| Tabnine | `/brands/tabnine.png` | Avatar oficial de la organización de Tabnine en GitHub (codota), 128×128. tabnine.com no sirvió su favicon y simple-icons no trae Tabnine. |
+| TRAE | `/brands/trae.svg` | simple-icons 16.34.0, slug trae, origen citado trae.ai. |
+| JetBrains AI | `/brands/jetbrains.svg` | simple-icons 16.34.0, slug jetbrains, origen citado jetbrains.com. No hay isotipo propio de JetBrains AI. |
+| Lovable | `/brands/lovable.png` | Favicon oficial de lovable.dev, 73×74, sin modificaciones. simple-icons no trae Lovable. |
+| Bolt | `/brands/bolt.png` | Ícono oficial de bolt.new, 192×192, sin modificaciones. simple-icons no trae Bolt. |
+| v0 | `/brands/v0.svg` | simple-icons 16.34.0, slug v0, origen citado v0.dev. |
+| NordVPN | `/brands/nordvpn.svg` | simple-icons 16.34.0, slug nordvpn, origen citado nordvpn.com/press-area. |
+| Bitwarden | `/brands/bitwarden.svg` | simple-icons 16.34.0, slug bitwarden, origen citado bitwarden.com/brand. |
+| 1Password | `/brands/1password.svg` | simple-icons 16.34.0, slug 1password, origen citado 1password.com/press. |
 | Apple One, F1 TV, Flow, Microsoft 365, Adobe | ninguno | No hay un export de simple-icons del producto. No se usó la marca de la empresa madre ni se dibujó un logo. |
 
 El pie del sitio aclara que es independiente y que las marcas son de sus titulares.
