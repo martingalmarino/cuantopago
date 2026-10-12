@@ -52,6 +52,7 @@ if (crumbs.length && Astro.site) {
     {canonical && <meta property="og:url" content={canonical} />}
     <meta property="og:image" content={ogImage} />
     {graph.map((item) => <script type="application/ld+json" set:html={JSON.stringify(item)} />)}
+    <script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6771833588582297" crossorigin="anonymous"></script>
   </head>
   <body>
     <a class="skip" href="#contenido">Saltar al contenido</a>
