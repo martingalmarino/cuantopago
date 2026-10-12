@@ -1,0 +1,96 @@
+---
+import Base from '../../layouts/Base.astro';
+import { billingGuides } from '../../data/subscription-management/billing-guides';
+import { platformGuides } from '../../data/subscription-management/platform-guides';
+import { guideSourceById } from '../../data/subscription-management/sources';
+import type { BillingGuide } from '../../data/subscription-management/types';
+
+export function getStaticPaths() {
+  return billingGuides.map((guide) => ({ params: { guide: guide.slug }, props: { guide } }));
+}
+interface Props { guide: BillingGuide }
+const { guide } = Astro.props;
+const sources = guide.sourceIds.map((id) => guideSourceById.get(id)).filter((item) => item !== undefined);
+const dateFormat = new Intl.DateTimeFormat('es-AR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+const reviewed = (iso: string) => dateFormat.format(new Date(`${iso}T12:00:00Z`));
+const platforms = platformGuides.filter((item) => item.channels.includes(guide.id));
+---
+<Base
+  title={guide.seo.title}
+  description={guide.seo.description}
+  ads={false}
+  crumbs={[
+    { name: 'Inicio', href: '/' },
+    { name: 'Gestionar suscripciones', href: '/gestionar-suscripciones/' },
+    { name: guide.name, href: `/guias/${guide.slug}/` },
+  ]}
+>
+  <div class="wrap page page-stack guide-page">
+    <nav class="crumbs" aria-label="Migas">
+      <a href="/">Inicio</a> <span>/</span> <a href="/gestionar-suscripciones/">Gestionar suscripciones</a> <span>/</span> <span>{guide.name}</span>
+    </nav>
+    <header class="intro">
+      <p class="kicker">Gestionar suscripciones</p>
+      <h1>{guide.h1}</h1>
+      <p>{guide.intro}</p>
+    </header>
+    <p class="guide-disclosure">Abonito te orienta. La gestión se completa en el sitio o la app del proveedor. No pedimos contraseñas ni datos de pago.</p>
+
+    <section class="section-panel">
+      <div class="section-cap"><h2>Antes de empezar</h2></div>
+      <div class="section-body pad">
+        <ul class="guide-list">{guide.before.map((item) => <li>{item}</li>)}</ul>
+        <p class="guide-cta-row">
+          <a class="btn primary" href={guide.cta.url} target="_blank" rel="noopener noreferrer" data-print-url aria-label={`${guide.cta.label} (se abre en una pestaña nueva)`}>
+            {guide.cta.label}
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6" /><path d="M10 14 21 3" /><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /></svg>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    {guide.sections.map((section) => (
+      <section class="section-panel">
+        <div class="section-cap"><h2>{section.heading}</h2></div>
+        <div class="section-body pad">
+          <ol class="guide-steps">{section.steps.map((step) => <li>{step}</li>)}</ol>
+          {section.note && <p class="meta">{section.note}</p>}
+        </div>
+      </section>
+    ))}
+
+    <section class="section-panel">
+      <div class="section-cap"><h2>Qué pasa después</h2></div>
+      <div class="section-body pad"><ul class="guide-list">{guide.after.map((item) => <li>{item}</li>)}</ul></div>
+    </section>
+
+    <section class="section-panel">
+      <div class="section-cap"><h2>Si no encontrás la suscripción</h2></div>
+      <div class="section-body pad"><ul class="guide-list">{guide.troubleshooting.map((item) => <li>{item}</li>)}</ul></div>
+    </section>
+
+    <section class="section-panel">
+      <div class="section-cap"><h2>Fuentes</h2></div>
+      <div class="section-body pad">
+        <ul class="source-list">
+          {sources.map((source) => (
+            <li>
+              <a href={source.url} target="_blank" rel="noopener noreferrer" data-print-url aria-label={`${source.title} (se abre en una pestaña nueva)`}>{source.title}</a>
+              <span class="meta"> · {source.publisher}. {source.applicability} Fuente oficial revisada el {reviewed(source.lastReviewedAt)}.</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    {platforms.length > 0 && (
+      <section class="section-panel">
+        <div class="section-cap"><h2>Guías por plataforma</h2></div>
+        <div class="section-body pad row-actions">
+          {platforms.map((item) => <a class="btn ghost" href={`/${item.slug}/cancelar/?cobro=${guide.id}`}>{item.name}</a>)}
+          <a class="btn ghost" href="/gestionar-suscripciones/">Todas las guías</a>
+        </div>
+      </section>
+    )}
+  </div>
+</Base>

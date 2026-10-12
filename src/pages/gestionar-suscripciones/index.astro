@@ -1,0 +1,114 @@
+---
+import Base from '../../layouts/Base.astro';
+import BrandLogo from '../../components/BrandLogo.astro';
+import { APPLE_GUIDE_HREF, GOOGLE_PLAY_GUIDE_HREF } from '../../data/subscription-management/billing-guides';
+import { platformGuides } from '../../data/subscription-management/platform-guides';
+import { normalizeSearch } from '../../lib/guides';
+
+const names = platformGuides.map((guide) => guide.name);
+const list = `${names.slice(0, -1).join(', ')} y ${names.at(-1)}`;
+---
+<Base
+  title="Cancelar o cambiar suscripciones | Abonito"
+  description="Pasos para cancelar o pagar menos en Netflix, Spotify, Disney+, HBO Max y YouTube Premium, según quién te cobra."
+  crumbs={[{ name: 'Inicio', href: '/' }, { name: 'Gestionar suscripciones', href: '/gestionar-suscripciones/' }]}
+>
+  <div class="wrap page page-stack guide-page">
+    <nav class="crumbs" aria-label="Migas"><a href="/">Inicio</a> <span>/</span> <span>Gestionar suscripciones</span></nav>
+    <header class="intro">
+      <h1>Cancelá o cambiá tu suscripción</h1>
+      <p>Encontrá los pasos según quién te cobra el servicio. Elegí una plataforma y te guiamos hasta el lugar correcto.</p>
+    </header>
+    <p class="guide-disclosure">Abonito te orienta. La gestión se completa en el sitio o la app del proveedor.</p>
+
+    <section class="section-panel" aria-labelledby="guias-titulo">
+      <div class="section-cap">
+        <h2 id="guias-titulo">Plataformas</h2>
+        <span class="count" data-guide-count>{platformGuides.length} guías</span>
+      </div>
+      <div class="section-body pad">
+        <div class="toolbar">
+          <label class="search">
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+            <span class="visually-hidden">Buscar plataforma</span>
+            <input type="search" placeholder="Buscar: Netflix, Disney, HBO, YouTube…" data-guide-search autocomplete="off" />
+          </label>
+        </div>
+        <ul class="guide-cards">
+          {platformGuides.map((guide) => (
+            <li class="guide-card" data-search={[guide.name, ...guide.aliases].map(normalizeSearch).join(' ')}>
+              <div class="guide-card-head">
+                <BrandLogo name={guide.name} logo={guide.existingLogoRef} size="row" />
+                <h3>{guide.name}</h3>
+              </div>
+              <div class="guide-card-actions">
+                <a class="btn" href={`/${guide.slug}/cancelar/`}>Quiero cancelar</a>
+                <a class="btn" href={`/${guide.slug}/cancelar/?objetivo=ahorrar`}>Quiero pagar menos</a>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <div class="guide-empty" data-guide-empty hidden>
+          <p><strong>No tenemos una guía para esa plataforma todavía.</strong></p>
+          <p class="meta">Por ahora cubrimos {list}. Si te la cobra Apple o Google Play, las guías de abajo sirven para cualquier app.</p>
+          <button type="button" class="btn" data-guide-reset>Ver todas las guías</button>
+        </div>
+        <p class="visually-hidden" data-guide-search-status aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="section-panel">
+      <div class="section-cap"><h2>Si te cobra una tienda de apps</h2></div>
+      <div class="section-body pad">
+        <p class="meta">Si te suscribiste desde una app en el celular, la baja se hace en la tienda, no en la app.</p>
+        <p class="row-actions">
+          <a class="btn" href={APPLE_GUIDE_HREF}>Suscripciones de Apple</a>
+          <a class="btn" href={GOOGLE_PLAY_GUIDE_HREF}>Suscripciones de Google Play</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section-panel">
+      <div class="section-cap"><h2>Antes de decidir</h2></div>
+      <div class="section-body pad row-actions">
+        <a class="btn ghost" href="/mis-suscripciones/">Ver Mis suscripciones</a>
+        <a class="btn ghost" href="/simular-ahorro/">Simular un cambio</a>
+        <a class="btn ghost" href="/plataformas/">Comparar precios</a>
+      </div>
+    </section>
+  </div>
+</Base>
+
+<script>
+  import { normalizeSearch } from '../../lib/guides';
+
+  const input = document.querySelector<HTMLInputElement>('[data-guide-search]');
+  const cards = [...document.querySelectorAll<HTMLElement>('.guide-card')];
+  const empty = document.querySelector<HTMLElement>('[data-guide-empty]');
+  const status = document.querySelector<HTMLElement>('[data-guide-search-status]');
+  const count = document.querySelector<HTMLElement>('[data-guide-count]');
+  const reset = document.querySelector<HTMLButtonElement>('[data-guide-reset]');
+
+  function filter() {
+    const needle = normalizeSearch(input?.value ?? '');
+    let visible = 0;
+    for (const card of cards) {
+      const terms = (card.dataset.search ?? '').split(' ');
+      const match = !needle || terms.some((term) => term.includes(needle));
+      card.hidden = !match;
+      if (match) visible += 1;
+    }
+    if (empty) empty.hidden = visible > 0;
+    if (count) count.textContent = `${visible} ${visible === 1 ? 'guía' : 'guías'}`;
+    if (status) status.textContent = needle ? (visible ? `${visible} ${visible === 1 ? 'guía encontrada' : 'guías encontradas'}` : 'No hay guías para esa búsqueda') : '';
+  }
+
+  input?.addEventListener('input', filter);
+  reset?.addEventListener('click', () => {
+    if (input) {
+      input.value = '';
+      input.focus();
+    }
+    filter();
+  });
+</script>

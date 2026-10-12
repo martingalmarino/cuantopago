@@ -1,0 +1,300 @@
+---
+import Base from '../../layouts/Base.astro';
+import BrandLogo from '../../components/BrandLogo.astro';
+import GuideSelector from '../../components/GuideSelector.astro';
+import GuideResult from '../../components/GuideResult.astro';
+import BillingHelper from '../../components/BillingHelper.astro';
+import { APPLE_GUIDE_HREF, GOOGLE_PLAY_GUIDE_HREF } from '../../data/subscription-management/billing-guides';
+import { platformGuides } from '../../data/subscription-management/platform-guides';
+import type { PlatformGuide } from '../../data/subscription-management/types';
+import { guideConfig } from '../../lib/guide-validation';
+import { intentLabels } from '../../lib/guides';
+
+export function getStaticPaths() {
+  return platformGuides.map((guide) => ({ params: { slug: guide.slug }, props: { guide } }));
+}
+interface Props { guide: PlatformGuide }
+const { guide } = Astro.props;
+const config = guideConfig(guide);
+const others = platformGuides.filter((item) => item.slug !== guide.slug);
+const dateFormat = new Intl.DateTimeFormat('es-AR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+const updated = dateFormat.format(new Date(`${guide.updatedAt}T12:00:00Z`));
+const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
+  intent,
+  routes: guide.routes.filter((route) => route.intent === intent),
+}));
+---
+<Base
+  title={guide.seo.title}
+  description={guide.seo.description}
+  ads={false}
+  crumbs={[
+    { name: 'Inicio', href: '/' },
+    { name: 'Gestionar suscripciones', href: '/gestionar-suscripciones/' },
+    { name: guide.name, href: `/${guide.slug}/cancelar/` },
+  ]}
+>
+  <div class="wrap page page-stack guide-page" data-guide-root data-platform={guide.platformId} data-config={JSON.stringify(config)}>
+    <nav class="crumbs" aria-label="Migas">
+      <a href="/">Inicio</a> <span>/</span> <a href="/gestionar-suscripciones/">Gestionar suscripciones</a> <span>/</span> <span>{guide.name}</span>
+    </nav>
+    <header class="identity">
+      <BrandLogo name={guide.name} logo={guide.existingLogoRef} size="header" />
+      <div>
+        <p class="kicker">Gestionar suscripciones</p>
+        <h1>{guide.h1}</h1>
+        <p class="meta">{guide.intro}</p>
+        <p class="meta">Fuentes oficiales revisadas el {updated}.</p>
+      </div>
+    </header>
+    <p class="guide-disclosure">Abonito te orienta. La gestión se completa en el sitio o la app del proveedor. No pedimos contraseñas ni datos de pago, y no cambiamos nada en tu cuenta ni en tu lista de Mis suscripciones.</p>
+
+    <GuideSelector guide={guide} />
+    <p class="guide-prompt" data-guide-prompt hidden></p>
+    <p class="visually-hidden" data-guide-live aria-live="polite"></p>
+
+    <nav class="section-panel guide-index" id="casos" aria-labelledby="casos-titulo">
+      <div class="section-cap"><h2 id="casos-titulo">Todos los casos de {guide.name}</h2></div>
+      <div class="section-body pad">
+        {byIntent.map((group) => (
+          <div class="guide-index-group">
+            <h3>{intentLabels[group.intent]}</h3>
+            <ul>
+              {group.routes.map((route) => <li><a href={`#ruta-${route.id}`} data-route-anchor={route.id}>{route.heading}</a></li>)}
+              {group.intent === 'cancelar' && <li><a href="#no-se-quien-cobra">No sé quién me cobra</a></li>}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </nav>
+
+    <BillingHelper guide={guide} />
+    {guide.routes.map((route) => <GuideResult guide={guide} route={route} config={config} />)}
+
+    <section class="section-panel guide-faq">
+      <div class="section-cap"><h2>Preguntas frecuentes</h2></div>
+      <div class="section-body pad">
+        {guide.faqs.map((faq) => (
+          <details class="breakdown">
+            <summary>{faq.question}</summary>
+            <p>{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <section class="section-panel guide-more">
+      <div class="section-cap"><h2>Seguí con</h2></div>
+      <div class="section-body pad row-actions">
+        <a class="btn" href={guide.catalogHref}>Precios de {guide.name}</a>
+        <a class="btn" href="/simular-ahorro/">Simular un cambio</a>
+        <a class="btn ghost" href={APPLE_GUIDE_HREF}>Suscripciones de Apple</a>
+        <a class="btn ghost" href={GOOGLE_PLAY_GUIDE_HREF}>Suscripciones de Google Play</a>
+        {others.map((item) => <a class="btn ghost" href={`/${item.slug}/cancelar/`}>{item.name}</a>)}
+      </div>
+    </section>
+  </div>
+</Base>
+
+<script>
+  import { track } from '../../lib/analytics';
+  import {
+    UNKNOWN_CHANNEL,
+    parseGuideState,
+    resolveRouteId,
+    serializeGuideState,
+    stateForRoute,
+    type GuideConfig,
+    type GuideState,
+  } from '../../lib/guides';
+  import type { BillingChannel, GuideIntent, GuideRole } from '../../data/subscription-management/types';
+
+  const root = document.querySelector<HTMLElement>('[data-guide-root]');
+  if (root) setup(root);
+
+  function setup(root: HTMLElement) {
+    const config = JSON.parse(root.dataset.config ?? '{}') as GuideConfig;
+    const platformId = root.dataset.platform ?? '';
+    const form = root.querySelector<HTMLFormElement>('[data-guide-selector]');
+    const helper = root.querySelector<HTMLElement>('[data-billing-helper]');
+    const prompt = root.querySelector<HTMLElement>('[data-guide-prompt]');
+    const live = root.querySelector<HTMLElement>('[data-guide-live]');
+    const channelFieldset = root.querySelector<HTMLFieldSetElement>('[data-channel-fieldset]');
+    const routes = [...root.querySelectorAll<HTMLElement>('.guide-route')];
+    if (!form || !helper || !prompt || !live || !channelFieldset) return;
+
+    root.classList.add('guide-js');
+    form.hidden = false;
+    root.querySelectorAll<HTMLElement>('[data-js-only]').forEach((element) => { element.hidden = false; });
+
+    const openedFromAnchor = location.hash.startsWith('#ruta-');
+    let state = initialState();
+    history.replaceState(null, '', location.pathname + serializeGuideState(state) + (openedFromAnchor ? '' : location.hash));
+    render(false);
+    if (openedFromAnchor) focusRoute(resolveRouteId(state, config));
+    track('guide_view', platformId, { intent: state.intent });
+
+    function initialState(): GuideState {
+      if (location.hash.startsWith('#ruta-') && !location.search) {
+        const fromHash = stateForRoute(location.hash.slice('#ruta-'.length), config);
+        if (fromHash) return fromHash;
+      }
+      return parseGuideState(location.search, config);
+    }
+
+    function setRadio(name: string, value: string | null) {
+      form!.querySelectorAll<HTMLInputElement>(`input[name="${name}"]`).forEach((input) => {
+        input.checked = input.value === value;
+      });
+    }
+
+    function render(announce: boolean) {
+      setRadio('objetivo', state.intent);
+      setRadio('rol', state.role);
+      setRadio('cobro', state.channel ?? (state.unknown ? UNKNOWN_CHANNEL : null));
+      channelFieldset!.hidden = state.role === 'miembro';
+      const activeId = resolveRouteId(state, config);
+      let activeHeading = '';
+      for (const section of routes) {
+        const active = section.dataset.routeId === activeId;
+        section.classList.toggle('is-active', active);
+        if (active) activeHeading = section.querySelector('h2')?.textContent ?? '';
+      }
+      const showHelper = state.unknown && state.role !== 'miembro';
+      helper!.classList.toggle('is-active', showHelper);
+      const needsRole = config.hasRole && !state.role;
+      prompt!.hidden = Boolean(activeId) || showHelper;
+      prompt!.textContent = needsRole
+        ? 'Contanos si pagás vos el plan y quién te cobra para ver los pasos.'
+        : 'Elegí quién te cobra para ver los pasos.';
+      if (announce) {
+        live!.textContent = activeId
+          ? `Mostrando: ${activeHeading}`
+          : showHelper ? 'Te mostramos cómo averiguar quién te cobra.' : prompt!.textContent;
+      }
+    }
+
+    function commit(next: GuideState) {
+      state = next;
+      history.pushState(null, '', location.pathname + serializeGuideState(state));
+      render(true);
+    }
+
+    function focusRoute(id: string | null) {
+      if (!id) return;
+      const heading = root.querySelector<HTMLElement>(`#titulo-${CSS.escape(id)}`);
+      heading?.focus({ preventScroll: true });
+      heading?.scrollIntoView({ block: 'start' });
+    }
+
+    form.addEventListener('submit', (event) => event.preventDefault());
+    form.addEventListener('change', (event) => {
+      const input = event.target as HTMLInputElement;
+      if (input.name === 'objetivo') {
+        const intent = input.value as GuideIntent;
+        commit({ ...state, intent });
+        track('guide_intent_select', platformId, { intent });
+      } else if (input.name === 'rol') {
+        const role = input.value as GuideRole;
+        commit(role === 'miembro' ? { ...state, role, channel: null, unknown: false } : { ...state, role });
+      } else if (input.name === 'cobro') {
+        if (input.value === UNKNOWN_CHANNEL) {
+          commit({ ...state, channel: null, unknown: true });
+          track('guide_unknown_biller', platformId, { intent: state.intent, channel: 'no-se' });
+        } else {
+          const channel = input.value as BillingChannel;
+          commit({ ...state, channel, unknown: false });
+          track('guide_biller_select', platformId, { intent: state.intent, channel });
+        }
+      }
+    });
+
+    window.addEventListener('popstate', () => {
+      state = parseGuideState(location.search, config);
+      render(true);
+    });
+
+    root.addEventListener('click', async (event) => {
+      const target = event.target as Element;
+      const link = target.closest('a');
+      if (link?.matches('[data-official-link]')) {
+        track('guide_official_link_click', platformId, {
+          intent: state.intent,
+          channel: state.channel ?? undefined,
+          routeId: link.dataset.routeId,
+        });
+        return;
+      }
+      if (link?.matches('[data-guide-link]')) {
+        event.preventDefault();
+        const next = parseGuideState(new URL(link.href).search, config);
+        commit(next);
+        focusRoute(resolveRouteId(next, config));
+        return;
+      }
+      if (link?.matches('[data-route-anchor]')) {
+        const next = stateForRoute(link.dataset.routeAnchor ?? '', config);
+        if (!next) return;
+        event.preventDefault();
+        commit(next);
+        focusRoute(resolveRouteId(next, config));
+        return;
+      }
+      if (link?.matches('[data-back-to-selector]')) {
+        event.preventDefault();
+        const first = channelFieldset!.querySelector<HTMLInputElement>('input[name="cobro"]');
+        channelFieldset!.scrollIntoView({ block: 'center' });
+        first?.focus({ preventScroll: true });
+        return;
+      }
+      const button = target.closest('button');
+      if (button?.matches('[data-print]')) {
+        window.print();
+        return;
+      }
+      if (button?.matches('[data-copy-steps]')) {
+        const section = button.closest<HTMLElement>('.guide-route');
+        if (section) await copySteps(section);
+      }
+    });
+
+    async function copySteps(section: HTMLElement) {
+      const status = section.querySelector<HTMLElement>('[data-copy-status]');
+      const fallback = section.querySelector<HTMLTextAreaElement>('[data-copy-fallback]');
+      const text = `${section.dataset.copyText ?? ''}\nGuía: ${location.origin}${location.pathname}${serializeGuideState(state)}`;
+      track('guide_copy_steps', platformId, { intent: state.intent, routeId: section.dataset.routeId });
+      try {
+        await navigator.clipboard.writeText(text);
+        if (fallback) fallback.hidden = true;
+        if (status) status.textContent = 'Copiamos los pasos. Pegalos donde quieras.';
+        return;
+      } catch {
+        if (legacyCopy(text)) {
+          if (status) status.textContent = 'Copiamos los pasos. Pegalos donde quieras.';
+          return;
+        }
+      }
+      if (fallback) {
+        fallback.value = text;
+        fallback.hidden = false;
+        fallback.focus();
+        fallback.select();
+      }
+      if (status) status.textContent = 'No pudimos copiar solos. El texto quedó seleccionado: copialo con el menú o el teclado.';
+    }
+
+    function legacyCopy(text: string): boolean {
+      const area = document.createElement('textarea');
+      area.value = text;
+      area.setAttribute('readonly', '');
+      area.style.position = 'fixed';
+      area.style.opacity = '0';
+      document.body.append(area);
+      area.select();
+      let ok = false;
+      try { ok = document.execCommand('copy'); } catch { ok = false; }
+      area.remove();
+      return ok;
+    }
+  }
+</script>

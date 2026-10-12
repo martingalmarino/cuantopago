@@ -5,6 +5,7 @@ import ServiceRow from '../components/ServiceRow.astro';
 import Calculator from '../components/Calculator';
 import { categoryLabels, monthlyPublishedMinor, plansFor, reviewedLabel, serviceById, services } from '../lib/catalog';
 import { formatPrice } from '../lib/money';
+import { guideHref } from '../data/subscription-management/managed';
 import type { PlanRecord } from '../lib/types';
 
 export function getStaticPaths() {
@@ -19,6 +20,8 @@ const firstPriced = list.find((plan) => plan.selectable !== false && plan.amount
 const verified = list.find((plan) => plan.verifiedAt)?.verifiedAt ?? null;
 const bundles = list.filter((plan) => (plan.entitlements?.length ?? 0) > 0 || (plan.choiceOptions?.length ?? 0) > 0);
 const related = services.filter((item) => item.category === service.category && item.id !== service.id).slice(0, 4);
+const cancelHref = guideHref(service.id, 'cancelar');
+const saveHref = guideHref(service.id, 'ahorrar');
 const groups = [
   { label: 'Por mes', plans: list.filter((plan) => !plan.billingIntervalDays && plan.billingPeriodMonths === 1) },
   { label: 'Cada varios meses', plans: list.filter((plan) => !plan.billingIntervalDays && plan.billingPeriodMonths > 1 && plan.billingPeriodMonths < 12) },
@@ -104,6 +107,16 @@ function priceLabel(plan: PlanRecord): string {
       </section>
       <Calculator client:load serviceId={service.id} initialPlanId={firstPriced?.id} embedded />
     </div>
+    {cancelHref && saveHref && (
+      <section class="section-panel" aria-labelledby="gestionar-titulo">
+        <div class="section-cap"><h2 id="gestionar-titulo">¿Querés cancelar o pagar menos?</h2></div>
+        <div class="section-body pad guide-links">
+          <p class="meta">Te guiamos según quién te cobra {service.name}. La gestión se completa en el sitio o la app del proveedor.</p>
+          <a class="btn" href={cancelHref}>Cómo cancelar {service.name}</a>
+          <a class="btn" href={saveHref}>Cómo pagar menos</a>
+        </div>
+      </section>
+    )}
     {list.some((plan) => featureLine(plan) || plan.notes || plan.promotion) && (
       <section class="section-panel">
         <div class="section-cap"><h2>Detalle de los planes</h2></div>

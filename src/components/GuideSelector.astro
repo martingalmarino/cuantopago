@@ -1,0 +1,55 @@
+---
+import type { PlatformGuide } from '../data/subscription-management/types';
+import { INTENTS, UNKNOWN_CHANNEL, channelLabel, intentLabels } from '../lib/guides';
+
+interface Props { guide: PlatformGuide }
+const { guide } = Astro.props;
+const intentHints = {
+  cancelar: `Dar de baja ${guide.name}.`,
+  ahorrar: 'Pasar a un plan más barato o revisar otras opciones.',
+};
+---
+<form class="section-panel guide-selector" data-guide-selector hidden aria-labelledby="guia-elegir">
+  <div class="section-cap"><h2 id="guia-elegir">Elegí tu caso</h2></div>
+  <div class="section-body pad guide-fields">
+    <fieldset class="guide-fieldset">
+      <legend>¿Qué querés hacer?</legend>
+      <div class="choice-grid">
+        {INTENTS.map((intent) => (
+          <label class="choice">
+            <input type="radio" name="objetivo" value={intent} />
+            <span><strong>{intentLabels[intent]}</strong><span class="meta">{intentHints[intent]}</span></span>
+          </label>
+        ))}
+      </div>
+    </fieldset>
+    {guide.roleQuestion && (
+      <fieldset class="guide-fieldset" data-role-fieldset>
+        <legend>{guide.roleQuestion.legend}</legend>
+        <div class="choice-grid">
+          {guide.roleQuestion.options.map((option) => (
+            <label class="choice">
+              <input type="radio" name="rol" value={option.id} />
+              <span><strong>{option.label}</strong><span class="meta">{option.hint}</span></span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+    )}
+    <fieldset class="guide-fieldset" data-channel-fieldset>
+      <legend>¿Quién te cobra la suscripción?</legend>
+      <div class="choice-grid">
+        {guide.channels.map((channel) => (
+          <label class="choice">
+            <input type="radio" name="cobro" value={channel} />
+            <span><strong>{channelLabel(channel, guide.providerName)}</strong><span class="meta">{guide.channelHints[channel]}</span></span>
+          </label>
+        ))}
+      </div>
+      <label class="choice choice-unknown">
+        <input type="radio" name="cobro" value={UNKNOWN_CHANNEL} />
+        <span><strong>No sé quién me cobra</strong><span class="meta">Te ayudamos a averiguarlo sin pedirte datos de pago.</span></span>
+      </label>
+    </fieldset>
+  </div>
+</form>

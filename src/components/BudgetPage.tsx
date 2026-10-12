@@ -6,6 +6,7 @@ import { customEntry } from '../lib/entries';
 import { calculate, monthlyMinorDisplay } from '../lib/calculation';
 import { divHalfUp, formatMinor, formatPrice, parseLocalAmount } from '../lib/money';
 import type { BudgetEntry } from '../lib/types';
+import { guideHref } from '../data/subscription-management/managed';
 import { useBudget } from './useBudget';
 
 const categoryName = { ...categoryLabels, otro: 'Otro' };
@@ -173,6 +174,7 @@ export default function BudgetPage() {
           const fresh = plan ? quotePlan(plan, { asOf: todayIso() }) : null;
           const canUpdate = fresh ? quoteChanged(entry, fresh, fresh.priceVerifiedAt ?? entry.catalogRevision) : false;
           const archived = entry.archived || (entry.planId !== null && !plan);
+          const manageHref = guideHref(entry.serviceId);
           return (
             <article className="entry" key={entry.id}>
               <input type="checkbox" checked={entry.enabled} aria-label={`Incluir ${title}`} onChange={(event) => update({ ...state, entries: state.entries.map((item) => item.id === entry.id ? { ...item, enabled: event.target.checked } : item) })} />
@@ -187,6 +189,7 @@ export default function BudgetPage() {
                 </div>
                 {entry.quote.status === 'partial' && entry.userReportedFinalMinor === null && <div className="meta">Total parcial: {entry.quote.missing[0]}</div>}
                 {canUpdate && entry.userReportedFinalMinor === null && <button type="button" className="btn" onClick={() => refresh(entry)}>Actualizar cotización</button>}
+                {manageHref && <p className="row-actions"><a className="btn ghost" href={manageHref}>Cómo cancelar o pagar menos</a></p>}
                 <form className="row-actions" onSubmit={(event) => { event.preventDefault(); const data = new FormData(event.currentTarget); setReported(entry, String(data.get('cobrado') ?? '')); }}>
                   <input name="cobrado" aria-label={`Lo que me cobraron en ${title}`} placeholder="Lo que me cobraron" />
                   <button type="submit" className="btn">Reemplazar</button>
@@ -223,7 +226,10 @@ export default function BudgetPage() {
         <button type="button" className="btn primary" onClick={addCustom}>Agregar</button>
         {formError && <p className="error" role="alert">{formError}</p>}
       </section>
-      <p><a className="btn" href="/simular-ahorro/">Simular un cambio</a></p>
+      <p className="row-actions">
+        <a className="btn" href="/simular-ahorro/">Simular un cambio</a>
+        <a className="btn ghost" href="/gestionar-suscripciones/">Gestionar suscripciones</a>
+      </p>
     </div>
   );
 }

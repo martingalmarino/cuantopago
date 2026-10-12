@@ -4,6 +4,7 @@ import { cloneBudget, savingsDelta, withEntryEnabled } from '../lib/budget';
 import { planById, purchasablePlans, quotePlan, serviceById, todayIso } from '../lib/catalog';
 import { formatMinor } from '../lib/money';
 import type { BudgetState } from '../lib/types';
+import { guideHref } from '../data/subscription-management/managed';
 import { useBudget } from './useBudget';
 
 export default function Simulator() {
@@ -26,11 +27,13 @@ export default function Simulator() {
   return (
     <div className="stack">
       <p>Esta simulación no modifica tu lista hasta que elijas «Aplicar cambios». Tampoco da de baja nada en Netflix, Spotify ni en ningún otro servicio, y no promete un reembolso.</p>
+      <p className="meta">Si decidís cancelar o bajar de plan, en <a href="/gestionar-suscripciones/">Gestionar suscripciones</a> te guiamos hasta el lugar correcto según quién te cobra.</p>
       {scenario.entries.length === 0 && <p>No hay suscripciones para simular. <a href="/">Agregá alguna en el catálogo</a>.</p>}
       {scenario.entries.map((entry) => {
         const plan = entry.planId ? planById(entry.planId) : undefined;
         const service = entry.serviceId ? serviceById(entry.serviceId) : undefined;
         const title = entry.customName ?? service?.name ?? 'Suscripción';
+        const saveHref = guideHref(entry.serviceId, 'ahorrar');
         return (
           <article className="entry" key={entry.id}>
             <input type="checkbox" checked={entry.enabled} aria-label={`Incluir ${title} en la simulación`} onChange={(event) => setScenario(withEntryEnabled(scenario, entry.id, event.target.checked))} />
@@ -52,6 +55,7 @@ export default function Simulator() {
                   </select>
                 </label>
               )}
+              {saveHref && <p className="row-actions"><a className="btn ghost" href={saveHref}>Cómo pagar menos en {title}</a></p>}
             </div>
           </article>
         );

@@ -1,0 +1,94 @@
+---
+import { guideSourceById } from '../data/subscription-management/sources';
+import type { GuideRoute, PlatformGuide } from '../data/subscription-management/types';
+import { resolveRouteId, serializeGuideState, statusLabels, type GuideConfig } from '../lib/guides';
+
+interface Props { guide: PlatformGuide; route: GuideRoute; config: GuideConfig }
+const { guide, route, config } = Astro.props;
+const sources = route.sourceIds.map((id) => guideSourceById.get(id)).filter((item) => item !== undefined);
+const otherIntent = route.intent === 'cancelar' ? 'ahorrar' : 'cancelar';
+const otherState = {
+  intent: otherIntent,
+  channel: route.role === 'miembro' ? null : route.channels[0] ?? null,
+  unknown: false,
+  role: config.hasRole ? route.role ?? 'titular' : null,
+} as const;
+const otherId = resolveRouteId(otherState, config);
+const otherHref = `${serializeGuideState(otherState) || './'}${otherId ? `#ruta-${otherId}` : ''}`;
+const otherLabel = otherIntent === 'ahorrar' ? `¿Preferís pagar menos en ${guide.name}?` : `¿Preferís cancelar ${guide.name}?`;
+const dateFormat = new Intl.DateTimeFormat('es-AR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+const reviewed = (iso: string) => dateFormat.format(new Date(`${iso}T12:00:00Z`));
+const copyText = [
+  route.heading,
+  '',
+  ...route.steps.map((step, index) => `${index + 1}. ${step}`),
+  '',
+  route.cta ? `${route.cta.label}: ${route.cta.url}` : route.ctaNote,
+  '',
+  'Abonito te orienta. La gestión se completa en el sitio o la app del proveedor.',
+].join('\n');
+---
+<section class="section-panel guide-route" id={`ruta-${route.id}`} data-route-id={route.id} data-copy-text={copyText} aria-labelledby={`titulo-${route.id}`}>
+  <div class="section-cap">
+    <h2 id={`titulo-${route.id}`} tabindex="-1">{route.heading}</h2>
+    <span class={`evidence evidence-${route.status}`}>{statusLabels[route.status]}</span>
+  </div>
+  <div class="section-body pad guide-route-body">
+    {route.eligibility && <p class="warning">{route.eligibility}</p>}
+    {route.before.length > 0 && (
+      <>
+        <h3>Antes de empezar</h3>
+        <ul class="guide-list">{route.before.map((item) => <li>{item}</li>)}</ul>
+      </>
+    )}
+    <h3>Pasos</h3>
+    <ol class="guide-steps">{route.steps.map((step) => <li>{step}</li>)}</ol>
+    {route.cta ? (
+      <p class="guide-cta-row">
+        <a
+          class="btn primary"
+          href={route.cta.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-official-link
+          data-route-id={route.id}
+          data-print-url
+          aria-label={`${route.cta.label} (se abre en una pestaña nueva)`}
+        >
+          {route.cta.label}
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6" /><path d="M10 14 21 3" /><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /></svg>
+        </a>
+      </p>
+    ) : (
+      <p class="meta">{route.ctaNote}</p>
+    )}
+    <p class="meta">Abonito te orienta. La gestión se completa en el sitio o la app del proveedor.</p>
+    <h3>Qué pasa después</h3>
+    <ul class="guide-list">{route.after.map((item) => <li>{item}</li>)}</ul>
+    <h3>Si no encontrás la opción</h3>
+    <ul class="guide-list">{route.troubleshooting.map((item) => <li>{item}</li>)}</ul>
+    {(route.related ?? []).length > 0 && (
+      <p class="row-actions guide-related">
+        {(route.related ?? []).map((item) => <a class="btn ghost" href={item.href}>{item.label}</a>)}
+      </p>
+    )}
+    <h3>Fuentes</h3>
+    <ul class="source-list">
+      {sources.map((source) => (
+        <li>
+          <a href={source.url} target="_blank" rel="noopener noreferrer" data-print-url aria-label={`${source.title} (se abre en una pestaña nueva)`}>{source.title}</a>
+          <span class="meta"> · {source.publisher}. {source.applicability} Fuente oficial revisada el {reviewed(source.lastReviewedAt)}.</span>
+        </li>
+      ))}
+    </ul>
+    <div class="guide-actions">
+      <a href={otherHref} data-guide-link>{otherLabel}</a>
+      <span class="row-actions" data-js-only hidden>
+        <button type="button" class="btn" data-copy-steps>Copiar pasos</button>
+        <button type="button" class="btn ghost" data-print>Imprimir</button>
+      </span>
+    </div>
+    <p class="meta" data-copy-status aria-live="polite"></p>
+    <textarea class="copy-fallback" data-copy-fallback readonly hidden aria-label="Pasos para copiar" rows="8"></textarea>
+  </div>
+</section>

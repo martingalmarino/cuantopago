@@ -1,0 +1,33 @@
+---
+import { APPLE_GUIDE_HREF, GOOGLE_PLAY_GUIDE_HREF } from '../data/subscription-management/billing-guides';
+import type { PlatformGuide } from '../data/subscription-management/types';
+
+interface Props { guide: PlatformGuide }
+const { guide } = Astro.props;
+---
+<section class="section-panel guide-helper" id="no-se-quien-cobra" data-billing-helper aria-labelledby="no-se-titulo">
+  <div class="section-cap"><h2 id="no-se-titulo">¿No sabés quién te cobra {guide.name}?</h2></div>
+  <div class="section-body pad">
+    <p>Seguí este orden. No hace falta tu resumen de tarjeta ni ningún dato de pago, y no tenés que subir nada a Abonito.</p>
+    <ol class="guide-steps">
+      <li>
+        <strong>Mirá la cuenta de {guide.name}.</strong> {guide.billerCheck.text}
+        <a href={guide.billerCheck.url} target="_blank" rel="noopener noreferrer" aria-label={`${guide.billerCheck.label} (se abre en una pestaña nueva)`}>{guide.billerCheck.label}</a>
+      </li>
+      <li>
+        <strong>Buscá el comprobante en tu email.</strong> Buscá en tu correo un aviso de cobro de {guide.name}, un «recibo de Apple» o un recibo de Google Play. Quien te manda el recibo es quien te cobra. Lo revisás vos, en tu correo.
+      </li>
+      <li>
+        <strong>Revisá Apple y Google Play.</strong> Si te suscribiste desde una app en el celular, fijate en las suscripciones de la cuenta de Apple o de Google con la que pagás:
+        <a href={APPLE_GUIDE_HREF}>cómo verlas en Apple</a> o <a href={GOOGLE_PLAY_GUIDE_HREF}>cómo verlas en Google Play</a>.
+      </li>
+      <li>
+        <strong>Revisá tus paquetes.</strong> Fijate en la factura o la app de tu compañía de celular, internet o TV, y en los beneficios que tengas contratados. A veces la suscripción viene incluida o como adicional.
+      </li>
+      <li>
+        <strong>Volvé a elegir.</strong> Cuando sepas quién te cobra, elegilo arriba y te mostramos los pasos.
+        <p><a class="btn" href="#casos" data-back-to-selector>Ya sé quién me cobra</a></p>
+      </li>
+    </ol>
+  </div>
+</section>
