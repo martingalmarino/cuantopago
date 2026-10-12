@@ -14,7 +14,8 @@ export type CategoryId =
   | 'inteligencia-artificial'
   | 'hosting-cloud'
   | 'internet'
-  | 'videojuegos';
+  | 'videojuegos'
+  | 'redes-sociales';
 export type Channel = 'web-direct' | 'app-store' | 'google-play' | 'operator' | 'bundle';
 
 export interface ServiceFaq {

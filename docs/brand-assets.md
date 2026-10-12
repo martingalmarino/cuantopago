@@ -56,6 +56,15 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | Chess.com | `/brands/chesscom.svg` | simple-icons 16.34.0, slug chessdotcom, origen citado chess.com. |
 | GeoGuessr | `/brands/geoguessr.png` | Ícono de app oficial de geoguessr.com, 180×180, sin modificaciones. |
 | ExitLag | ninguno | simple-icons no lo trae y exitlag.com pide una verificación anti-bots antes de servir sus archivos. |
+| Google Workspace | `/brands/googleworkspace.png` | Logo G de Google que usa workspace.google.com, 96×96, sin modificaciones. No hay isotipo propio de Workspace. |
+| Notion | `/brands/notion.svg` | simple-icons 16.34.0, slug notion, origen citado notion.so. |
+| Zoom | `/brands/zoom.svg` | simple-icons 16.34.0, slug zoom, origen citado brand.zoom.us. |
+| Discord Nitro | `/brands/discord.svg` | simple-icons 16.34.0, slug discord, origen citado discord.com/branding. |
+| Meta Verified | `/brands/meta.svg` | simple-icons 16.34.0, slug meta, origen citado meta.com. No hay isotipo propio de Meta Verified. |
+| Slack | `/brands/slack.png` | Ícono oficial `slack_hash_256.png` de slack.com, 256×256, sin modificaciones. simple-icons no trae Slack. |
+| Telegram Premium | `/brands/telegram.svg` | simple-icons 16.34.0, slug telegram, origen citado telegram.org. |
+| X Premium | `/brands/x.svg` | simple-icons 16.34.0, slug x, origen citado x.com. |
+| LinkedIn Premium | `/brands/linkedin.png` | Favicon oficial de linkedin.com, 64×64, sin modificaciones. simple-icons no trae LinkedIn. |
 | Apple One, F1 TV, Flow, Microsoft 365, Adobe | ninguno | No hay un export de simple-icons del producto. No se usó la marca de la empresa madre ni se dibujó un logo. |
 
 El pie del sitio aclara que es independiente y que las marcas son de sus titulares.

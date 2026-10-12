@@ -454,5 +454,77 @@
     "retrievalDate": "2026-10-11",
     "license": null,
     "limitation": "simple-icons 16.34.0 no trae ExitLag y exitlag.com pide una verificación anti-bots antes de servir sus archivos. La ficha muestra el nombre."
+  },
+  {
+    "serviceId": "google-workspace",
+    "file": "/brands/googleworkspace.png",
+    "sourceUrl": "https://www.gstatic.com/images/branding/googleg_gradient/1x/googleg_gradient_standard_96dp.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Google. Ícono oficial que usa workspace.google.com, usado solo para identificar el servicio.",
+    "limitation": "Logo G de Google de 96×96, sin modificaciones. No hay un isotipo propio de Workspace."
+  },
+  {
+    "serviceId": "notion",
+    "file": "/brands/notion.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Notion; origen citado notion.so.",
+    "limitation": "Isotipo de Notion en negro, sin wordmark."
+  },
+  {
+    "serviceId": "zoom",
+    "file": "/brands/zoom.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Zoom; origen citado brand.zoom.us.",
+    "limitation": "Isotipo de Zoom en un solo color #0B5CFF."
+  },
+  {
+    "serviceId": "discord",
+    "file": "/brands/discord.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Discord; origen citado discord.com/branding.",
+    "limitation": "Isotipo de Discord en un solo color #5865F2."
+  },
+  {
+    "serviceId": "meta-verified",
+    "file": "/brands/meta.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Meta; origen citado meta.com.",
+    "limitation": "Logo de Meta en un solo color #0467DF. No hay un isotipo propio de Meta Verified."
+  },
+  {
+    "serviceId": "slack",
+    "file": "/brands/slack.png",
+    "sourceUrl": "https://a.slack-edge.com/80588/marketing/img/meta/slack_hash_256.png",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de Salesforce. Ícono oficial publicado por slack.com, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 256×256 sobre fondo violeta, sin modificaciones."
+  },
+  {
+    "serviceId": "telegram-premium",
+    "file": "/brands/telegram.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de Telegram; origen citado telegram.org.",
+    "limitation": "Isotipo de Telegram en un solo color #26A5E4."
+  },
+  {
+    "serviceId": "x-premium",
+    "file": "/brands/x.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-11",
+    "license": "CC0 1.0 (simple-icons). Marca de X Corp.; origen citado x.com.",
+    "limitation": "Logo X en negro."
+  },
+  {
+    "serviceId": "linkedin-premium",
+    "file": "/brands/linkedin.png",
+    "sourceUrl": "https://static.licdn.com/aero-v1/sc/h/al2o9zrvru7aqj8e1x2rzsrca",
+    "retrievalDate": "2026-10-11",
+    "license": "Marca de LinkedIn. Favicon oficial de linkedin.com, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 64×64 extraído del favicon, sin modificaciones."
   }
 ]

@@ -40,6 +40,7 @@ export const categoryLabels: Record<CategoryId, string> = {
   'hosting-cloud': 'Hosting / Cloud',
   internet: 'Internet / Conectividad',
   videojuegos: 'Games / Videojuegos',
+  'redes-sociales': 'Redes sociales y chat',
 };
 
 export function todayIso(date = new Date()): string {

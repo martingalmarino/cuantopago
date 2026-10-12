@@ -1133,6 +1133,137 @@
     "seoDescription": "Compará Microsoft 365 Personal, Familia y Premium en Argentina. Revisá pago mensual o anual y sumalo a tu presupuesto."
   },
   {
+    "id": "google-workspace",
+    "slug": "google-workspace",
+    "name": "Google Workspace",
+    "category": "productividad",
+    "officialUrl": "https://workspace.google.com/intl/es-419/pricing",
+    "logo": "/brands/googleworkspace.png",
+    "logoAltMode": "decorative",
+    "description": "Gmail con dominio propio, Drive, Meet y Gemini para empresas. Business Starter, Standard y Plus se pagan por usuario, en dólares.",
+    "aliases": [
+      "google workspace",
+      "workspace",
+      "g suite",
+      "gsuite",
+      "gmail empresas",
+      "business starter",
+      "business standard",
+      "business plus"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://workspace.google.com/intl/es-419/pricing",
+      "https://knowledge.workspace.google.com/admin/billing/payment-options-in-my-country"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Google Workspace?",
+        "answer": "El 11 de octubre de 2026 la página publicaba, con compromiso de un año, Business Starter a USD 7, Business Standard a USD 14 y Business Plus a USD 22 por usuario por mes."
+      },
+      {
+        "question": "¿Hay descuento para empezar?",
+        "answer": "Sí, para clientes nuevos y hasta 20 usuarios: Starter a USD 4,90 y Standard a USD 11,20 por usuario por mes durante los primeros 12 meses. No lo aplicamos solo; lo podés elegir al agregar el plan."
+      },
+      {
+        "question": "¿Se paga en pesos?",
+        "answer": "No. Google lista a Argentina entre los países que pagan en dólares con tarjeta de crédito."
+      },
+      {
+        "question": "¿Y sin compromiso anual?",
+        "answer": "El plan flexible, que se cancela cuando quieras, cuesta más. La página dice que el compromiso anual ahorra un 16%."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Google Workspace cobra por usuario. El total del equipo es el precio del plan por la cantidad de cuentas.",
+    "seoTitle": "Google Workspace Argentina: precio de Business Starter, Standard y Plus",
+    "seoDescription": "Cuánto cuesta Google Workspace en Argentina: Business Starter, Standard y Plus por usuario, en dólares y con impuestos."
+  },
+  {
+    "id": "notion",
+    "slug": "notion",
+    "name": "Notion",
+    "category": "productividad",
+    "officialUrl": "https://www.notion.com/es/pricing",
+    "logo": "/brands/notion.svg",
+    "logoAltMode": "decorative",
+    "description": "Notas, documentos, bases de datos y proyectos en un solo lugar. Plus y Business se pagan por miembro, en dólares.",
+    "aliases": [
+      "notion",
+      "notion ai",
+      "notion plus",
+      "notion business",
+      "notas"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.notion.com/es/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Notion?",
+        "answer": "El 11 de octubre de 2026 la página publicaba Plus a USD 12 y Business a USD 24 por miembro por mes, o USD 10 y USD 20 por mes con pago anual."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí. El plan Gratuito alcanza para uso personal. Plus para un solo miembro es gratis para estudiantes y docentes con correo educativo."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "La página publica los precios en dólares y no aclara impuestos. Sumamos la percepción que corresponda al pagar con tarjeta en pesos."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Notion cobra por miembro del espacio de trabajo. Los invitados no pagan.",
+    "seoTitle": "Notion Argentina: precio de Plus y Business",
+    "seoDescription": "Cuánto cuesta Notion en Argentina: Plus y Business por miembro, por mes o por año, en dólares."
+  },
+  {
+    "id": "zoom",
+    "slug": "zoom",
+    "name": "Zoom",
+    "category": "productividad",
+    "officialUrl": "https://zoom.us/pricing",
+    "logo": "/brands/zoom.svg",
+    "logoAltMode": "decorative",
+    "description": "Videollamadas, chat y toma de notas con IA. Pro y Comercial se pagan por usuario, en pesos y más impuestos.",
+    "aliases": [
+      "zoom",
+      "zoom workplace",
+      "zoom pro",
+      "zoom meetings",
+      "videollamadas"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://zoom.us/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Zoom?",
+        "answer": "El 11 de octubre de 2026 la página mostraba en pesos, con cobro anual, Workplace Pro a ARS 19.821,66 y Comercial a ARS 25.655 por usuario por mes."
+      },
+      {
+        "question": "¿Se suman impuestos?",
+        "answer": "Sí. Zoom dice que los impuestos dependen de tu jurisdicción y que los ves en el carrito antes de pagar. Sumamos el IVA del 21%."
+      },
+      {
+        "question": "¿Y el plan gratis?",
+        "answer": "Básico es gratis, con reuniones de hasta 40 minutos y 100 participantes."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Zoom muestra el precio en pesos para Argentina. El cobro anual ahorra hasta un 16% frente al mensual, que no cargamos.",
+    "seoTitle": "Zoom Argentina: precio de Workplace Pro y Comercial",
+    "seoDescription": "Cuánto cuesta Zoom en Argentina: Workplace Pro y Comercial por usuario, en pesos y con impuestos."
+  },
+  {
     "id": "canva",
     "slug": "canva",
     "name": "Canva",
@@ -2563,5 +2694,257 @@
     "body": "ExitLag funciona en Windows, Android e iOS. La página de precios tiene una verificación anti-bots, así que conviene confirmar el precio antes de pagar.",
     "seoTitle": "ExitLag Argentina: precio mensual y anual",
     "seoDescription": "Cuánto cuesta ExitLag en Argentina: plan para un jugador, mensual o anual, en dólares."
+  },
+  {
+    "id": "discord",
+    "slug": "discord",
+    "name": "Discord Nitro",
+    "category": "redes-sociales",
+    "officialUrl": "https://discord.com/nitro",
+    "logo": "/brands/discord.svg",
+    "logoAltMode": "decorative",
+    "description": "Nitro y Nitro Basic: emojis y stickers en cualquier servidor, archivos más grandes y transmisiones en HD. En Argentina se cobra en dólares.",
+    "aliases": [
+      "discord",
+      "nitro",
+      "nitro basic",
+      "discord nitro",
+      "boost"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://apps.apple.com/ar/app/discord-conversa-y-juega/id985746746",
+      "https://support.discord.com/hc/es/articles/4407269525911-Precios-locales-en-Discord"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Discord Nitro en Argentina?",
+        "answer": "El 11 de octubre de 2026 el App Store de Argentina listaba Nitro a USD 9,99 por mes o USD 99,99 por año, y Nitro Basic a USD 2,99 por mes."
+      },
+      {
+        "question": "¿Por qué en dólares?",
+        "answer": "Discord dejó de cobrar en pesos el 15 de febrero de 2024. Desde entonces cobra en dólares en Argentina."
+      },
+      {
+        "question": "¿Puede costar distinto en la computadora?",
+        "answer": "Sí. Discord dice que el precio depende del país y lo muestra en Ajustes de usuario > Nitro. Usamos el del App Store porque es el único publicado."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Discord no publica en su web el precio para Argentina. Tomamos el del App Store argentino; en la app de escritorio puede ser otro.",
+    "seoTitle": "Discord Nitro Argentina: precio de Nitro y Nitro Basic",
+    "seoDescription": "Cuánto cuesta Discord Nitro en Argentina: Nitro y Nitro Basic en dólares, por mes o por año, con impuestos."
+  },
+  {
+    "id": "meta-verified",
+    "slug": "meta-verified",
+    "name": "Meta Verified",
+    "category": "redes-sociales",
+    "officialUrl": "https://www.meta.com/meta-verified/",
+    "logo": "/brands/meta.svg",
+    "logoAltMode": "decorative",
+    "description": "Insignia de verificación, protección contra la suplantación y soporte para perfiles de Instagram y Facebook.",
+    "aliases": [
+      "meta verified",
+      "meta",
+      "tilde azul",
+      "verificado",
+      "verificacion",
+      "insignia azul",
+      "instagram",
+      "facebook"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://apps.apple.com/ar/app/instagram/id389801252",
+      "https://www.meta.com/es-es/meta-verified"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Meta Verified en Argentina?",
+        "answer": "El 11 de octubre de 2026 la app de Instagram en el App Store de Argentina listaba Meta Verified Standard a USD 6,99 por mes."
+      },
+      {
+        "question": "¿Hay planes más caros?",
+        "answer": "Meta publica Plus, Premium y Max para creadores, pero aclara que los planes y precios cambian según la región. No los cargamos porque no figuran para Argentina."
+      },
+      {
+        "question": "¿Sale más barato desde la web?",
+        "answer": "Meta dice que suscribirse desde la web cuesta menos que desde la app, pero no publica el precio web para Argentina."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "El precio sale del App Store argentino, dentro de la app de Instagram. Meta muestra el precio de tu mercado al iniciar la suscripción.",
+    "seoTitle": "Meta Verified Argentina: precio del tilde azul en Instagram y Facebook",
+    "seoDescription": "Cuánto cuesta Meta Verified en Argentina: el plan Standard para Instagram y Facebook, en dólares y con impuestos."
+  },
+  {
+    "id": "slack",
+    "slug": "slack",
+    "name": "Slack",
+    "category": "redes-sociales",
+    "officialUrl": "https://slack.com/intl/es-ar/pricing",
+    "logo": "/brands/slack.png",
+    "logoAltMode": "decorative",
+    "description": "Mensajería y canales para equipos de trabajo. Pro y Business+ se pagan por usuario, en dólares.",
+    "aliases": [
+      "slack",
+      "slack pro",
+      "business+",
+      "business plus",
+      "chat de equipo"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://slack.com/intl/es-ar/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Slack?",
+        "answer": "El 11 de octubre de 2026 la página publicaba Pro a USD 8,75 y Business+ a USD 18 por usuario por mes, con facturación mensual."
+      },
+      {
+        "question": "¿Hay descuento?",
+        "answer": "La página ofrecía un 50% menos durante 3 meses: USD 4,38 en Pro y USD 9 en Business+. Aplican términos. No lo aplicamos solo."
+      },
+      {
+        "question": "¿Y el plan gratis?",
+        "answer": "Existe, con 90 días de historial de mensajes y hasta 10 aplicaciones."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Slack cobra por usuario activo. El total del equipo es el precio del plan por la cantidad de personas.",
+    "seoTitle": "Slack Argentina: precio de Pro y Business+",
+    "seoDescription": "Cuánto cuesta Slack en Argentina: Pro y Business+ por usuario, en dólares y con impuestos."
+  },
+  {
+    "id": "telegram-premium",
+    "slug": "telegram-premium",
+    "name": "Telegram Premium",
+    "category": "redes-sociales",
+    "officialUrl": "https://telegram.org/faq_premium/es",
+    "logo": "/brands/telegram.svg",
+    "logoAltMode": "decorative",
+    "description": "Archivos de hasta 4 GB, descargas más rápidas, transcripción de audios y sin anuncios en canales. Se cobra en dólares.",
+    "aliases": [
+      "telegram",
+      "telegram premium",
+      "premiumbot"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://apps.apple.com/ar/app/telegram-messenger/id686449807",
+      "https://telegram.org/faq_premium/es"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Telegram Premium en Argentina?",
+        "answer": "El 11 de octubre de 2026 el App Store de Argentina listaba Telegram Premium a USD 4,99 por mes o USD 35,99 por año."
+      },
+      {
+        "question": "¿Qué incluye?",
+        "answer": "Según Telegram: límites duplicados, envío de archivos de hasta 4 GB, descargas más rápidas, conversión de voz a texto, stickers y reacciones premium, y sin anuncios en los canales."
+      },
+      {
+        "question": "¿Hay una forma más barata?",
+        "answer": "Telegram dice que suscribirse con @PremiumBot sale más barato porque no paga la comisión de Apple o Google, y que el precio depende del número de teléfono. No publica ese precio."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "El precio sale del App Store argentino. Con @PremiumBot o en Android puede ser otro.",
+    "seoTitle": "Telegram Premium Argentina: precio mensual y anual",
+    "seoDescription": "Cuánto cuesta Telegram Premium en Argentina, por mes o por año, en dólares y con impuestos."
+  },
+  {
+    "id": "x-premium",
+    "slug": "x-premium",
+    "name": "X Premium",
+    "category": "redes-sociales",
+    "officialUrl": "https://x.com/i/premium_sign_up",
+    "logo": "/brands/x.svg",
+    "logoAltMode": "decorative",
+    "description": "La suscripción de X (Twitter): Basic, Premium con la marca de verificación y Premium+ con menos anuncios y más Grok. En dólares.",
+    "aliases": [
+      "x",
+      "twitter",
+      "x premium",
+      "twitter blue",
+      "premium+",
+      "premium plus",
+      "tilde azul"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://apps.apple.com/ar/app/x/id333903271"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta X Premium en Argentina?",
+        "answer": "El 11 de octubre de 2026 el App Store de Argentina listaba Basic a USD 2, Premium a USD 5 y Premium+ a USD 50 por mes."
+      },
+      {
+        "question": "¿Conviene el pago anual?",
+        "answer": "Sí. Basic sale USD 20 por año y Premium USD 48 por año, dos meses menos que pagar mes a mes. Premium+ no figura con pago anual."
+      },
+      {
+        "question": "¿Es igual desde la web?",
+        "answer": "X muestra el precio web al iniciar sesión y puede ser distinto. Usamos el del App Store porque es el único publicado para Argentina."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Los precios salen del App Store argentino.",
+    "seoTitle": "X Premium Argentina: precio de Basic, Premium y Premium+",
+    "seoDescription": "Cuánto cuesta X (Twitter) Premium en Argentina: Basic, Premium y Premium+, por mes o por año, en dólares."
+  },
+  {
+    "id": "linkedin-premium",
+    "slug": "linkedin-premium",
+    "name": "LinkedIn Premium",
+    "category": "redes-sociales",
+    "officialUrl": "https://premium.linkedin.com/",
+    "logo": "/brands/linkedin.png",
+    "logoAltMode": "decorative",
+    "description": "Premium Career para buscar trabajo y Premium Business para hacer contactos. En el App Store de Argentina se cobra en dólares.",
+    "aliases": [
+      "linkedin",
+      "linkedin premium",
+      "premium career",
+      "premium business",
+      "linked in"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://apps.apple.com/ar/app/linkedin-red-profesional/id288429040"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta LinkedIn Premium en Argentina?",
+        "answer": "El 11 de octubre de 2026 el App Store de Argentina listaba Premium Career a USD 39,99 y Premium Business a USD 69,99 por mes."
+      },
+      {
+        "question": "¿Por qué hay otros precios en la ficha?",
+        "answer": "La misma ficha también lista Career a USD 29,99 con prueba gratis y Business a USD 59,99. Cargamos el precio que más se repite."
+      },
+      {
+        "question": "¿Sale más barato desde la web?",
+        "answer": "Puede ser. LinkedIn muestra el precio web recién al iniciar sesión, así que no lo publicamos."
+      }
+    ],
+    "tags": [],
+    "secondaryCategories": [],
+    "body": "Los precios salen del App Store argentino. Si pagaste desde la web, cargá tu importe en Mis suscripciones.",
+    "seoTitle": "LinkedIn Premium Argentina: precio de Career y Business",
+    "seoDescription": "Cuánto cuesta LinkedIn Premium en Argentina: Premium Career y Premium Business en dólares, con impuestos."
   }
 ]
