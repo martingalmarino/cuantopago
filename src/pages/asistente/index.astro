@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import AssistantChat from '../../components/AssistantChat';
+import { services } from '../../lib/catalog';
+---
+<Base
+  title="Chat Abonito: preguntá por precios y suscripciones | Abonito"
+  description="Preguntá cuánto sale una suscripción, si incluye impuestos, cómo cancelarla o cuál es la más barata. Responde solo con los datos publicados en Abonito."
+  crumbs={[{ name: 'Inicio', href: '/' }, { name: 'Chat Abonito', href: '/asistente/' }]}
+  ads={false}
+  assistant={false}
+>
+  <div class="wrap page page-stack assistant-page">
+    <nav class="crumbs" aria-label="Migas"><a href="/">Inicio</a> <span>/</span> <span>Chat Abonito</span></nav>
+    <header class="intro">
+      <h1>Chat Abonito</h1>
+      <p>Preguntá por precios, planes, impuestos o cómo cancelar. Responde con los datos de las {services.length} plataformas del catálogo y las guías del sitio, sin inteligencia artificial externa.</p>
+    </header>
+    <AssistantChat client:load mode="page" />
+    <noscript>
+      <p class="warning">El chat necesita JavaScript. Podés navegar el <a href="/plataformas/">catálogo de plataformas</a>, la <a href="/calculadora/">calculadora</a> o las <a href="/gestionar-suscripciones/">guías para cancelar</a>.</p>
+    </noscript>
+    <section class="section-panel">
+      <div class="section-cap"><h2>Cómo responde</h2></div>
+      <div class="section-body pad prose">
+        <p>Busca la respuesta en los precios publicados, las reglas de impuestos y las guías de Abonito. Si un dato no está publicado, te lo dice en vez de inventarlo: un precio a confirmar nunca se toma como $ 0, y las promociones no se suman a ningún total.</p>
+        <p>No tiene acceso a tu cuenta, a tu banco ni a tu lista de Mis suscripciones, y no hace cambios por vos. La conversación queda en esta pestaña del navegador y se borra al cerrarla.</p>
+      </div>
+    </section>
+  </div>
+</Base>

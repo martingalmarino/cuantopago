@@ -6,6 +6,7 @@ const links = [
   { href: '/calculadora/', label: 'Calculadora' },
   { href: '/gestionar-suscripciones/', label: 'Gestionar suscripciones' },
   { href: '/mis-suscripciones/', label: 'Mis suscripciones', count: true },
+  { href: '/asistente/', label: 'Chat' },
 ];
 const inGuides = path.startsWith('/guias/') || /^\/[a-z0-9-]+\/cancelar\/$/.test(path);
 const isCurrent = (href: string) => path === href || (href === '/gestionar-suscripciones/' && inGuides);

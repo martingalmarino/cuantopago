@@ -9,7 +9,8 @@ type AnalyticsEvent =
   | 'guide_biller_select'
   | 'guide_unknown_biller'
   | 'guide_official_link_click'
-  | 'guide_copy_steps';
+  | 'guide_copy_steps'
+  | 'assistant_question';
 
 /** Sólo valores de listas cerradas: plataforma, intención, canal y id de ruta. */
 export interface GuideEventProps {
@@ -17,9 +18,12 @@ export interface GuideEventProps {
   channel?: 'directo' | 'apple' | 'google-play' | 'externo' | 'movistar' | 'playstation' | 'prime-video' | 'no-se';
   scope?: 'servicio' | 'canal' | 'paquete';
   routeId?: string;
+  /** Tipo de pregunta que reconoció el chat. Nunca el texto que escribió la persona. */
+  assistantIntent?: string;
+  answered?: boolean;
 }
 
-/** Apagado si no hay PUBLIC_ANALYTICS_ENDPOINT. Nunca manda importes, nombres propios ni la lista. */
+/** Apagado si no hay PUBLIC_ANALYTICS_ENDPOINT. Nunca manda importes, nombres propios, la lista ni lo que se escribe en el chat. */
 export function track(event: AnalyticsEvent, serviceId?: string, props: GuideEventProps = {}): void {
   const endpoint = import.meta.env.PUBLIC_ANALYTICS_ENDPOINT;
   if (!endpoint || typeof navigator === 'undefined') return;
@@ -30,6 +34,8 @@ export function track(event: AnalyticsEvent, serviceId?: string, props: GuideEve
     channel: props.channel ?? null,
     scope: props.scope ?? null,
     routeId: props.routeId ?? null,
+    assistantIntent: props.assistantIntent ?? null,
+    answered: props.answered ?? null,
   });
   if (navigator.sendBeacon) {
     navigator.sendBeacon(endpoint, new Blob([body], { type: 'application/json' }));
