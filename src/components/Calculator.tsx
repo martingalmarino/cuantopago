@@ -161,7 +161,11 @@ export default function Calculator({ serviceId, initialPlanId, embedded = false 
 
   return (
     <section id="calculo" className="section-panel calc-panel">
-      <div className="section-cap"><h2>{bundle?.name ?? plan?.name ?? 'Calculá tu costo'}</h2></div>
+      <div className="section-cap">
+        {embedded
+          ? <p className="section-title">{bundle?.name ?? plan?.name ?? 'Calculá tu costo'}</p>
+          : <h2>{bundle?.name ?? plan?.name ?? 'Calculá tu costo'}</h2>}
+      </div>
       <div className="section-body pad stack">
       {!embedded && servicePlans.length > 0 && (
         <label className="field">

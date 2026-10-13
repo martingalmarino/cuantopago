@@ -3,8 +3,20 @@ import Base from '../layouts/Base.astro';
 import BrandLogo from '../components/BrandLogo.astro';
 import ServiceRow from '../components/ServiceRow.astro';
 import Calculator from '../components/Calculator';
-import { categoryLabels, monthlyPublishedMinor, plansFor, reviewedLabel, serviceById, services } from '../lib/catalog';
+import { categoryLabels, monthlyPublishedMinor, plansFor, reviewedLabel, serviceById, services, todayIso } from '../lib/catalog';
 import { formatPrice } from '../lib/money';
+import {
+  answerText,
+  latestVerified,
+  priceSummary,
+  relatedServices,
+  serviceDescription,
+  serviceJsonLd,
+  serviceTitle,
+  standardFaqs,
+  taxLabel,
+  type PageFaq,
+} from '../lib/service-seo';
 import { guideHref } from '../data/subscription-management/managed';
 import type { PlanRecord } from '../lib/types';
 
@@ -12,14 +24,22 @@ export function getStaticPaths() {
   return services.map((service) => ({ params: { slug: service.slug }, props: { service } }));
 }
 const { service } = Astro.props;
+const asOf = todayIso();
 const list = plansFor(service.id);
-const h1 = `${service.name} en Argentina`;
-const title = `¿Cuánto sale ${service.name} en Argentina? - Precios y Planes 2026 | Abonito`;
-const description = service.seoDescription ?? `Precio publicado de ${service.name} en Argentina, planes y qué entra en la estimación.`;
+const summary = priceSummary(service, asOf);
+const h1 = `Precio de ${service.name} en Argentina`;
+const title = serviceTitle(service, asOf);
+const description = serviceDescription(service, summary);
+const answer = answerText(service, summary);
 const firstPriced = list.find((plan) => plan.selectable !== false && plan.amountMinor !== null && (plan.choiceSlots ?? 0) === 0);
-const verified = list.find((plan) => plan.verifiedAt)?.verifiedAt ?? null;
+const verified = latestVerified(service.id);
 const bundles = list.filter((plan) => (plan.entitlements?.length ?? 0) > 0 || (plan.choiceOptions?.length ?? 0) > 0);
-const related = services.filter((item) => item.category === service.category && item.id !== service.id).slice(0, 4);
+const related = relatedServices(service);
+const faqs: PageFaq[] = [...service.faqs, ...standardFaqs(service, summary)];
+const pageUrl = new URL(`/${service.slug}/`, Astro.site ?? 'https://www.abonito.com.ar').href;
+const logoUrl = service.logo ? new URL(service.logo, pageUrl).href : null;
+const jsonLd = serviceJsonLd({ service, pageUrl, title, description, logoUrl, faqs, asOf });
+const chargedInUsd = summary.plan?.currency === 'USD';
 const cancelHref = guideHref(service.id, 'cancelar');
 const saveHref = guideHref(service.id, 'ahorrar');
 const groups = [
@@ -57,6 +77,7 @@ function priceLabel(plan: PlanRecord): string {
 <Base
   title={title}
   description={description}
+  jsonLd={jsonLd}
   crumbs={[{ name: 'Inicio', href: '/' }, { name: 'Plataformas', href: '/plataformas/' }, { name: service.name, href: `/${service.slug}/` }]}
 >
   <div class="wrap page page-stack">
@@ -69,14 +90,22 @@ function priceLabel(plan: PlanRecord): string {
         <p class="kicker">{categoryLabels[service.category]}{(service.tags ?? []).length ? ` · ${service.tags?.join(' · ')}` : ''}</p>
         <h1>{h1}</h1>
         <p class="meta clamp-2">{service.description}</p>
-        {reviewedLabel(verified) && <p class="meta">{reviewedLabel(verified)}</p>}
+        {verified && reviewedLabel(verified) && <p class="meta"><time datetime={verified}>{reviewedLabel(verified)}</time></p>}
         <p class="meta"><a href={service.officialUrl} rel="noopener noreferrer">Sitio oficial</a></p>
       </div>
     </header>
+    <section class="answer" aria-label={`Cuánto sale ${service.name}`}>
+      <p>{answer}</p>
+      <p class="answer-links">
+        <a href="/como-calculamos/">Cómo calculamos</a>
+        {chargedInUsd && <a href="/cotizaciones/">Cotizaciones del dólar</a>}
+        <a href="/calculadora/">Calculadora</a>
+      </p>
+    </section>
     <div class="decision">
       <section class="section-panel">
         <div class="section-cap">
-          <h2>Elegí tu plan</h2>
+          <h2>Planes y precios de {service.name}</h2>
           <a class="see-calc" href="#calculo">Ver cálculo</a>
         </div>
         <div class="section-body">
@@ -117,14 +146,31 @@ function priceLabel(plan: PlanRecord): string {
         </div>
       </section>
     )}
-    {list.some((plan) => featureLine(plan) || plan.notes || plan.promotion) && (
+    {list.length > 0 && (
       <section class="section-panel">
-        <div class="section-cap"><h2>Detalle de los planes</h2></div>
+        <div class="section-cap"><h2>Qué incluye cada plan de {service.name}</h2></div>
         <div class="section-body pad">
-          {list.map((plan) => (
+          <div class="table-scroll">
+            <table class="plan-table">
+              <caption class="visually-hidden">Planes de {service.name} en Argentina: precio publicado, impuestos y características</caption>
+              <thead>
+                <tr><th scope="col">Plan</th><th scope="col">Precio publicado</th><th scope="col">Impuestos</th><th scope="col">Características</th></tr>
+              </thead>
+              <tbody>
+                {list.map((plan) => (
+                  <tr>
+                    <th scope="row">{plan.name}</th>
+                    <td class="nums">{priceLabel(plan)}</td>
+                    <td>{taxLabel(plan)}</td>
+                    <td>{featureLine(plan) || '—'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {list.filter((plan) => plan.notes || plan.promotion || (plan.amountMinor !== null && plan.currency && plan.billingPeriodMonths > 1)).map((plan) => (
             <article class="include-row" style="display:block;padding:12px 0">
               <strong>{plan.name}</strong>
-              <p class="meta">{featureLine(plan)}</p>
               {plan.amountMinor !== null && plan.currency && plan.billingPeriodMonths > 1 && (
                 <p class="meta">Equivalente mensual: {formatPrice(monthlyPublishedMinor(plan) ?? plan.amountMinor, plan.currency)}. No es una cuota.</p>
               )}
@@ -139,7 +185,7 @@ function priceLabel(plan: PlanRecord): string {
     )}
     {bundles.length > 0 && (
       <section class="section-panel">
-        <div class="section-cap"><h2>Incluye</h2></div>
+        <div class="section-cap"><h2>Qué servicios incluye {service.name}</h2></div>
         <div class="section-body pad">
           {service.overlapNote && <p class="warning">{service.overlapNote}</p>}
           {bundles.map((plan) => (
@@ -164,29 +210,31 @@ function priceLabel(plan: PlanRecord): string {
     )}
     {service.body && <p class="prose">{service.body}</p>}
     <section class="section-panel">
-      <div class="section-cap"><h2>Fuentes</h2></div>
+      <div class="section-cap"><h2>Fuentes de los precios de {service.name}</h2></div>
       <div class="section-body pad">
         <ul class="source-list">
           {service.sourceUrls.map((url) => <li><a href={url} title={url} rel="noopener">{sourceLabel(url)}</a></li>)}
         </ul>
-      </div>
-    </section>
-    <section class="section-panel">
-      <div class="section-cap"><h2>Preguntas frecuentes</h2></div>
-      <div class="section-body pad">
-        {service.faqs.map((faq) => (
-          <details class="breakdown">
-            <summary>{faq.question}</summary>
-            <p>{faq.answer}</p>
-          </details>
-        ))}
+        <p class="meta">¿Ves un precio distinto en la página oficial?</p>
         <p><button type="button" class="btn" id="copy-report">Copiar resumen para reportar un precio</button></p>
         <p id="copy-status" class="meta" aria-live="polite"></p>
       </div>
     </section>
+    <section class="section-panel">
+      <div class="section-cap"><h2>Preguntas frecuentes sobre {service.name}</h2></div>
+      <div class="section-body pad">
+        {faqs.map((faq) => (
+          <details class="breakdown">
+            <summary>{faq.question}</summary>
+            <p>{faq.answer}</p>
+            {faq.link && <p><a href={faq.link.href}>{faq.link.label}</a></p>}
+          </details>
+        ))}
+      </div>
+    </section>
     {related.length > 0 && (
       <section class="section-panel">
-        <div class="section-cap"><h2>Otras de {categoryLabels[service.category]}</h2></div>
+        <div class="section-cap"><h2>Alternativas a {service.name}</h2></div>
         <div class="section-body">
           {related.map((item) => <ServiceRow service={item} />)}
         </div>

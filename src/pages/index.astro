@@ -9,11 +9,25 @@ import { services } from '../lib/catalog';
   description="Compará planes, calculá el costo estimado y organizá tu gasto mensual en suscripciones."
   jsonLd={{
     '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: 'Abonito',
-    url: Astro.site?.href,
-    description: 'Compará planes, calculá el costo estimado y organizá tu gasto mensual.',
-    inLanguage: 'es-AR',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': `${Astro.site?.href}#sitio`,
+        name: 'Abonito',
+        url: Astro.site?.href,
+        description: 'Compará planes, calculá el costo estimado y organizá tu gasto mensual.',
+        inLanguage: 'es-AR',
+        publisher: { '@id': `${Astro.site?.href}#organizacion` },
+      },
+      {
+        '@type': 'Organization',
+        '@id': `${Astro.site?.href}#organizacion`,
+        name: 'Abonito',
+        url: Astro.site?.href,
+        logo: Astro.site ? new URL('/favicon.svg', Astro.site).href : undefined,
+        description: 'Sitio independiente que compara precios de suscripciones digitales en Argentina con fuentes oficiales.',
+      },
+    ],
   }}
 >
   <div class="wrap has-budget-bar">

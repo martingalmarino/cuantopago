@@ -32,7 +32,6 @@ const serviceSchema = z.object({
   tags: z.array(z.string()).optional(),
   secondaryCategories: z.array(z.enum(['series', 'musica', 'almacenamiento', 'paquetes', 'deportes', 'tv-en-vivo', 'productividad', 'diseno', 'inteligencia-artificial', 'hosting-cloud', 'internet', 'videojuegos', 'redes-sociales', 'programacion-ia', 'creacion-apps', 'seguridad', 'streaming-creadores', 'aprendizaje'])).optional(),
   body: z.string().nullable().optional(),
-  seoDescription: z.string().nullable().optional(),
 });
 
 const planSchema = z.object({

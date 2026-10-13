@@ -53,6 +53,9 @@ if (crumbs.length && Astro.site) {
     <meta property="og:locale" content="es_AR" />
     {canonical && <meta property="og:url" content={canonical} />}
     <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
     {graph.map((item) => <script type="application/ld+json" set:html={JSON.stringify(item)} />)}
     {ads && <script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6771833588582297" crossorigin="anonymous"></script>}
   </head>
