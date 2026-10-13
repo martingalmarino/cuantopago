@@ -40,6 +40,18 @@ if (crumbs.length && Astro.site) {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f5f5" />
+    <script is:inline>
+      (function () {
+        var theme = null;
+        try { theme = localStorage.getItem('abonito:tema'); } catch (error) {}
+        if (theme !== 'light' && theme !== 'dark') {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.dataset.theme = theme;
+        if (theme === 'dark') document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d1110');
+      })();
+    </script>
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="google-site-verification" content="7zHmjrRMQb8Zn398ZZg2Ejm6SG91MRi9f0JgVZoGpq4" />
