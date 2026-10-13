@@ -23,6 +23,19 @@ const intentHints = {
         ))}
       </div>
     </fieldset>
+    {guide.scopeQuestion && (
+      <fieldset class="guide-fieldset" data-scope-fieldset data-legend={guide.scopeQuestion.legend}>
+        <legend>{guide.scopeQuestion.legend}</legend>
+        <div class="choice-grid">
+          {guide.scopeQuestion.options.map((option) => (
+            <label class="choice">
+              <input type="radio" name="alcance" value={option.id} />
+              <span><strong>{option.label}</strong><span class="meta">{option.hint}</span></span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+    )}
     {guide.roleQuestion && (
       <fieldset class="guide-fieldset" data-role-fieldset>
         <legend>{guide.roleQuestion.legend}</legend>

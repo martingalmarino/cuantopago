@@ -5,6 +5,7 @@ type AnalyticsEvent =
   | 'savings_simulated'
   | 'guide_view'
   | 'guide_intent_select'
+  | 'guide_scope_select'
   | 'guide_biller_select'
   | 'guide_unknown_biller'
   | 'guide_official_link_click'
@@ -13,7 +14,8 @@ type AnalyticsEvent =
 /** Sólo valores de listas cerradas: plataforma, intención, canal y id de ruta. */
 export interface GuideEventProps {
   intent?: 'cancelar' | 'ahorrar';
-  channel?: 'directo' | 'apple' | 'google-play' | 'externo' | 'no-se';
+  channel?: 'directo' | 'apple' | 'google-play' | 'externo' | 'movistar' | 'playstation' | 'prime-video' | 'no-se';
+  scope?: 'servicio' | 'canal' | 'paquete';
   routeId?: string;
 }
 
@@ -26,6 +28,7 @@ export function track(event: AnalyticsEvent, serviceId?: string, props: GuideEve
     serviceId: serviceId ?? null,
     intent: props.intent ?? null,
     channel: props.channel ?? null,
+    scope: props.scope ?? null,
     routeId: props.routeId ?? null,
   });
   if (navigator.sendBeacon) {

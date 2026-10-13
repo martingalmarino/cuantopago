@@ -4,7 +4,7 @@ import { managedPlatforms } from '../data/subscription-management/managed';
 import { platformGuides } from '../data/subscription-management/platform-guides';
 import { guideSources } from '../data/subscription-management/sources';
 import type { BillingGuide, GuideSource, PlatformGuide } from '../data/subscription-management/types';
-import { CHANNELS, INTENTS, isOfficialUrl, resolveRouteId, type GuideConfig } from './guides';
+import { CHANNELS, INTENTS, isOfficialUrl, resolveRouteId, scopeOptionsFor, type GuideConfig } from './guides';
 
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine((value) => {
   const date = new Date(`${value}T00:00:00Z`);
@@ -12,9 +12,11 @@ const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine((value) => {
 }, 'Fecha inválida');
 const officialUrl = z.string().refine(isOfficialUrl, 'URL no oficial o sin HTTPS');
 const text = z.string().trim().min(1);
-const channel = z.enum(['directo', 'apple', 'google-play', 'externo']);
+const channel = z.enum(['directo', 'apple', 'google-play', 'externo', 'movistar', 'playstation', 'prime-video']);
+const scope = z.enum(['servicio', 'canal', 'paquete']);
+const intent = z.enum(['cancelar', 'ahorrar']);
 const cta = z.object({ label: text, url: officialUrl });
-const link = z.object({ label: text, href: z.string().regex(/^\/[a-z0-9\-/]*\/$/, 'Enlace interno inválido') });
+const link = z.object({ label: text, href: z.string().regex(/^\/[a-z0-9\-/]*\/(#ruta-[a-z0-9-]+)?$/, 'Enlace interno inválido') });
 
 const sourceSchema = z.object({
   id: text,
@@ -25,13 +27,17 @@ const sourceSchema = z.object({
   applicability: text,
   lastReviewedAt: isoDate,
   lastLinkCheckedAt: isoDate,
+  regionalScope: z.enum(['ar', 'latam', 'global', 'otro-pais']).optional(),
+  evidence: z.enum(['readable_article', 'store_listing', 'indexed_excerpt']).optional(),
 });
 
 const routeSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
-  intent: z.enum(['cancelar', 'ahorrar']),
+  intent,
   channels: z.array(channel),
   role: z.enum(['titular', 'miembro']).nullable(),
+  scope: scope.optional(),
+  transition: z.enum(['next_cycle', 'cancel_then_expire_then_resubscribe', 'inspect_account']).optional(),
   status: z.enum(['verified', 'conditional', 'official_handoff']),
   heading: text.max(90),
   eligibility: text.optional(),
@@ -62,6 +68,11 @@ const platformSchema = z.object({
     legend: text,
     options: z.array(z.object({ id: z.enum(['titular', 'miembro']), label: text, hint: text })).length(2),
   }).nullable(),
+  scopeQuestion: z.object({
+    legend: text,
+    intents: z.array(intent).min(1),
+    options: z.array(z.object({ id: scope, label: text, hint: text, askChannel: z.boolean() })).min(2),
+  }).optional(),
   billerCheck: z.object({ text, label: text, url: officialUrl, sourceId: text }),
   routes: z.array(routeSchema).min(1),
   faqs: z.array(z.object({ question: text, answer: text })).min(1),
@@ -88,7 +99,10 @@ export function guideConfig(guide: PlatformGuide): GuideConfig {
   return {
     channels: guide.channels,
     hasRole: guide.roleQuestion !== null,
-    routes: guide.routes.map(({ id, intent, channels, role }) => ({ id, intent, channels, role })),
+    scope: guide.scopeQuestion
+      ? { intents: guide.scopeQuestion.intents, options: guide.scopeQuestion.options.map(({ id, askChannel }) => ({ id, askChannel })) }
+      : null,
+    routes: guide.routes.map(({ id, intent, channels, role, scope }) => ({ id, intent, channels, role, scope: scope ?? null })),
   };
 }
 
@@ -124,6 +138,7 @@ export function validateGuides(
     if (source.lastLinkCheckedAt > today) errors.push(`La fuente ${source.id} tiene un chequeo de enlace con fecha futura.`);
   }
 
+  const anchorIds = new Set(catalog.platforms.flatMap((guide) => guide.routes.map((route) => `/${guide.slug}/cancelar/#ruta-${route.id}`)));
   const routeIds = new Set<string>();
   const slugs = new Set<string>();
   for (const guide of catalog.platforms) {
@@ -149,20 +164,33 @@ export function validateGuides(
       routeIds.add(route.id);
       for (const id of route.sourceIds) if (!sourceIds.has(id)) errors.push(`La ruta ${route.id} cita la fuente inexistente ${id}.`);
       for (const item of route.channels) if (!guide.channels.includes(item)) errors.push(`La ruta ${route.id} usa el canal ${item}, que la guía no ofrece.`);
-      for (const item of route.related ?? []) if (!internalRoutes.has(item.href)) errors.push(`La ruta ${route.id} enlaza a una página inexistente: ${item.href}`);
+      for (const item of route.related ?? []) {
+        const [path, hash] = item.href.split('#');
+        if (!internalRoutes.has(path)) errors.push(`La ruta ${route.id} enlaza a una página inexistente: ${item.href}`);
+        if (hash && !anchorIds.has(`${path}#${hash}`)) errors.push(`La ruta ${route.id} enlaza a una sección inexistente: ${item.href}`);
+      }
       if (route.role === 'miembro' && route.channels.length) errors.push(`La ruta de miembro ${route.id} no debería depender del canal.`);
-      if (route.role !== 'miembro' && route.channels.length === 0) errors.push(`La ruta ${route.id} no tiene canal.`);
       if (route.role !== null && !guide.roleQuestion) errors.push(`La ruta ${route.id} pide un rol que la guía no pregunta.`);
+      const scopeOptions = scopeOptionsFor(route.intent, guideConfig(guide));
+      const scopeOption = scopeOptions.find((item) => item.id === route.scope);
+      if (route.scope && !scopeOption) errors.push(`La ruta ${route.id} usa un alcance que la guía no pregunta para ${route.intent}.`);
+      if (!route.scope && scopeOptions.length && route.role !== 'miembro') errors.push(`La ruta ${route.id} necesita alcance: la guía lo pregunta para ${route.intent}.`);
+      const needsChannel = route.role !== 'miembro' && (scopeOption ? scopeOption.askChannel : true);
+      if (needsChannel && route.channels.length === 0) errors.push(`La ruta ${route.id} no tiene canal.`);
+      if (!needsChannel && route.role !== 'miembro' && route.channels.length) errors.push(`La ruta ${route.id} no debería depender del canal en ese alcance.`);
     }
 
     const config = guideConfig(guide);
     const roles = guide.roleQuestion ? (['titular', 'miembro'] as const) : [null];
     for (const intent of INTENTS) {
+      const scopes = scopeOptionsFor(intent, config);
       for (const role of roles) {
-        const channels = role === 'miembro' ? [null] : guide.channels;
-        for (const item of channels) {
-          const id = resolveRouteId({ intent, channel: item, unknown: false, role }, config);
-          if (!id) errors.push(`La guía ${guide.slug} no cubre ${intent} / ${item ?? 'sin canal'} / ${role ?? 'sin rol'}.`);
+        for (const option of scopes.length ? scopes : [null]) {
+          const channels = role === 'miembro' || (option && !option.askChannel) ? [null] : guide.channels;
+          for (const item of channels) {
+            const id = resolveRouteId({ intent, channel: item, unknown: false, role, scope: option?.id ?? null }, config);
+            if (!id) errors.push(`La guía ${guide.slug} no cubre ${intent} / ${option?.id ?? 'sin alcance'} / ${item ?? 'sin canal'} / ${role ?? 'sin rol'}.`);
+          }
         }
       }
     }

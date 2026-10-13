@@ -100,14 +100,17 @@ const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
   import { track } from '../../lib/analytics';
   import {
     UNKNOWN_CHANNEL,
+    asksChannel,
+    normalizeGuideState,
     parseGuideState,
     resolveRouteId,
+    scopeOptionsFor,
     serializeGuideState,
     stateForRoute,
     type GuideConfig,
     type GuideState,
   } from '../../lib/guides';
-  import type { BillingChannel, GuideIntent, GuideRole } from '../../data/subscription-management/types';
+  import type { BillingChannel, GuideIntent, GuideRole, ProductScope } from '../../data/subscription-management/types';
 
   const root = document.querySelector<HTMLElement>('[data-guide-root]');
   if (root) setup(root);
@@ -120,6 +123,7 @@ const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
     const prompt = root.querySelector<HTMLElement>('[data-guide-prompt]');
     const live = root.querySelector<HTMLElement>('[data-guide-live]');
     const channelFieldset = root.querySelector<HTMLFieldSetElement>('[data-channel-fieldset]');
+    const scopeFieldset = root.querySelector<HTMLFieldSetElement>('[data-scope-fieldset]');
     const routes = [...root.querySelectorAll<HTMLElement>('.guide-route')];
     if (!form || !helper || !prompt || !live || !channelFieldset) return;
 
@@ -151,8 +155,12 @@ const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
     function render(announce: boolean) {
       setRadio('objetivo', state.intent);
       setRadio('rol', state.role);
+      setRadio('alcance', state.scope);
       setRadio('cobro', state.channel ?? (state.unknown ? UNKNOWN_CHANNEL : null));
-      channelFieldset!.hidden = state.role === 'miembro';
+      const asksScope = scopeOptionsFor(state.intent, config).length > 0;
+      if (scopeFieldset) scopeFieldset.hidden = !asksScope;
+      const needsScope = asksScope && !state.scope && state.role !== 'miembro';
+      channelFieldset!.hidden = !asksChannel(state, config);
       const activeId = resolveRouteId(state, config);
       let activeHeading = '';
       for (const section of routes) {
@@ -160,13 +168,15 @@ const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
         section.classList.toggle('is-active', active);
         if (active) activeHeading = section.querySelector('h2')?.textContent ?? '';
       }
-      const showHelper = state.unknown && state.role !== 'miembro';
+      const showHelper = state.unknown && asksChannel(state, config);
       helper!.classList.toggle('is-active', showHelper);
       const needsRole = config.hasRole && !state.role;
       prompt!.hidden = Boolean(activeId) || showHelper;
       prompt!.textContent = needsRole
         ? 'Contanos si pagás vos el plan y quién te cobra para ver los pasos.'
-        : 'Elegí quién te cobra para ver los pasos.';
+        : needsScope
+          ? `Respondé «${scopeFieldset?.dataset.legend ?? '¿Qué querés dar de baja?'}» para ver los pasos.`
+          : 'Elegí quién te cobra para ver los pasos.';
       if (announce) {
         live!.textContent = activeId
           ? `Mostrando: ${activeHeading}`
@@ -175,7 +185,7 @@ const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
     }
 
     function commit(next: GuideState) {
-      state = next;
+      state = normalizeGuideState(next, config);
       history.pushState(null, '', location.pathname + serializeGuideState(state));
       render(true);
     }
@@ -197,6 +207,10 @@ const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
       } else if (input.name === 'rol') {
         const role = input.value as GuideRole;
         commit(role === 'miembro' ? { ...state, role, channel: null, unknown: false } : { ...state, role });
+      } else if (input.name === 'alcance') {
+        const scope = input.value as ProductScope;
+        commit({ ...state, scope });
+        track('guide_scope_select', platformId, { intent: state.intent, scope });
       } else if (input.name === 'cobro') {
         if (input.value === UNKNOWN_CHANNEL) {
           commit({ ...state, channel: null, unknown: true });
@@ -221,6 +235,7 @@ const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
         track('guide_official_link_click', platformId, {
           intent: state.intent,
           channel: state.channel ?? undefined,
+          scope: state.scope ?? undefined,
           routeId: link.dataset.routeId,
         });
         return;
@@ -242,8 +257,9 @@ const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
       }
       if (link?.matches('[data-back-to-selector]')) {
         event.preventDefault();
-        const first = channelFieldset!.querySelector<HTMLInputElement>('input[name="cobro"]');
-        channelFieldset!.scrollIntoView({ block: 'center' });
+        const fieldset = !channelFieldset!.hidden || !scopeFieldset ? channelFieldset! : scopeFieldset;
+        const first = fieldset.querySelector<HTMLInputElement>('input');
+        fieldset.scrollIntoView({ block: 'center' });
         first?.focus({ preventScroll: true });
         return;
       }

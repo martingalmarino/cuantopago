@@ -1,4 +1,4 @@
-import type { BillingGuide, GuideCta } from './types';
+import type { BillingGuide, GuideCta, GuideLink, GuideRoute } from './types';
 
 export const APPLE_SUBSCRIPTIONS: GuideCta = {
   label: 'Abrir en Apple',
@@ -29,6 +29,99 @@ export function googlePlaySteps(app: string): string[] {
     `Elegí ${app}.`,
     'Tocá Cancelar suscripción y seguí las instrucciones.',
   ];
+}
+
+export const PRIME_VIDEO_SETTINGS: GuideCta = {
+  label: 'Abrir mi cuenta de Prime Video',
+  url: 'https://www.primevideo.com/settings',
+};
+
+export const PRIME_VIDEO_CHANNEL_ROUTE_ID = 'prime-video-cancelar-canal';
+export const PRIME_VIDEO_CHANNEL_GUIDE: GuideLink = {
+  label: 'Cancelar un canal adicional de Prime Video',
+  href: `/prime-video/cancelar/#ruta-${PRIME_VIDEO_CHANNEL_ROUTE_ID}`,
+};
+
+/** Pasos para dar de baja un canal que se paga dentro de Prime Video. No tocan la membresía de Prime Video. */
+export function primeVideoChannelSteps(channel: string): string[] {
+  return [
+    'Iniciá sesión en Prime Video y abrí Cuenta y configuración.',
+    'En el menú de arriba, elegí Mis suscripciones.',
+    `Buscá ${channel} en la lista.`,
+    'Elegí Anular suscripción. En algunas pantallas figura como Retirar.',
+    'Confirmá la baja.',
+  ];
+}
+
+export const PRIME_VIDEO_CHANNEL_AFTER = [
+  'La pantalla de confirmación muestra hasta qué fecha seguís teniendo el canal. Anotala: Abonito no la calcula.',
+  'Hasta esa fecha podés volver atrás desde Mis suscripciones.',
+  'No se devuelven los cargos que ya se cobraron.',
+  'Dar de baja un canal no cancela Prime Video ni los otros canales que tengas.',
+];
+
+export const PRIME_VIDEO_CHANNEL_TROUBLESHOOTING = [
+  'Si el canal no figura en Mis suscripciones, no lo pagás dentro de Prime Video: puede cobrártelo el servicio directamente, una tienda de apps u otra empresa. Volvé a elegir quién te cobra.',
+  'Si el canal se cobra a través de Apple, cancelalo desde las suscripciones de Apple al menos 24 horas antes de la renovación.',
+];
+
+function primeVideoChannelEligibility(service: string): string {
+  return `Sólo si ${service} figura como canal en Mis suscripciones de tu cuenta de Prime Video. No confirmamos que hoy se venda así en Argentina.`;
+}
+
+/** Ruta condicional para un servicio que la persona confirma pagar como canal de Prime Video. */
+export function primeVideoChannelCancelRoute(id: string, service: string, extraBefore: string[] = []): GuideRoute {
+  return {
+    id,
+    intent: 'cancelar',
+    channels: ['prime-video'],
+    role: null,
+    status: 'conditional',
+    heading: `Cancelar ${service} si lo pagás como canal de Prime Video`,
+    eligibility: primeVideoChannelEligibility(service),
+    before: [
+      `Esto da de baja sólo el canal ${service}. Tu suscripción a Prime Video sigue igual.`,
+      'No uses Finalizar suscripción: esa opción termina Prime Video, no el canal.',
+      ...extraBefore,
+    ],
+    steps: primeVideoChannelSteps(service),
+    cta: PRIME_VIDEO_SETTINGS,
+    after: PRIME_VIDEO_CHANNEL_AFTER,
+    troubleshooting: PRIME_VIDEO_CHANNEL_TROUBLESHOOTING,
+    related: [PRIME_VIDEO_CHANNEL_GUIDE],
+    sourceIds: ['prime-video-canal'],
+  };
+}
+
+/** Para pagar menos con un canal de Prime Video sólo se puede revisar la cuenta y quitar lo que no se usa. */
+export function primeVideoChannelSaveRoute(id: string, service: string, related: GuideLink[]): GuideRoute {
+  return {
+    id,
+    intent: 'ahorrar',
+    channels: ['prime-video'],
+    role: null,
+    transition: 'inspect_account',
+    status: 'conditional',
+    heading: `Pagar menos en ${service} si lo pagás como canal de Prime Video`,
+    eligibility: primeVideoChannelEligibility(service),
+    before: [
+      'El precio y las opciones del canal los define Prime Video. No confirmamos un precio del canal para Argentina.',
+      `Los planes que ves en la web de ${service} no se aplican a un canal de Prime Video.`,
+    ],
+    steps: [
+      'Iniciá sesión en Prime Video, abrí Cuenta y configuración y elegí Mis suscripciones.',
+      `Revisá si seguís usando ${service} y si pagás otros canales que no mirás.`,
+      'Si querés dejar de pagar alguno, elegí Anular suscripción y confirmá.',
+    ],
+    cta: PRIME_VIDEO_SETTINGS,
+    after: [
+      'El canal sigue activo hasta la fecha que muestra la confirmación.',
+      `Si preferís pagarle directo a ${service}, esperá a que termine el canal antes de suscribirte, así no pagás dos veces.`,
+    ],
+    troubleshooting: PRIME_VIDEO_CHANNEL_TROUBLESHOOTING,
+    related: [...related, PRIME_VIDEO_CHANNEL_GUIDE],
+    sourceIds: ['prime-video-canal'],
+  };
 }
 
 export const billingGuides: BillingGuide[] = [

@@ -3,7 +3,9 @@ import Base from '../../layouts/Base.astro';
 import { billingGuides } from '../../data/subscription-management/billing-guides';
 import { platformGuides } from '../../data/subscription-management/platform-guides';
 import { guideSourceById } from '../../data/subscription-management/sources';
-import type { BillingGuide } from '../../data/subscription-management/types';
+import type { BillingChannel, BillingGuide, PlatformGuide } from '../../data/subscription-management/types';
+import { guideConfig } from '../../lib/guide-validation';
+import { normalizeGuideState, scopeOptionsFor, serializeGuideState } from '../../lib/guides';
 
 export function getStaticPaths() {
   return billingGuides.map((guide) => ({ params: { guide: guide.slug }, props: { guide } }));
@@ -13,7 +15,18 @@ const { guide } = Astro.props;
 const sources = guide.sourceIds.map((id) => guideSourceById.get(id)).filter((item) => item !== undefined);
 const dateFormat = new Intl.DateTimeFormat('es-AR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 const reviewed = (iso: string) => dateFormat.format(new Date(`${iso}T12:00:00Z`));
-const platforms = platformGuides.filter((item) => item.channels.includes(guide.id));
+function storeChannel(platform: PlatformGuide): BillingChannel | null {
+  if (platform.channels.includes(guide.id)) return guide.id;
+  return guide.id === 'apple' && platform.providerName === 'Apple' ? 'directo' : null;
+}
+const platforms = platformGuides.flatMap((item) => {
+  const channel = storeChannel(item);
+  if (!channel) return [];
+  const config = guideConfig(item);
+  const scope = scopeOptionsFor('cancelar', config).find((option) => option.askChannel)?.id ?? null;
+  const state = normalizeGuideState({ intent: 'cancelar', channel, unknown: false, role: null, scope }, config);
+  return [{ name: item.name, href: `/${item.slug}/cancelar/${serializeGuideState(state)}` }];
+});
 ---
 <Base
   title={guide.seo.title}
@@ -87,7 +100,7 @@ const platforms = platformGuides.filter((item) => item.channels.includes(guide.i
       <section class="section-panel">
         <div class="section-cap"><h2>Guías por plataforma</h2></div>
         <div class="section-body pad row-actions">
-          {platforms.map((item) => <a class="btn ghost" href={`/${item.slug}/cancelar/?cobro=${guide.id}`}>{item.name}</a>)}
+          {platforms.map((item) => <a class="btn ghost" href={item.href}>{item.name}</a>)}
           <a class="btn ghost" href="/gestionar-suscripciones/">Todas las guías</a>
         </div>
       </section>

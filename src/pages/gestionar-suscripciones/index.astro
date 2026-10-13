@@ -7,10 +7,15 @@ import { normalizeSearch } from '../../lib/guides';
 
 const names = platformGuides.map((guide) => guide.name);
 const list = `${names.slice(0, -1).join(', ')} y ${names.at(-1)}`;
+const fullDescription = `Pasos para cancelar o pagar menos en ${list}, según quién te cobra.`;
+const description = fullDescription.length <= 160
+  ? fullDescription
+  : `Pasos para cancelar o pagar menos en ${names.length} plataformas, como ${names.slice(0, 3).join(', ')} y ${names[3]}, según quién te cobra.`;
+const placeholder = `Buscar: ${names.slice(0, 4).join(', ')}…`;
 ---
 <Base
   title="Cancelar o cambiar suscripciones | Abonito"
-  description="Pasos para cancelar o pagar menos en Netflix, Spotify, Disney+, HBO Max y YouTube Premium, según quién te cobra."
+  description={description}
   crumbs={[{ name: 'Inicio', href: '/' }, { name: 'Gestionar suscripciones', href: '/gestionar-suscripciones/' }]}
 >
   <div class="wrap page page-stack guide-page">
@@ -31,7 +36,7 @@ const list = `${names.slice(0, -1).join(', ')} y ${names.at(-1)}`;
           <label class="search">
             <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
             <span class="visually-hidden">Buscar plataforma</span>
-            <input type="search" placeholder="Buscar: Netflix, Disney, HBO, YouTube…" data-guide-search autocomplete="off" />
+            <input type="search" placeholder={placeholder} data-guide-search autocomplete="off" />
           </label>
         </div>
         <ul class="guide-cards">

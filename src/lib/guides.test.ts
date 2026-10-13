@@ -12,6 +12,7 @@ import {
   matchesAliases,
   parseGuideState,
   resolveRouteId,
+  scopeOptionsFor,
   serializeGuideState,
   stateForRoute,
 } from './guides';
@@ -24,8 +25,11 @@ describe('guías para gestionar suscripciones', () => {
     expect(validateGuides(services, todayIso())).toEqual([]);
   });
 
-  it('cubren las cinco plataformas y los diez puntos de entrada', () => {
-    expect(platformGuides.map((guide) => guide.slug)).toEqual(['netflix', 'spotify', 'disney-plus', 'hbo-max', 'youtube-premium']);
+  it('cubren las diez plataformas con los dos objetivos', () => {
+    expect(platformGuides.map((guide) => guide.slug)).toEqual([
+      'netflix', 'spotify', 'disney-plus', 'hbo-max', 'youtube-premium',
+      'prime-video', 'apple-tv', 'paramount-plus', 'crunchyroll', 'mubi',
+    ]);
     for (const guide of platformGuides) {
       const config = guideConfig(guide);
       for (const intent of INTENTS) {
@@ -33,11 +37,16 @@ describe('guías para gestionar suscripciones', () => {
         const base = parseGuideState(search, config);
         expect(base.intent).toBe(intent);
         const role = config.hasRole ? '&rol=titular' : '';
-        for (const channel of guide.channels) {
-          const state = parseGuideState(`?objetivo=${intent}&cobro=${channel}${role}`, config);
-          const id = resolveRouteId(state, config);
-          expect(id, `${guide.slug} ${intent} ${channel}`).not.toBeNull();
-          expect(routeIntent(guide, id)).toBe(intent);
+        const scopes = scopeOptionsFor(intent, config);
+        for (const option of scopes.length ? scopes : [null]) {
+          const scope = option ? `&alcance=${option.id}` : '';
+          const channels = option && !option.askChannel ? [null] : guide.channels;
+          for (const channel of channels) {
+            const state = parseGuideState(`?objetivo=${intent}${scope}${channel ? `&cobro=${channel}` : ''}${role}`, config);
+            const id = resolveRouteId(state, config);
+            expect(id, `${guide.slug} ${intent} ${option?.id ?? ''} ${channel ?? ''}`).not.toBeNull();
+            expect(routeIntent(guide, id)).toBe(intent);
+          }
         }
         if (config.hasRole) {
           const member = resolveRouteId(parseGuideState(`?objetivo=${intent}&rol=miembro`, config), config);
@@ -50,11 +59,12 @@ describe('guías para gestionar suscripciones', () => {
   it('descartan parámetros inválidos y combinaciones que la plataforma no ofrece', () => {
     const netflix = guideConfig(bySlug('netflix'));
     expect(parseGuideState('?objetivo=hackear&cobro=javascript:alert(1)&rol=miembro', netflix)).toEqual({
-      intent: 'cancelar', channel: null, unknown: false, role: null,
+      intent: 'cancelar', channel: null, unknown: false, role: null, scope: null,
     });
     expect(parseGuideState('?cobro=apple', netflix).channel).toBeNull();
     expect(resolveRouteId(parseGuideState('?cobro=google-play', netflix), netflix)).toBeNull();
-    expect(parseGuideState('?destino=https://evil.example', netflix)).toEqual({ intent: 'cancelar', channel: null, unknown: false, role: null });
+    expect(parseGuideState('?destino=https://evil.example', netflix)).toEqual({ intent: 'cancelar', channel: null, unknown: false, role: null, scope: null });
+    expect(parseGuideState('?alcance=canal&cobro=directo', netflix)).toEqual({ intent: 'cancelar', channel: 'directo', unknown: false, role: null, scope: null });
   });
 
   it('pide el rol antes de mostrar pasos donde importa', () => {
@@ -77,9 +87,9 @@ describe('guías para gestionar suscripciones', () => {
 
   it('serializa y vuelve a leer el mismo estado', () => {
     const youtube = guideConfig(bySlug('youtube-premium'));
-    const state = { intent: 'ahorrar', channel: 'apple', unknown: false, role: 'titular' } as const;
+    const state = { intent: 'ahorrar', channel: 'apple', unknown: false, role: 'titular', scope: null } as const;
     expect(parseGuideState(serializeGuideState(state), youtube)).toEqual(state);
-    expect(serializeGuideState({ intent: 'cancelar', channel: null, unknown: false, role: null })).toBe('');
+    expect(serializeGuideState({ intent: 'cancelar', channel: null, unknown: false, role: null, scope: null })).toBe('');
   });
 
   it('cada ruta se puede abrir desde su ancla', () => {
@@ -129,7 +139,8 @@ describe('guías para gestionar suscripciones', () => {
     expect(managedPlatforms.map((item) => item.slug)).toEqual(platformGuides.map((guide) => guide.slug));
     expect(guideHref('netflix')).toBe('/netflix/cancelar/');
     expect(guideHref('hbo-max', 'ahorrar')).toBe('/hbo-max/cancelar/?objetivo=ahorrar');
-    expect(guideHref('prime-video')).toBeNull();
+    expect(guideHref('prime-video')).toBe('/prime-video/cancelar/');
+    expect(guideHref('apple-one')).toBeNull();
   });
 
   it('la validación rechaza fuentes inexistentes, URLs externas y fechas inválidas', () => {

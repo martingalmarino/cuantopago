@@ -1,18 +1,22 @@
 ---
 import { guideSourceById } from '../data/subscription-management/sources';
 import type { GuideRoute, PlatformGuide } from '../data/subscription-management/types';
-import { resolveRouteId, serializeGuideState, statusLabels, type GuideConfig } from '../lib/guides';
+import { normalizeGuideState, resolveRouteId, scopeOptionsFor, serializeGuideState, statusLabels, type GuideConfig } from '../lib/guides';
 
 interface Props { guide: PlatformGuide; route: GuideRoute; config: GuideConfig }
 const { guide, route, config } = Astro.props;
 const sources = route.sourceIds.map((id) => guideSourceById.get(id)).filter((item) => item !== undefined);
 const otherIntent = route.intent === 'cancelar' ? 'ahorrar' : 'cancelar';
-const otherState = {
+const otherScopes = scopeOptionsFor(otherIntent, config);
+const otherScope = otherScopes.find((option) => option.id === route.scope)
+  ?? (route.channels.length ? otherScopes.find((option) => option.askChannel) : undefined);
+const otherState = normalizeGuideState({
   intent: otherIntent,
   channel: route.role === 'miembro' ? null : route.channels[0] ?? null,
   unknown: false,
   role: config.hasRole ? route.role ?? 'titular' : null,
-} as const;
+  scope: otherScope?.id ?? null,
+}, config);
 const otherId = resolveRouteId(otherState, config);
 const otherHref = `${serializeGuideState(otherState) || './'}${otherId ? `#ruta-${otherId}` : ''}`;
 const otherLabel = otherIntent === 'ahorrar' ? `¿Preferís pagar menos en ${guide.name}?` : `¿Preferís cancelar ${guide.name}?`;
