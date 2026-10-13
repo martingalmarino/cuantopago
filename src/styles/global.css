@@ -875,7 +875,6 @@ fieldset.stack legend { font-size: 13px; font-weight: 600; color: var(--text-sec
   background: var(--panel-cap);
 }
 .chat-title { font-weight: 700; font-size: 16px; margin: 0; }
-.chat-note { color: var(--text-secondary); font-size: 12px; line-height: 1.35; margin: 2px 0 0; }
 .chat-head-actions { display: flex; gap: 4px; }
 .chat-icon {
   width: 36px;

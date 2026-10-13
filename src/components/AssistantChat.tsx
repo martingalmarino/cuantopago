@@ -244,7 +244,6 @@ export default function AssistantChat({ mode = 'panel' }: Props) {
       <header className="chat-head">
         <div>
           <p className="chat-title" id={titleId}>Chat Abonito</p>
-          <p className="chat-note">Respondo solo con lo publicado en Abonito. No es asesoramiento impositivo.</p>
         </div>
         <div className="chat-head-actions">
           {stored.messages.length > 0 && (
