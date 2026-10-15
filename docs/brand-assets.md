@@ -33,7 +33,8 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | Figma | `/brands/figma.svg` | simple-icons 16.34.0, slug figma, origen citado figma.com/using-the-figma-brand. Isotipo en un solo color. |
 | FigJam | `/brands/figjam.svg` | Icono oficial del menú de productos de figma.com, copiado el 11 de octubre de 2026. Nota adhesiva violeta sobre fondo lila. |
 | iplan | `/brands/iplan.png` | PNG oficial del encabezado de iplan.com.ar, descargado el 11 de octubre de 2026. Wordmark de 149×60, sin modificaciones. |
-| Google One | ninguno | No se usa el logo genérico de Google. |
+| Google One | `/brands/googleone.png` | Logo enviado por el responsable del sitio el 14 de octubre de 2026. Se recortó el isotipo «1» sin el wordmark, centrado en 160×160 sobre fondo blanco. |
+| Microsoft 365 | `/brands/microsoft365.png` | Ícono enviado por el responsable del sitio el 14 de octubre de 2026. Reducido de 447×447 a 160×160 y convertido a PNG, con fondo blanco. |
 | iCloud+ | `/brands/icloud.svg` | La marca del paquete es iCloud y el nombre visible es iCloud+. |
 | Dropbox | `/brands/dropbox.svg` | simple-icons 16.34.0, slug dropbox, origen citado dropbox.com/branding. Isotipo azul sin wordmark. |
 | OneDrive | `/brands/onedrive.svg` | Ícono oficial de la app publicado en microsoft.com, descargado el 11 de octubre de 2026. 48×48 con degradados, sin modificaciones. |
@@ -94,6 +95,6 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | Busuu | `/brands/busuu.png` | Ícono oficial publicado por busuu.com, 192×192, sin modificaciones. simple-icons no trae Busuu. |
 | Brilliant | `/brands/brilliant.png` | Ícono oficial publicado por brilliant.org, 120×120, sin modificaciones. simple-icons no trae Brilliant. |
 | Mimo | `/brands/mimo.png` | Ícono oficial publicado por mimo.org, 192×192, sin modificaciones. simple-icons no trae Mimo. |
-| Apple One, F1 TV, Flow, Microsoft 365, Adobe | ninguno | No hay un export de simple-icons del producto. No se usó la marca de la empresa madre ni se dibujó un logo. |
+| Apple One, F1 TV, Flow, Adobe | ninguno | No hay un export de simple-icons del producto. No se usó la marca de la empresa madre ni se dibujó un logo. |
 
 El pie del sitio aclara que es independiente y que las marcas son de sus titulares.

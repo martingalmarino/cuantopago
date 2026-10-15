@@ -426,8 +426,8 @@
     "name": "Google One",
     "category": "almacenamiento",
     "officialUrl": "https://one.google.com/about/plans?hl=es-419",
-    "logo": null,
-    "logoAltMode": "text-fallback",
+    "logo": "/brands/googleone.png",
+    "logoAltMode": "decorative",
     "description": "Almacenamiento de Google. En la página localizada en pesos verificamos el plan de 100 GB. Otros planes se mezclan con ofertas de inteligencia artificial, así que no los publicamos todavía.",
     "aliases": [
       "google one",
@@ -449,8 +449,8 @@
         "answer": "Quedaron pendientes. Había precios de planes con IA y de otros almacenamientos que no se podían separar con seguridad."
       },
       {
-        "question": "¿Por qué no hay logo?",
-        "answer": "Simple Icons no trae una marca de Google One. Mostramos el nombre completo en lugar de un ícono genérico."
+        "question": "¿Cuánto espacio gratis trae una cuenta de Google?",
+        "answer": "15 GB compartidos entre Gmail, Google Drive y Google Fotos. Google One suma espacio pago sobre ese total."
       }
     ]
   },
@@ -1071,8 +1071,8 @@
     "name": "Microsoft 365",
     "category": "productividad",
     "officialUrl": "https://www.microsoft.com/es-ar/microsoft-365/buy/compare-all-microsoft-365-products",
-    "logo": null,
-    "logoAltMode": "text-fallback",
+    "logo": "/brands/microsoft365.png",
+    "logoAltMode": "decorative",
     "description": "Aplicaciones y almacenamiento para organizar el gasto de trabajo o estudio.",
     "aliases": [
       "microsoft 365",

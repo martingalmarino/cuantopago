@@ -89,11 +89,11 @@
   },
   {
     "serviceId": "google-one",
-    "file": null,
-    "sourceUrl": null,
-    "retrievalDate": "2026-10-08",
-    "license": null,
-    "limitation": "No hay slug googleone. No se usa el logo genérico de Google como si fuera Google One."
+    "file": "/brands/googleone.png",
+    "sourceUrl": "https://one.google.com/about/plans?hl=es-419",
+    "retrievalDate": "2026-10-14",
+    "license": "Logo de Google One enviado por el responsable del sitio el 2026-10-14. simple-icons 16.34.0 no trae Google One.",
+    "limitation": "Se recortó el isotipo «1» de la imagen recibida, sin el wordmark, centrado en 160×160 sobre fondo blanco."
   },
   {
     "serviceId": "icloud-plus",
@@ -161,11 +161,11 @@
   },
   {
     "serviceId": "microsoft-365",
-    "file": null,
+    "file": "/brands/microsoft365.png",
     "sourceUrl": "https://www.microsoft.com/es-ar/microsoft-365/buy/compare-all-microsoft-365-products",
-    "retrievalDate": "2026-10-08",
-    "license": null,
-    "limitation": "Todavía no hay un logo verificado. La ficha muestra el nombre."
+    "retrievalDate": "2026-10-14",
+    "license": "Ícono de Microsoft 365 enviado por el responsable del sitio el 2026-10-14. simple-icons 16.34.0 no trae Microsoft 365.",
+    "limitation": "Ícono con degradé, reducido de 447×447 a 160×160 y convertido a PNG, con fondo blanco."
   },
   {
     "serviceId": "canva",
