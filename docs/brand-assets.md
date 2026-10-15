@@ -5,9 +5,9 @@ Los SVG están en `public/brands/`. La ficha completa es `src/data/brand-assets.
 | Servicio | Archivo | Límite |
 | --- | --- | --- |
 | Netflix | `/brands/netflix.svg` | Isotipo de un color. Origen citado por el paquete: brand.netflix.com. |
-| Disney+ | ninguno | El paquete no trae la marca. Se muestra el nombre. |
+| Disney+ | `/brands/disneyplus.png` | Ícono de app enviado por el responsable del sitio el 15 de octubre de 2026. Reducido de 976×976 a 160×160 y convertido de WebP a PNG. |
 | HBO Max | `/brands/hbomax.svg` | El origen citado es un archivo de Wikimedia llamado Max 2025. Va junto al nombre HBO Max. |
-| Prime Video | ninguno | No hay slug de Prime Video. Se muestra el nombre. |
+| Prime Video | `/brands/primevideo.png` | Ícono de app enviado por el responsable del sitio el 15 de octubre de 2026. Se recortó el margen blanco y se redujo a 160×160 en PNG. |
 | Paramount+ | `/brands/paramountplus.svg` | Origen citado: paramount.com/brand. |
 | Apple TV | `/brands/appletv.svg` | Marca negra sobre fondo blanco. |
 | Spotify | `/brands/spotify.svg` | Guía citada en la documentación de Spotify para desarrolladores. |

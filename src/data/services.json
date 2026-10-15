@@ -41,8 +41,8 @@
     "name": "Disney+",
     "category": "series",
     "officialUrl": "https://www.disneyplus.com/es-ar",
-    "logo": null,
-    "logoAltMode": "text-fallback",
+    "logo": "/brands/disneyplus.png",
+    "logoAltMode": "decorative",
     "description": "Películas, series y deporte. La página argentina publica tres planes con precio final por mes: Estándar con anuncios, Estándar y Premium. ESPN solo viene en Premium.",
     "aliases": [
       "disney",
@@ -123,8 +123,8 @@
     "name": "Prime Video",
     "category": "series",
     "officialUrl": "https://www.primevideo.com/",
-    "logo": null,
-    "logoAltMode": "text-fallback",
+    "logo": "/brands/primevideo.png",
+    "logoAltMode": "decorative",
     "description": "Series y películas de Amazon. No verificamos un precio argentino en una página oficial durante esta lectura, así que no hay un monto publicado acá.",
     "aliases": [
       "prime",

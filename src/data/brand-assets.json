@@ -9,11 +9,11 @@
   },
   {
     "serviceId": "disney-plus",
-    "file": null,
-    "sourceUrl": null,
-    "retrievalDate": "2026-10-08",
-    "license": null,
-    "limitation": "simple-icons 16.34.0 no exporta disneyplus ni disney. No se dibujó un logo. En la interfaz se muestra el nombre."
+    "file": "/brands/disneyplus.png",
+    "sourceUrl": "https://www.disneyplus.com/es-ar",
+    "retrievalDate": "2026-10-15",
+    "license": "Ícono de app de Disney+ enviado por el responsable del sitio el 2026-10-15. simple-icons 16.34.0 no trae Disney+.",
+    "limitation": "Ícono con degradé, reducido de 976×976 a 160×160 y convertido de WebP a PNG, con fondo blanco."
   },
   {
     "serviceId": "hbo-max",
@@ -25,11 +25,11 @@
   },
   {
     "serviceId": "prime-video",
-    "file": null,
-    "sourceUrl": null,
-    "retrievalDate": "2026-10-08",
-    "license": null,
-    "limitation": "No hay un slug primevideo ni amazonprimevideo en simple-icons 16.34.0. Se usa el nombre, sin un ícono genérico de play."
+    "file": "/brands/primevideo.png",
+    "sourceUrl": "https://www.primevideo.com/",
+    "retrievalDate": "2026-10-15",
+    "license": "Ícono de app de Prime Video enviado por el responsable del sitio el 2026-10-15. simple-icons 16.34.0 no trae Prime Video.",
+    "limitation": "Ícono con degradé. Se recortó el margen blanco (356×356 de 447×447), se redujo a 160×160 y se convirtió a PNG."
   },
   {
     "serviceId": "paramount-plus",
