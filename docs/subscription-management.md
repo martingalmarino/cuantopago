@@ -1,6 +1,6 @@
 # Gestionar suscripciones
 
-Guías para cancelar o pagar menos en Netflix, Spotify, Disney+, HBO Max, YouTube Premium, Prime Video, Apple TV, Paramount+, Crunchyroll y MUBI, más dos guías de tienda (Apple y Google Play). La lista sale de `platformGuides`: el directorio y sus contadores no tienen nombres ni números fijos. Abonito orienta: la gestión siempre se completa en el sitio o la app del proveedor. No pedimos contraseñas, no subimos comprobantes, no leemos cuentas y no tocamos la lista de Mis suscripciones.
+Guías para cancelar o pagar menos en Netflix, Spotify, Disney+, HBO Max, YouTube Premium, Prime Video, Apple TV, Paramount+, Crunchyroll, MUBI, Google One, iCloud+, Dropbox, Microsoft 365 y Canva, más dos guías de tienda (Apple y Google Play). La lista sale de `platformGuides`: el directorio y sus contadores no tienen nombres ni números fijos. Abonito orienta: la gestión siempre se completa en el sitio o la app del proveedor. No pedimos contraseñas, no subimos comprobantes, no leemos cuentas y no tocamos la lista de Mis suscripciones.
 
 ## Rutas
 
@@ -15,8 +15,10 @@ La guía acepta cuatro parámetros:
 
 - `objetivo`: `cancelar` o `ahorrar`.
 - `cobro`: `directo`, `apple`, `google-play`, `externo`, `movistar`, `playstation`, `prime-video` o `no-se`. Cada guía ofrece sólo los canales que tiene su fuente.
-- `rol`: `titular` o `miembro`, sólo Spotify y YouTube.
-- `alcance`: `servicio`, `canal` o `paquete`, sólo donde la guía lo pregunta. Prime Video lo pregunta para cancelar (Prime Video o sólo un canal adicional). Apple TV lo pregunta para los dos objetivos (la suscripción, un canal de la app o Apple One).
+- `rol`: `titular` o `miembro`, en Spotify, YouTube y las cinco guías de la tercera tanda. En Dropbox, Microsoft 365 y Canva «titular» incluye al administrador con acceso a la facturación.
+- `alcance`: `servicio`, `canal`, `paquete`, `personal`, `familia`, `equipo` o `empresa`, sólo donde la guía lo pregunta. Prime Video lo pregunta para cancelar (Prime Video o sólo un canal adicional). Apple TV lo pregunta para los dos objetivos (la suscripción, un canal de la app o Apple One). iCloud+ pregunta `servicio` o `paquete` (Apple One). Dropbox pregunta `personal`, `familia` o `equipo`; Microsoft 365, `personal` o `empresa`; Canva, `personal` o `equipo`.
+
+Las rutas de miembro pueden tener alcance cuando cambia a quién recurrir (miembro de un Family o de un equipo). Si una guía tiene rutas de miembro con alcance, al miembro se le pregunta el alcance; si su alcance no tiene ruta propia, ve la ruta de miembro sin alcance.
 
 Un valor inválido o que la plataforma no tiene se descarta y la URL se normaliza. Si un alcance no necesita saber quién cobra (un canal de Prime Video, Apple One), el `cobro` se descarta. Al cambiar de objetivo, el alcance que ya no aplica se borra. Ningún parámetro acepta una URL de destino. La canónica no lleva parámetros y las variantes no van al sitemap. También funciona `#ruta-<id>` sin parámetros.
 
@@ -24,7 +26,9 @@ Un valor inválido o que la plataforma no tiene se descarta y la URL se normaliz
 
 - `src/data/subscription-management/types.ts`: modelo de datos.
 - `src/data/subscription-management/sources.ts`: fuentes oficiales con `lastReviewedAt` (cuándo se leyó el contenido) y `lastLinkCheckedAt` (cuándo se comprobó que el enlace responde). Son fechas distintas. Las fuentes de la segunda tanda suman `regionalScope` (`ar`, `latam`, `global`, `otro-pais`) y `evidence`: `readable_article` (leímos el artículo), `store_listing` (descripción del desarrollador en la tienda) o `indexed_excerpt` (sólo un resumen o la portada de ayuda). Estos campos no se muestran en la página.
-- `src/data/subscription-management/platform-guides.ts`: una guía por plataforma con sus canales de cobro, la pregunta de rol, la ayuda para saber quién cobra, las rutas y las preguntas frecuentes.
+- `src/data/subscription-management/platform-guides.ts`: una guía por plataforma con sus canales de cobro, la pregunta de rol, la ayuda para saber quién cobra, las rutas y las preguntas frecuentes. Las guías de la tercera tanda están en `storage-productivity-guides.ts` y se suman a la misma lista.
+- `impact` (guía) y `impact: true` (ruta): el aviso «Antes de reducir tu almacenamiento» (o «Qué conservás y qué no» en Canva), que se muestra arriba del botón oficial. Es informativo: no se marca ni bloquea nada.
+- `variants` (ruta): pasos por dispositivo o versión. Sin JavaScript se ven todos; con JavaScript se elige uno y «Copiar pasos» copia sólo ese.
 - `src/data/subscription-management/billing-guides.ts`: guías de Apple y Google Play, los pasos compartidos que reutilizan las plataformas y la sección única «Cancelar un canal adicional de Prime Video» (`primeVideoChannelCancelRoute` y `primeVideoChannelSaveRoute`). Paramount+, Crunchyroll y MUBI la usan sólo cuando la persona elige «Prime Video, como canal», siempre como `conditional` y con el aviso de que no confirmamos que se venda así en Argentina.
 - `src/data/subscription-management/managed.ts`: índice liviano que usan la ficha, Mis suscripciones y el simulador para mostrar el enlace.
 - `src/lib/guides.ts`: lógica pura (leer y escribir parámetros, elegir la ruta, buscar por alias, lista de dominios oficiales).
@@ -39,7 +43,7 @@ Un valor inválido o que la plataforma no tiene se descarta y la URL se normaliz
 | `conditional` | Depende de tu cuenta | La opción existe pero depende del plan, la región o la tienda |
 | `official_handoff` | Te llevamos a la ayuda oficial | No hay pasos confiables para copiar; enviamos a la ayuda del proveedor |
 
-Nunca usamos «Probado en una cuenta»: no probamos con cuentas reales. El botón principal siempre empieza con «Abrir» («Abrir en Netflix», «Abrir mi cuenta de Prime Video»), nunca «Cancelar ahora».
+Nunca usamos «Probado en una cuenta»: no probamos con cuentas reales. El botón principal empieza con «Abrir» («Abrir en Netflix», «Abrir mi cuenta de Prime Video») o, desde la tercera tanda, dice «Administrar mi suscripción» o «Ver los pasos oficiales». Nunca «Cancelar ahora».
 
 Las rutas para pagar menos de la segunda tanda llevan `transition`, que no se muestra pero los tests controlan:
 
@@ -69,6 +73,33 @@ Limitaciones abiertas, sin revisar con una cuenta:
 - Apple One: el paquete no se cancela por partes. La guía no lo recomienda como ahorro sin comparar el total.
 
 Una respuesta 200 vacía, una redirección a la portada de ayuda o a otro país, o una página con error no cuentan como fuente verificada. Una pantalla de login sólo prueba que la gestión pide iniciar sesión.
+
+## Fuentes de la tercera tanda (base 2026-10-14)
+
+| Plataforma | Fuente | Estado de la evidencia |
+| --- | --- | --- |
+| Google One | Ayuda es-419: cancelar (pestaña Computadora) y cambiar de plan | Artículos legibles |
+| iCloud+ | Apple es-LA 108318 (reducir o cancelar), 121290 (sin dispositivo), 108783 (familia), 108922 (almacenamiento) | Artículos legibles |
+| Dropbox | Ayuda es-LA: cancelar o cambiar, móvil, Family, equipo, qué plan tengo, exceso de espacio en Basic | Artículos legibles |
+| Microsoft 365 | Soporte es-ES: cancelar, cambiar de plan, facturación periódica, almacenamiento. Microsoft Learn: cancelar en empresas | Artículos legibles. Sin versión para Argentina: los menús son los mismos, los reembolsos dependen del país |
+| Canva | Ayuda es_es: cancelar. Ayuda global: renovación automática y frecuencia de facturación | Leídas en un navegador. `curl` y los lectores automáticos reciben 403 o «navegador no compatible», que no cuentan como evidencia |
+
+Alcance y handoffs:
+
+- Google One: sólo la membresía de consumo. Google Workspace queda afuera. La cancelación nunca manda a «eliminar un servicio» ni a borrar la cuenta: la fuente lo menciona sólo para cambios de proveedor. El miembro del grupo familiar primero identifica a quien paga; salir del grupo es una opción, no la primera.
+- iCloud+: siete variantes de dispositivo para cancelar y seis para reducir. «Sin un dispositivo Apple» usa el formulario de reembolsos de Apple, y la guía aclara que pedir la cancelación por ahí no garantiza un reembolso. Apple Vision Pro no tiene variante: la ruta manda a la ayuda oficial. iCloud+ no ofrece canales: siempre cobra Apple.
+- Dropbox: pasos completos sólo para planes personales. Family y equipo son handoff o `conditional` con su ayuda oficial. El miembro de un Family puede abandonar el plan; el de un equipo habla con el administrador. Dropbox Sign y Fax quedan afuera.
+- Microsoft 365: sólo cuentas personales tienen pasos. Trabajo o escuela es un handoff etiquetado al Centro de administración. Si la página muestra «Activar facturación periódica», la suscripción ya vence: la guía no lo presenta como una baja pendiente. Microsoft 365 Básico figura en la ficha de OneDrive y no se cuenta dos veces.
+- Canva: el miembro de un equipo nunca recibe pasos para cancelar el plan del equipo. Pausas y descuentos de retención no se prometen. El cambio de frecuencia (C3) es sólo eso, no un plan más barato. No ofrecemos planes educativos o para organizaciones como alternativa.
+
+Limitaciones abiertas, sin revisar con una cuenta:
+
+- Los enlaces de gestión (`one.google.com/settings`, `dropbox.com/account/plan`, `account.microsoft.com/services/microsoft365`) redirigen al login: sólo prueba que piden iniciar sesión. `canva.com/settings/billing-and-teams` responde 403 a `curl`.
+- No revisamos qué planes muestran Apple o Google Play para Google One, Dropbox, Microsoft 365 o Canva: esas rutas para pagar menos son `conditional`.
+- Los pasos de Dropbox Family para quien administra no se copian: la ruta manda a la ayuda oficial. «Abandonar el plan» para miembros sale de la misma ayuda.
+- Los títulos de las fuentes de Canva C2 y C3 se escribieron a partir de su contenido, porque la página no se pudo leer de forma automática.
+
+Al revisar estas guías, además de los menús, releé qué dice cada fuente sobre el espacio gratuito, los límites cuando se excede y la conservación a largo plazo. Si cambian, corregí el aviso `impact` y las preguntas frecuentes.
 
 ## Revisión mensual
 
@@ -115,8 +146,8 @@ Las guías paso a paso (`/<slug>/cancelar/` y `/guias/...`) no cargan AdSense (`
 
 ## Analítica
 
-Eventos: `guide_view`, `guide_intent_select`, `guide_scope_select`, `guide_biller_select`, `guide_unknown_biller`, `guide_official_link_click`, `guide_copy_steps`. Llevan el id de la plataforma, el objetivo, el alcance, el canal y la ruta. No hay `cancellation_success`: no sabemos si la persona canceló. Sin `PUBLIC_ANALYTICS_ENDPOINT` no sale ningún evento.
+Eventos: `guide_view`, `guide_intent_select`, `guide_scope_select`, `guide_role_select`, `guide_biller_select`, `guide_unknown_biller`, `guide_official_link_click`, `guide_copy_steps`. Llevan el id de la plataforma, el objetivo, el alcance, el rol, el canal y la ruta, siempre de listas cerradas. Nunca el espacio usado ni datos de pago. No hay `cancellation_success`: no sabemos si la persona canceló. Sin `PUBLIC_ANALYTICS_ENDPOINT` no sale ningún evento.
 
 ## Sin JavaScript
 
-Todas las rutas están en el HTML con un índice «Todos los casos» y la ayuda «No sé quién me cobra». El selector, copiar e imprimir aparecen sólo con JavaScript.
+Todas las rutas están en el HTML con un índice «Todos los casos» y la ayuda «No sé quién me cobra». Las variantes por dispositivo se ven todas, cada una con su título. El selector, el selector de dispositivo, copiar e imprimir aparecen sólo con JavaScript.

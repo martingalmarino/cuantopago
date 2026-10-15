@@ -2,8 +2,11 @@ export type GuideIntent = 'cancelar' | 'ahorrar';
 /** movistar, playstation y prime-video sólo aparecen donde una fuente oficial los menciona para esa plataforma. */
 export type BillingChannel = 'directo' | 'apple' | 'google-play' | 'externo' | 'movistar' | 'playstation' | 'prime-video';
 export type GuideRole = 'titular' | 'miembro';
-/** servicio: la suscripción principal. canal: un adicional que se paga dentro de otra plataforma. paquete: viene incluido en un combo como Apple One. */
-export type ProductScope = 'servicio' | 'canal' | 'paquete';
+/**
+ * servicio: la suscripción principal. canal: un adicional que se paga dentro de otra plataforma. paquete: viene incluido en un combo como Apple One.
+ * personal, familia, equipo y empresa: a quién cubre el plan, para servicios donde eso cambia quién puede gestionarlo.
+ */
+export type ProductScope = 'servicio' | 'canal' | 'paquete' | 'personal' | 'familia' | 'equipo' | 'empresa';
 /** verified: la fuente oficial describe el camino. conditional: depende de la cuenta o de la tienda. official_handoff: derivamos a la ayuda oficial sin pasos propios. */
 export type EvidenceStatus = 'verified' | 'conditional' | 'official_handoff';
 /** Cómo se llega a pagar menos según la fuente. No se muestra: sirve para validar que el texto no prometa otra cosa. */
@@ -37,20 +40,39 @@ export interface GuideLink {
   href: string;
 }
 
+/** Pasos que cambian según el dispositivo o la versión. Sin JavaScript se ven todos. */
+export interface GuideVariant {
+  id: string;
+  label: string;
+  steps: string[];
+}
+
+/** Aviso informativo antes del botón oficial. No es un requisito para seguir. */
+export interface GuideImpact {
+  heading: string;
+  points: { label: string; text: string }[];
+  links: GuideCta[];
+  sourceIds: string[];
+}
+
 export interface GuideRoute {
   id: string;
   intent: GuideIntent;
   /** Vacío cuando la ruta es para miembros: no depende de quién cobra. */
   channels: BillingChannel[];
   role: GuideRole | null;
-  /** Sólo en guías con pregunta de alcance, para los objetivos donde se pregunta. */
+  /** En guías con pregunta de alcance. Las rutas de miembro pueden tenerlo cuando el alcance cambia a quién recurrir. */
   scope?: ProductScope;
   transition?: PlanTransition;
   status: EvidenceStatus;
   heading: string;
   eligibility?: string;
   before: string[];
+  /** Puede quedar vacío si la ruta tiene variantes. */
   steps: string[];
+  variants?: GuideVariant[];
+  /** Muestra el aviso impact de la guía antes del botón. */
+  impact?: boolean;
   cta: GuideCta | null;
   ctaNote?: string;
   after: string[];
@@ -88,6 +110,7 @@ export interface PlatformGuide {
   roleQuestion: RoleQuestion | null;
   scopeQuestion?: ScopeQuestion;
   billerCheck: { text: string; label: string; url: string; sourceId: string };
+  impact?: GuideImpact;
   routes: GuideRoute[];
   faqs: { question: string; answer: string }[];
   updatedAt: string;

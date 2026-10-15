@@ -12,6 +12,9 @@ export const GOOGLE_PLAY_SUBSCRIPTIONS: GuideCta = {
 
 export const APPLE_GUIDE_HREF = '/guias/cancelar-suscripciones-apple/';
 export const GOOGLE_PLAY_GUIDE_HREF = '/guias/cancelar-suscripciones-google-play/';
+export const SIMULATOR: GuideLink = { label: 'Simular un cambio en tu lista', href: '/simular-ahorro/' };
+export const APPLE_GUIDE: GuideLink = { label: 'Guía completa de Apple', href: APPLE_GUIDE_HREF };
+export const GOOGLE_GUIDE: GuideLink = { label: 'Guía completa de Google Play', href: GOOGLE_PLAY_GUIDE_HREF };
 
 /** Pasos de Apple en iPhone o iPad para una app concreta. */
 export function appleSteps(app: string): string[] {

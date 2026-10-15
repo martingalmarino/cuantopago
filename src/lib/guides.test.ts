@@ -10,6 +10,7 @@ import {
   INTENTS,
   isOfficialUrl,
   matchesAliases,
+  memberUsesScope,
   parseGuideState,
   resolveRouteId,
   scopeOptionsFor,
@@ -25,10 +26,11 @@ describe('guías para gestionar suscripciones', () => {
     expect(validateGuides(services, todayIso())).toEqual([]);
   });
 
-  it('cubren las diez plataformas con los dos objetivos', () => {
+  it('cubren todas las plataformas con los dos objetivos', () => {
     expect(platformGuides.map((guide) => guide.slug)).toEqual([
       'netflix', 'spotify', 'disney-plus', 'hbo-max', 'youtube-premium',
       'prime-video', 'apple-tv', 'paramount-plus', 'crunchyroll', 'mubi',
+      'google-one', 'icloud-plus', 'dropbox', 'microsoft-365', 'canva',
     ]);
     for (const guide of platformGuides) {
       const config = guideConfig(guide);
@@ -49,8 +51,11 @@ describe('guías para gestionar suscripciones', () => {
           }
         }
         if (config.hasRole) {
-          const member = resolveRouteId(parseGuideState(`?objetivo=${intent}&rol=miembro`, config), config);
-          expect(guide.routes.find((route) => route.id === member)?.role).toBe('miembro');
+          const memberScopes = memberUsesScope(intent, config) ? scopes.map((item) => `&alcance=${item.id}`) : [''];
+          for (const scope of memberScopes) {
+            const member = resolveRouteId(parseGuideState(`?objetivo=${intent}&rol=miembro${scope}`, config), config);
+            expect(guide.routes.find((route) => route.id === member)?.role, `${guide.slug} ${intent} ${scope}`).toBe('miembro');
+          }
         }
       }
     }
@@ -119,7 +124,7 @@ describe('guías para gestionar suscripciones', () => {
     expect(copy).not.toMatch(/Cancelar ahora/i);
     expect(copy).not.toMatch(/Probado en una cuenta/i);
     for (const guide of platformGuides) {
-      for (const route of guide.routes) if (route.cta) expect(route.cta.label).toMatch(/^Abrir /);
+      for (const route of guide.routes) if (route.cta) expect(route.cta.label).toMatch(/^(Abrir |Administrar mi suscripción$|Ver los pasos oficiales$)/);
     }
   });
 

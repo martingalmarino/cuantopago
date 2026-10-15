@@ -5,7 +5,9 @@ import { normalizeGuideState, resolveRouteId, scopeOptionsFor, serializeGuideSta
 
 interface Props { guide: PlatformGuide; route: GuideRoute; config: GuideConfig }
 const { guide, route, config } = Astro.props;
-const sources = route.sourceIds.map((id) => guideSourceById.get(id)).filter((item) => item !== undefined);
+const impact = route.impact ? guide.impact : undefined;
+const sourceIds = [...new Set([...route.sourceIds, ...(impact?.sourceIds ?? [])])];
+const sources = sourceIds.map((id) => guideSourceById.get(id)).filter((item) => item !== undefined);
 const otherIntent = route.intent === 'cancelar' ? 'ahorrar' : 'cancelar';
 const otherScopes = scopeOptionsFor(otherIntent, config);
 const otherScope = otherScopes.find((option) => option.id === route.scope)
@@ -22,15 +24,21 @@ const otherHref = `${serializeGuideState(otherState) || './'}${otherId ? `#ruta-
 const otherLabel = otherIntent === 'ahorrar' ? `¿Preferís pagar menos en ${guide.name}?` : `¿Preferís cancelar ${guide.name}?`;
 const dateFormat = new Intl.DateTimeFormat('es-AR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 const reviewed = (iso: string) => dateFormat.format(new Date(`${iso}T12:00:00Z`));
-const copyText = [
+const numbered = (steps: string[]) => steps.map((step, index) => `${index + 1}. ${step}`);
+const copyFor = (lines: string[]) => [
   route.heading,
   '',
-  ...route.steps.map((step, index) => `${index + 1}. ${step}`),
+  ...lines,
   '',
   route.cta ? `${route.cta.label}: ${route.cta.url}` : route.ctaNote,
   '',
   'Abonito te orienta. La gestión se completa en el sitio o la app del proveedor.',
 ].join('\n');
+const variants = route.variants ?? [];
+const copyText = copyFor([
+  ...numbered(route.steps),
+  ...variants.flatMap((variant) => ['', variant.label, ...numbered(variant.steps)]),
+]);
 ---
 <section class="section-panel guide-route" id={`ruta-${route.id}`} data-route-id={route.id} data-copy-text={copyText} aria-labelledby={`titulo-${route.id}`}>
   <div class="section-cap">
@@ -46,7 +54,42 @@ const copyText = [
       </>
     )}
     <h3>Pasos</h3>
-    <ol class="guide-steps">{route.steps.map((step) => <li>{step}</li>)}</ol>
+    {route.steps.length > 0 && <ol class="guide-steps">{route.steps.map((step) => <li>{step}</li>)}</ol>}
+    {variants.length > 0 && (
+      <fieldset class="guide-fieldset guide-variant-picker" data-variant-picker data-js-only hidden>
+        <legend>¿Desde qué dispositivo lo hacés?</legend>
+        <div class="choice-grid">
+          {variants.map((variant, index) => (
+            <label class="choice">
+              <input type="radio" name={`variante-${route.id}`} value={variant.id} checked={index === 0} />
+              <span><strong>{variant.label}</strong></span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+    )}
+    {variants.map((variant) => (
+      <div class="guide-variant" data-variant={variant.id} data-copy-text={copyFor([variant.label, ...numbered(variant.steps)])}>
+        <h4>{variant.label}</h4>
+        <ol class="guide-steps">{variant.steps.map((step) => <li>{step}</li>)}</ol>
+      </div>
+    ))}
+    {impact && (
+      <div class="guide-impact" role="note" aria-labelledby={`aviso-${route.id}`}>
+        <h3 id={`aviso-${route.id}`}>{impact.heading}</h3>
+        <ul class="guide-list">{impact.points.map((point) => <li><strong>{point.label}.</strong> {point.text}</li>)}</ul>
+        {impact.links.length > 0 && (
+          <p>
+            {impact.links.map((item, index) => (
+              <>
+                {index > 0 && ' · '}
+                <a href={item.url} target="_blank" rel="noopener noreferrer" data-print-url aria-label={`${item.label} (se abre en una pestaña nueva)`}>{item.label}</a>
+              </>
+            ))}
+          </p>
+        )}
+      </div>
+    )}
     {route.cta ? (
       <p class="guide-cta-row">
         <a

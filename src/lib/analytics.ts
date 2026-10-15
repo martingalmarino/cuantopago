@@ -6,17 +6,19 @@ type AnalyticsEvent =
   | 'guide_view'
   | 'guide_intent_select'
   | 'guide_scope_select'
+  | 'guide_role_select'
   | 'guide_biller_select'
   | 'guide_unknown_biller'
   | 'guide_official_link_click'
   | 'guide_copy_steps'
   | 'assistant_question';
 
-/** Sólo valores de listas cerradas: plataforma, intención, canal y id de ruta. */
+/** Sólo valores de listas cerradas: plataforma, intención, canal, alcance, rol y id de ruta. */
 export interface GuideEventProps {
   intent?: 'cancelar' | 'ahorrar';
   channel?: 'directo' | 'apple' | 'google-play' | 'externo' | 'movistar' | 'playstation' | 'prime-video' | 'no-se';
-  scope?: 'servicio' | 'canal' | 'paquete';
+  scope?: 'servicio' | 'canal' | 'paquete' | 'personal' | 'familia' | 'equipo' | 'empresa';
+  role?: 'titular' | 'miembro';
   routeId?: string;
   /** Tipo de pregunta que reconoció el chat. Nunca el texto que escribió la persona. */
   assistantIntent?: string;
@@ -33,6 +35,7 @@ export function track(event: AnalyticsEvent, serviceId?: string, props: GuideEve
     intent: props.intent ?? null,
     channel: props.channel ?? null,
     scope: props.scope ?? null,
+    role: props.role ?? null,
     routeId: props.routeId ?? null,
     assistantIntent: props.assistantIntent ?? null,
     answered: props.answered ?? null,

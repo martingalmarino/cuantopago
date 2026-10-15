@@ -89,7 +89,7 @@ describe('preguntas estándar', () => {
   it('suma la guía para cancelar sólo donde existe', () => {
     const withGuide = standardFaqs(service('youtube-premium'), priceSummary(service('youtube-premium'), AS_OF));
     expect(withGuide.find((faq) => faq.link?.href === '/youtube-premium/cancelar/')).toBeTruthy();
-    const withoutGuide = standardFaqs(service('dropbox'), priceSummary(service('dropbox'), AS_OF));
+    const withoutGuide = standardFaqs(service('notion'), priceSummary(service('notion'), AS_OF));
     expect(withoutGuide.some((faq) => /cancel/i.test(faq.question))).toBe(false);
   });
 });

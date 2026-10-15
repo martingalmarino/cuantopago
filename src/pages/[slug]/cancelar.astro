@@ -101,6 +101,7 @@ const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
   import {
     UNKNOWN_CHANNEL,
     asksChannel,
+    memberUsesScope,
     normalizeGuideState,
     parseGuideState,
     resolveRouteId,
@@ -159,7 +160,7 @@ const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
       setRadio('cobro', state.channel ?? (state.unknown ? UNKNOWN_CHANNEL : null));
       const asksScope = scopeOptionsFor(state.intent, config).length > 0;
       if (scopeFieldset) scopeFieldset.hidden = !asksScope;
-      const needsScope = asksScope && !state.scope && state.role !== 'miembro';
+      const needsScope = asksScope && !state.scope && (state.role !== 'miembro' || memberUsesScope(state.intent, config));
       channelFieldset!.hidden = !asksChannel(state, config);
       const activeId = resolveRouteId(state, config);
       let activeHeading = '';
@@ -207,6 +208,7 @@ const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
       } else if (input.name === 'rol') {
         const role = input.value as GuideRole;
         commit(role === 'miembro' ? { ...state, role, channel: null, unknown: false } : { ...state, role });
+        track('guide_role_select', platformId, { intent: state.intent, role });
       } else if (input.name === 'alcance') {
         const scope = input.value as ProductScope;
         commit({ ...state, scope });
@@ -223,6 +225,22 @@ const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
       }
     });
 
+    function showVariant(section: HTMLElement, id: string) {
+      section.querySelectorAll<HTMLElement>('[data-variant]').forEach((block) => {
+        block.toggleAttribute('data-hidden', block.dataset.variant !== id);
+      });
+    }
+    root.querySelectorAll<HTMLElement>('[data-variant-picker]').forEach((picker) => {
+      const section = picker.closest<HTMLElement>('.guide-route');
+      const checked = picker.querySelector<HTMLInputElement>('input:checked');
+      if (section && checked) showVariant(section, checked.value);
+    });
+    root.addEventListener('change', (event) => {
+      const input = event.target as HTMLInputElement;
+      const section = input.closest<HTMLElement>('.guide-route');
+      if (section && input.closest('[data-variant-picker]')) showVariant(section, input.value);
+    });
+
     window.addEventListener('popstate', () => {
       state = parseGuideState(location.search, config);
       render(true);
@@ -236,6 +254,7 @@ const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
           intent: state.intent,
           channel: state.channel ?? undefined,
           scope: state.scope ?? undefined,
+          role: state.role ?? undefined,
           routeId: link.dataset.routeId,
         });
         return;
@@ -277,7 +296,9 @@ const byIntent = (['cancelar', 'ahorrar'] as const).map((intent) => ({
     async function copySteps(section: HTMLElement) {
       const status = section.querySelector<HTMLElement>('[data-copy-status]');
       const fallback = section.querySelector<HTMLTextAreaElement>('[data-copy-fallback]');
-      const text = `${section.dataset.copyText ?? ''}\nGuía: ${location.origin}${location.pathname}${serializeGuideState(state)}`;
+      const variant = section.querySelector<HTMLElement>('[data-variant]:not([data-hidden])[data-copy-text]');
+      const steps = section.querySelector('[data-variant-picker]') && variant ? variant.dataset.copyText : section.dataset.copyText;
+      const text = `${steps ?? ''}\nGuía: ${location.origin}${location.pathname}${serializeGuideState(state)}`;
       track('guide_copy_steps', platformId, { intent: state.intent, routeId: section.dataset.routeId });
       try {
         await navigator.clipboard.writeText(text);

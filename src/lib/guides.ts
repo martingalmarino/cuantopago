@@ -3,7 +3,7 @@ import type { BillingChannel, GuideIntent, GuideRole, ProductScope } from '../da
 export const INTENTS: GuideIntent[] = ['cancelar', 'ahorrar'];
 export const CHANNELS: BillingChannel[] = ['directo', 'apple', 'google-play', 'externo', 'movistar', 'playstation', 'prime-video'];
 export const ROLES: GuideRole[] = ['titular', 'miembro'];
-export const SCOPES: ProductScope[] = ['servicio', 'canal', 'paquete'];
+export const SCOPES: ProductScope[] = ['servicio', 'canal', 'paquete', 'personal', 'familia', 'equipo', 'empresa'];
 export const UNKNOWN_CHANNEL = 'no-se';
 
 /** Únicos dominios a los que pueden apuntar fuentes y botones. */
@@ -32,6 +32,13 @@ export const OFFICIAL_HOSTS = [
   'www.crunchyroll.com',
   'es.help.mubi.com',
   'mubi.com',
+  'one.google.com',
+  'help.dropbox.com',
+  'www.dropbox.com',
+  'support.microsoft.com',
+  'account.microsoft.com',
+  'learn.microsoft.com',
+  'www.canva.com',
 ];
 
 export function isOfficialUrl(raw: string): boolean {
@@ -87,6 +94,12 @@ export function scopeOptionsFor(intent: GuideIntent, config: GuideConfig) {
   return config.scope?.intents.includes(intent) ? config.scope.options : [];
 }
 
+/** Si las rutas de miembro de ese objetivo cambian según el alcance, por ejemplo miembro de una familia o de un equipo. */
+export function memberUsesScope(intent: GuideIntent, config: GuideConfig): boolean {
+  return scopeOptionsFor(intent, config).length > 0
+    && config.routes.some((route) => route.intent === intent && route.role === 'miembro' && route.scope);
+}
+
 /** Si hay que preguntar quién cobra. No se pregunta a miembros ni en alcances con una sola ruta. */
 export function asksChannel(state: GuideState, config: GuideConfig): boolean {
   if (state.role === 'miembro') return false;
@@ -134,7 +147,13 @@ export function normalizeGuideState(state: GuideState, config: GuideConfig): Gui
 export function resolveRouteId(state: GuideState, config: GuideConfig): string | null {
   if (config.hasRole && !state.role) return null;
   if (state.role === 'miembro') {
-    return config.routes.find((route) => route.intent === state.intent && route.role === 'miembro')?.id ?? null;
+    const members = config.routes.filter((route) => route.intent === state.intent && route.role === 'miembro');
+    if (memberUsesScope(state.intent, config)) {
+      if (!state.scope) return null;
+      const scoped = members.find((route) => route.scope === state.scope);
+      if (scoped) return scoped.id;
+    }
+    return members.find((route) => !route.scope)?.id ?? null;
   }
   const options = scopeOptionsFor(state.intent, config);
   if (options.length && !options.some((item) => item.id === state.scope)) return null;
@@ -152,12 +171,19 @@ export function resolveRouteId(state: GuideState, config: GuideConfig): string |
 export function stateForRoute(routeId: string, config: GuideConfig): GuideState | null {
   const route = config.routes.find((item) => item.id === routeId);
   if (!route) return null;
+  let scope = route.scope ?? null;
+  if (!scope && route.role === 'miembro' && memberUsesScope(route.intent, config)) {
+    const scopedIds = new Set(config.routes
+      .filter((item) => item.intent === route.intent && item.role === 'miembro' && item.scope)
+      .map((item) => item.scope));
+    scope = scopeOptionsFor(route.intent, config).find((option) => !scopedIds.has(option.id))?.id ?? null;
+  }
   return {
     intent: route.intent,
     channel: route.role === 'miembro' ? null : route.channels[0] ?? null,
     unknown: false,
     role: config.hasRole ? (route.role ?? 'titular') : null,
-    scope: route.scope ?? null,
+    scope,
   };
 }
 

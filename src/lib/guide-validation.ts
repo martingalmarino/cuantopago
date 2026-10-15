@@ -4,7 +4,7 @@ import { managedPlatforms } from '../data/subscription-management/managed';
 import { platformGuides } from '../data/subscription-management/platform-guides';
 import { guideSources } from '../data/subscription-management/sources';
 import type { BillingGuide, GuideSource, PlatformGuide } from '../data/subscription-management/types';
-import { CHANNELS, INTENTS, isOfficialUrl, resolveRouteId, scopeOptionsFor, type GuideConfig } from './guides';
+import { CHANNELS, INTENTS, isOfficialUrl, resolveRouteId, scopeOptionsFor, stateForRoute, type GuideConfig } from './guides';
 
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine((value) => {
   const date = new Date(`${value}T00:00:00Z`);
@@ -13,7 +13,7 @@ const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine((value) => {
 const officialUrl = z.string().refine(isOfficialUrl, 'URL no oficial o sin HTTPS');
 const text = z.string().trim().min(1);
 const channel = z.enum(['directo', 'apple', 'google-play', 'externo', 'movistar', 'playstation', 'prime-video']);
-const scope = z.enum(['servicio', 'canal', 'paquete']);
+const scope = z.enum(['servicio', 'canal', 'paquete', 'personal', 'familia', 'equipo', 'empresa']);
 const intent = z.enum(['cancelar', 'ahorrar']);
 const cta = z.object({ label: text, url: officialUrl });
 const link = z.object({ label: text, href: z.string().regex(/^\/[a-z0-9\-/]*\/(#ruta-[a-z0-9-]+)?$/, 'Enlace interno inválido') });
@@ -42,14 +42,18 @@ const routeSchema = z.object({
   heading: text.max(90),
   eligibility: text.optional(),
   before: z.array(text),
-  steps: z.array(text).min(1),
+  steps: z.array(text),
+  variants: z.array(z.object({ id: z.string().regex(/^[a-z0-9-]+$/), label: text, steps: z.array(text).min(1) })).min(2).optional(),
+  impact: z.boolean().optional(),
   cta: cta.nullable(),
   ctaNote: text.optional(),
   after: z.array(text).min(1),
   troubleshooting: z.array(text).min(1),
   related: z.array(link).optional(),
   sourceIds: z.array(text).min(1),
-}).refine((route) => route.cta !== null || Boolean(route.ctaNote), 'Una ruta sin botón necesita una nota');
+})
+  .refine((route) => route.cta !== null || Boolean(route.ctaNote), 'Una ruta sin botón necesita una nota')
+  .refine((route) => route.steps.length > 0 || Boolean(route.variants?.length), 'Una ruta necesita pasos o variantes');
 
 const platformSchema = z.object({
   platformId: text,
@@ -74,6 +78,12 @@ const platformSchema = z.object({
     options: z.array(z.object({ id: scope, label: text, hint: text, askChannel: z.boolean() })).min(2),
   }).optional(),
   billerCheck: z.object({ text, label: text, url: officialUrl, sourceId: text }),
+  impact: z.object({
+    heading: text,
+    points: z.array(z.object({ label: text, text })).min(3),
+    links: z.array(cta),
+    sourceIds: z.array(text).min(1),
+  }).optional(),
   routes: z.array(routeSchema).min(1),
   faqs: z.array(z.object({ question: text, answer: text })).min(1),
   updatedAt: isoDate,
@@ -158,6 +168,7 @@ export function validateGuides(
     for (const key of Object.keys(guide.channelHints)) {
       if (!guide.channels.includes(key as never)) errors.push(`La guía ${guide.slug} describe un canal que no ofrece: ${key}`);
     }
+    for (const id of guide.impact?.sourceIds ?? []) if (!sourceIds.has(id)) errors.push(`El aviso de ${guide.slug} cita la fuente inexistente ${id}.`);
 
     for (const route of guide.routes) {
       if (routeIds.has(route.id)) errors.push(`Ruta duplicada: ${route.id}`);
@@ -170,6 +181,11 @@ export function validateGuides(
         if (hash && !anchorIds.has(`${path}#${hash}`)) errors.push(`La ruta ${route.id} enlaza a una sección inexistente: ${item.href}`);
       }
       if (route.role === 'miembro' && route.channels.length) errors.push(`La ruta de miembro ${route.id} no debería depender del canal.`);
+      if (route.impact && !guide.impact) errors.push(`La ruta ${route.id} pide un aviso que la guía no tiene.`);
+      const variantIds = (route.variants ?? []).map((item) => item.id);
+      if (new Set(variantIds).size !== variantIds.length) errors.push(`La ruta ${route.id} repite variantes.`);
+      const anchorState = stateForRoute(route.id, guideConfig(guide));
+      if (!anchorState || resolveRouteId(anchorState, guideConfig(guide)) !== route.id) errors.push(`El ancla #ruta-${route.id} no lleva a esa ruta.`);
       if (route.role !== null && !guide.roleQuestion) errors.push(`La ruta ${route.id} pide un rol que la guía no pregunta.`);
       const scopeOptions = scopeOptionsFor(route.intent, guideConfig(guide));
       const scopeOption = scopeOptions.find((item) => item.id === route.scope);

@@ -10,6 +10,11 @@ export const managedPlatforms: { serviceId: string; slug: string; name: string }
   { serviceId: 'paramount-plus', slug: 'paramount-plus', name: 'Paramount+' },
   { serviceId: 'crunchyroll', slug: 'crunchyroll', name: 'Crunchyroll' },
   { serviceId: 'mubi', slug: 'mubi', name: 'MUBI' },
+  { serviceId: 'google-one', slug: 'google-one', name: 'Google One' },
+  { serviceId: 'icloud-plus', slug: 'icloud-plus', name: 'iCloud+' },
+  { serviceId: 'dropbox', slug: 'dropbox', name: 'Dropbox' },
+  { serviceId: 'microsoft-365', slug: 'microsoft-365', name: 'Microsoft 365' },
+  { serviceId: 'canva', slug: 'canva', name: 'Canva' },
 ];
 
 export function guideHref(serviceId: string | null | undefined, intent: 'cancelar' | 'ahorrar' = 'cancelar'): string | null {

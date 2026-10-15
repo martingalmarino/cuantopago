@@ -1,27 +1,25 @@
 import {
-  APPLE_GUIDE_HREF,
+  APPLE_GUIDE,
   APPLE_SUBSCRIPTIONS,
-  GOOGLE_PLAY_GUIDE_HREF,
+  GOOGLE_GUIDE,
   GOOGLE_PLAY_SUBSCRIPTIONS,
   PRIME_VIDEO_CHANNEL_AFTER,
   PRIME_VIDEO_CHANNEL_GUIDE,
   PRIME_VIDEO_CHANNEL_ROUTE_ID,
   PRIME_VIDEO_CHANNEL_TROUBLESHOOTING,
   PRIME_VIDEO_SETTINGS,
+  SIMULATOR,
   appleSteps,
   googlePlaySteps,
   primeVideoChannelCancelRoute,
   primeVideoChannelSaveRoute,
   primeVideoChannelSteps,
 } from './billing-guides';
+import { storageProductivityGuides } from './storage-productivity-guides';
 import type { GuideCta, PlatformGuide } from './types';
 
 const ADDON_VS_BUNDLE = 'Fijate si lo pagás como un adicional o si viene incluido en un paquete de internet, celular, TV o un beneficio. Dar de baja el adicional no es lo mismo que dar de baja el paquete completo.';
 const NO_PARTNER_MENUS = 'Cada empresa tiene su propio menú. No publicamos pasos de Mercado Libre, Personal, Flow, Claro, Movistar ni DGO porque no los revisamos.';
-const SIMULATOR = { label: 'Simular un cambio en tu lista', href: '/simular-ahorro/' };
-const APPLE_GUIDE = { label: 'Guía completa de Apple', href: APPLE_GUIDE_HREF };
-const GOOGLE_GUIDE = { label: 'Guía completa de Google Play', href: GOOGLE_PLAY_GUIDE_HREF };
-
 const netflix: PlatformGuide = {
   platformId: 'netflix',
   slug: 'netflix',
@@ -2110,7 +2108,10 @@ const mubi: PlatformGuide = {
   updatedAt: BATCH_2_UPDATED,
 };
 
-export const platformGuides: PlatformGuide[] = [netflix, spotify, disney, hboMax, youtube, primeVideo, appleTv, paramount, crunchyroll, mubi];
+export const platformGuides: PlatformGuide[] = [
+  netflix, spotify, disney, hboMax, youtube, primeVideo, appleTv, paramount, crunchyroll, mubi,
+  ...storageProductivityGuides,
+];
 
 export function platformGuideBySlug(slug: string): PlatformGuide | undefined {
   return platformGuides.find((guide) => guide.slug === slug);
