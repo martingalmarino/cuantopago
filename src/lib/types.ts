@@ -205,6 +205,21 @@ export interface BudgetState {
   entries: BudgetEntry[];
 }
 
+export type PaymentScenario = 'card-ars' | 'own-usd';
+
+export interface ProvinceIIBB {
+  id: string;
+  name: string;
+  rateBasisPoints: number;
+  rateAudiovisualBasisPoints?: number;
+  rateOtherBasisPoints?: number;
+  verifiedAt: string;
+  sourceUrl: string | null;
+  verificationStatus: 'official' | 'verified-by-secondary-source' | 'unconfirmed';
+  officialReference: string | null;
+  note: string;
+}
+
 export interface CalculationInput {
   label: string;
   amountMinor: number | null;
@@ -225,4 +240,7 @@ export interface CalculationInput {
   userReportedFinalMinor: number | null;
   userReportedMonths: number | null;
   manual?: boolean;
+  paymentScenario?: PaymentScenario;
+  provinceId?: string | null;
+  iibbProvinces?: ProvinceIIBB[];
 }

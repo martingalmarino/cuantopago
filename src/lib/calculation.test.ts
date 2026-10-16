@@ -174,6 +174,50 @@ describe('calculate', () => {
     expect(monthlyMinorDisplay(result)).toBe(1000);
     expect(result.periodTotalMinor).toBe(12000);
   });
+
+  it('asume que precios USD con taxInclusion unknown excluyen impuestos', () => {
+    const result = calculate(
+      input({
+        amountMinor: 100,
+        currency: 'USD',
+        taxInclusion: 'unknown',
+        fxArsPerUsdMinor: 100000,
+        fxSource: 'user',
+        ruleIds: ['vat'],
+        rules: [rule({ id: 'vat', rateBasisPoints: 2100 })],
+      }),
+    );
+    expect(result.assumptions.some((a) => a.includes('asumimos que el precio publicado no incluye impuestos'))).toBe(true);
+    expect(result.lines.find((line) => line.id === 'added-vat')?.amountMinor).toBe(21000);
+  });
+
+  it('aplica flags por defecto según escenario de pago', () => {
+    const perception = rule({
+      id: 'perception',
+      inclusion: 'add-when-flags-match',
+      requiresFlags: ['paysInArs', 'accessesMulc', 'providerNotExcludedByRg5677'],
+      unresolvedIfFlagsUnknown: true,
+      rateBasisPoints: 3000,
+    });
+    
+    const cardScenario = calculate(
+      input({
+        ruleIds: ['perception'],
+        rules: [perception],
+        flags: { paysInArs: true, accessesMulc: true, providerNotExcludedByRg5677: true },
+      }),
+    );
+    expect(cardScenario.lines.find((line) => line.id === 'added-perception')?.amountMinor).toBe(3000);
+    
+    const usdScenario = calculate(
+      input({
+        ruleIds: ['perception'],
+        rules: [perception],
+        flags: { paysInArs: false, accessesMulc: false, providerNotExcludedByRg5677: false },
+      }),
+    );
+    expect(usdScenario.lines.find((line) => line.id === 'added-perception')).toBeUndefined();
+  });
 });
 
 describe('presupuesto', () => {
@@ -301,6 +345,59 @@ describe('catálogo ampliado', () => {
     const result = calculate(input({ userReportedFinalMinor: 1_200_000, taxInclusion: 'excluded', ruleIds: ['vat'] }));
     expect(result.periodTotalMinor).toBe(1_200_000);
     expect(result.lines.some((line) => line.kind === 'added')).toBe(false);
+  });
+
+  it('planes con taxInclusion included no tienen ar-iva-digital-21 en taxRuleIds', () => {
+    const withDoubleIva = plans.filter((plan) => 
+      plan.taxInclusion === 'included' && plan.taxRuleIds.includes('ar-iva-digital-21')
+    );
+    expect(withDoubleIva).toHaveLength(0);
+    
+    const includedPlans = plans.filter((plan) => plan.taxInclusion === 'included');
+    expect(includedPlans.length).toBeGreaterThan(0);
+  });
+
+  it('calcula IIBB provincial sobre base neta de IVA', () => {
+    const mockProvinces = [
+      {
+        id: 'CABA',
+        name: 'CABA',
+        rateBasisPoints: 200,
+        verifiedAt: '2026-10-16',
+        sourceUrl: 'https://example.com',
+        verificationStatus: 'verified-by-secondary-source' as const,
+        officialReference: 'Res. AGIP 312/2019',
+        note: 'Test',
+      },
+    ];
+
+    // Precio sin IVA
+    const excluded = calculate(
+      input({
+        amountMinor: 10000,
+        taxInclusion: 'excluded',
+        ruleIds: [],
+        rules: [],
+        provinceId: 'CABA',
+        iibbProvinces: mockProvinces,
+      }),
+    );
+    const iibbLineExcluded = excluded.lines.find((line) => line.id === 'added-iibb-CABA');
+    expect(iibbLineExcluded?.amountMinor).toBe(200); // 10000 * 0.02 = 200
+
+    // Precio con IVA incluido - debe dividir por 1.21
+    const included = calculate(
+      input({
+        amountMinor: 12100,
+        taxInclusion: 'included',
+        ruleIds: [],
+        rules: [],
+        provinceId: 'CABA',
+        iibbProvinces: mockProvinces,
+      }),
+    );
+    const iibbLineIncluded = included.lines.find((line) => line.id === 'added-iibb-CABA');
+    expect(iibbLineIncluded?.amountMinor).toBe(200); // (12100 / 1.21) * 0.02 = 10000 * 0.02 = 200
   });
 });
 

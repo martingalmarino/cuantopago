@@ -1,0 +1,274 @@
+{
+  "provinces": [
+    {
+      "id": "CABA",
+      "name": "Ciudad Autónoma de Buenos Aires",
+      "rateBasisPoints": 200,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": "https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/",
+      "verificationStatus": "verified-by-secondary-source",
+      "officialReference": "Res. AGIP 312/2019",
+      "note": "Percepción del 2% sobre servicios digitales del exterior. Base de cálculo: precio neto de IVA (para precios con IVA incluido se divide por 1.21). Aplicada por el emisor de la tarjeta."
+    },
+    {
+      "id": "BA",
+      "name": "Buenos Aires",
+      "rateBasisPoints": 200,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": "https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/",
+      "verificationStatus": "verified-by-secondary-source",
+      "officialReference": "RN ARBA 38/2019",
+      "note": "Percepción del 2% sobre servicios digitales del exterior. Base de cálculo: precio neto de IVA. Aplicada por el emisor de la tarjeta."
+    },
+    {
+      "id": "CO",
+      "name": "Córdoba",
+      "rateBasisPoints": 300,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": "https://www.rentascordoba.gob.ar/cms/wp-content/uploads/2026/02/resolucion_sip_n_032026_%E2%80%93_regimen_de_percepcion_de_ingresos_brutos_-_servicios_digitales.pdf",
+      "verificationStatus": "official",
+      "officialReference": "Res. SIP 3/2026",
+      "note": "Percepción del 3% sobre servicios digitales del exterior. Base de cálculo: precio neto de IVA. Fuente oficial verificada. Aplicada por el emisor de la tarjeta."
+    },
+    {
+      "id": "SF",
+      "name": "Santa Fe",
+      "rateBasisPoints": 300,
+      "rateAudiovisualBasisPoints": 300,
+      "rateOtherBasisPoints": 450,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": "https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/",
+      "verificationStatus": "verified-by-secondary-source",
+      "officialReference": "RG API 30/2025",
+      "note": "Percepción sobre servicios digitales del exterior: 3% para suscripciones audiovisuales y musicales, 4.5% para otros servicios. Base de cálculo: precio neto de IVA. Aplicada por el emisor de la tarjeta. Nota: La tasa general mostrada (3%) es la más común para los servicios del sitio."
+    },
+    {
+      "id": "SJ",
+      "name": "San Juan",
+      "rateBasisPoints": 300,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": "https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/",
+      "verificationStatus": "verified-by-secondary-source",
+      "officialReference": "Res. DGR 894/2025",
+      "note": "Percepción del 3% sobre servicios digitales del exterior. Base de cálculo: precio neto de IVA. Aplicada por el emisor de la tarjeta."
+    },
+    {
+      "id": "CH",
+      "name": "Chaco",
+      "rateBasisPoints": 550,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": "https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/",
+      "verificationStatus": "verified-by-secondary-source",
+      "officialReference": "RG ATP 2046/2020",
+      "note": "Percepción del 5.5% sobre servicios digitales del exterior. Base de cálculo: precio neto de IVA. Aplicada por el emisor de la tarjeta."
+    },
+    {
+      "id": "LP",
+      "name": "La Pampa",
+      "rateBasisPoints": 100,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": "https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/",
+      "verificationStatus": "verified-by-secondary-source",
+      "officialReference": "RG DGR 14/2019 Anexo II",
+      "note": "Percepción del 1% sobre servicios digitales del exterior. Base de cálculo: precio neto de IVA. Aplicada por el emisor de la tarjeta."
+    },
+    {
+      "id": "NQ",
+      "name": "Neuquén",
+      "rateBasisPoints": 400,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": "https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/",
+      "verificationStatus": "verified-by-secondary-source",
+      "officialReference": "Res. DPR 1/2022",
+      "note": "Percepción del 4% sobre servicios digitales del exterior. Base de cálculo: precio neto de IVA. Aplicada por el emisor de la tarjeta."
+    },
+    {
+      "id": "RN",
+      "name": "Río Negro",
+      "rateBasisPoints": 500,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": "https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/",
+      "verificationStatus": "verified-by-secondary-source",
+      "officialReference": "Res. ART 808/2020",
+      "note": "Percepción del 5% sobre servicios digitales del exterior. Base de cálculo: precio neto de IVA. Aplicada por el emisor de la tarjeta."
+    },
+    {
+      "id": "SA",
+      "name": "Salta",
+      "rateBasisPoints": 360,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": "https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/",
+      "verificationStatus": "verified-by-secondary-source",
+      "officialReference": "RG DGR 34/2018",
+      "note": "Percepción del 3.6% sobre servicios digitales del exterior. Base de cálculo: precio neto de IVA. Aplicada por el emisor de la tarjeta."
+    },
+    {
+      "id": "TF",
+      "name": "Tierra del Fuego",
+      "rateBasisPoints": 300,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": "https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/",
+      "verificationStatus": "verified-by-secondary-source",
+      "officialReference": "RG AREF 929/2022",
+      "note": "Percepción del 3% sobre servicios digitales del exterior. Base de cálculo: precio neto de IVA. Aplicada por el emisor de la tarjeta."
+    },
+    {
+      "id": "MZ",
+      "name": "Mendoza",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "verificationStatus": "unconfirmed",
+      "officialReference": null,
+      "note": "Sin confirmar: No se encontró información oficial sobre percepción de IIBB para servicios digitales del exterior en Mendoza. Puede existir pero no está verificada. Tasa mostrada: 0%."
+    },
+    {
+      "id": "TU",
+      "name": "Tucumán",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "verificationStatus": "unconfirmed",
+      "officialReference": null,
+      "note": "Sin confirmar: No se encontró información oficial sobre percepción de IIBB para servicios digitales del exterior en Tucumán. Tasa mostrada: 0%."
+    },
+    {
+      "id": "ER",
+      "name": "Entre Ríos",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "verificationStatus": "unconfirmed",
+      "officialReference": null,
+      "note": "Sin confirmar: No se encontró información oficial sobre percepción de IIBB para servicios digitales del exterior en Entre Ríos. Tasa mostrada: 0%."
+    },
+    {
+      "id": "MI",
+      "name": "Misiones",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "verificationStatus": "unconfirmed",
+      "officialReference": null,
+      "note": "Sin confirmar: No se encontró información oficial sobre percepción de IIBB para servicios digitales del exterior en Misiones. Tasa mostrada: 0%."
+    },
+    {
+      "id": "CR",
+      "name": "Corrientes",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "verificationStatus": "unconfirmed",
+      "officialReference": null,
+      "note": "Sin confirmar: No se encontró información oficial sobre percepción de IIBB para servicios digitales del exterior en Corrientes. Tasa mostrada: 0%."
+    },
+    {
+      "id": "CT",
+      "name": "Catamarca",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "verificationStatus": "unconfirmed",
+      "officialReference": null,
+      "note": "Sin confirmar: No se encontró información oficial sobre percepción de IIBB para servicios digitales del exterior en Catamarca. Tasa mostrada: 0%."
+    },
+    {
+      "id": "FO",
+      "name": "Formosa",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "verificationStatus": "unconfirmed",
+      "officialReference": null,
+      "note": "Sin confirmar: No se encontró información oficial sobre percepción de IIBB para servicios digitales del exterior en Formosa. Tasa mostrada: 0%."
+    },
+    {
+      "id": "JY",
+      "name": "Jujuy",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "verificationStatus": "unconfirmed",
+      "officialReference": null,
+      "note": "Sin confirmar: No se encontró información oficial sobre percepción de IIBB para servicios digitales del exterior en Jujuy. Tasa mostrada: 0%."
+    },
+    {
+      "id": "LR",
+      "name": "La Rioja",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "verificationStatus": "unconfirmed",
+      "officialReference": null,
+      "note": "Sin confirmar: No se encontró información oficial sobre percepción de IIBB para servicios digitales del exterior en La Rioja. Tasa mostrada: 0%."
+    },
+    {
+      "id": "SL",
+      "name": "San Luis",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "verificationStatus": "unconfirmed",
+      "officialReference": null,
+      "note": "Sin confirmar: No se encontró información oficial sobre percepción de IIBB para servicios digitales del exterior en San Luis. Tasa mostrada: 0%."
+    },
+    {
+      "id": "SC",
+      "name": "Santa Cruz",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "verificationStatus": "unconfirmed",
+      "officialReference": null,
+      "note": "Sin confirmar: No se encontró información oficial sobre percepción de IIBB para servicios digitales del exterior en Santa Cruz. Tasa mostrada: 0%."
+    },
+    {
+      "id": "SE",
+      "name": "Santiago del Estero",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "verificationStatus": "unconfirmed",
+      "officialReference": null,
+      "note": "Sin confirmar: No se encontró información oficial sobre percepción de IIBB para servicios digitales del exterior en Santiago del Estero. Tasa mostrada: 0%."
+    },
+    {
+      "id": "OTHER",
+      "name": "Otra provincia",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "verificationStatus": "unconfirmed",
+      "officialReference": null,
+      "note": "Sin confirmar: Tasa mostrada 0% para provincias sin información verificada."
+    }
+  ],
+  "metadata": {
+    "note": "Percepciones de IIBB (Ingresos Brutos) sobre servicios digitales del exterior por provincia. BASE DE CÁLCULO: precio neto de IVA (para precios con IVA incluido, dividir por 1.21). Las percepciones son aplicadas por el emisor de la tarjeta. 11 provincias con tasas verificadas (1 fuente oficial, 10 fuentes secundarias confiables). 13 jurisdicciones sin confirmar (mostradas como 0% pero puede existir normativa no localizada).",
+    "lastUpdate": "2026-10-16",
+    "sources": [
+      {
+        "type": "secondary",
+        "url": "https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/",
+        "description": "Estudio Piacentini - Análisis de impuestos sobre servicios digitales"
+      },
+      {
+        "type": "secondary",
+        "url": "https://www.mercadopago.com.ar/ayuda/_4063",
+        "description": "MercadoPago - Información sobre percepciones provinciales"
+      },
+      {
+        "type": "official",
+        "url": "https://www.rentascordoba.gob.ar/cms/wp-content/uploads/2026/02/resolucion_sip_n_032026_%E2%80%93_regimen_de_percepcion_de_ingresos_brutos_-_servicios_digitales.pdf",
+        "description": "Córdoba - Res. SIP 3/2026 (fuente oficial)"
+      }
+    ],
+    "verificationLevels": {
+      "official": "Fuente oficial del organismo provincial",
+      "verified-by-secondary-source": "Verificado por fuentes secundarias confiables (estudios contables, plataformas de pago)",
+      "unconfirmed": "Sin información verificada - puede existir normativa no localizada"
+    },
+    "disclaimer": "Las tasas provinciales están sujetas a cambios y actualizaciones normativas. Se recomienda consultar con un contador matriculado para casos específicos. Las tasas 'sin confirmar' no implican ausencia de normativa, sino falta de información verificable al momento de la consulta."
+  }
+}
+

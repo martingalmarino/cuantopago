@@ -58,7 +58,7 @@ describe('respuesta directa', () => {
   it('en pesos sin impuestos suma el IVA calculado', () => {
     const text = plain(answerText(service('netflix'), priceSummary(service('netflix'), AS_OF)));
     expect(text).toContain('desde $ 8.999 por mes');
-    expect(text).toContain('sumando IVA queda en $ 10.888,79 por mes');
+    expect(text).toContain('sumando IVA y Percepción RG 5617 queda en $ 13.588,49 por mes');
     expect(text).toContain('8 de octubre de 2026');
   });
 

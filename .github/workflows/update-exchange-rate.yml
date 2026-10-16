@@ -1,0 +1,40 @@
+name: Actualizar tipo de cambio BNA
+
+on:
+  schedule:
+    # Ejecutar todos los días a las 09:00 UTC (06:00 ART)
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-exchange-rate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Update exchange rate
+        run: npm run update-exchange-rate
+        
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code src/data/exchange-rates.json || echo "changed=true" >> $GITHUB_OUTPUT
+          
+      - name: Commit and push if changed
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add src/data/exchange-rates.json
+          git commit -m "chore: actualizar tipo de cambio BNA [skip ci]"
+          git push

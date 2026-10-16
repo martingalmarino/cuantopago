@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source": "Resolución General AFIP 5677/2025",
+    "sourceUrl": "https://www.afip.gob.ar/regimen-devolucion-percepciones/percepcion/exclusiones.asp",
+    "verifiedAt": "2026-10-16",
+    "note": "Exclusiones del Artículo 6 de la RG 5617/2024 para compras en el exterior. Solo incluye plataformas de videojuegos verificadas en la nómina oficial de AFIP."
+  },
+  "excludedServiceIds": [
+    "steam",
+    "playstation-plus",
+    "xbox-game-pass",
+    "nintendo-switch-online",
+    "epic-games",
+    "riot-games",
+    "ea-play",
+    "ubisoft-plus",
+    "battle-net"
+  ],
+  "excludedProviderPatterns": [
+    "steam",
+    "valve",
+    "playstation",
+    "sony interactive",
+    "xbox",
+    "microsoft gaming",
+    "nintendo",
+    "epic games",
+    "riot games",
+    "electronic arts",
+    "ea",
+    "ubisoft",
+    "blizzard",
+    "activision"
+  ]
+}

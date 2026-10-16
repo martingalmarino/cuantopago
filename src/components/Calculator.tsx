@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
 import { track } from '../lib/analytics';
 import { calculate } from '../lib/calculation';
-import { inputFromPlan, plansFor, purchasablePlans, quotePlan, serviceById, taxRules, todayIso } from '../lib/catalog';
+import { iibbProvinces, inputFromPlan, plansFor, purchasablePlans, quotePlan, serviceById, taxRules, todayIso } from '../lib/catalog';
 import { catalogEntry, customEntry } from '../lib/entries';
 import { parseLocalAmount } from '../lib/money';
 import { loadBudget, saveBudget } from '../lib/storage';
-import type { CalculationInput, TaxInclusion } from '../lib/types';
+import type { CalculationInput, PaymentScenario, TaxInclusion } from '../lib/types';
 import QuoteView from './QuoteView';
 
 interface Props {
@@ -26,6 +26,8 @@ export default function Calculator({ serviceId, initialPlanId, embedded = false 
   const [months, setMonths] = useState('1');
   const [fxRaw, setFxRaw] = useState('');
   const [taxInclusion, setTaxInclusion] = useState<TaxInclusion>('unknown');
+  const [paymentScenario, setPaymentScenario] = useState<PaymentScenario>('card-ars');
+  const [provinceId, setProvinceId] = useState<string | null>('CABA');
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const asOf = todayIso();
@@ -64,9 +66,9 @@ export default function Calculator({ serviceId, initialPlanId, embedded = false 
 
   const shown = useMemo(() => {
     if (mode === 'catalog') {
-      if (bundle && bundle.amountMinor !== null) return quotePlan(bundle, { asOf });
+      if (bundle && bundle.amountMinor !== null) return quotePlan(bundle, { asOf, paymentScenario, provinceId });
       if (!plan) return null;
-      return calculate(inputFromPlan(plan, { asOf }));
+      return calculate(inputFromPlan(plan, { asOf, paymentScenario, provinceId }));
     }
     if (mode === 'final') {
       const parsed = parseLocalAmount(finalRaw);
@@ -89,6 +91,9 @@ export default function Calculator({ serviceId, initialPlanId, embedded = false 
         flags: {},
         userReportedFinalMinor: parsed.minor,
         userReportedMonths: safeMonths,
+        paymentScenario,
+        provinceId,
+        iibbProvinces,
       };
       return calculate(manual);
     }
@@ -114,9 +119,12 @@ export default function Calculator({ serviceId, initialPlanId, embedded = false 
       userReportedFinalMinor: null,
       userReportedMonths: null,
       manual: true,
+      paymentScenario,
+      provinceId,
+      iibbProvinces,
     };
     return calculate(manual);
-  }, [asOf, baseRaw, bundle, currency, finalRaw, fxRaw, mode, plan, safeMonths, taxInclusion]);
+  }, [asOf, baseRaw, bundle, currency, finalRaw, fxRaw, mode, plan, safeMonths, taxInclusion, paymentScenario, provinceId]);
 
   function add() {
     if (!shown) {
@@ -175,6 +183,34 @@ export default function Calculator({ serviceId, initialPlanId, embedded = false 
           </select>
         </label>
       )}
+      <label className="field">
+        <span>Escenario de pago</span>
+        <select value={paymentScenario} onChange={(event) => setPaymentScenario(event.target.value as PaymentScenario)}>
+          <option value="card-ars">Tarjeta en pesos (incluye percepción 30%)</option>
+          <option value="own-usd">Dólares propios / MEP (sin percepción)</option>
+        </select>
+      </label>
+      <p className="meta">
+        {paymentScenario === 'card-ars' 
+          ? 'Escenario típico: pagas en pesos con tarjeta. Incluye IVA 21% y percepción RG 5617 del 30% (recuperable para no contribuyentes). Plataformas de gaming excluidas según RG 5677.'
+          : 'Pagas con dólares propios o por MEP. No aplica la percepción del 30%. Solo se suma el IVA del 21%.'}
+      </p>
+      {true && (
+        <label className="field">
+          <span>Provincia (IIBB)</span>
+          <select value={provinceId ?? ''} onChange={(event) => setProvinceId(event.target.value || null)}>
+            {iibbProvinces.map((prov) => (
+              <option key={prov.id} value={prov.id}>
+                {prov.name}
+                {prov.rateBasisPoints > 0 ? ` (${prov.rateBasisPoints / 100}%)` : ' (sin confirmar)'}
+              </option>
+            ))}
+          </select>
+        </label>
+      )}
+      <p className="meta" style={{ fontSize: '0.875rem', opacity: 0.8 }}>
+        Nota sobre IIBB: 11 provincias tienen percepciones sobre servicios digitales (CABA 2%, Buenos Aires 2%, Córdoba 3%, Santa Fe 3-4.5%, Chaco 5.5%, etc.). 13 jurisdicciones sin confirmar (mostradas como 0%). Base de cálculo: precio neto de IVA.
+      </p>
       <div className="row-actions">
         {servicePlans.length > 0 && <button type="button" className="chip" aria-pressed={mode === 'catalog' && !bundle} onClick={() => { setBundleId(null); setMode('catalog'); }}>Precio publicado</button>}
         <button type="button" className="chip" aria-pressed={mode === 'final'} onClick={() => { setBundleId(null); setMode('final'); }}>Cargar lo que pago</button>
