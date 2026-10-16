@@ -174,6 +174,50 @@ describe('calculate', () => {
     expect(monthlyMinorDisplay(result)).toBe(1000);
     expect(result.periodTotalMinor).toBe(12000);
   });
+
+  it('asume que precios USD con taxInclusion unknown excluyen impuestos', () => {
+    const result = calculate(
+      input({
+        amountMinor: 100,
+        currency: 'USD',
+        taxInclusion: 'unknown',
+        fxArsPerUsdMinor: 100000,
+        fxSource: 'user',
+        ruleIds: ['vat'],
+        rules: [rule({ id: 'vat', rateBasisPoints: 2100 })],
+      }),
+    );
+    expect(result.assumptions.some((a) => a.includes('asumimos que el precio publicado no incluye impuestos'))).toBe(true);
+    expect(result.lines.find((line) => line.id === 'added-vat')?.amountMinor).toBe(21000);
+  });
+
+  it('aplica flags por defecto según escenario de pago', () => {
+    const perception = rule({
+      id: 'perception',
+      inclusion: 'add-when-flags-match',
+      requiresFlags: ['paysInArs', 'accessesMulc', 'providerNotExcludedByRg5677'],
+      unresolvedIfFlagsUnknown: true,
+      rateBasisPoints: 3000,
+    });
+    
+    const cardScenario = calculate(
+      input({
+        ruleIds: ['perception'],
+        rules: [perception],
+        flags: { paysInArs: true, accessesMulc: true, providerNotExcludedByRg5677: true },
+      }),
+    );
+    expect(cardScenario.lines.find((line) => line.id === 'added-perception')?.amountMinor).toBe(3000);
+    
+    const usdScenario = calculate(
+      input({
+        ruleIds: ['perception'],
+        rules: [perception],
+        flags: { paysInArs: false, accessesMulc: false, providerNotExcludedByRg5677: false },
+      }),
+    );
+    expect(usdScenario.lines.find((line) => line.id === 'added-perception')).toBeUndefined();
+  });
 });
 
 describe('presupuesto', () => {

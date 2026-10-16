@@ -4,6 +4,8 @@ import rulesJson from '../data/tax-rules.json';
 import ratesJson from '../data/exchange-rates.json';
 import brandsJson from '../data/brand-assets.json';
 import metaJson from '../data/meta.json';
+import rg5677Json from '../data/rg5677-exclusions.json';
+import iibbJson from '../data/iibb-provinces.json';
 import { calculate } from './calculation';
 import { isStale } from './freshness';
 import { divHalfUp } from './money';
@@ -16,6 +18,7 @@ import type {
   CalculationResult,
   CategoryId,
   PlanRecord,
+  ProvinceIIBB,
   ServiceRecord,
   TaxRule,
 } from './types';
@@ -25,7 +28,15 @@ export const services = servicesJson as ServiceRecord[];
 export const plans = plansJson as PlanRecord[];
 export const taxRules = rulesJson as TaxRule[];
 export const exchangeBasis = ratesJson.basis;
+export const exchangeSnapshots = ratesJson.snapshots;
 export const brandAssets = brandsJson as BrandAsset[];
+export const rg5677Exclusions = rg5677Json;
+export const iibbProvinces = iibbJson.provinces as ProvinceIIBB[];
+
+export function isExcludedByRg5677(serviceId: string | null): boolean {
+  if (!serviceId) return false;
+  return rg5677Exclusions.excludedServiceIds.includes(serviceId);
+}
 
 export const categoryLabels: Record<CategoryId, string> = {
   series: 'Series y películas',
@@ -137,8 +148,34 @@ export function inputFromPlan(
     userReportedFinalMinor?: number | null;
     userReportedMonths?: number | null;
     flags?: CalculationInput['flags'];
+    paymentScenario?: 'card-ars' | 'own-usd';
+    provinceId?: string | null;
   },
 ): CalculationInput {
+  const scenario = options.paymentScenario ?? 'card-ars';
+  const isExcluded = isExcludedByRg5677(plan.serviceId);
+  
+  const defaultFlags: CalculationInput['flags'] = {};
+  if (scenario === 'card-ars') {
+    defaultFlags.paysInArs = true;
+    defaultFlags.accessesMulc = true;
+    defaultFlags.providerNotExcludedByRg5677 = !isExcluded;
+  } else {
+    defaultFlags.paysInArs = false;
+    defaultFlags.accessesMulc = false;
+    defaultFlags.providerNotExcludedByRg5677 = false;
+  }
+
+  const flags = { ...defaultFlags, ...options.flags };
+
+  let fxRate = options.fxArsPerUsdMinor ?? null;
+  let fxSource = options.fxSource ?? null;
+
+  if (plan.currency === 'USD' && fxRate === null && exchangeSnapshots.length > 0) {
+    fxRate = exchangeSnapshots[0]?.arsPerUsdMinor ?? null;
+    fxSource = 'snapshot';
+  }
+
   return {
     label: plan.name,
     amountMinor: plan.amountMinor,
@@ -152,12 +189,14 @@ export function inputFromPlan(
     priceSourceUrl: plan.sourceUrl,
     rules: taxRules,
     asOf: options.asOf,
-    fxArsPerUsdMinor: options.fxArsPerUsdMinor ?? null,
-    fxSource: options.fxSource ?? null,
-    fxVerifiedAt: options.fxSource === 'user' ? options.asOf : null,
-    flags: options.flags ?? {},
+    fxArsPerUsdMinor: fxRate,
+    fxSource,
+    fxVerifiedAt: fxSource === 'snapshot' && exchangeSnapshots.length > 0 ? exchangeSnapshots[0]?.verifiedAt ?? null : options.fxSource === 'user' ? options.asOf : null,
+    flags,
     userReportedFinalMinor: options.userReportedFinalMinor ?? null,
     userReportedMonths: options.userReportedMonths ?? null,
+    paymentScenario: scenario,
+    provinceId: options.provinceId ?? null,
   };
 }
 

@@ -1,0 +1,104 @@
+{
+  "provinces": [
+    {
+      "id": "CABA",
+      "name": "Ciudad Autónoma de Buenos Aires",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en CABA. No se encontró normativa específica."
+    },
+    {
+      "id": "BA",
+      "name": "Buenos Aires",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Provincia de Buenos Aires. No se encontró normativa específica."
+    },
+    {
+      "id": "CO",
+      "name": "Córdoba",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Córdoba. No se encontró normativa específica."
+    },
+    {
+      "id": "SF",
+      "name": "Santa Fe",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Santa Fe. No se encontró normativa específica."
+    },
+    {
+      "id": "MZ",
+      "name": "Mendoza",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Mendoza. No se encontró normativa específica."
+    },
+    {
+      "id": "TU",
+      "name": "Tucumán",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Tucumán. No se encontró normativa específica."
+    },
+    {
+      "id": "SA",
+      "name": "Salta",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Salta. No se encontró normativa específica."
+    },
+    {
+      "id": "ER",
+      "name": "Entre Ríos",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Entre Ríos. No se encontró normativa específica."
+    },
+    {
+      "id": "MI",
+      "name": "Misiones",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Misiones. No se encontró normativa específica."
+    },
+    {
+      "id": "CH",
+      "name": "Chaco",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Chaco. No se encontró normativa específica."
+    },
+    {
+      "id": "CO",
+      "name": "Corrientes",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Corrientes. No se encontró normativa específica."
+    },
+    {
+      "id": "OTHER",
+      "name": "Otra provincia",
+      "rateBasisPoints": 0,
+      "verifiedAt": "2026-10-16",
+      "sourceUrl": null,
+      "note": "TODO: Completar con tasas verificadas para cada provincia. Por ahora se asume 0% hasta verificar las normativas provinciales."
+    }
+  ],
+  "metadata": {
+    "note": "Las tasas de IIBB (Ingresos Brutos) varían por provincia y no todas tienen normativa específica para servicios digitales del exterior. Las tasas actuales están en 0% con nota TODO hasta que se verifiquen fuentes oficiales. No se deben inventar tasas sin fuente oficial.",
+    "lastUpdate": "2026-10-16"
+  }
+}

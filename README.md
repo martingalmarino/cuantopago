@@ -17,7 +17,17 @@ npm run validate:data
 npm run check
 npm run build
 npm run preview
+npm run update-exchange-rate
 ```
+
+### Actualización automática del tipo de cambio
+
+El sitio usa el tipo de cambio BNA oficial (dólar vendedor) para convertir precios en USD a ARS. Este se actualiza automáticamente de dos formas:
+
+1. **Manualmente**: `npm run update-exchange-rate`
+2. **Automáticamente**: GitHub Action que se ejecuta diariamente a las 09:00 UTC (06:00 ART)
+
+El tipo de cambio se obtiene de [dolarapi.com](https://dolarapi.com) y se guarda en `src/data/exchange-rates.json`.
 
 ## URL de producción
 

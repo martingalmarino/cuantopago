@@ -5,6 +5,9 @@ import type { CalculationInput, CalculationLine, CalculationResult, TaxRule } fr
 const PERCEPTION_MISSING =
   'La percepción del 30% de la RG 5617 no se suma: hace falta saber si el pago en pesos accede al mercado de cambios y si el prestador está fuera de la nómina de exclusión de la RG 5677.';
 
+const ASSUMPTION_USD_EXCLUDES_TAX =
+  'Para precios en USD sin confirmación explícita de inclusión de IVA, asumimos que el precio publicado no incluye impuestos argentinos (escenario más común).';
+
 function emptyResult(partial: Pick<CalculationResult, 'status' | 'periodMonths'> & Partial<CalculationResult>): CalculationResult {
   return {
     status: partial.status,
@@ -127,6 +130,12 @@ export function calculate(input: CalculationInput): CalculationResult {
   const stalePrice = isStale(input.priceVerifiedAt, 30, 'days', input.asOf);
   let staleFx = false;
 
+  let effectiveTaxInclusion = input.taxInclusion;
+  if (input.currency === 'USD' && input.taxInclusion === 'unknown') {
+    effectiveTaxInclusion = 'excluded';
+    assumptions.push(ASSUMPTION_USD_EXCLUDES_TAX);
+  }
+
   if (input.currency === 'ARS') {
     arsBase = input.amountMinor;
     lines.push({
@@ -157,7 +166,7 @@ export function calculate(input: CalculationInput): CalculationResult {
     }
     arsBase = divHalfUp(input.amountMinor * input.fxArsPerUsdMinor, 100);
     simulated = input.fxSource !== 'snapshot';
-    fxLabel = input.fxSource === 'user' ? 'Tipo de cambio ingresado por vos' : 'Tipo de cambio de la cotización guardada';
+    fxLabel = input.fxSource === 'user' ? 'Tipo de cambio ingresado por vos' : 'Tipo de cambio BNA oficial (dólar vendedor)';
     fxVerifiedAt = input.fxVerifiedAt;
     staleFx = input.fxSource === 'snapshot' && isStale(input.fxVerifiedAt, 24, 'hours', input.asOf);
     lines.push({
@@ -174,12 +183,12 @@ export function calculate(input: CalculationInput): CalculationResult {
       kind: 'conversion',
       amountMinor: arsBase,
       currency: 'ARS',
-      note: 'Conversión del precio publicado. No es una cotización de un banco.',
+      note: 'Conversión del precio publicado usando el tipo de cambio oficial.',
     });
     assumptions.push(
       input.fxSource === 'user'
         ? 'La conversión usa el tipo de cambio que ingresaste, no una cotización en vivo.'
-        : 'La conversión usa la cotización guardada en los datos del sitio.',
+        : 'La conversión usa el tipo de cambio BNA oficial (dólar vendedor) guardado en el sitio.',
     );
   }
 
@@ -192,7 +201,7 @@ export function calculate(input: CalculationInput): CalculationResult {
   let staleTax = false;
   let taxVerified: string | null = null;
 
-  if (input.taxInclusion === 'unknown') {
+  if (input.taxInclusion === 'unknown' && input.currency !== 'USD') {
     missing.push('No está confirmado si el precio publicado ya incluye impuestos.');
   }
   if (input.otherChargesNoted) {
@@ -202,7 +211,7 @@ export function calculate(input: CalculationInput): CalculationResult {
   const applicable: TaxRule[] = [];
   for (const rule of activeRules) {
     if (rule.inclusion === 'add-when-excluded') {
-      if (input.taxInclusion === 'included') {
+      if (effectiveTaxInclusion === 'included') {
         lines.push({
           id: `included-${rule.id}`,
           label: rule.label,
@@ -213,7 +222,7 @@ export function calculate(input: CalculationInput): CalculationResult {
         });
         continue;
       }
-      if (input.taxInclusion !== 'excluded') continue;
+      if (effectiveTaxInclusion !== 'excluded') continue;
       applicable.push(rule);
       continue;
     }

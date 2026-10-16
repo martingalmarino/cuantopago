@@ -7,6 +7,9 @@ export default function QuoteView({ result }: { result: CalculationResult }) {
   const monthly = monthlyMinorDisplay(result);
   const period = result.periodTotalMinor;
   const currency = result.currency === 'USD' ? 'USD' : 'ARS';
+  const hasAssumptions = result.assumptions.length > 0;
+  const hasTotal = period !== null;
+  
   return (
     <div aria-live="polite">
       <p className="kicker">{result.periodMonths === 1 ? resultHeading(result) : monthlyHeading(result)}</p>
@@ -14,7 +17,14 @@ export default function QuoteView({ result }: { result: CalculationResult }) {
         {monthly !== null && result.currency !== 'USD' ? formatPrice(monthly, 'ARS') : period !== null && result.currency ? formatPrice(period, currency) : 'No hay datos suficientes'}
       </p>
       <p className="meta">{result.periodDays ? `Cada ${result.periodDays} días` : result.periodMonths === 12 ? 'Por año, prorrateado al mes' : result.periodMonths === 1 ? 'Por mes' : `Cada ${result.periodMonths} meses`}</p>
-      {result.status === 'partial' && <p className="meta">Total parcial. La estimación no cierra todos los cargos.</p>}
+      {result.status === 'partial' && hasTotal && hasAssumptions && (
+        <p className="meta">
+          <strong>Estimado con supuestos.</strong> Este cálculo asume condiciones típicas. Ver desglose para más detalle.
+        </p>
+      )}
+      {result.status === 'partial' && (!hasTotal || !hasAssumptions) && (
+        <p className="meta">Total parcial. La estimación no cierra todos los cargos.</p>
+      )}
       {result.status === 'unavailable' && <p className="meta">No hay datos suficientes para un total.</p>}
       {result.periodMonths !== 1 && period !== null && result.currency === 'ARS' && (
         <p className="meta nums">
@@ -22,7 +32,7 @@ export default function QuoteView({ result }: { result: CalculationResult }) {
         </p>
       )}
       {result.warnings.map((warning) => <p key={warning} className="warning">{warning}</p>)}
-      {result.missing.length > 0 && (
+      {result.missing.length > 0 && result.status !== 'partial' && (
         <div className="warning">
           <strong>Falta resolver: </strong>
           {result.missing.join(' ')}
@@ -38,8 +48,20 @@ export default function QuoteView({ result }: { result: CalculationResult }) {
             </div>
           ))}
         </div>
-        {result.assumptions.length > 0 && <p className="meta">{result.assumptions[0]}</p>}
-        {result.fxLabel && <p className="meta">{result.fxLabel}. No es una cotización bancaria.</p>}
+        {result.assumptions.length > 0 && (
+          <>
+            <p className="meta"><strong>Supuestos aplicados:</strong></p>
+            {result.assumptions.map((assumption, i) => (
+              <p key={i} className="meta">• {assumption}</p>
+            ))}
+          </>
+        )}
+        {result.fxLabel && <p className="meta">{result.fxLabel}.</p>}
+        {hasTotal && hasAssumptions && (
+          <p className="meta">
+            <strong>Nota importante:</strong> La percepción del 30% es recuperable para personas que no son contribuyentes inscriptos (se puede solicitar la devolución).
+          </p>
+        )}
       </details>
     </div>
   );
