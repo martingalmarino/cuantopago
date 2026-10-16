@@ -319,10 +319,15 @@ p { margin: 0 0 12px; }
   padding: 0 12px;
   background: var(--surface-muted);
   color: var(--ink);
+  max-width: 100%;
+  min-width: 0;
+}
+.field select, .field input {
+  width: 100%;
 }
 .toolbar select { min-width: 220px; box-shadow: var(--shadow); }
 .field { display: grid; gap: 6px; }
-.field span, .meta, .kicker { color: var(--text-secondary); font-size: 13px; font-weight: 500; line-height: 1.4; }
+.field span, .meta, .kicker { color: var(--text-secondary); font-size: 13px; font-weight: 500; line-height: 1.4; overflow-wrap: break-word; }
 .kicker { margin: 0; }
 .field input:focus, .field select:focus, .entry form input:focus {
   outline: 2px solid var(--accent);
