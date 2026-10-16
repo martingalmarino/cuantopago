@@ -292,7 +292,6 @@
     "taxInclusion": "included",
     "otherChargesNoted": false,
     "taxRuleIds": [
-      "ar-iva-digital-21",
       "ar-percepcion-rg5617"
     ],
     "channel": "web-direct",
@@ -323,7 +322,6 @@
     "taxInclusion": "included",
     "otherChargesNoted": false,
     "taxRuleIds": [
-      "ar-iva-digital-21",
       "ar-percepcion-rg5617"
     ],
     "channel": "web-direct",
@@ -354,7 +352,6 @@
     "taxInclusion": "included",
     "otherChargesNoted": false,
     "taxRuleIds": [
-      "ar-iva-digital-21",
       "ar-percepcion-rg5617"
     ],
     "channel": "web-direct",
@@ -565,7 +562,6 @@
     "taxInclusion": "included",
     "otherChargesNoted": true,
     "taxRuleIds": [
-      "ar-iva-digital-21",
       "ar-percepcion-rg5617"
     ],
     "channel": "web-direct",

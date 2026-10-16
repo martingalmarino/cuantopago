@@ -346,6 +346,16 @@ describe('catálogo ampliado', () => {
     expect(result.periodTotalMinor).toBe(1_200_000);
     expect(result.lines.some((line) => line.kind === 'added')).toBe(false);
   });
+
+  it('planes con taxInclusion included no tienen ar-iva-digital-21 en taxRuleIds', () => {
+    const withDoubleIva = plans.filter((plan) => 
+      plan.taxInclusion === 'included' && plan.taxRuleIds.includes('ar-iva-digital-21')
+    );
+    expect(withDoubleIva).toHaveLength(0);
+    
+    const includedPlans = plans.filter((plan) => plan.taxInclusion === 'included');
+    expect(includedPlans.length).toBeGreaterThan(0);
+  });
 });
 
 function divProjection(totals: { knownMonthly: { n: number; d: number }; projectionDisplayMinor: number }): number {

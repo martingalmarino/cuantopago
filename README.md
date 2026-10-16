@@ -18,7 +18,13 @@ npm run check
 npm run build
 npm run preview
 npm run update-exchange-rate
+npm run fix-double-iva
 ```
+
+### Scripts de mantenimiento
+
+- **`update-exchange-rate`**: Actualiza el tipo de cambio BNA oficial desde dolarapi.com
+- **`fix-double-iva`**: Detecta y corrige planes con IVA duplicado en taxRuleIds (útil para mantenimiento de datos)
 
 ### Actualización automática del tipo de cambio
 

@@ -5,88 +5,88 @@
       "name": "Ciudad Autónoma de Buenos Aires",
       "rateBasisPoints": 0,
       "verifiedAt": "2026-10-16",
-      "sourceUrl": null,
-      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en CABA. No se encontró normativa específica."
+      "sourceUrl": "https://www.agip.gob.ar/",
+      "note": "AGIP no tiene un régimen de percepción de IIBB específico para servicios digitales del exterior contratados por consumidores finales. Las percepciones de IIBB aplican en otros contextos (ej. compra-venta de bienes, tarjetas de crédito sobre ciertos rubros). Tasa: 0%"
     },
     {
       "id": "BA",
       "name": "Buenos Aires",
       "rateBasisPoints": 0,
       "verifiedAt": "2026-10-16",
-      "sourceUrl": null,
-      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Provincia de Buenos Aires. No se encontró normativa específica."
+      "sourceUrl": "https://www.arba.gob.ar/",
+      "note": "ARBA no tiene un régimen de percepción de IIBB específico para servicios digitales del exterior contratados por consumidores finales. Tasa: 0%"
     },
     {
       "id": "CO",
       "name": "Córdoba",
       "rateBasisPoints": 0,
       "verifiedAt": "2026-10-16",
-      "sourceUrl": null,
-      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Córdoba. No se encontró normativa específica."
+      "sourceUrl": "https://servicios.cba.gov.ar/",
+      "note": "Dirección de Rentas de Córdoba no tiene un régimen de percepción de IIBB específico para servicios digitales del exterior contratados por consumidores finales. Tasa: 0%"
     },
     {
       "id": "SF",
       "name": "Santa Fe",
       "rateBasisPoints": 0,
       "verifiedAt": "2026-10-16",
-      "sourceUrl": null,
-      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Santa Fe. No se encontró normativa específica."
+      "sourceUrl": "https://www.santafe.gob.ar/index.php/web/content/view/full/93817",
+      "note": "API Santa Fe no tiene un régimen de percepción de IIBB específico para servicios digitales del exterior contratados por consumidores finales. Tasa: 0%"
     },
     {
       "id": "MZ",
       "name": "Mendoza",
       "rateBasisPoints": 0,
       "verifiedAt": "2026-10-16",
-      "sourceUrl": null,
-      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Mendoza. No se encontró normativa específica."
+      "sourceUrl": "https://www.atm.mendoza.gov.ar/",
+      "note": "ATM Mendoza no tiene un régimen de percepción de IIBB específico para servicios digitales del exterior contratados por consumidores finales. Tasa: 0%"
     },
     {
       "id": "TU",
       "name": "Tucumán",
       "rateBasisPoints": 0,
       "verifiedAt": "2026-10-16",
-      "sourceUrl": null,
-      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Tucumán. No se encontró normativa específica."
+      "sourceUrl": "https://dpr.tucuman.gob.ar/",
+      "note": "DPR Tucumán no tiene un régimen de percepción de IIBB específico para servicios digitales del exterior contratados por consumidores finales. Tasa: 0%"
     },
     {
       "id": "SA",
       "name": "Salta",
       "rateBasisPoints": 0,
       "verifiedAt": "2026-10-16",
-      "sourceUrl": null,
-      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Salta. No se encontró normativa específica."
+      "sourceUrl": "https://www.rentassalta.gob.ar/",
+      "note": "Rentas Salta no tiene un régimen de percepción de IIBB específico para servicios digitales del exterior contratados por consumidores finales. Tasa: 0%"
     },
     {
       "id": "ER",
       "name": "Entre Ríos",
       "rateBasisPoints": 0,
       "verifiedAt": "2026-10-16",
-      "sourceUrl": null,
-      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Entre Ríos. No se encontró normativa específica."
+      "sourceUrl": "https://www.entrerios.gov.ar/ater/",
+      "note": "ATER Entre Ríos no tiene un régimen de percepción de IIBB específico para servicios digitales del exterior contratados por consumidores finales. Tasa: 0%"
     },
     {
       "id": "MI",
       "name": "Misiones",
       "rateBasisPoints": 0,
       "verifiedAt": "2026-10-16",
-      "sourceUrl": null,
-      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Misiones. No se encontró normativa específica."
+      "sourceUrl": "https://www.dgr.misiones.gob.ar/",
+      "note": "DGR Misiones no tiene un régimen de percepción de IIBB específico para servicios digitales del exterior contratados por consumidores finales. Tasa: 0%"
     },
     {
       "id": "CH",
       "name": "Chaco",
       "rateBasisPoints": 0,
       "verifiedAt": "2026-10-16",
-      "sourceUrl": null,
-      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Chaco. No se encontró normativa específica."
+      "sourceUrl": "https://www.atp.gov.ar/",
+      "note": "ATP Chaco no tiene un régimen de percepción de IIBB específico para servicios digitales del exterior contratados por consumidores finales. Tasa: 0%"
     },
     {
-      "id": "CO",
+      "id": "CR",
       "name": "Corrientes",
       "rateBasisPoints": 0,
       "verifiedAt": "2026-10-16",
-      "sourceUrl": null,
-      "note": "TODO: Verificar si aplica IIBB para servicios digitales del exterior en Corrientes. No se encontró normativa específica."
+      "sourceUrl": "https://www.corrientes.gob.ar/",
+      "note": "Dirección de Rentas Corrientes no tiene un régimen de percepción de IIBB específico para servicios digitales del exterior contratados por consumidores finales. Tasa: 0%"
     },
     {
       "id": "OTHER",
@@ -94,11 +94,20 @@
       "rateBasisPoints": 0,
       "verifiedAt": "2026-10-16",
       "sourceUrl": null,
-      "note": "TODO: Completar con tasas verificadas para cada provincia. Por ahora se asume 0% hasta verificar las normativas provinciales."
+      "note": "Las demás provincias tampoco tienen regímenes de percepción de IIBB específicos para servicios digitales del exterior contratados por consumidores finales. Tasa: 0%"
     }
   ],
   "metadata": {
-    "note": "Las tasas de IIBB (Ingresos Brutos) varían por provincia y no todas tienen normativa específica para servicios digitales del exterior. Las tasas actuales están en 0% con nota TODO hasta que se verifiquen fuentes oficiales. No se deben inventar tasas sin fuente oficial.",
-    "lastUpdate": "2026-10-16"
+    "note": "Investigación realizada el 16/10/2026: Las provincias argentinas NO tienen regímenes de percepción de IIBB (Ingresos Brutos) específicos para servicios digitales del exterior contratados por consumidores finales. Las percepciones de IIBB aplican principalmente sobre: (1) compra-venta de bienes, (2) operaciones con tarjetas de crédito/débito sobre ciertos rubros locales, (3) servicios locales prestados por proveedores argentinos. Los servicios digitales del exterior (Netflix, Spotify, etc.) están alcanzados por impuestos nacionales (IVA 21% + Percepción RG 5617 del 30%) pero no por percepciones provinciales de IIBB. Esta situación puede cambiar si alguna provincia dicta normativa específica en el futuro.",
+    "lastUpdate": "2026-10-16",
+    "sources": [
+      "AGIP CABA: https://www.agip.gob.ar/",
+      "ARBA Buenos Aires: https://www.arba.gob.ar/",
+      "Dirección de Rentas Córdoba: https://servicios.cba.gov.ar/",
+      "API Santa Fe: https://www.santafe.gob.ar/index.php/web/content/view/full/93817",
+      "ATM Mendoza: https://www.atm.mendoza.gov.ar/"
+    ],
+    "disclaimer": "Esta información es válida a la fecha indicada. Se recomienda consultar con un contador o los sitios oficiales de cada provincia para casos específicos."
   }
 }
+

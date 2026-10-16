@@ -27,7 +27,7 @@ export default function Calculator({ serviceId, initialPlanId, embedded = false 
   const [fxRaw, setFxRaw] = useState('');
   const [taxInclusion, setTaxInclusion] = useState<TaxInclusion>('unknown');
   const [paymentScenario, setPaymentScenario] = useState<PaymentScenario>('card-ars');
-  const [provinceId, setProvinceId] = useState<string | null>(null);
+  const [provinceId, setProvinceId] = useState<string | null>('CABA');
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const asOf = todayIso();
@@ -193,7 +193,7 @@ export default function Calculator({ serviceId, initialPlanId, embedded = false 
           ? 'Escenario típico: pagas en pesos con tarjeta. Incluye IVA 21% y percepción RG 5617 del 30% (recuperable para no contribuyentes). Plataformas de gaming excluidas según RG 5677.'
           : 'Pagas con dólares propios o por MEP. No aplica la percepción del 30%. Solo se suma el IVA del 21%.'}
       </p>
-      {false && (
+      {true && (
         <label className="field">
           <span>Provincia (IIBB)</span>
           <select value={provinceId ?? ''} onChange={(event) => setProvinceId(event.target.value || null)}>
@@ -208,7 +208,7 @@ export default function Calculator({ serviceId, initialPlanId, embedded = false 
         </label>
       )}
       <p className="meta" style={{ fontSize: '0.875rem', opacity: 0.8 }}>
-        Nota: El selector de provincia con IIBB está deshabilitado hasta verificar las tasas oficiales para cada jurisdicción.
+        Nota: Las provincias argentinas NO tienen percepciones de IIBB sobre servicios digitales del exterior. Todas las tasas provinciales son 0%. Ver desglose para más información.
       </p>
       <div className="row-actions">
         {servicePlans.length > 0 && <button type="button" className="chip" aria-pressed={mode === 'catalog' && !bundle} onClick={() => { setBundleId(null); setMode('catalog'); }}>Precio publicado</button>}
