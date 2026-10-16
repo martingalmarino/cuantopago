@@ -211,8 +211,12 @@ export interface ProvinceIIBB {
   id: string;
   name: string;
   rateBasisPoints: number;
+  rateAudiovisualBasisPoints?: number;
+  rateOtherBasisPoints?: number;
   verifiedAt: string;
   sourceUrl: string | null;
+  verificationStatus: 'official' | 'verified-by-secondary-source' | 'unconfirmed';
+  officialReference: string | null;
   note: string;
 }
 
@@ -238,4 +242,5 @@ export interface CalculationInput {
   manual?: boolean;
   paymentScenario?: PaymentScenario;
   provinceId?: string | null;
+  iibbProvinces?: ProvinceIIBB[];
 }

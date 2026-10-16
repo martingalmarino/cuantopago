@@ -197,6 +197,7 @@ export function inputFromPlan(
     userReportedMonths: options.userReportedMonths ?? null,
     paymentScenario: scenario,
     provinceId: options.provinceId ?? null,
+    iibbProvinces,
   };
 }
 

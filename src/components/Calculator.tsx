@@ -93,6 +93,7 @@ export default function Calculator({ serviceId, initialPlanId, embedded = false 
         userReportedMonths: safeMonths,
         paymentScenario,
         provinceId,
+        iibbProvinces,
       };
       return calculate(manual);
     }
@@ -120,6 +121,7 @@ export default function Calculator({ serviceId, initialPlanId, embedded = false 
       manual: true,
       paymentScenario,
       provinceId,
+      iibbProvinces,
     };
     return calculate(manual);
   }, [asOf, baseRaw, bundle, currency, finalRaw, fxRaw, mode, plan, safeMonths, taxInclusion, paymentScenario, provinceId]);
@@ -197,18 +199,17 @@ export default function Calculator({ serviceId, initialPlanId, embedded = false 
         <label className="field">
           <span>Provincia (IIBB)</span>
           <select value={provinceId ?? ''} onChange={(event) => setProvinceId(event.target.value || null)}>
-            <option value="">No especificado</option>
             {iibbProvinces.map((prov) => (
               <option key={prov.id} value={prov.id}>
                 {prov.name}
-                {prov.rateBasisPoints > 0 ? ` (${prov.rateBasisPoints / 100}%)` : ''}
+                {prov.rateBasisPoints > 0 ? ` (${prov.rateBasisPoints / 100}%)` : ' (sin confirmar)'}
               </option>
             ))}
           </select>
         </label>
       )}
       <p className="meta" style={{ fontSize: '0.875rem', opacity: 0.8 }}>
-        Nota: Las provincias argentinas NO tienen percepciones de IIBB sobre servicios digitales del exterior. Todas las tasas provinciales son 0%. Ver desglose para más información.
+        Nota sobre IIBB: 11 provincias tienen percepciones sobre servicios digitales (CABA 2%, Buenos Aires 2%, Córdoba 3%, Santa Fe 3-4.5%, Chaco 5.5%, etc.). 13 jurisdicciones sin confirmar (mostradas como 0%). Base de cálculo: precio neto de IVA.
       </p>
       <div className="row-actions">
         {servicePlans.length > 0 && <button type="button" className="chip" aria-pressed={mode === 'catalog' && !bundle} onClick={() => { setBundleId(null); setMode('catalog'); }}>Precio publicado</button>}

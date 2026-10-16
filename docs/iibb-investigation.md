@@ -4,39 +4,53 @@
 
 ### 1. Investigación de tasas de IIBB provinciales
 
-**Resultado:** Las provincias argentinas **NO tienen regímenes de percepción de IIBB** específicos para servicios digitales del exterior contratados por consumidores finales.
+**Resultado CORREGIDO:** Varias provincias argentinas SÍ tienen regímenes de percepción de IIBB para servicios digitales del exterior.
 
-#### Provincias investigadas:
-- **CABA (AGIP)**: https://www.agip.gob.ar/
-- **Buenos Aires (ARBA)**: https://www.arba.gob.ar/
-- **Córdoba (Dirección de Rentas)**: https://servicios.cba.gov.ar/
-- **Santa Fe (API)**: https://www.santafe.gob.ar/index.php/web/content/view/full/93817
-- **Mendoza (ATM)**: https://www.atm.mendoza.gov.ar/
-- **Tucumán (DPR)**: https://dpr.tucuman.gob.ar/
-- **Salta (Rentas)**: https://www.rentassalta.gob.ar/
-- **Entre Ríos (ATER)**: https://www.entrerios.gov.ar/ater/
-- **Misiones (DGR)**: https://www.dgr.misiones.gob.ar/
-- **Chaco (ATP)**: https://www.atp.gov.ar/
-- **Corrientes**: https://www.corrientes.gob.ar/
+#### Provincias con percepciones verificadas (11):
 
-#### Hallazgos:
+| Provincia | Tasa IIBB | Normativa | Verificación | Fuente |
+|-----------|-----------|-----------|--------------|--------|
+| **CABA** | 2% | Res. AGIP 312/2019 | Fuentes secundarias | [Estudio Piacentini](https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/) |
+| **Buenos Aires** | 2% | RN ARBA 38/2019 | Fuentes secundarias | [Estudio Piacentini](https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/) |
+| **Córdoba** | 3% | Res. SIP 3/2026 | **Fuente oficial** | [Rentas Córdoba](https://www.rentascordoba.gob.ar/cms/wp-content/uploads/2026/02/resolucion_sip_n_032026_%E2%80%93_regimen_de_percepcion_de_ingresos_brutos_-_servicios_digitales.pdf) |
+| **Santa Fe** | 3% / 4.5% | RG API 30/2025 | Fuentes secundarias | [Estudio Piacentini](https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/) |
+| **San Juan** | 3% | Res. DGR 894/2025 | Fuentes secundarias | [Estudio Piacentini](https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/) |
+| **Chaco** | 5.5% | RG ATP 2046/2020 | Fuentes secundarias | [Estudio Piacentini](https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/) |
+| **La Pampa** | 1% | RG DGR 14/2019 Anexo II | Fuentes secundarias | [Estudio Piacentini](https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/) |
+| **Neuquén** | 4% | Res. DPR 1/2022 | Fuentes secundarias | [Estudio Piacentini](https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/) |
+| **Río Negro** | 5% | Res. ART 808/2020 | Fuentes secundarias | [Estudio Piacentini](https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/) |
+| **Salta** | 3.6% | RG DGR 34/2018 | Fuentes secundarias | [Estudio Piacentini](https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/) |
+| **Tierra del Fuego** | 3% | RG AREF 929/2022 | Fuentes secundarias | [Estudio Piacentini](https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/) |
 
-Las percepciones de IIBB provinciales se aplican principalmente sobre:
-1. Compra-venta de bienes
-2. Operaciones con tarjetas de crédito/débito sobre ciertos rubros **locales**
-3. Servicios locales prestados por proveedores argentinos
+**Nota sobre Santa Fe:** 3% para suscripciones audiovisuales y musicales, 4.5% para otros servicios digitales.
 
-**Los servicios digitales del exterior** (Netflix, Spotify, etc.) están alcanzados por:
-- ✅ **Impuestos nacionales**: IVA 21% + Percepción RG 5617 del 30% (AFIP)
-- ❌ **Impuestos provinciales**: NO tienen percepciones de IIBB específicas
+#### Provincias sin confirmar (13):
+
+Mendoza, Tucumán, Entre Ríos, Misiones, Corrientes, Catamarca, Formosa, Jujuy, La Rioja, San Luis, Santa Cruz, Santiago del Estero + otras.
+
+**Estado:** Mostradas como 0% pero **puede existir normativa no localizada**. No implica ausencia de percepción.
+
+#### Base de cálculo IIBB:
+
+**CRÍTICO:** La base para IIBB es el **precio neto de IVA**:
+- Precio con IVA incluido: base = precio / 1.21
+- Precio sin IVA: base = precio
+
+Ejemplo Netflix Básico:
+- Precio publicado: $8.999 (sin IVA)
+- IVA 21%: $1.889,79
+- **Base IIBB:** $8.999 (precio sin IVA)
+- IIBB CABA 2%: $8.999 × 0.02 = $179,98
+- Percepción RG 5617 30%: sobre precio final con IVA
 
 #### Actualización realizada:
 
 Archivo `src/data/iibb-provinces.json`:
-- Todas las provincias: **tasa 0%**
-- Cada provincia tiene URL oficial de su organismo recaudador
-- Metadata con explicación completa y disclaimer
-- **Total de tasas verificadas: 12 provincias con 0%**
+- 11 provincias con tasas verificadas
+- 1 fuente oficial (Córdoba)
+- 10 fuentes secundarias confiables (Estudio Piacentini, MercadoPago)
+- 13 jurisdicciones "sin confirmar" (no "no aplica")
+- Metadata completa con disclaimer
 
 ### 2. Corrección de doble IVA
 
@@ -85,35 +99,44 @@ Disney+ publica:
 
 El código ya manejaba correctamente estos casos (no sumaba IVA dos veces), pero la inconsistencia en los datos fue corregida.
 
-### 3. Habilitación del selector de provincia
+### 3. Implementación del cálculo de IIBB
 
-- **Default:** CABA
-- **Estado:** Habilitado con nota clara
-- **Mensaje:** "Las provincias argentinas NO tienen percepciones de IIBB sobre servicios digitales del exterior. Todas las tasas provinciales son 0%."
+- **Lógica implementada:** Cálculo automático de IIBB provincial sobre base neta de IVA
+- **Selector habilitado:** Con CABA como default
+- **Nota en UI:** Indica tasas verificadas vs sin confirmar
 
 ### 4. Scripts creados
 
 1. **`scripts/fix-double-iva.ts`**: Detecta y corrige automáticamente planes con doble IVA
 2. **Comando npm**: `npm run fix-double-iva`
 
-### 5. Tests agregados
+### 5. Tests
 
-- Nuevo test: Verifica que ningún plan con `taxInclusion: "included"` tenga `ar-iva-digital-21` en `taxRuleIds`
-- **Total tests:** 121 (todos pasando)
+- Tests actualizados para nueva lógica de IIBB
+- Verificación de cálculo sobre base neta de IVA
+- **Total tests:** Todos pasando
 
-### Resumen de fuentes oficiales consultadas
+### Resumen de fuentes consultadas
 
 **IIBB Provincial:**
-- 11 organismos oficiales de recaudación provincial consultados
-- URLs oficiales documentadas para cada provincia
-- **Conclusión verificada:** No hay percepciones de IIBB para servicios digitales del exterior
+
+**Fuentes secundarias confiables:**
+- Estudio Piacentini: https://www.estudiopiacentini.com.ar/impuestos-que-se-pagan-sobre-los-servicios-digitales-del-exterior/
+- MercadoPago: https://www.mercadopago.com.ar/ayuda/_4063
+
+**Fuente oficial:**
+- Córdoba - Res. SIP 3/2026: https://www.rentascordoba.gob.ar/cms/wp-content/uploads/2026/02/resolucion_sip_n_032026_%E2%80%93_regimen_de_percepcion_de_ingresos_brutos_-_servicios_digitales.pdf
 
 **Precios ARS con IVA incluido:**
 - Disney+: https://www.disneyplus.com/es-ar (publica precio con y sin IVA)
 - Paramount+: https://www.paramountplus.com/ar/ (precio con IVA incluido)
 - DGO: https://www.directvgo.com/ar/home (precio con IVA incluido)
 
-**Fuentes normativas:**
+**Fuentes normativas nacionales:**
 - RG 5617/2024 (Percepción 30%): https://servicios.infoleg.gob.ar/infolegInternet/anexos/405000-409999/407430/texact.htm
 - RG 5677/2025 (Exclusiones gaming): https://www.afip.gob.ar/regimen-devolucion-percepciones/percepcion/exclusiones.asp
 - Decreto 354/2018 (IVA digital): https://www.boletinoficial.gob.ar/detalleAviso/primera/182137/20180424
+
+### Disclaimer
+
+Las tasas provinciales están sujetas a cambios y actualizaciones normativas. Las provincias marcadas como "sin confirmar" no implican ausencia de normativa, sino falta de información verificable. Se recomienda consultar con un contador matriculado para casos específicos.

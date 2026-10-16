@@ -1,6 +1,6 @@
 import { divHalfUp } from './money';
 import { isStale, ruleIsActive } from './freshness';
-import type { CalculationInput, CalculationLine, CalculationResult, TaxRule } from './types';
+import type { CalculationInput, CalculationLine, CalculationResult, ProvinceIIBB, TaxRule } from './types';
 
 const PERCEPTION_MISSING =
   'La percepción del 30% de la RG 5617 no se suma: hace falta saber si el pago en pesos accede al mercado de cambios y si el prestador está fuera de la nómina de exclusión de la RG 5677.';
@@ -282,6 +282,48 @@ export function calculate(input: CalculationInput): CalculationResult {
       note: rule.note,
     });
     assumptions.push(rule.note);
+  }
+
+  // IIBB Provincial: aplicar percepción provincial si corresponde
+  if (input.provinceId && arsBase !== null && input.iibbProvinces) {
+    const province = input.iibbProvinces.find(p => p.id === input.provinceId);
+    if (province && province.rateBasisPoints > 0) {
+      // Base de IIBB: precio neto de IVA
+      // Si el precio incluye IVA, dividimos por 1.21
+      // Si el precio excluye IVA, usamos el precio directo
+      let iibbBase = arsBase;
+      if (effectiveTaxInclusion === 'included') {
+        iibbBase = divHalfUp(arsBase * 10000, 12100); // dividir por 1.21
+      }
+      
+      const iibbCharge = divHalfUp(iibbBase * province.rateBasisPoints, 10000);
+      added += iibbCharge;
+      
+      const provinceLabel = province.verificationStatus === 'unconfirmed' 
+        ? `IIBB ${province.name} (sin confirmar)`
+        : `IIBB ${province.name}`;
+      
+      lines.push({
+        id: `added-iibb-${province.id}`,
+        label: provinceLabel,
+        kind: 'added',
+        amountMinor: iibbCharge,
+        currency: 'ARS',
+        note: `Percepción de IIBB provincial sobre la base neta de IVA. ${province.officialReference ? `Normativa: ${province.officialReference}` : 'Fuente: fuentes secundarias verificadas'}.`,
+      });
+      
+      if (province.verificationStatus === 'official') {
+        assumptions.push(`IIBB ${province.name} (${province.rateBasisPoints / 100}%) verificado con fuente oficial: ${province.officialReference}`);
+      } else if (province.verificationStatus === 'verified-by-secondary-source') {
+        assumptions.push(`IIBB ${province.name} (${province.rateBasisPoints / 100}%) verificado por fuentes secundarias confiables (${province.officialReference})`);
+      } else if (province.verificationStatus === 'unconfirmed') {
+        assumptions.push(`IIBB ${province.name}: tasa sin confirmar (mostrada como 0%). Puede existir normativa no localizada.`);
+      }
+      
+      if (province.sourceUrl) {
+        sources.push({ label: provinceLabel, url: province.sourceUrl });
+      }
+    }
   }
 
   const periodTotalMinor = arsBase === null ? null : arsBase + added;

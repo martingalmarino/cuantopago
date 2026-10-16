@@ -356,6 +356,49 @@ describe('catálogo ampliado', () => {
     const includedPlans = plans.filter((plan) => plan.taxInclusion === 'included');
     expect(includedPlans.length).toBeGreaterThan(0);
   });
+
+  it('calcula IIBB provincial sobre base neta de IVA', () => {
+    const mockProvinces = [
+      {
+        id: 'CABA',
+        name: 'CABA',
+        rateBasisPoints: 200,
+        verifiedAt: '2026-10-16',
+        sourceUrl: 'https://example.com',
+        verificationStatus: 'verified-by-secondary-source' as const,
+        officialReference: 'Res. AGIP 312/2019',
+        note: 'Test',
+      },
+    ];
+
+    // Precio sin IVA
+    const excluded = calculate(
+      input({
+        amountMinor: 10000,
+        taxInclusion: 'excluded',
+        ruleIds: [],
+        rules: [],
+        provinceId: 'CABA',
+        iibbProvinces: mockProvinces,
+      }),
+    );
+    const iibbLineExcluded = excluded.lines.find((line) => line.id === 'added-iibb-CABA');
+    expect(iibbLineExcluded?.amountMinor).toBe(200); // 10000 * 0.02 = 200
+
+    // Precio con IVA incluido - debe dividir por 1.21
+    const included = calculate(
+      input({
+        amountMinor: 12100,
+        taxInclusion: 'included',
+        ruleIds: [],
+        rules: [],
+        provinceId: 'CABA',
+        iibbProvinces: mockProvinces,
+      }),
+    );
+    const iibbLineIncluded = included.lines.find((line) => line.id === 'added-iibb-CABA');
+    expect(iibbLineIncluded?.amountMinor).toBe(200); // (12100 / 1.21) * 0.02 = 10000 * 0.02 = 200
+  });
 });
 
 function divProjection(totals: { knownMonthly: { n: number; d: number }; projectionDisplayMinor: number }): number {
