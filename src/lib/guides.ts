@@ -39,6 +39,19 @@ export const OFFICIAL_HOSTS = [
   'account.microsoft.com',
   'learn.microsoft.com',
   'www.canva.com',
+  'www.playstation.com',
+  'support.xbox.com',
+  'www.xbox.com',
+  'es-americas-support.nintendo.com',
+  'accounts.nintendo.com',
+  'help.ea.com',
+  'myaccount.ea.com',
+  'www.ea.com',
+  'help.steampowered.com',
+  'www.epicgames.com',
+  'abya.com',
+  'www.nvidia.com',
+  'play.geforcenow.com',
 ];
 
 export function isOfficialUrl(raw: string): boolean {

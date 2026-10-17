@@ -1,6 +1,6 @@
 # Gestionar suscripciones
 
-Guías para cancelar o pagar menos en Netflix, Spotify, Disney+, HBO Max, YouTube Premium, Prime Video, Apple TV, Paramount+, Crunchyroll, MUBI, Google One, iCloud+, Dropbox, Microsoft 365 y Canva, más dos guías de tienda (Apple y Google Play). La lista sale de `platformGuides`: el directorio y sus contadores no tienen nombres ni números fijos. Abonito orienta: la gestión siempre se completa en el sitio o la app del proveedor. No pedimos contraseñas, no subimos comprobantes, no leemos cuentas y no tocamos la lista de Mis suscripciones.
+Guías para cancelar o pagar menos en Netflix, Spotify, Disney+, HBO Max, YouTube Premium, Prime Video, Apple TV, Paramount+, Crunchyroll, MUBI, Google One, iCloud+, Dropbox, Microsoft 365, Canva, PlayStation Plus, Xbox Game Pass, Nintendo Switch Online, EA Play y GeForce NOW, más dos guías de tienda (Apple y Google Play). La lista sale de `platformGuides`: el directorio y sus contadores no tienen nombres ni números fijos. Abonito orienta: la gestión siempre se completa en el sitio o la app del proveedor. No pedimos contraseñas, no subimos comprobantes, no leemos cuentas y no tocamos la lista de Mis suscripciones.
 
 ## Rutas
 
@@ -15,8 +15,8 @@ La guía acepta cuatro parámetros:
 
 - `objetivo`: `cancelar` o `ahorrar`.
 - `cobro`: `directo`, `apple`, `google-play`, `externo`, `movistar`, `playstation`, `prime-video` o `no-se`. Cada guía ofrece sólo los canales que tiene su fuente.
-- `rol`: `titular` o `miembro`, en Spotify, YouTube y las cinco guías de la tercera tanda. En Dropbox, Microsoft 365 y Canva «titular» incluye al administrador con acceso a la facturación.
-- `alcance`: `servicio`, `canal`, `paquete`, `personal`, `familia`, `equipo` o `empresa`, sólo donde la guía lo pregunta. Prime Video lo pregunta para cancelar (Prime Video o sólo un canal adicional). Apple TV lo pregunta para los dos objetivos (la suscripción, un canal de la app o Apple One). iCloud+ pregunta `servicio` o `paquete` (Apple One). Dropbox pregunta `personal`, `familia` o `equipo`; Microsoft 365, `personal` o `empresa`; Canva, `personal` o `equipo`.
+- `rol`: `titular` o `miembro`, en Spotify, YouTube, las cinco guías de la tercera tanda y Nintendo Switch Online. En Dropbox, Microsoft 365 y Canva «titular» incluye al administrador con acceso a la facturación. En Nintendo, el titular es quien compró la membresía.
+- `alcance`: `servicio`, `canal`, `paquete`, `personal`, `familia`, `equipo` o `empresa`, sólo donde la guía lo pregunta. Prime Video lo pregunta para cancelar (Prime Video o sólo un canal adicional). Apple TV lo pregunta para los dos objetivos (la suscripción, un canal de la app o Apple One). iCloud+ pregunta `servicio` o `paquete` (Apple One). Dropbox pregunta `personal`, `familia` o `equipo`; Microsoft 365, `personal` o `empresa`; Canva, `personal` o `equipo`. Nintendo pregunta `personal` o `familia`. EA Play pregunta `servicio` (cobro aparte) o `paquete` (incluido en otro plan).
 
 Las rutas de miembro pueden tener alcance cuando cambia a quién recurrir (miembro de un Family o de un equipo). Si una guía tiene rutas de miembro con alcance, al miembro se le pregunta el alcance; si su alcance no tiene ruta propia, ve la ruta de miembro sin alcance.
 
@@ -26,7 +26,7 @@ Un valor inválido o que la plataforma no tiene se descarta y la URL se normaliz
 
 - `src/data/subscription-management/types.ts`: modelo de datos.
 - `src/data/subscription-management/sources.ts`: fuentes oficiales con `lastReviewedAt` (cuándo se leyó el contenido) y `lastLinkCheckedAt` (cuándo se comprobó que el enlace responde). Son fechas distintas. Las fuentes de la segunda tanda suman `regionalScope` (`ar`, `latam`, `global`, `otro-pais`) y `evidence`: `readable_article` (leímos el artículo), `store_listing` (descripción del desarrollador en la tienda) o `indexed_excerpt` (sólo un resumen o la portada de ayuda). Estos campos no se muestran en la página.
-- `src/data/subscription-management/platform-guides.ts`: una guía por plataforma con sus canales de cobro, la pregunta de rol, la ayuda para saber quién cobra, las rutas y las preguntas frecuentes. Las guías de la tercera tanda están en `storage-productivity-guides.ts` y se suman a la misma lista.
+- `src/data/subscription-management/platform-guides.ts`: una guía por plataforma con sus canales de cobro, la pregunta de rol, la ayuda para saber quién cobra, las rutas y las preguntas frecuentes. Las guías de la tercera tanda están en `storage-productivity-guides.ts` y las de la cuarta (videojuegos) en `gaming-guides.ts`; ambas se suman a la misma lista.
 - `impact` (guía) y `impact: true` (ruta): el aviso «Antes de reducir tu almacenamiento» (o «Qué conservás y qué no» en Canva), que se muestra arriba del botón oficial. Es informativo: no se marca ni bloquea nada.
 - `variants` (ruta): pasos por dispositivo o versión. Sin JavaScript se ven todos; con JavaScript se elige uno y «Copiar pasos» copia sólo ese.
 - `src/data/subscription-management/billing-guides.ts`: guías de Apple y Google Play, los pasos compartidos que reutilizan las plataformas y la sección única «Cancelar un canal adicional de Prime Video» (`primeVideoChannelCancelRoute` y `primeVideoChannelSaveRoute`). Paramount+, Crunchyroll y MUBI la usan sólo cuando la persona elige «Prime Video, como canal», siempre como `conditional` y con el aviso de que no confirmamos que se venda así en Argentina.
@@ -100,6 +100,30 @@ Limitaciones abiertas, sin revisar con una cuenta:
 - Los títulos de las fuentes de Canva C2 y C3 se escribieron a partir de su contenido, porque la página no se pudo leer de forma automática.
 
 Al revisar estas guías, además de los menús, releé qué dice cada fuente sobre el espacio gratuito, los límites cuando se excede y la conservación a largo plazo. Si cambian, corregí el aviso `impact` y las preguntas frecuentes.
+
+## Fuentes de la cuarta tanda (base 2026-10-17)
+
+| Plataforma | Fuente | Estado de la evidencia |
+| --- | --- | --- |
+| PlayStation Plus | Soporte es-AR: administrar suscripciones y cambiar PS Plus | Artículos legibles. Web, PS5 y PS4. No se usan precios de ejemplo |
+| Xbox Game Pass | Soporte Microsoft es-ES (cancelar y opciones) + xbox.com/es-AR/xbox-game-pass | Artículos legibles. La ayuda de Xbox Support devolvió página vacía a pedidos automáticos |
+| Nintendo Switch Online | Asistencia Américas 24803, 24804, 24800 y FAQ 23101 | Artículos legibles. Aviso de 48 horas en la ruta de baja |
+| EA Play | Ayuda EA: cancelar y gestionar membresía PC | Artículos legibles. Steam/Epic son handoff a sus ayudas oficiales |
+| GeForce NOW | ABYA (gfn y términos) + FAQ/términos NVIDIA | Legibles. ABYA manage no publica un botón único de baja en la documentación pública |
+
+Alcance y handoffs:
+
+- PlayStation Plus: cobro PlayStation o código/prepago. Sin Apple ni Google Play por defecto. Variantes web/PS5/PS4.
+- Xbox Game Pass: Microsoft vs operador/código. Si la cuenta muestra «Activar facturación periódica», la renovación ya está apagada.
+- Nintendo: rol comprador/beneficiario y alcance individual/familiar. El Paquete de expansión se explica en el cambio de plan sin inventar un downgrade inmediato. No se copian tasas de descuento en pesos.
+- EA Play: `servicio` (aparte) vs `paquete` (incluido). El paquete deriva a Game Pass u orientación al plan padre; nunca cancela el padre en silencio. Steam/Epic/Microsoft aparte son handoff.
+- GeForce NOW: `directo` = ABYA; `externo` = NVIDIA u otro socio. No se mezclan paneles ni se prometen horas o planes de otra región.
+
+Limitaciones abiertas:
+
+- Menús de consola Xbox y detalles exactos de baja en el panel ABYA no se pudieron copiar con evidencia completa: hay handoff o pasos de inspección.
+- Operadores regionales de Game Pass y socios Alliance de GeForce NOW fuera de ABYA/NVIDIA no tienen destino verificado propio.
+- No se probaron cancelaciones reales ni compras.
 
 ## Revisión mensual
 

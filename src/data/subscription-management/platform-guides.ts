@@ -15,6 +15,7 @@ import {
   primeVideoChannelSaveRoute,
   primeVideoChannelSteps,
 } from './billing-guides';
+import { gamingGuides } from './gaming-guides';
 import { storageProductivityGuides } from './storage-productivity-guides';
 import type { GuideCta, PlatformGuide } from './types';
 
@@ -2111,6 +2112,7 @@ const mubi: PlatformGuide = {
 export const platformGuides: PlatformGuide[] = [
   netflix, spotify, disney, hboMax, youtube, primeVideo, appleTv, paramount, crunchyroll, mubi,
   ...storageProductivityGuides,
+  ...gamingGuides,
 ];
 
 export function platformGuideBySlug(slug: string): PlatformGuide | undefined {

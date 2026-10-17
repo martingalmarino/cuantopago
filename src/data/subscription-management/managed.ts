@@ -15,6 +15,11 @@ export const managedPlatforms: { serviceId: string; slug: string; name: string }
   { serviceId: 'dropbox', slug: 'dropbox', name: 'Dropbox' },
   { serviceId: 'microsoft-365', slug: 'microsoft-365', name: 'Microsoft 365' },
   { serviceId: 'canva', slug: 'canva', name: 'Canva' },
+  { serviceId: 'playstation-plus', slug: 'playstation-plus', name: 'PlayStation Plus' },
+  { serviceId: 'xbox-game-pass', slug: 'xbox-game-pass', name: 'Xbox Game Pass' },
+  { serviceId: 'nintendo-switch-online', slug: 'nintendo-switch-online', name: 'Nintendo Switch Online' },
+  { serviceId: 'ea-play', slug: 'ea-play', name: 'EA Play' },
+  { serviceId: 'geforce-now', slug: 'geforce-now', name: 'GeForce NOW' },
 ];
 
 export function guideHref(serviceId: string | null | undefined, intent: 'cancelar' | 'ahorrar' = 'cancelar'): string | null {

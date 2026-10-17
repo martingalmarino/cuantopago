@@ -31,6 +31,7 @@ describe('guías para gestionar suscripciones', () => {
       'netflix', 'spotify', 'disney-plus', 'hbo-max', 'youtube-premium',
       'prime-video', 'apple-tv', 'paramount-plus', 'crunchyroll', 'mubi',
       'google-one', 'icloud-plus', 'dropbox', 'microsoft-365', 'canva',
+      'playstation-plus', 'xbox-game-pass', 'nintendo-switch-online', 'ea-play', 'geforce-now',
     ]);
     for (const guide of platformGuides) {
       const config = guideConfig(guide);
