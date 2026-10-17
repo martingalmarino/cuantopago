@@ -52,6 +52,15 @@ export const OFFICIAL_HOSTS = [
   'abya.com',
   'www.nvidia.com',
   'play.geforcenow.com',
+  'helpx.adobe.com',
+  'account.adobe.com',
+  'www.adobe.com',
+  'www.duolingo.com',
+  'www.linkedin.com',
+  'support.discord.com',
+  'discord.com',
+  'help.twitch.tv',
+  'www.twitch.tv',
 ];
 
 export function isOfficialUrl(raw: string): boolean {

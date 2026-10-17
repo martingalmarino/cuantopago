@@ -20,6 +20,11 @@ export const managedPlatforms: { serviceId: string; slug: string; name: string }
   { serviceId: 'nintendo-switch-online', slug: 'nintendo-switch-online', name: 'Nintendo Switch Online' },
   { serviceId: 'ea-play', slug: 'ea-play', name: 'EA Play' },
   { serviceId: 'geforce-now', slug: 'geforce-now', name: 'GeForce NOW' },
+  { serviceId: 'adobe', slug: 'adobe', name: 'Adobe' },
+  { serviceId: 'duolingo', slug: 'duolingo', name: 'Duolingo' },
+  { serviceId: 'linkedin-premium', slug: 'linkedin-premium', name: 'LinkedIn Premium' },
+  { serviceId: 'discord', slug: 'discord', name: 'Discord Nitro' },
+  { serviceId: 'twitch', slug: 'twitch', name: 'Twitch' },
 ];
 
 export function guideHref(serviceId: string | null | undefined, intent: 'cancelar' | 'ahorrar' = 'cancelar'): string | null {
