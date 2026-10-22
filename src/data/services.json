@@ -3998,5 +3998,300 @@
     "tags": [],
     "secondaryCategories": [],
     "body": "Los precios salen del App Store argentino. Desde la web o Android el importe puede ser otro."
+  },
+  {
+    "id": "grammarly",
+    "slug": "grammarly",
+    "name": "Grammarly",
+    "category": "productividad",
+    "secondaryCategories": [],
+    "officialUrl": "https://www.grammarly.com/plans",
+    "logo": "/brands/grammarly.svg",
+    "logoAltMode": "decorative",
+    "description": "Corrector y asistente de escritura en inglés. Pro se publica en dólares, sin aclarar impuestos en la página de planes.",
+    "aliases": [
+      "grammarly",
+      "gramarly",
+      "corrector ingles"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.grammarly.com/plans",
+      "https://support.grammarly.com/hc/en-us/articles/115000090011-How-much-does-Grammarly-Pro-cost"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Grammarly Pro?",
+        "answer": "El 22 de octubre de 2026 el soporte oficial listaba Pro a USD 30 por miembro por mes, o USD 144 por miembro por año (USD 12 promedio por mes). En la página de planes el destacado es el anual a USD 12."
+      },
+      {
+        "question": "¿Hay descuento anual o el primer mes?",
+        "answer": "El anual sale más barato por mes que el mensual. También ofrecen una prueba de Pro con pago de USD 0 el primer día y aviso por email 2 días antes de que termine."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La página de planes no lo aclara. Sumamos el IVA digital del 21% y dejamos la percepción según cómo pagues."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "Sí. Grammarly publica una prueba de Pro a USD 0 y avisa por email 2 días antes del fin. También hay un plan Free permanente."
+      }
+    ],
+    "tags": [],
+    "body": "Se paga con tarjeta o PayPal. Los precios están en dólares; el total en pesos depende de la cotización de tu tarjeta. Enterprise es a cotizar y no lo cargamos."
+  },
+  {
+    "id": "elevenlabs",
+    "slug": "elevenlabs",
+    "name": "ElevenLabs",
+    "category": "inteligencia-artificial",
+    "secondaryCategories": [
+      "diseno"
+    ],
+    "officialUrl": "https://elevenlabs.io/pricing",
+    "logo": "/brands/elevenlabs.svg",
+    "logoAltMode": "decorative",
+    "description": "Voz, música e imagen con IA. Planes Starter a Business en dólares; la página dice que los precios excluyen impuestos.",
+    "aliases": [
+      "elevenlabs",
+      "eleven labs",
+      "11labs",
+      "voz ia"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://elevenlabs.io/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta ElevenLabs?",
+        "answer": "El 22 de octubre de 2026 la página listaba por mes: Starter USD 6, Creator USD 22 (USD 11 el primer mes), Pro USD 99, Scale USD 299 y Business USD 990. Con facturación anual se pagan 10 meses (dos meses gratis)."
+      },
+      {
+        "question": "¿Hay descuento anual o el primer mes?",
+        "answer": "Creator tiene 50% off el primer mes (USD 11). El anual equivale a pagar 10 meses: Starter USD 60, Creator USD 220, Pro USD 990, Scale USD 2.990 y Business USD 9.900."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "No. ElevenLabs aclara: «Prices exclude all taxes, levies and duties». Sumamos el IVA digital del 21%."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "Hay un plan Free con 10.000 créditos por mes. Los créditos no usados de planes pagos se acumulan hasta 2 meses."
+      }
+    ],
+    "tags": [],
+    "body": "Se paga con tarjeta, Apple Pay o Google Pay. Scale incluye 3 asientos y Business 10. Enterprise es a cotizar y no lo cargamos."
+  },
+  {
+    "id": "coursera-plus",
+    "slug": "coursera-plus",
+    "name": "Coursera Plus",
+    "category": "aprendizaje",
+    "secondaryCategories": [],
+    "officialUrl": "https://www.coursera.org/courseraplus",
+    "logo": "/brands/coursera.svg",
+    "logoAltMode": "decorative",
+    "description": "Acceso ilimitado a miles de cursos en Coursera. El plan mensual se publica en dólares; el anual no se pudo confirmar sin iniciar sesión.",
+    "aliases": [
+      "coursera",
+      "coursera plus"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.coursera.org/courseraplus"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Coursera Plus?",
+        "answer": "El 22 de octubre de 2026 la página oficial mostraba Coursera Plus a USD 59 por mes. El precio anual existe (con 14 días para pedir reembolso), pero no se vio sin iniciar sesión, así que no lo cargamos."
+      },
+      {
+        "question": "¿Hay descuento anual o el primer mes?",
+        "answer": "El mensual incluye una prueba gratis de 7 días. El anual tiene hasta 14 días para pedir reembolso; el importe anual no está confirmado acá."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La página no lo aclara y los precios pueden variar por país. Sumamos el IVA digital del 21% sobre el precio en dólares."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "Sí, 7 días en el plan mensual. No incluye títulos universitarios ni MasterTrack."
+      }
+    ],
+    "tags": [],
+    "body": "Cancelá durante la prueba de 7 días si no querés el cobro. Coursera for Teams es otro producto y no lo mezclamos acá."
+  },
+  {
+    "id": "surfshark",
+    "slug": "surfshark",
+    "name": "Surfshark",
+    "category": "seguridad",
+    "secondaryCategories": [],
+    "officialUrl": "https://surfshark.com/pricing",
+    "logo": "/brands/surfshark.svg",
+    "logoAltMode": "decorative",
+    "description": "VPN con planes Starter, One y One+. Precios en dólares; la página avisa que puede aplicarse IVA.",
+    "aliases": [
+      "surfshark",
+      "surf shark",
+      "vpn"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://surfshark.com/pricing",
+      "https://api.surfshark.com/v1/payment/plans",
+      "https://surfshark.com/terms-of-service/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Surfshark?",
+        "answer": "El 22 de octubre de 2026 la API oficial de precios listaba el plan de 1 mes a USD 18,95 (Starter), USD 19,95 (One) y USD 22,85 (One+). El anual se renueva a USD 79, USD 99 y USD 119."
+      },
+      {
+        "question": "¿Hay descuento anual o el primer mes?",
+        "answer": "Sí. El primer ciclo de 12 meses (+3 de bonus, 15 en total) salía a USD 44,85 en Starter y One, y USD 104,85 en One+. Después se renueva al precio anual lleno. También hay un plan de 24 meses (+3) que no cargamos porque el ciclo no encaja con el resto del sitio."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La página dice «VAT may apply». Sumamos el IVA digital del 21%."
+      },
+      {
+        "question": "¿Hay garantía o prueba?",
+        "answer": "Hay garantía de devolución de 30 días. Dispositivos ilimitados en los planes pagos."
+      }
+    ],
+    "tags": [],
+    "body": "Starter trae VPN, ID alternativa y protección contra estafas. One suma antivirus y alertas. One+ suma Incogni. Surfshark hace pruebas A/B de precios: el importe en el checkout puede diferir un poco."
+  },
+  {
+    "id": "krea",
+    "slug": "krea",
+    "name": "Krea",
+    "category": "diseno",
+    "secondaryCategories": [
+      "inteligencia-artificial"
+    ],
+    "officialUrl": "https://www.krea.ai/pricing",
+    "logo": "/brands/krea.png",
+    "logoAltMode": "decorative",
+    "description": "Generación de imagen y video con IA. Basic, Pro, Max y Business en dólares; la página no aclara impuestos.",
+    "aliases": [
+      "krea",
+      "krea ai",
+      "krea.ai"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.krea.ai/pricing"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Krea?",
+        "answer": "El 22 de octubre de 2026 la página listaba por mes Basic USD 9 (5.000 unidades), Pro USD 35 (20.000), Max USD 105 (60.000) y Business USD 200. Con facturación anual publicaba el equivalente de USD 5 / 21 / 63 / 160 por mes (en la tabla de comparación Basic figura USD 5,25)."
+      },
+      {
+        "question": "¿Hay descuento anual o el primer mes?",
+        "answer": "El anual se promociona con 40% off. Usamos el total anual a partir del precio por mes de la tabla (Basic USD 5,25 × 12 = USD 63; Pro USD 252; Max USD 756; Business USD 1.920)."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La página no lo menciona. Sumamos el IVA digital del 21%."
+      },
+      {
+        "question": "¿Hay plan gratis?",
+        "answer": "Sí, Free con 100 unidades por día. Las unidades no se acumulan. La licencia comercial empieza en Basic."
+      }
+    ],
+    "tags": [],
+    "body": "Business es el plan de equipos. Enterprise es a cotizar y no lo cargamos."
+  },
+  {
+    "id": "plex",
+    "slug": "plex",
+    "name": "Plex",
+    "category": "series",
+    "secondaryCategories": [
+      "musica"
+    ],
+    "officialUrl": "https://www.plex.tv/plex-pass/",
+    "logo": "/brands/plex.svg",
+    "logoAltMode": "decorative",
+    "description": "Servidor de medios personales. Cargamos Remote Watch Pass en dólares de lista; el Plex Pass completo no se pudo confirmar en la página (los precios fallan al cargar).",
+    "aliases": [
+      "plex",
+      "plex pass",
+      "plexamp"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.plex.tv/plex-pass/",
+      "https://www.plex.tv/blog/new-lifetime-plex-pass-pricing/"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Remote Watch Pass?",
+        "answer": "La FAQ oficial de la página, leída el 22 de octubre de 2026, lista USD 2,99 por mes o USD 29,99 por año (precio de lista desde el 1/6/2026). Aclara que en otras monedas el importe puede variar."
+      },
+      {
+        "question": "¿Y el Plex Pass completo?",
+        "answer": "Existe mensual, anual y de por vida, pero la página no mostró los precios (error de carga). El blog oficial confirma Lifetime a USD 749,99 y un plan de 5 años a USD 249,99, sin publicar el mensual ni el anual. No cargamos esos importes hasta verlos en la página de planes."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "No lo aclara. Sumamos el IVA digital del 21% sobre el precio en dólares."
+      },
+      {
+        "question": "¿Saca los anuncios del contenido gratis de Plex?",
+        "answer": "No. Ni Remote Watch Pass ni Plex Pass dan acceso a contenido premium ni quitan los anuncios del streaming gratis de Plex."
+      }
+    ],
+    "tags": [],
+    "body": "El pago de por vida no es recurrente: no lo tratamos como plan mensual/anual. Categoría principal series (media personal); secundaria música por Plexamp."
+  },
+  {
+    "id": "deezer",
+    "slug": "deezer",
+    "name": "Deezer",
+    "category": "musica",
+    "secondaryCategories": [],
+    "officialUrl": "https://www.deezer.com/es/offers",
+    "logo": "/brands/deezer.svg",
+    "logoAltMode": "decorative",
+    "description": "Música en streaming. En Argentina publica Premium, Student y Family en pesos, con 1 mes de Premium gratis.",
+    "aliases": [
+      "deezer"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.deezer.com/es/offers"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Deezer en Argentina?",
+        "answer": "El 22 de octubre de 2026 la página de ofertas en español (región AR) listaba Premium Arg$ 2.499/mes, Student Arg$ 1.299/mes y Family Arg$ 4.199/mes. Con pago anual: Premium Arg$ 22.499/año y Family Arg$ 37.799/año. Duo no apareció en esa vista."
+      },
+      {
+        "question": "¿Hay descuento anual o el primer mes?",
+        "answer": "Hay 1 mes de Premium gratis. El anual baja el equivalente mensual (Premium a Arg$ 1.874,92/mes y Family a Arg$ 3.149,92/mes si se paga el año)."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La página no lo aclara. Tratamos el precio como sin impuestos, igual que otros servicios en pesos del sitio, y sumamos el IVA del 21%."
+      },
+      {
+        "question": "¿Cuidado con /ar/offers?",
+        "answer": "En Deezer «ar» es el idioma árabe, no Argentina. Para precios locales usá la versión en español con región Argentina."
+      }
+    ],
+    "tags": [],
+    "body": "Ojo: deezer.com/ar/offers es árabe. Los precios de otras regiones en dólares no aplican a Argentina."
   }
 ]

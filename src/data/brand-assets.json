@@ -758,5 +758,61 @@
     "retrievalDate": "2026-10-11",
     "license": "Marca de Mimo (Getmimo AG). Ícono oficial publicado por mimo.org, usado solo para identificar el servicio.",
     "limitation": "Ícono de 192×192, sin modificaciones."
+  },
+  {
+    "serviceId": "grammarly",
+    "file": "/brands/grammarly.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-22",
+    "license": "CC0 1.0 (simple-icons). Marca de Grammarly; origen citado grammarly.com.",
+    "limitation": "Isotipo de Grammarly en un solo color #027E6F."
+  },
+  {
+    "serviceId": "elevenlabs",
+    "file": "/brands/elevenlabs.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-22",
+    "license": "CC0 1.0 (simple-icons). Marca de ElevenLabs; origen citado elevenlabs.io.",
+    "limitation": "Isotipo de ElevenLabs en un solo color #000000."
+  },
+  {
+    "serviceId": "coursera-plus",
+    "file": "/brands/coursera.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-22",
+    "license": "CC0 1.0 (simple-icons). Marca de Coursera; origen citado coursera.org.",
+    "limitation": "Isotipo de Coursera en un solo color #0056D2."
+  },
+  {
+    "serviceId": "surfshark",
+    "file": "/brands/surfshark.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-22",
+    "license": "CC0 1.0 (simple-icons). Marca de Surfshark; origen citado surfshark.com.",
+    "limitation": "Isotipo de Surfshark en un solo color #1EBFBF."
+  },
+  {
+    "serviceId": "krea",
+    "file": "/brands/krea.png",
+    "sourceUrl": "https://www.krea.ai/favicon/favicon-192.png",
+    "retrievalDate": "2026-10-22",
+    "license": "Marca de Krea. Favicon oficial de krea.ai, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 192×192, sin modificaciones."
+  },
+  {
+    "serviceId": "plex",
+    "file": "/brands/plex.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-22",
+    "license": "CC0 1.0 (simple-icons). Marca de Plex; origen citado plex.tv.",
+    "limitation": "Isotipo de Plex en un solo color #EBAF00."
+  },
+  {
+    "serviceId": "deezer",
+    "file": "/brands/deezer.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-22",
+    "license": "CC0 1.0 (simple-icons). Marca de Deezer; origen citado deezer.com.",
+    "limitation": "Isotipo de Deezer en un solo color #A238FF."
   }
 ]
