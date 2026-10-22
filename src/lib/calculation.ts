@@ -168,7 +168,7 @@ export function calculate(input: CalculationInput): CalculationResult {
     simulated = input.fxSource !== 'snapshot';
     fxLabel = input.fxSource === 'user' ? 'Tipo de cambio ingresado por vos' : 'Tipo de cambio BNA oficial (dólar vendedor)';
     fxVerifiedAt = input.fxVerifiedAt;
-    staleFx = input.fxSource === 'snapshot' && isStale(input.fxVerifiedAt, 24, 'hours', input.asOf);
+    staleFx = input.fxSource === 'snapshot' && isStale(input.fxVerifiedAt, 48, 'hours', input.asOf);
     lines.push({
       id: 'base-usd',
       label: 'Precio publicado',
@@ -193,7 +193,7 @@ export function calculate(input: CalculationInput): CalculationResult {
   }
 
   if (stalePrice) warnings.push('El precio publicado superó los 30 días desde la última verificación.');
-  if (staleFx) warnings.push('La referencia de tipo de cambio superó las 24 horas.');
+  if (staleFx) warnings.push('La referencia de tipo de cambio superó las 48 horas.');
 
   const activeRules = input.rules.filter(
     (rule) => input.ruleIds.includes(rule.id) && ruleIsActive(rule.effectiveFrom, rule.effectiveTo, input.asOf),
