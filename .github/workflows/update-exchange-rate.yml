@@ -9,6 +9,8 @@ on:
 jobs:
   update-exchange-rate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
       - name: Checkout
@@ -36,5 +38,5 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add src/data/exchange-rates.json
-          git commit -m "chore: actualizar tipo de cambio BNA [skip ci]"
+          git commit -m "chore: actualizar tipo de cambio BNA"
           git push

@@ -61,12 +61,13 @@ async function updateExchangeRate() {
       basis: 'Tipo de cambio vendedor del Banco de la Nación Argentina (dólar oficial) obtenido a través de dolarapi.com',
       sourceUrl: apiUrl,
       verifiedAt: today,
-      freshnessHours: 24,
+      freshnessHours: 48,
     };
 
     currentData.snapshots = [newSnapshot];
     currentData.basis.arsPerUsdMinor = arsPerUsdMinor;
     currentData.basis.verifiedAt = today;
+    currentData.basis.freshnessHours = 48;
 
     writeFileSync(dataPath, JSON.stringify(currentData, null, 2) + '\n', 'utf-8');
 
