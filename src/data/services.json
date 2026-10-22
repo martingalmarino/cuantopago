@@ -4285,13 +4285,9 @@
       {
         "question": "¿El IVA está incluido?",
         "answer": "La página no lo aclara. Tratamos el precio como sin impuestos, igual que otros servicios en pesos del sitio, y sumamos el IVA del 21%."
-      },
-      {
-        "question": "¿Cuidado con /ar/offers?",
-        "answer": "En Deezer «ar» es el idioma árabe, no Argentina. Para precios locales usá la versión en español con región Argentina."
       }
     ],
     "tags": [],
-    "body": "Ojo: deezer.com/ar/offers es árabe. Los precios de otras regiones en dólares no aplican a Argentina."
+    "body": "Los precios de Argentina están en pesos. El total estimado suma impuestos según cómo pagues."
   }
 ]
