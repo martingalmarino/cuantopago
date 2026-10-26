@@ -814,5 +814,53 @@
     "retrievalDate": "2026-10-22",
     "license": "CC0 1.0 (simple-icons). Marca de Deezer; origen citado deezer.com.",
     "limitation": "Isotipo de Deezer en un solo color #A238FF."
+  },
+  {
+    "serviceId": "kindle-unlimited",
+    "file": "/brands/kindle-unlimited.svg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amazon_Kindle_2024.svg",
+    "retrievalDate": "2026-10-26",
+    "license": "Dominio público en Wikimedia Commons. El archivo reproduce el logotipo Kindle 2024 de Amazon.com, Inc.",
+    "limitation": "Wordmark horizontal, sin modificaciones de las formas."
+  },
+  {
+    "serviceId": "platzi",
+    "file": "/brands/platzi.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-26",
+    "license": "CC0 1.0 (simple-icons). Marca de Platzi; origen citado: https://github.com/PlatziDev/oss.",
+    "limitation": "Isotipo de Platzi en un solo color #98CA3F."
+  },
+  {
+    "serviceId": "midjourney",
+    "file": "/brands/midjourney.svg",
+    "sourceUrl": "https://docs.midjourney.com/hc/theming_assets/01K1K3SHJHG4BTD9YK9VH9G86N",
+    "retrievalDate": "2026-10-26",
+    "license": "Marca de Midjourney. Ícono SVG del centro de ayuda oficial, usado solo para identificar el servicio.",
+    "limitation": "Ícono de 96×96 del tema de docs.midjourney.com, sin modificaciones."
+  },
+  {
+    "serviceId": "viki",
+    "file": "/brands/viki.svg",
+    "sourceUrl": "https://www.viki.com/images/rakuten-viki-horizontal.svg",
+    "retrievalDate": "2026-10-26",
+    "license": "Marca de Rakuten Viki. Wordmark oficial de viki.com, usado solo para identificar el servicio.",
+    "limitation": "Logotipo horizontal, sin modificaciones."
+  },
+  {
+    "serviceId": "faceit",
+    "file": "/brands/faceit.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-10-26",
+    "license": "CC0 1.0 (simple-icons). Marca de FACEIT; origen citado: https://corporate.faceit.com/branding/.",
+    "limitation": "Isotipo de FACEIT en un solo color #FF5500."
+  },
+  {
+    "serviceId": "world-of-warcraft",
+    "file": "/brands/world-of-warcraft.svg",
+    "sourceUrl": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltb7c1db49cad77069/60a81b45b078b00d8a909fce/world-of-warcraft.svg",
+    "retrievalDate": "2026-10-26",
+    "license": "Marca de Blizzard. Ícono SVG publicado en la ficha de la tienda Battle.net, usado solo para identificar el servicio.",
+    "limitation": "Ícono oficial de World of Warcraft, sin modificaciones."
   }
 ]
