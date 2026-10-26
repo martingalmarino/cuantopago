@@ -276,11 +276,24 @@ describe('presupuesto', () => {
 });
 
 describe('catálogo ampliado', () => {
-  it('importa 102 servicios sin ids repetidos', () => {
-    expect(services).toHaveLength(102);
-    expect(new Set(services.map((service) => service.id)).size).toBe(102);
-    expect(new Set(services.map((service) => service.slug)).size).toBe(102);
+  it('importa 108 servicios sin ids repetidos', () => {
+    expect(services).toHaveLength(108);
+    expect(new Set(services.map((service) => service.id)).size).toBe(108);
+    expect(new Set(services.map((service) => service.slug)).size).toBe(108);
     expect(new Set(plans.map((plan) => plan.id)).size).toBe(plans.length);
+  });
+
+  it('no suma la percepción del 30% a World of Warcraft y sí se la suma a FACEIT', () => {
+    const wow = plans.find((item) => item.id === 'world-of-warcraft-monthly');
+    const faceit = plans.find((item) => item.id === 'faceit-premium-monthly');
+    if (!wow || !faceit) throw new Error('faltan los planes de juegos');
+    const options = { asOf: '2026-10-26', paymentScenario: 'card-ars' as const, provinceId: 'CABA' };
+    const wowQuote = quotePlan(wow, options);
+    const faceitQuote = quotePlan(faceit, options);
+    const perception = (quote: ReturnType<typeof quotePlan>) =>
+      quote.lines.some((line) => line.id === 'added-ar-percepcion-rg5617');
+    expect(perception(wowQuote)).toBe(false);
+    expect(perception(faceitQuote)).toBe(true);
   });
 
   it('cobra Flow+ una sola vez y exige exactamente dos elecciones', () => {

@@ -4289,5 +4289,267 @@
     ],
     "tags": [],
     "body": "Los precios de Argentina están en pesos. El total estimado suma impuestos según cómo pagues."
+  },
+  {
+    "id": "kindle-unlimited",
+    "slug": "kindle-unlimited",
+    "name": "Kindle+",
+    "category": "aprendizaje",
+    "secondaryCategories": [],
+    "officialUrl": "https://www.amazon.com/kindle-dbs/hz/subscribe/ku",
+    "logo": "/brands/kindle-unlimited.svg",
+    "logoAltMode": "decorative",
+    "description": "Lectura de ebooks, revistas y cómics con una suscripción. Amazon la vende como Kindle+, en dólares, más los impuestos que correspondan.",
+    "aliases": [
+      "kindle unlimited",
+      "kindle+",
+      "kindle plus",
+      "ku",
+      "libros amazon"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.amazon.com/kindle-dbs/hz/subscribe/ku",
+      "https://www.amazon.com/gp/help/customer/display.html?nodeId=TFtdZHzxNayxBGVntF",
+      "https://www.amazon.com.mx/gp/help/customer/display.html?nodeId=TryGuDEBL4T8YoFxJ1"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Kindle+?",
+        "answer": "El 26 de octubre de 2026 la ayuda de Amazon.com decía USD 11,99 por mes, más los impuestos que correspondan, hasta que la canceles. La página de alta no mostró un precio de varios meses."
+      },
+      {
+        "question": "¿Hay descuento anual o el primer mes?",
+        "answer": "La ayuda ofrece 30 días de prueba gratis si todavía no lo probaste. No vimos un plan anual ni una promo de varios meses en la página de alta, así que no los cargamos."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La ayuda dice «más los impuestos que correspondan». El precio publicado no los incluye: sumamos IVA digital del 21% y, si pagás con tarjeta en pesos, la percepción del 30%."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "Sí. La ayuda y la página de alta ofrecen 30 días gratis si todavía no usaste Kindle+."
+      }
+    ],
+    "tags": [],
+    "body": "El nombre comercial vigente en Amazon.com es Kindle+; Kindle Unlimited queda como nombre anterior. Argentina figura entre los países que se suscriben por Amazon.com. Otra ayuda dice que Kindle+ en Amazon.com es solo para clientes de Estados Unidos: si el alta no te deja seguir, el precio de esta ficha no aplica. Se lee en la app de Kindle, en el celu, la tablet o la computadora."
+  },
+  {
+    "id": "platzi",
+    "slug": "platzi",
+    "name": "Platzi",
+    "category": "aprendizaje",
+    "secondaryCategories": [],
+    "officialUrl": "https://platzi.com/precios/",
+    "logo": "/brands/platzi.svg",
+    "logoAltMode": "decorative",
+    "description": "Cursos online en español, con rutas y certificados. La página de precios está en dólares y no aclara impuestos.",
+    "aliases": [
+      "platzi",
+      "platzi expert",
+      "platzi duo"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://platzi.com/precios/"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Platzi?",
+        "answer": "El 26 de octubre de 2026 la página de precios, en dólares, mostraba Basic a USD 49 por mes, Expert a USD 249 por año y Expert Duo a USD 329 por año."
+      },
+      {
+        "question": "¿Hay descuento anual o el primer mes?",
+        "answer": "Expert y Expert Duo ya son anuales. Se pueden pagar en 4 cuotas sin interés de USD 63 y USD 83. No hay un mes de regalo de entrada. Expert Groups, de 4 a 50 estudiantes, se cotiza y no está cargado."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La página dice «Precios en dólares» y no menciona impuestos. Tratamos el precio como sin impuestos: sumamos IVA del 21% y, si pagás con tarjeta en pesos, la percepción del 30%."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "No hay prueba de la suscripción. Hay cursos gratuitos y las primeras 3 clases de cualquier curso sin costo. Podés pausar hasta 2 veces por año, un mes cada vez."
+      }
+    ],
+    "tags": [],
+    "body": "Basic es para una persona y se cobra cada mes, con acceso limitado. Expert suma certificados físicos, las escuelas de Startups, Inglés y Liderazgo, Platzi Conf y descargas en la app. Duo es para dos estudiantes, cada uno con cuenta y certificado propio. Medios de pago publicados: tarjeta, PayPal, Google Pay, Apple Pay, efectivo y Bitcoin. La factura fiscal que menciona la ayuda es para pagos de Colombia o México, no para Argentina."
+  },
+  {
+    "id": "midjourney",
+    "slug": "midjourney",
+    "name": "Midjourney",
+    "category": "diseno",
+    "secondaryCategories": [
+      "inteligencia-artificial"
+    ],
+    "officialUrl": "https://www.midjourney.com/account",
+    "logo": "/brands/midjourney.svg",
+    "logoAltMode": "decorative",
+    "description": "Generación de imágenes y video con inteligencia artificial. Los planes se publican en dólares y la comparación no menciona impuestos.",
+    "aliases": [
+      "midjourney",
+      "mid journey",
+      "mj",
+      "ia imagenes"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+      "https://www.midjourney.com/account"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Midjourney?",
+        "answer": "El 26 de octubre de 2026 la comparación oficial listaba, por mes, Basic USD 10, Standard USD 30, Pro USD 60 y Mega USD 120. El año, pago por adelantado, sale USD 96, USD 288, USD 576 y USD 1.152."
+      },
+      {
+        "question": "¿Hay descuento anual o el primer mes?",
+        "answer": "El plan anual es un 20% menos y se paga el año entero por adelantado. No es un precio solo del primer mes: es el importe del año. No hay plan gratis ni prueba."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La comparación de planes no habla de impuestos. Tratamos el precio como sin impuestos: sumamos IVA del 21% y, si pagás con tarjeta en pesos, la percepción del 30%."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "No. La documentación dice que todos los planes son suscripciones que se renuevan solas, mensuales o anuales. No hay plan gratis."
+      }
+    ],
+    "tags": [],
+    "body": "Fast GPU es 3,3 h, 15 h, 30 h o 60 h por mes según el plan. Desde Standard hay imágenes ilimitadas en modo Relax, y desde Pro también video SD. El modo sigiloso está solo en Pro y Mega. La hora extra sale USD 4. Una empresa que factura más de USD 1.000.000 al año tiene que usar Pro o Mega."
+  },
+  {
+    "id": "viki",
+    "slug": "viki",
+    "name": "Viki Pass",
+    "category": "series",
+    "secondaryCategories": [],
+    "officialUrl": "https://www.viki.com/pass",
+    "logo": "/brands/viki.svg",
+    "logoAltMode": "decorative",
+    "description": "Series y películas asiáticas sin anuncios. Para Argentina el cobro de la web es en dólares y la página avisa que los precios están sujetos a impuestos.",
+    "aliases": [
+      "viki",
+      "rakuten viki",
+      "viki pass",
+      "kdramas",
+      "doramas"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.viki.com/pass",
+      "https://support.viki.com/hc/es/articles/15319507566611--Qu%C3%A9-moneda-se-utiliza-para-el-pago",
+      "https://support.viki.com/hc/es/articles/51593044590867-Impuestos-en-suscripciones-y-alquileres-de-Viki-Pass"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Viki Pass?",
+        "answer": "El 26 de octubre de 2026 viki.com/pass, con la moneda en USD, mostraba Standard a USD 4,99 por mes o USD 49,99 por año, y Plus a USD 9,99 por mes o USD 99,99 por año."
+      },
+      {
+        "question": "¿Hay descuento anual o el primer mes?",
+        "answer": "El anual se cobra entero y queda más barato por mes que el plan mensual. No es una promo del primer mes: se renueva a ese mismo importe. En la web no hay días de prueba."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La ficha dice que todos los precios están sujetos a impuestos, y la ayuda agrega que pueden sumarse impuestos según la dirección de facturación. El precio publicado no los incluye."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "No en la web. La página de planes no ofrece días de prueba. Argentina no está en la lista de moneda local: si tu país no figura, Viki cobra en dólares."
+      }
+    ],
+    "tags": [],
+    "body": "Standard es HD 720p y un dispositivo a la vez. Plus es Full HD 1080p, hasta 4 dispositivos y descarga para ver sin conexión. La ayuda aclara que en la app de Apple o Google el cobro lo hace la tienda, con otro precio. Estos importes son los de viki.com."
+  },
+  {
+    "id": "faceit",
+    "slug": "faceit",
+    "name": "FACEIT",
+    "category": "videojuegos",
+    "secondaryCategories": [],
+    "officialUrl": "https://www.faceit.com/es/subscriptions/cs2/premium",
+    "logo": "/brands/faceit.svg",
+    "logoAltMode": "decorative",
+    "description": "Suscripción para partidas competitivas de Counter-Strike 2. En Argentina la página muestra pesos y avisa que el precio anual no incluye impuestos.",
+    "aliases": [
+      "faceit",
+      "face it",
+      "faceit premium",
+      "cs2"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.faceit.com/es/subscriptions/cs2/premium",
+      "https://www.afip.gob.ar/regimen-devolucion-percepciones/percepcion/exclusiones.asp"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta FACEIT?",
+        "answer": "El 26 de octubre de 2026 la ficha en pesos mostraba Plus a $ 2.049 por mes y Premium a $ 3.949 por mes, facturados por año. El cobro mensual real, en el listado de esa misma página, es $ 3.449 y $ 5.429."
+      },
+      {
+        "question": "¿Hay descuento anual o el primer mes?",
+        "answer": "El número chico de la tarjeta es el anual partido en 12, no un mes suelto. Plus anual son $ 24.588 y Premium anual $ 47.388. La ficha no ofrece una prueba gratis."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La página dice que el precio es sin incluir impuestos. FACEIT no está en la nómina de la RG 5677, así que con tarjeta en pesos sumamos la percepción del 30%. No sumamos IVA digital: la página no publica esa tasa y los juegos del sitio no la cargan en el plan."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "No. Esa página no publica días de prueba. El emparejamiento básico de FACEIT es gratis y no está cargado como plan pago."
+      }
+    ],
+    "tags": [],
+    "body": "Plus trae 3 bloqueos de emparejamiento y prioridad Second. Premium trae 5 bloqueos, prioridad First, Premium Match, misiones y ladders con premios en skins y FACEIT Points, highlights y cambio de apodo cada 3 meses. Los impuestos de más los cobra el medio de pago: la ficha no publica una tasa."
+  },
+  {
+    "id": "world-of-warcraft",
+    "slug": "world-of-warcraft",
+    "name": "World of Warcraft",
+    "category": "videojuegos",
+    "secondaryCategories": [],
+    "officialUrl": "https://us.shop.battle.net/es-es/product/world-of-warcraft-subscription",
+    "logo": "/brands/world-of-warcraft.svg",
+    "logoAltMode": "decorative",
+    "description": "Suscripción del MMORPG de Blizzard, en dólares en la tienda de Battle.net. La ficha avisa que a residentes argentinos les puede corresponder un 21% que Blizzard no controla.",
+    "aliases": [
+      "world of warcraft",
+      "wow",
+      "warcraft",
+      "suscripcion wow"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://us.shop.battle.net/es-es/product/world-of-warcraft-subscription",
+      "https://www.afip.gob.ar/regimen-devolucion-percepciones/percepcion/exclusiones.asp"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta World of Warcraft?",
+        "answer": "El 26 de octubre de 2026 la tienda en dólares mostraba 1 mes a USD 14,99, 3 meses a USD 41,97, 6 meses a USD 77,94 y 12 meses a USD 155,88."
+      },
+      {
+        "question": "¿Hay descuento anual o el primer mes?",
+        "answer": "Los plazos de 3, 6 y 12 meses salen menos que pagar mes a mes. No es un descuento solo del primer mes: es el total de ese plazo. El checkout pide iniciar sesión, así que el cobro final de la tarjeta no se vio."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La tienda dice que a residentes argentinos les puede corresponder un impuesto del 21% y que Blizzard no lo controla. Blizzard está en la nómina de la RG 5677, así que no sumamos la percepción del 30%."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "La ficha tiene un botón Probar, sin un plazo ni un precio de prueba publicados. La expansión Midnight se compra aparte y no incluye las expansiones futuras."
+      }
+    ],
+    "tags": [],
+    "body": "La suscripción incluye el juego moderno hasta el nivel 80, Classic hasta el 60 y Mists of Pandaria Classic hasta el 90, además de las expansiones ya lanzadas. Midnight se vende por separado. Hace falta internet, una cuenta de Battle.net y la app de escritorio. Los plazos de 3 y 6 meses se cuentan cada 90 y 180 días, como el resto de los juegos por días del sitio."
   }
 ]
