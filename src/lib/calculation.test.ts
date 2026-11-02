@@ -276,10 +276,10 @@ describe('presupuesto', () => {
 });
 
 describe('catálogo ampliado', () => {
-  it('importa 108 servicios sin ids repetidos', () => {
-    expect(services).toHaveLength(108);
-    expect(new Set(services.map((service) => service.id)).size).toBe(108);
-    expect(new Set(services.map((service) => service.slug)).size).toBe(108);
+  it('importa 114 servicios sin ids repetidos', () => {
+    expect(services).toHaveLength(114);
+    expect(new Set(services.map((service) => service.id)).size).toBe(114);
+    expect(new Set(services.map((service) => service.slug)).size).toBe(114);
     expect(new Set(plans.map((plan) => plan.id)).size).toBe(plans.length);
   });
 
@@ -294,6 +294,19 @@ describe('catálogo ampliado', () => {
       quote.lines.some((line) => line.id === 'added-ar-percepcion-rg5617');
     expect(perception(wowQuote)).toBe(false);
     expect(perception(faceitQuote)).toBe(true);
+  });
+
+  it('no suma la percepción del 30% a Fortnite Crew ni a Ubisoft+, y sí se la suma a Roblox Plus', () => {
+    const fortnite = plans.find((item) => item.id === 'fortnite-crew-monthly');
+    const ubisoft = plans.find((item) => item.id === 'ubisoft-plus-classics-monthly');
+    const roblox = plans.find((item) => item.id === 'roblox-plus-monthly');
+    if (!fortnite || !ubisoft || !roblox) throw new Error('faltan los planes nuevos de juegos');
+    const options = { asOf: '2026-11-02', paymentScenario: 'card-ars' as const, provinceId: 'CABA' };
+    const perception = (quote: ReturnType<typeof quotePlan>) =>
+      quote.lines.some((line) => line.id === 'added-ar-percepcion-rg5617');
+    expect(perception(quotePlan(fortnite, options))).toBe(false);
+    expect(perception(quotePlan(ubisoft, options))).toBe(false);
+    expect(perception(quotePlan(roblox, options))).toBe(true);
   });
 
   it('cobra Flow+ una sola vez y exige exactamente dos elecciones', () => {

@@ -862,5 +862,53 @@
     "retrievalDate": "2026-10-26",
     "license": "Marca de Blizzard. Ícono SVG publicado en la ficha de la tienda Battle.net, usado solo para identificar el servicio.",
     "limitation": "Ícono oficial de World of Warcraft, sin modificaciones."
+  },
+  {
+    "serviceId": "domestika-plus",
+    "file": "/brands/domestika-plus.svg",
+    "sourceUrl": "https://www.domestika.org/safari-pinned-tab.svg",
+    "retrievalDate": "2026-11-02",
+    "license": "Marca de Domestika. Mask-icon oficial de domestika.org, usado solo para identificar el servicio.",
+    "limitation": "Isotipo de Domestika a partir del safari-pinned-tab, recolorizado a #E85D4C sobre fondo."
+  },
+  {
+    "serviceId": "tinder",
+    "file": "/brands/tinder.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-11-02",
+    "license": "CC0 1.0 (simple-icons). Marca de Tinder; origen citado tinder.com.",
+    "limitation": "Isotipo de Tinder en un solo color #FF6B6B."
+  },
+  {
+    "serviceId": "strava",
+    "file": "/brands/strava.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-11-02",
+    "license": "CC0 1.0 (simple-icons). Marca de Strava; origen citado strava.com.",
+    "limitation": "Isotipo de Strava en un solo color #FC4C02."
+  },
+  {
+    "serviceId": "fortnite-crew",
+    "file": "/brands/fortnite-crew.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-11-02",
+    "license": "CC0 1.0 (simple-icons). Marca de Epic Games / Fortnite.",
+    "limitation": "Isotipo de Fortnite en un solo color #000000."
+  },
+  {
+    "serviceId": "roblox-plus",
+    "file": "/brands/roblox-plus.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-11-02",
+    "license": "CC0 1.0 (simple-icons). Marca de Roblox.",
+    "limitation": "Isotipo de Roblox en un solo color #000000."
+  },
+  {
+    "serviceId": "ubisoft-plus",
+    "file": "/brands/ubisoft-plus.svg",
+    "sourceUrl": "https://github.com/simple-icons/simple-icons",
+    "retrievalDate": "2026-11-02",
+    "license": "CC0 1.0 (simple-icons). Marca de Ubisoft.",
+    "limitation": "Isotipo de Ubisoft en un solo color #000000."
   }
 ]
