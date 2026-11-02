@@ -2,8 +2,8 @@
   "metadata": {
     "source": "Resolución General AFIP 5677/2025",
     "sourceUrl": "https://www.afip.gob.ar/regimen-devolucion-percepciones/percepcion/exclusiones.asp",
-    "verifiedAt": "2026-10-26",
-    "note": "Exclusiones del Artículo 6 de la RG 5617/2024 para compras en el exterior. Solo incluye plataformas de videojuegos verificadas en la nómina oficial de AFIP."
+    "verifiedAt": "2026-11-02",
+    "note": "Exclusiones del Artículo 6 de la RG 5617/2024 para compras en el exterior. Solo incluye plataformas de videojuegos verificadas en la nómina oficial de AFIP. Roblox no figura en NOMINA-PRESTADORES-RG-5677.txt al 2026-11-02."
   },
   "excludedServiceIds": [
     "steam",
@@ -15,7 +15,8 @@
     "ea-play",
     "ubisoft-plus",
     "battle-net",
-    "world-of-warcraft"
+    "world-of-warcraft",
+    "fortnite-crew"
   ],
   "excludedProviderPatterns": [
     "steam",

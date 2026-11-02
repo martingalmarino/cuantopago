@@ -4551,5 +4551,268 @@
     ],
     "tags": [],
     "body": "La suscripción incluye el juego moderno hasta el nivel 80, Classic hasta el 60 y Mists of Pandaria Classic hasta el 90, además de las expansiones ya lanzadas. Midnight se vende por separado. Hace falta internet, una cuenta de Battle.net y la app de escritorio. Los plazos de 3 y 6 meses se cuentan cada 90 y 180 días, como el resto de los juegos por días del sitio."
+  },
+  {
+    "id": "domestika-plus",
+    "slug": "domestika-plus",
+    "name": "Domestika Plus",
+    "category": "aprendizaje",
+    "secondaryCategories": [
+      "diseno"
+    ],
+    "officialUrl": "https://www.domestika.org/es/plus",
+    "logo": "/brands/domestika-plus.svg",
+    "logoAltMode": "decorative",
+    "description": "Cursos creativos online con catálogo Plus y créditos para quedarte cursos. Desde Argentina la web publica los precios en pesos y no aclara impuestos; los términos dicen que el cobro final se calcula en dólares.",
+    "aliases": [
+      "domestika",
+      "domestika plus",
+      "cursos creativos"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.domestika.org/es/plus",
+      "https://www.domestika.org/es/terms"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Domestika Plus?",
+        "answer": "El 2 de noviembre de 2026 la página /es/plus, vista desde Argentina, mostraba el plan mensual a $ 16.999 por mes y el anual con promo a $ 74.500 el primer año (equivalente a $ 6.208,39 por mes). Después del primer año el cobro anual de renovación publicado es $ 149.000."
+      },
+      {
+        "question": "¿Hay descuento anual?",
+        "answer": "Sí. El anual con promoción del 2 de noviembre de 2026 sale $ 74.500 el primer año frente a $ 149.000 de renovación. El mensual publicado ese día era $ 16.999. La promo cambia seguido."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La página de Plus no menciona impuestos. Tratamos el precio como sin impuestos: sumamos IVA del 21% y, si pagás con tarjeta en pesos, la percepción del 30%. Los términos dicen que el cargo final se calcula en USD."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "La página de Plus del 2 de noviembre de 2026 no ofrecía una prueba gratis visible en el plan mensual ni en el anual. Hay cursos gratis por tiempo limitado dentro del catálogo Plus una vez suscripto."
+      }
+    ],
+    "tags": [],
+    "body": "Plus da acceso a más de 1.000 cursos del catálogo para ver gratis por tiempo limitado, 12 créditos al año (uno por mes en el plan mensual) para canjear cursos y quedártelos, y certificado por curso comprado. Plus no se reembolsa. Los precios cargados son los que mostró la web para Argentina el 2 de noviembre de 2026; desde otras regiones la misma página puede mostrar dólares."
+  },
+  {
+    "id": "tinder",
+    "slug": "tinder",
+    "name": "Tinder",
+    "category": "redes-sociales",
+    "secondaryCategories": [],
+    "officialUrl": "https://tinder.com/es/feature/subscription-tiers",
+    "logo": "/brands/tinder.svg",
+    "logoAltMode": "decorative",
+    "description": "App de citas con Plus, Gold y Platinum. Tinder no publica precios fijos: varían por edad, duración, plataforma y promos, y se ven en la app.",
+    "aliases": [
+      "tinder",
+      "tinder plus",
+      "tinder gold",
+      "tinder platinum",
+      "app de citas"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://tinder.com/es/feature/subscription-tiers",
+      "https://www.help.tinder.com/hc/es-ar/articles/115004487406"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Tinder?",
+        "answer": "El 2 de noviembre de 2026 la página oficial de niveles no publicaba montos. Los precios se ven al pagar en la app y cambian según edad, duración y promos. No cargamos planes hasta confirmar un precio por plan en una fuente oficial o en la ficha de la tienda."
+      },
+      {
+        "question": "¿Hay descuento anual?",
+        "answer": "Puede haber packs de varios meses dentro de la app, pero no hay una lista pública de precios anuales para Argentina. Sin monto confirmado, no lo cargamos."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "Sin un precio publicado no armamos el desglose. Cuando se cobre por App Store o Google Play, el total y los impuestos dependen de la tienda y de cómo pagues."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "La página de niveles describe Plus, Gold y Platinum, pero el 2 de noviembre de 2026 no mostraba una prueba gratis clara. Cualquier oferta aparece en la app."
+      }
+    ],
+    "tags": [],
+    "body": "Plus suma likes ilimitados, Passport, rewind y sin anuncios. Gold agrega ver a quién le gustaste, Super Likes y un Boost mensual. Platinum suma likes priorizados. El cobro suele ser por App Store o Google Play. Quedó sin planes cargados porque no hay precio oficial fijo."
+  },
+  {
+    "id": "strava",
+    "slug": "strava",
+    "name": "Strava",
+    "category": "deportes",
+    "secondaryCategories": [],
+    "officialUrl": "https://www.strava.com/pricing",
+    "logo": "/brands/strava.svg",
+    "logoAltMode": "decorative",
+    "description": "App de running y ciclismo con rutas, segmentos y análisis. Para Argentina la página de tarifas publica precios en dólares.",
+    "aliases": [
+      "strava",
+      "strava premium",
+      "strava suscripcion",
+      "running",
+      "ciclismo"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.strava.com/pricing",
+      "https://www.strava.com/subscribe"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Strava?",
+        "answer": "El 2 de noviembre de 2026 la página de tarifas, en la sección Argentina, listaba USD 4,99 por mes o USD 29,99 por año. El Plan familiar sale USD 79,99 por año y Strava + Runna USD 149,99 por año."
+      },
+      {
+        "question": "¿Hay descuento anual?",
+        "answer": "Sí. El anual individual publicado para Argentina es USD 29,99 frente a USD 4,99 por mes. El Plan familiar solo figura en cobro anual."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La sección Argentina no aclara impuestos. Tratamos el precio como sin impuestos: sumamos IVA del 21% y, si pagás con tarjeta en pesos, la percepción del 30%."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "Strava ofrece prueba gratis de 30 días en la suscripción individual. El descuento para estudiantes existe como enlace, pero el 2 de noviembre de 2026 no había un monto publicado para Argentina, así que no lo cargamos."
+      }
+    ],
+    "tags": [],
+    "body": "La suscripción suma rutas, segmentos, tablas de clasificación, análisis de entrenamiento avanzado y Beacon. Los precios cargados son los de strava.com/pricing para Argentina el 2 de noviembre de 2026. Strava + Runna está cargado aparte como plan anual."
+  },
+  {
+    "id": "fortnite-crew",
+    "slug": "fortnite-crew",
+    "name": "Fortnite Crew",
+    "category": "videojuegos",
+    "secondaryCategories": [],
+    "officialUrl": "https://www.fortnite.com/fortnite-crew-subscription?lang=es-ES",
+    "logo": "/brands/fortnite-crew.svg",
+    "logoAltMode": "decorative",
+    "description": "Suscripción mensual de Fortnite con pases, 800 paVos y el lote cosmético. Epic publica USD 11,99 al mes en la ficha del Club.",
+    "aliases": [
+      "fortnite crew",
+      "club de fortnite",
+      "fortnite",
+      "pavos",
+      "vbucks"
+    ],
+    "overlapNote": "Xbox Game Pass Ultimate incluye Fortnite Crew.",
+    "sourceUrls": [
+      "https://www.fortnite.com/fortnite-crew-subscription?lang=es-ES",
+      "https://www.fortnite.com/news/pricing-alignment"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Fortnite Crew?",
+        "answer": "El 2 de noviembre de 2026 la página del Club de Fortnite listaba 11,99 US$ al mes. No confirmamos un monto vigente en pesos para cuentas argentinas: la tabla histórica de pricing-alignment (ARS 683) es de 2022 y no la usamos."
+      },
+      {
+        "question": "¿Hay descuento anual?",
+        "answer": "No. El Club de Fortnite se cobra mes a mes."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. Fortnite figura en la nómina de exclusiones de la RG 5677, así que no aplicamos la percepción del 30%."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "No hay prueba gratis del Club. Si tenés Xbox Game Pass Ultimate, el Club de Fortnite ya está incluido."
+      }
+    ],
+    "tags": [],
+    "body": "Incluye el pase de batalla, el pase de Orígenes, el pase LEGO, el pase musical, 800 paVos por mes, el pack cosmético mensual y el Rocket Pass Premium de Rocket League. El precio cargado es el USD 11,99 de la ficha oficial; el cobro real puede variar según la tienda (Epic, Microsoft Store u otras)."
+  },
+  {
+    "id": "roblox-plus",
+    "slug": "roblox-plus",
+    "name": "Roblox Plus",
+    "category": "videojuegos",
+    "secondaryCategories": [],
+    "officialUrl": "https://www.roblox.com/upgrades/robux",
+    "logo": "/brands/roblox-plus.svg",
+    "logoAltMode": "decorative",
+    "description": "Suscripción de Roblox con descuentos, servidores privados y opción de Robux mensuales. La web en español muestra los planes en dólares.",
+    "aliases": [
+      "roblox",
+      "roblox plus",
+      "roblox premium",
+      "robux"
+    ],
+    "overlapNote": null,
+    "sourceUrls": [
+      "https://www.roblox.com/upgrades/robux",
+      "https://en.help.roblox.com/hc/en-us/articles/47967913158164",
+      "https://en.help.roblox.com/hc/en-us/articles/360024256251"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Roblox Plus?",
+        "answer": "El 2 de noviembre de 2026 la página de upgrades en español listaba Roblox Plus a 4,99 US$ por mes, Plus 500 a 8,99 US$, Plus 1000 a 12,99 US$ y Plus 2000 a 21,99 US$."
+      },
+      {
+        "question": "¿Hay descuento anual?",
+        "answer": "No. Los planes de Roblox Plus se cobran por mes. Roblox Premium (450/1000/2200) dejó de venderse el 30 de abril de 2026."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. Roblox no figura en la nómina de exclusiones de la RG 5677 del 2 de noviembre de 2026, así que si pagás con tarjeta en pesos puede sumarse la percepción del 30%."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "No hay prueba gratis de Roblox Plus. Plus solo da beneficios; los packs 500/1000/2000 suman Robux mensuales."
+      }
+    ],
+    "tags": [],
+    "body": "Roblox Plus da 10–20% off en ítems, servidores privados gratis y envío de Robux. Los packs Plus 500, 1000 y 2000 incluyen esos beneficios más 500, 1.000 o 2.000 Robux por mes. Premium ya no se vende. Los precios son los de la web en dólares; en App Store o Google Play el monto puede diferir."
+  },
+  {
+    "id": "ubisoft-plus",
+    "slug": "ubisoft-plus",
+    "name": "Ubisoft+",
+    "category": "videojuegos",
+    "secondaryCategories": [],
+    "officialUrl": "https://store.ubisoft.com/us/select-plan",
+    "logo": "/brands/ubisoft-plus.svg",
+    "logoAltMode": "decorative",
+    "description": "Catálogo de juegos Ubisoft en PC, con plan Classics y Premium. Los precios cargados son los de la tienda de EE. UU. en dólares.",
+    "aliases": [
+      "ubisoft+",
+      "ubisoft plus",
+      "uplay plus",
+      "ubisoft premium",
+      "ubisoft classics"
+    ],
+    "overlapNote": "Xbox Game Pass Ultimate incluye Ubisoft+ Classics. En PlayStation Plus, Ubisoft+ Classics se ofrece como complemento aparte.",
+    "sourceUrls": [
+      "https://store.ubisoft.com/us/select-plan"
+    ],
+    "verificationStatus": "partial",
+    "faqs": [
+      {
+        "question": "¿Cuánto cuesta Ubisoft+?",
+        "answer": "El 2 de noviembre de 2026 la tienda de EE. UU. listaba Classics a USD 7,99 por mes o USD 79,99 por año, y Premium a USD 17,99 por mes o USD 179,99 por año. La ruta /ar/select-plan no mostró esos planes ese día."
+      },
+      {
+        "question": "¿Hay descuento anual?",
+        "answer": "Sí. El anual de Classics y Premium figura con un 17% menos frente a pagar 12 meses sueltos."
+      },
+      {
+        "question": "¿El IVA está incluido?",
+        "answer": "La página no aclara impuestos. No sumamos IVA. Ubisoft está en la nómina de exclusiones de la RG 5677, así que no aplicamos la percepción del 30%."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "La página de selección de plan del 2 de noviembre de 2026 no mostraba una prueba gratis. Podés cancelar al final del ciclo de cobro."
+      }
+    ],
+    "tags": [],
+    "body": "Classics es un catálogo de clásicos en PC. Premium suma 145+ juegos, estrenos día 1, ediciones premium y DLC, recompensas mensuales y juego en Xbox. Los montos son de store.ubisoft.com/us; no confirmamos un precio distinto publicado para Argentina."
   }
 ]
